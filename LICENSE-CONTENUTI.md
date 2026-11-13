@@ -16,7 +16,7 @@ Rientrano nei contenuti:
 
 È consentito condividerli e adattarli a fini non commerciali, citando la fonte:
 
-> Amato L., *Paesaggio tra misura e percezione — Visualizzatore ipotesi visuali del paesaggio*, Dottorato in Landscape Studies for Global and Local Challenges, Università degli Studi di Bergamo, 2026.
+> Amato L., *Paesaggio tra misura e percezione* (https://lorenzotlc.github.io/landscape-dashboard/), Dottorato in Landscape Studies for Global and Local Challenges, Università degli Studi di Bergamo, 2026.
 
 Il **codice** (HTML, CSS, JavaScript, script Python) è distribuito con licenza MIT (vedi `LICENSE`).
 

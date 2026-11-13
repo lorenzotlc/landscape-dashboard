@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Prepara i dati per il Visualizzatore ipotesi visuali del paesaggio.
+Prepara i dati per la dashboard "Paesaggio tra misura e percezione".
 
 Input:
   --cluster   (obbligatorio, tranne con --statistiche) GeoTIFF a banda singola con il codice del cluster SuperSOM per cella

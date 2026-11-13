@@ -1,5 +1,5 @@
 {
-  "titolo": "Visualizzatore ipotesi visuali del paesaggio",
+  "titolo": "Paesaggio tra misura e percezione",
   "sottotitolo": "Mappa degli intorni percepiti · SuperSOM k=6 · area del Vulture",
   "raster_cluster": "data/cluster.tif",
   "confine": "data/area_studio.geojson",

@@ -1,4 +1,4 @@
-# Paesaggio tra misura e percezione — Visualizzatore ipotesi visuali del paesaggio
+# Paesaggio tra misura e percezione
 
 Dashboard web della **mappa degli intorni percepiti** dell'area del Vulture (Basilicata): sei configurazioni di paesaggio
 individuate con una rete neurale SuperSOM, le relative ipotesi visuali generate con l'intelligenza artificiale,
@@ -7,7 +7,7 @@ i profili statistici degli indicatori e le fotografie del territorio.
 Progetto di dottorato in [Landscape Studies for Global and Local Challenges](https://phd-landscape.unibg.it/),
 Università degli Studi di Bergamo. **Progetto in corso.**
 
-🌐 **Sito:** https://UTENTE.github.io/visualizzatore-paesaggio/
+🌐 **Sito:** https://lorenzotlc.github.io/landscape-dashboard/
 
 La sezione *Il progetto* del sito descrive la ricerca; *Come si usa* spiega i pannelli della dashboard.
 
