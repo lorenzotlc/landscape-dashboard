@@ -1,0 +1,67 @@
+TITOLO: Matrice agricolo-storica periferica ad alta leggibilità
+
+DESCRIZIONE GENERALE
+
+Questo cluster costruisce un paesaggio fortemente leggibile e ordinato, nel quale la componente agricola tradizionale e quella storico-culturale costituiscono il sistema dominante. La struttura centrale non deriva da elementi spettacolari o eccezionali, ma da una continuità stabile di trame coltivate, nuclei storici e organizzazione territoriale chiara. Il paesaggio appare periferico rispetto al vulcano, che perde ruolo percettivo diretto e rimane episodico o marginale sullo sfondo. L’insieme genera una scena aperta ma non estrema, in cui la leggibilità nasce soprattutto dalla continuità della matrice rurale e dalla forte permanenza dei sistemi storici.
+
+STRUTTURA CENTRALE
+
+La struttura centrale è dominata dalla fortissima coerenza della componente storico-culturale. La variabile hist_cult_index mostra infatti una mediana massima e un IQR nullo: il sistema storico non è un episodio, ma una condizione strutturale costante dell’intero cluster. Borghi storici, tessuti consolidati, emergenze architettoniche e nuclei storici leggibili diventano quindi il principale ordinatore percettivo del paesaggio. La scena non è urbana in senso moderno, ma storicamente sedimentata.
+
+Questa struttura è sostenuta da una presenza agricola molto stabile. vis_agri_share presenta una mediana elevata e un IQR interamente positivo e ampio: l’agricoltura tradizionale non compare come semplice sfondo rurale indistinto, ma come trama chiaramente leggibile. Filari, oliveti, vigneti, appezzamenti e sistemi agricoli organizzano foreground e midground con continuità. La salienza agricola è forte ma subordinata al sistema storico, che rimane il vero elemento identitario del cluster.
+
+La leggibilità complessiva della scena è anch’essa elevata e stabile. vis_total_intensity mostra una mediana positiva e un IQR interamente positivo, indicando paesaggi generalmente chiari, ordinati e facilmente interpretabili. Questa leggibilità non deriva da singoli landmark dominanti, ma dalla coerenza tra morfologia, agricoltura e insediamento storico.
+
+Il cluster si colloca inoltre in una posizione territorialmente periferica rispetto al vulcano. distance_to_volcano ha mediana fortemente positiva e IQR completamente positivo: la relazione con il vulcano è quindi indiretta e distante. Coerentemente, vis_landmark_share attraversa lo zero e presenta una mediana leggermente negativa: il vulcano non è assente in modo assoluto, ma non struttura stabilmente la scena. Compare solo in alcune aperture visuali o condizioni eccezionali.
+
+Dal punto di vista morfologico il cluster mantiene una moderata articolazione del rilievo. relief_context attraversa lo zero con mediana lievemente negativa: prevalgono situazioni relativamente morbide o poco accidentate, ma senza una totale uniformità pianeggiante. Anche terrain_enclosure oscilla intorno allo zero, suggerendo alternanza tra aperture panoramiche e condizioni più raccolte. Ne deriva un paesaggio equilibrato, né fortemente chiuso né totalmente aperto.
+
+La componente antropico-produttiva (vis_anthropic_share) resta stabilmente subordinata. La mediana negativa e l’IQR interamente negativo indicano che infrastrutture industriali, energetiche o produttive sono generalmente poco percepibili. Il cluster evita quindi una lettura industriale del territorio.
+
+Dal punto di vista ecologico emerge una moderata eterogeneità naturale. ecology.shannon è stabilmente positiva: il mosaico ambientale è diversificato, senza però trasformarsi in wilderness dominante. La presenza d’acqua (water_presence_500m) è relativamente frequente ma variabile, mentre la presenza forestale (forest_presence_500m) rimane oscillante e subordinata alla matrice agricola.
+
+ECCEZIONI E TENSIONI
+
+Le tensioni interne derivano soprattutto dalla variabilità morfologica e dalla presenza episodica di componenti naturali o landmark vulcanici.
+
+relief_context mostra numerosi outlier positivi: alcune porzioni del cluster sviluppano rilievi molto più articolati rispetto alla struttura centrale. In questi casi compaiono versanti più incisivi, crinali o morfologie più montuose che aumentano la profondità visuale. Tuttavia queste situazioni restano marginali rispetto alla prevalenza di paesaggi moderatamente ondulati.
+
+Anche forest_presence_500m presenta molti outlier positivi. Ciò indica episodi locali in cui il bosco diventa improvvisamente più visibile e continuo. Tuttavia la foresta non sostituisce mai la matrice agricola dominante: rimane un elemento episodico di margine o sfondo.
+
+La variabile vis_landmark_share presenta outlier negativi che corrispondono a condizioni di totale schermatura del vulcano. In alcune configurazioni il landmark vulcanico scompare completamente dalla percezione, accentuando l’autonomia locale del paesaggio storico-agricolo.
+
+Le poche deviazioni positive di vis_anthropic_share indicano invece episodi locali di maggiore presenza produttiva o infrastrutturale. Si tratta però di emergenze isolate che non riescono a ridefinire l’identità generale del cluster.
+
+Infine, alcuni outlier negativi di vis_total_intensity mostrano porzioni in cui la scena perde temporaneamente chiarezza e leggibilità. Questi episodi possono derivare da maggiore frammentazione morfologica, schermature o minore continuità visiva, ma restano subordinati alla forte coerenza generale del cluster.
+
+PARTE CENTRALE
+
+La scena deve essere costruita come un paesaggio rurale storico chiaramente organizzato. In foreground e midground dominano trame agricole leggibili: filari regolari, oliveti, appezzamenti coltivati e reti rurali continue. Gli elementi agricoli non devono apparire generici, ma strutturati e ordinati.
+
+All’interno di questa matrice emergono con forte salienza nuclei storici, borghi consolidati, tessuti edilizi storici e piccoli sistemi monumentali diffusi. Questi elementi devono essere percepiti come continui e territorialmente integrati, non come singoli monumenti isolati.
+
+La morfologia resta moderatamente ondulata, con alternanza di aperture e leggere chiusure prospettiche. La scena deve mantenere buona profondità visuale senza trasformarsi in panorama estremo o montano.
+
+Il vulcano, quando presente, resta sullo sfondo e con ruolo subordinato. Non deve dominare l’orizzonte né organizzare la composizione principale.
+
+Le componenti produttive moderne devono rimanere secondarie e poco invasive. Eventuali infrastrutture antropiche non devono assumere centralità percettiva.
+
+NOTE SULLE ECCEZIONI
+
+Le eccezioni visuali devono comparire come variazioni locali e non come struttura dominante.
+
+ECCEZIONE 1
+
+Gli outlier positivi del rilievo possono essere tradotti con episodi di maggiore articolazione morfologica: versanti più netti, crinali più leggibili o valloni più profondi. Tuttavia queste situazioni devono occupare porzioni limitate della scena.
+
+ECCEZIONE 2
+
+Gli outlier forestali possono introdurre nuclei boschivi più densi o continui, soprattutto nei margini o nei rilievi secondari, senza oscurare la leggibilità agricola.
+
+ECCEZIONE 3
+
+Le schermature del vulcano devono essere rese attraverso chiusure morfologiche o orizzonti che eliminano completamente il landmark dallo sfondo.
+
+ECCEZIONE 4
+
+Le rare emergenze produttive possono comparire come episodi localizzati di infrastrutturazione moderna — piccoli impianti, aree produttive o elementi energetici — ma senza alterare l’identità storico-rurale dominante.

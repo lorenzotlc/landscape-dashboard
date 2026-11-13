@@ -1,0 +1,39 @@
+{
+  "_nota": "Spostamenti manuali delle foto (metri nel sistema del raster, EPSG:3035). Rilanciare tools/prepara_foto.py per applicarli.",
+  "spostamenti": [
+    {
+      "foto": [
+        "sony_DSC05209",
+        "sony_DSC05211",
+        "android_20260529_145654",
+        "android_20260529_145658",
+        "android_20260529_145703",
+        "Vulture_29_maggio_20250824_105319"
+      ],
+      "nord_m": 250,
+      "est_m": 0,
+      "nota": "gruppo spostato di 250 m a nord, nel cluster 1"
+    },
+    {
+      "foto": [
+        "android_20260529_110010",
+        "android_20260529_110011"
+      ],
+      "nord_m": 182,
+      "est_m": 0,
+      "nota": "gruppo spostato di 182 m a nord, appena oltre il bordo della cella, nel cluster 3"
+    },
+    {
+      "foto": [
+        "Vulture_29_maggio_20250824_112451",
+        "Vulture_29_maggio_20250824_112510",
+        "Vulture_29_maggio_20250824_112517",
+        "Vulture_29_maggio_20250824_112716"
+      ],
+      "nord_m": 75,
+      "est_m": 0,
+      "nota": "spostata di 75 m a nord, appena oltre il bordo della cella, nel cluster 3"
+    }
+  ],
+  "escluse": ["android_20260529_135737","sony_DSC05153","android_20260529_104632"]
+}

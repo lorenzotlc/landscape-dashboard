@@ -1,0 +1,108 @@
+<!--
+  Pagina "Il progetto": versione sintetica per il web, tono accademico.
+  La versione estesa e dettagliata (dal poster) è conservata in data/progetto_esteso.html come backup.
+  Ogni <section class="pg-sez" id="..." data-titolo="..."> diventa una voce dell'indice.
+  <div data-auto="cluster" data-stile="galleria"></div> = galleria dei 6 cluster generata dai dati.
+  Titolo e sottotitolo: quelli del poster, da non modificare.
+  Il working paper NON è pubblicato: non citarlo. Le pubblicazioni future vanno in "A che punto siamo".
+  STATO: a ogni aggiornamento cambiare la data nelle due occorrenze di <time>.
+-->
+
+<section class="pg-sez pg-apertura" id="progetto" data-titolo="Il progetto">
+  <p class="pg-occhiello">Progetto di dottorato · <a href="https://phd-landscape.unibg.it/" target="_blank" rel="noopener">Landscape Studies for Global and Local Challenges</a> · Università degli Studi di Bergamo</p>
+  <h1>Paesaggio tra misura e percezione</h1>
+  <p class="pg-sottotitolo">Mediazioni esperte, algoritmiche e situate nella produzione della conoscenza paesaggistica</p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-13">13 novembre 2026</time></p>
+  <p class="pg-lead">Il paesaggio è al tempo stesso realtà materiale e oggetto di conoscenza: ciò che ne sappiamo passa attraverso <strong>forme di rappresentazione</strong> (carte, piani, indicatori, immagini) che selezionano, ordinano e rendono visibili alcuni aspetti a scapito di altri.</p>
+  <p>La ricerca pone al centro proprio questi <strong>modi attraverso cui il paesaggio si rende conoscibile</strong>. Su un piano rappresentativo-metodologico, ne indaga presupposti e limiti e sperimenta nuove forme di rappresentazione che mettono in relazione dati, cartografie e immagini generate con l'intelligenza artificiale. Su un piano teorico-epistemologico, legge la produzione della conoscenza paesaggistica come una catena di <strong>mediazioni</strong>, esperte, algoritmiche e situate, in cui si distribuisce l'autorità di rappresentare il territorio.</p>
+  <p>Due nozioni orientano l'analisi: la <strong>transcalarità</strong> (Turco, 2010), per osservare che cosa cambia nel passaggio tra scale e punti di vista, e la <strong>transmedialità</strong> (Turco, 2025), per seguire il paesaggio mentre attraversa dati, carte, classificazioni, immagini e interpretazioni. </p><p>L'area del Vulture, in Basilicata, è il laboratorio della sperimentazione; questa dashboard ne rende consultabili gli esiti.</p>
+  <div class="pg-azioni">
+    <a href="#dashboard" class="pg-btn pg-btn-primario">Apri la dashboard</a>
+    <a href="#metodo" class="pg-btn">Il dispositivo</a>
+  </div>
+</section>
+
+<section class="pg-sez" id="perche" data-titolo="Quadro e domande">
+  <h2>Quadro teorico e domande di ricerca</h2>
+  <p>Il paesaggio può essere inteso come relazione tra materialità, esperienza e progetto (Besse, 2018): è un sistema ecologico, analizzabile con metriche spaziali, ma anche un sistema di segni, in cui le rappresentazioni educano lo sguardo prima ancora dell'esperienza diretta (Cosgrove, 2003; Turri, 1998). La cartografia, in questa prospettiva, non è uno strumento neutro ma un dispositivo che produce significati (Casti, 2013).</p>
+  <p>Lo studio del paesaggio resta tuttavia diviso tra analisi geospaziali guidate dai dati e approcci qualitativi e partecipativi rivolti a percezioni e valori, ed emerge una forte esigenza di una lettura transdisciplinare (Dorado, 2023). Quando le due prospettive si incontrano, l'integrazione è perlopiù additiva, e le mediazioni che le collegano restano implicite. Il ruolo dell'intelligenza artificiale in questo quadro è ancora largamente da esplorare (Kang et al., 2024).</p>
+  <p>Da qui le due domande della ricerca: in che modo l'integrazione tra <strong>analisi geospaziale e pratiche partecipative</strong> può contribuire a una comprensione più completa del paesaggio e dei valori ad esso associati? E in che modo le tecnologie di <strong>intelligenza artificiale</strong> possono sostenere questa integrazione?</p>
+  <p>L'ipotesi è che una conoscenza plurale e riflessiva nasca non dalla somma o dalla convergenza forzata delle letture, ma dal loro <strong>confronto trasparente e contestabile</strong>, capace di rendere visibili anche scarti, omissioni e conflitti.</p>
+</section>
+
+<section class="pg-sez" id="metodo" data-titolo="Il dispositivo">
+  <h2>Un dispositivo in sette fasi</h2>
+  <p>Per mettere alla prova questa ipotesi la ricerca costruisce un dispositivo metodologico in sette fasi, in cui ogni passaggio è trattato come una mediazione da documentare e ogni esito può riaprire le scelte precedenti.</p>
+  <p>Il punto di partenza è la conoscenza esperta e istituzionale: la scheda d'ambito del <strong>Piano Paesaggistico Regionale della Basilicata</strong> indica i caratteri distintivi del Vulture, dall'edificio vulcanico a boschi, vigneti, uliveti e borghi, fino a piattaforme industriali e impianti per le energie rinnovabili. Questi caratteri sono tradotti in dodici indicatori, organizzati in quattro dimensioni (visivo-percettiva, storico-culturale, morfologica ed ecologica) e calcolati su una griglia di celle di 250 metri, in larga parte attraverso analisi di intervisibilità.</p>
+  <p>Una rete neurale non supervisionata, la <strong>SuperSOM</strong> (Kohonen, 2001; Wehrens e Buydens, 2007), individua ricorrenze latenti nei dati e restituisce sei configurazioni territoriali, secondo un approccio già impiegato per la definizione di tipologie territoriali (Tonini et al., 2025). L'intelligenza artificiale generativa ne interpreta i profili statistici e li traduce in immagini; le immagini sono infine sottoposte alla comunità locale e discusse in una fase di restituzione pubblica.</p>
+  <figure class="pg-fig" data-opz><img src="assets/progetto/dispositivo.jpg" alt="Il dispositivo metodologico in sette fasi"><figcaption>Il dispositivo metodologico: dalla conoscenza esperta-istituzionale alla restituzione riflessiva.</figcaption></figure>
+  <p>L'esito è una <strong>mappa degli intorni percepiti</strong>. Rispetto alla carta-inventario dei piani paesaggistici, che descrive che cosa c'è e dove, essa attribuisce a ogni cella il valore di ciò che da lì si percepisce, non di ciò che contiene.</p>
+</section>
+
+<section class="pg-sez" id="configurazioni" data-titolo="Le sei configurazioni">
+  <h2>Sei configurazioni del Vulture</h2>
+  <p>Le configurazioni non vanno intese come regioni o tipi naturali, ma come <strong>ipotesi classificatorie</strong>, dipendenti dalle variabili, dai pesi e dai parametri adottati. I nomi sono stati attribuiti solo dopo l'interpretazione dei profili, per evitare che ne anticipassero il significato.</p>
+  <div data-auto="cluster" data-stile="galleria"></div>
+</section>
+
+<section class="pg-sez" id="immagini" data-titolo="Le immagini">
+  <h2>Le immagini come ipotesi visuali</h2>
+  <p>Per ciascuna configurazione, un primo modello GPT interpreta il profilo statistico distinguendo caratteri dominanti ed eccezioni; altri due ne derivano un'immagine della struttura dominante, esplorabile nella <em>vista sferica</em>, e quattro immagini delle eccezioni locali. L'uso di immagini generate per sollecitare la partecipazione è un campo di sperimentazione recente (Awashra et al., 2025).</p>
+  <p>Queste immagini non sono fotografie ma <strong>ipotesi visuali</strong>: per costruire una scena il modello deve stabilire forme e relazioni che i dati non determinano, e può far apparire come un unico luogo caratteri distribuiti sul territorio. Per questo la dashboard le presenta sempre accanto alla mappa, ai profili statistici e alle fotografie scattate in ciascuna configurazione.</p>
+</section>
+
+<section class="pg-sez" id="partecipazione" data-titolo="La partecipazione">
+  <h2>Conoscenze situate e partecipazione</h2>
+  <p>Le fasi precedenti poggiano su un quadro esperto e istituzionale. La componente partecipativa, <strong>attualmente in corso</strong>, introduce le conoscenze situate di chi abita e attraversa il territorio (Burini, 2016). Una survey diffusa sul territorio interroga la riconoscibilità delle immagini e rileva valori, omissioni e preferenze di sviluppo.</p>
+  <figure class="pg-fig" data-opz><img src="assets/progetto/figE_survey.jpg" alt="La survey territoriale"><figcaption>La survey territoriale sulle ipotesi visuali.</figcaption></figure>
+  <p>La partecipazione non è intesa come validazione del risultato algoritmico: può riconoscerlo, integrarlo o contestarlo, fino a rimettere in discussione fonti, indicatori e pesi. Gli esiti confluiranno in una restituzione riflessiva (Ghisalberti, 2018), attraverso mappe di valori e di conflitto, scenari e discussione pubblica, e nel grafo dei dati partecipativi della dashboard, oggi ancora dimostrativo.</p>
+</section>
+
+<section class="pg-sez" id="trasparenza" data-titolo="Mediazioni e trasparenza">
+  <h2>Mediazioni e trasparenza</h2>
+  <p>Ogni passaggio del dispositivo implica scelte: quali caratteri contano, come si misurano, come si raggruppano, come diventano immagine. Nel passaggio da un medium all'altro, da documento a indicatore, da cluster a testo, da testo a immagine, alcune relazioni diventano più leggibili e altre si attenuano (Turco, 2025). Quando entrano nella pianificazione, mappe e immagini rischiano di apparire neutre e consolidano categorie e priorità.</p>
+  <p>Per questo il progetto documenta per ogni mediazione chi decide e con quali tracce, conservando anche le generazioni scartate. L'obiettivo è rendere l'autorità di rappresentare visibile e attribuibile, e la catena delle scelte ricostruibile e contestabile.</p>
+</section>
+
+<section class="pg-sez" id="uso" data-titolo="Come usare la dashboard">
+  <h2>Come usare la dashboard</h2>
+  <p>La dashboard mette a confronto, per ciascuna configurazione, la mappa, i dati, le immagini generate e le fotografie del territorio. Tutti i pannelli si aggiornano insieme quando si seleziona un cluster.</p>
+  <ul class="pg-lista pg-uso">
+    <li><b>Mappa degli intorni percepiti.</b> Passando con il mouse (o toccando) una cella si vede il suo cluster; con un clic lo si fissa, con un clic fuori dalle celle si torna alla vista d'insieme. Dal selettore dei livelli si attivano il confine dell'area, le foto reali e le mappe di sfondo.</li>
+    <li><b>Descrizione del cluster.</b> Nella fascia sotto l'intestazione compaiono il nome del cluster e una sintesi; «leggi tutto» apre il testo completo dell'interpretazione.</li>
+    <li><b>Vista sferica.</b> L'immagine della struttura dominante, navigabile trascinando con il mouse o con il dito. Il pulsante «Leggi» ne apre la descrizione.</li>
+    <li><b>Eccezioni di paesaggio.</b> Le quattro immagini delle eccezioni locali, con le relative didascalie. Nella linguetta «Foto reali» si trovano le fotografie scattate nel cluster: cliccandone una si apre il confronto affiancato con l'immagine generata.</li>
+    <li><b>Variabili del cluster.</b> I boxplot dei dodici indicatori, sulla stessa scala; le tacche grigie indicano le mediane degli altri cluster.</li>
+    <li><b>Grafo dei dati partecipativi.</b> I temi emersi dalla survey e le loro relazioni (attualmente dimostrativo).</li>
+  </ul>
+  <p class="pg-nota">Il tasto Esc sblocca il cluster selezionato e chiude le finestre aperte. Su smartphone i pannelli sono disposti in un'unica colonna.</p>
+  <div class="pg-azioni"><a href="#dashboard" class="pg-btn pg-btn-primario">Apri la dashboard</a></div>
+</section>
+
+<section class="pg-sez" id="stato" data-titolo="A che punto siamo">
+  <h2>A che punto siamo</h2>
+  <p>La mappa degli intorni percepiti e le ipotesi visuali delle sei configurazioni sono state completate; la survey è in corso e saranno avviate l'analisi delle risposte e la restituzione pubblica. Stabilità dei raggruppamenti, riproducibilità degli output generativi e adeguatezza paesaggistica delle immagini non sono ancora state valutate in modo sistematico: i risultati vanno letti come provvisori.</p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-13">13 novembre 2026</time></p>
+  <h3>Pubblicazioni</h3>
+  <p class="pg-nota">Le pubblicazioni che deriveranno dal progetto saranno segnalate qui.</p>
+  <h3>Ricerca</h3>
+  <p><b>Lorenzo Amato</b>, dottorato in <a href="https://phd-landscape.unibg.it/" target="_blank" rel="noopener">Landscape Studies for Global and Local Challenges</a>, Università degli Studi di Bergamo. Supervisor: Prof. Marco Tononi (Università degli Studi di Bergamo); co-supervisor: Ing. Rosa Coluzzi (CNR-IMIOT, Potenza). Periodo di ricerca all'estero presso l'Institute of Earth Surface Dynamics dell'Université de Lausanne, con la Prof.ssa Marj Tonini.</p>
+  <h3>Riferimenti</h3>
+  <ul class="pg-biblio">
+    <li>Awashra I. et al. (2025), Generative AI text-to-image for community participation in landscape planning, <em>Landscape and Urban Planning</em>, 264: 105464. <a href="https://doi.org/10.1016/j.landurbplan.2025.105464" target="_blank" rel="noopener">doi</a></li>
+    <li>Besse J.-M. (2018), <em>La nécessité du paysage</em>, Parenthèses, Marseille.</li>
+    <li>Burini F. (2016), <em>Cartografia partecipativa. Mapping per la governance ambientale e urbana</em>, FrancoAngeli, Milano.</li>
+    <li>Casti E. (2013), <em>Cartografia critica. Dal topos alla chora</em>, Guerini e Associati, Milano.</li>
+    <li>Cosgrove D. (2003), Landscape and the European sense of sight, in <em>Handbook of Cultural Geography</em>, SAGE.</li>
+    <li>Dorado M. I. A. (2023), Theoretical conceptions for a holistic, transdisciplinary approach to contemporary landscape, <em>City, Territory and Architecture</em>, 10.</li>
+    <li>Ghisalberti A. (2018), <em>Rigenerazione urbana e restituzione di territorio</em>, Mimesis.</li>
+    <li>Kang Y., Gao S., Roth R.E. (2024), Artificial intelligence studies in cartography, <em>Cartography and Geographic Information Science</em>, 51(4). <a href="https://doi.org/10.1080/15230406.2023.2295943" target="_blank" rel="noopener">doi</a></li>
+    <li>Kohonen T. (2001), <em>Self-Organizing Maps</em>, Springer. <a href="https://doi.org/10.1007/978-3-642-56927-2" target="_blank" rel="noopener">doi</a></li>
+    <li>Lussault M. (2007), <em>L'Homme spatial</em>, Seuil.</li>
+    <li>Tonini M. et al. (2025), Redefining Swiss territorial typologies, <em>Journal of Geovisualization and Spatial Analysis</em>, 9. <a href="https://doi.org/10.1007/s41651-025-00226-3" target="_blank" rel="noopener">doi</a></li>
+    <li>Turco A. (2010), <em>Configurazioni della territorialità</em>, FrancoAngeli.</li>
+    <li>Turco A. (2025), <em>Mediologia della territorialità</em>, Unicopli, Milano.</li>
+    <li>Wehrens R., Buydens L. M. C. (2007), Self- and Super-organizing Maps in R, <em>Journal of Statistical Software</em>, 21(5). <a href="https://doi.org/10.18637/jss.v021.i05" target="_blank" rel="noopener">doi</a></li>
+  </ul>
+  <p class="pg-nota">Dati: Copernicus, INGV, ISTAT, Dipartimento della Protezione Civile, Regione Basilicata. Mappe di sfondo: © OpenStreetMap, OpenTopoMap, Esri. Realizzazione: Leaflet, D3, Pannellum.</p>
+</section>

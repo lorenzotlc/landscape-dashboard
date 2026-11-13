@@ -1,0 +1,75 @@
+TITOLO: Paesaggio agricolo aperto e periferico con mosaico ecologico diffuso
+
+DESCRIZIONE GENERALE
+
+Il Cluster 4 rappresenta un paesaggio fortemente dominato dalla leggibilità dei sistemi agricoli tradizionali, organizzati entro una struttura territoriale aperta, periferica rispetto al vulcano e caratterizzata da una buona articolazione ecologica. La scena è governata dalla continuità delle trame agricole e dalla loro capacità di strutturare foreground e midground attraverso filari, appezzamenti coltivati, oliveti e sistemi rurali leggibili. L’insieme mantiene una forte chiarezza percettiva generale, ma senza assumere caratteri fortemente urbanizzati o monumentalizzati.
+
+STRUTTURA CENTRALE
+
+La struttura centrale del cluster è costruita innanzitutto dalla variabile vis_agri_share, che presenta una mediana molto elevata e un IQR interamente positivo e compatto. Questo indica che la componente agricola non è episodica ma costituisce il principale sistema visuale stabile. La presenza agricola domina quindi la lettura territoriale attraverso campi coltivati continui, filari ordinati, strade rurali e sistemi agrari tradizionali percepibili sia nel foreground sia nel midground.
+
+La seconda componente strutturante deriva da distance_to_volcano, anch’essa con valori stabilmente positivi. Il cluster appartiene quindi a contesti periferici rispetto al sistema vulcanico: il vulcano non organizza la scena né come presenza morfologica dominante né come landmark stabile. Questa perifericità rafforza l’autonomia del paesaggio agricolo e ne accentua la dimensione territoriale diffusa.
+
+La variabile terrain_enclosure mostra una mediana moderatamente positiva e un IQR relativamente coerente: il paesaggio tende quindi ad essere aperto, con orizzonti leggibili, profondità visuale e assenza di forte chiusura valliva. Le quinte morfologiche non comprimono la scena ma lasciano emergere continuità spaziali ampie.
+
+Anche shannon assume valori mediamente positivi, indicando un mosaico territoriale diversificato. La struttura agricola non è monocolturale né rigidamente uniforme: coltivi, vegetazione, elementi aperti e piccole componenti ecologiche convivono producendo una scena varia ma leggibile.
+
+La leggibilità generale è sostenuta da vis_total_intensity, che possiede mediana positiva pur con variabilità interna. Questo suggerisce un paesaggio visivamente chiaro, ordinato e facilmente interpretabile, senza tuttavia raggiungere livelli estremi di spettacolarizzazione percettiva.
+
+Le componenti antropiche produttive (vis_anthropic_share) restano presenti ma subordinate. La mediana leggermente positiva e l’IQR attraversante lo zero indicano che infrastrutture produttive, aree industriali o sistemi energetici possono comparire nel paesaggio, ma non definiscono la sua identità dominante. Si tratta di presenze sparse e discontinue.
+
+La componente storico-culturale (hist_cult_index) è invece strutturalmente debole. La mediana molto negativa e l’intero box collocato in territorio negativo indicano l’assenza stabile di nuclei storici fortemente leggibili o di sistemi monumentali capaci di organizzare la scena.
+
+Dal punto di vista ecologico, hemeroby mostra valori leggermente negativi o prossimi allo zero: il paesaggio mantiene quindi una componente di naturalità residua pur restando fortemente modellato dalle pratiche agricole. L’antropizzazione non assume caratteri industriali aggressivi.
+
+La presenza d’acqua (water_presence_500m) rimane episodicamente positiva ma variabile: corsi d’acqua, fasce ripariali o piccoli sistemi umidi possono comparire localmente senza diventare il tema centrale della rappresentazione.
+
+La componente forestale (forest_presence_500m) rimane marginale nella struttura centrale. La mediana negativa e l’IQR vicino allo zero indicano che boschi e masse arboree non costituiscono il principale dispositivo percettivo del cluster.
+
+Infine, relief_context suggerisce una morfologia moderatamente articolata ma non estrema: il paesaggio evita sia la piena pianura uniforme sia il rilievo montano dominante, collocandosi entro una configurazione collinare dolce o ondulata.
+
+ECCEZIONI E TENSIONI
+
+Le tensioni principali emergono dalla variabilità di alcune componenti secondarie.
+
+La variabile forest_presence_500m presenta numerosi outlier positivi. Questo significa che, pur essendo generalmente agricolo e aperto, il cluster contiene episodi locali in cui margini boschivi o masse forestali diventano improvvisamente molto presenti. Tali episodi non modificano però la struttura dominante agricola.
+
+Anche relief_context mostra outlier positivi significativi: alcune porzioni del cluster possono assumere caratteri morfologici più articolati, con versanti o rilievi più marcati rispetto alla configurazione centrale relativamente dolce.
+
+La variabile terrain_enclosure presenta outlier negativi che introducono localmente paesaggi più chiusi o vallivi. In alcune aree quindi l’apertura dominante si interrompe temporaneamente attraverso conche o sistemi più incassati.
+
+distance_to_volcano possiede outlier inferiori che indicano episodi di maggiore prossimità al vulcano rispetto alla struttura media periferica. Tuttavia tali casi restano minoritari e non ridefiniscono l’identità complessiva del cluster.
+
+Infine, hist_cult_index presenta alcuni outlier positivi: nuclei storici o emergenze culturali possono comparire localmente come elementi episodici, ma non assumono mai il ruolo di soggetto dominante.
+
+PARTE CENTRALE
+
+La scena deve essere costruita come un paesaggio agricolo ampio, leggibile e territorialmente continuo. Il foreground e il midground devono essere occupati da appezzamenti coltivati, filari, oliveti, trame agrarie e strade rurali che organizzano chiaramente lo spazio.
+
+La profondità visuale deve risultare aperta, con orizzonti estesi e continuità percettiva del mosaico agricolo. Le componenti ecologiche devono comparire come elementi di articolazione secondaria: fasce vegetate, piccoli corsi d’acqua o alternanze di coperture territoriali contribuiscono alla varietà senza rompere la dominanza agricola.
+
+Le infrastrutture produttive devono rimanere subordinate: eventuali capannoni, superfici artificiali o impianti energetici possono essere visibili ma non devono catturare il centro percettivo della scena.
+
+Il vulcano non deve diventare elemento iconico dominante: la sua presenza può essere assente o estremamente marginale sullo sfondo.
+
+La scena deve risultare luminosa, ordinata e leggibile, evitando sia l’eccessiva frammentazione sia la monumentalizzazione storica.
+
+NOTE SULLE ECCEZIONI
+
+Le eccezioni devono apparire come variazioni locali all’interno della continuità agricola.
+
+ECCEZIONE 1
+
+I boschi possono emergere episodicamente come quinte arboree più dense o macchie forestali localizzate nel midground e background, ma senza trasformare il paesaggio in scena forestale dominante.
+
+ECCEZIONE 2
+
+Le tensioni morfologiche possono essere rappresentate attraverso episodi di rilievo più marcato o tratti vallivi localizzati che interrompono temporaneamente l’apertura prevalente.
+
+ECCEZIONE 3
+
+Alcuni nuclei storici o emergenze culturali possono comparire come piccoli borghi, chiese o tessuti storici episodici, mantenendo però una scala subordinata rispetto alla matrice agricola.
+
+ECCEZIONE 4
+
+Le rare situazioni di maggiore prossimità vulcanica possono introdurre una lieve percezione del landmark vulcanico, ma sempre come presenza marginale e non strutturante.

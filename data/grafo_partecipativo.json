@@ -1,0 +1,507 @@
+{
+ "demo": true,
+ "descrizione": "Grafo DIMOSTRATIVO: sostituire con i dati partecipativi reali (nodi = temi/concetti emersi, archi = co-occorrenze).",
+ "nodi": [
+  {
+   "id": "silenzio",
+   "etichetta": "silenzio",
+   "gruppo": "percezione",
+   "peso": 9,
+   "cluster": [
+    3,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "panorama",
+   "etichetta": "panorama",
+   "gruppo": "percezione",
+   "peso": 17,
+   "cluster": [
+    1,
+    2,
+    7
+   ]
+  },
+  {
+   "id": "apertura",
+   "etichetta": "apertura",
+   "gruppo": "percezione",
+   "peso": 17,
+   "cluster": [
+    4,
+    9
+   ]
+  },
+  {
+   "id": "quiete",
+   "etichetta": "quiete",
+   "gruppo": "percezione",
+   "peso": 8,
+   "cluster": [
+    4,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "rumore",
+   "etichetta": "rumore",
+   "gruppo": "percezione",
+   "peso": 6,
+   "cluster": [
+    3
+   ]
+  },
+  {
+   "id": "memoria",
+   "etichetta": "memoria",
+   "gruppo": "valori",
+   "peso": 18,
+   "cluster": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "identità",
+   "etichetta": "identità",
+   "gruppo": "valori",
+   "peso": 7,
+   "cluster": [
+    1,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "bellezza",
+   "etichetta": "bellezza",
+   "gruppo": "valori",
+   "peso": 2,
+   "cluster": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "abbandono",
+   "etichetta": "abbandono",
+   "gruppo": "valori",
+   "peso": 15,
+   "cluster": [
+    3,
+    8
+   ]
+  },
+  {
+   "id": "naturalità",
+   "etichetta": "naturalità",
+   "gruppo": "valori",
+   "peso": 13,
+   "cluster": [
+    1
+   ]
+  },
+  {
+   "id": "passeggiata",
+   "etichetta": "passeggiata",
+   "gruppo": "usi",
+   "peso": 6,
+   "cluster": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "agricoltura",
+   "etichetta": "agricoltura",
+   "gruppo": "usi",
+   "peso": 15,
+   "cluster": [
+    5,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "pascolo",
+   "etichetta": "pascolo",
+   "gruppo": "usi",
+   "peso": 14,
+   "cluster": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "strada",
+   "etichetta": "strada",
+   "gruppo": "usi",
+   "peso": 9,
+   "cluster": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "quartiere",
+   "etichetta": "quartiere",
+   "gruppo": "usi",
+   "peso": 7,
+   "cluster": [
+    2,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "bosco",
+   "etichetta": "bosco",
+   "gruppo": "elementi",
+   "peso": 8,
+   "cluster": [
+    1,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "borgo",
+   "etichetta": "borgo",
+   "gruppo": "elementi",
+   "peso": 4,
+   "cluster": [
+    2,
+    8
+   ]
+  },
+  {
+   "id": "pale eoliche",
+   "etichetta": "pale eoliche",
+   "gruppo": "elementi",
+   "peso": 13,
+   "cluster": [
+    7
+   ]
+  },
+  {
+   "id": "torrente",
+   "etichetta": "torrente",
+   "gruppo": "elementi",
+   "peso": 6,
+   "cluster": [
+    5
+   ]
+  },
+  {
+   "id": "capannoni",
+   "etichetta": "capannoni",
+   "gruppo": "elementi",
+   "peso": 15,
+   "cluster": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "uliveto",
+   "etichetta": "uliveto",
+   "gruppo": "elementi",
+   "peso": 3,
+   "cluster": [
+    5,
+    6
+   ]
+  }
+ ],
+ "archi": [
+  {
+   "source": "silenzio",
+   "target": "quiete",
+   "peso": 5
+  },
+  {
+   "source": "silenzio",
+   "target": "rumore",
+   "peso": 2
+  },
+  {
+   "source": "silenzio",
+   "target": "bellezza",
+   "peso": 6
+  },
+  {
+   "source": "silenzio",
+   "target": "abbandono",
+   "peso": 3
+  },
+  {
+   "source": "panorama",
+   "target": "memoria",
+   "peso": 4
+  },
+  {
+   "source": "panorama",
+   "target": "bellezza",
+   "peso": 5
+  },
+  {
+   "source": "panorama",
+   "target": "naturalità",
+   "peso": 6
+  },
+  {
+   "source": "panorama",
+   "target": "agricoltura",
+   "peso": 3
+  },
+  {
+   "source": "panorama",
+   "target": "strada",
+   "peso": 5
+  },
+  {
+   "source": "panorama",
+   "target": "quartiere",
+   "peso": 6
+  },
+  {
+   "source": "panorama",
+   "target": "bosco",
+   "peso": 3
+  },
+  {
+   "source": "panorama",
+   "target": "borgo",
+   "peso": 4
+  },
+  {
+   "source": "panorama",
+   "target": "pale eoliche",
+   "peso": 5
+  },
+  {
+   "source": "panorama",
+   "target": "capannoni",
+   "peso": 3
+  },
+  {
+   "source": "apertura",
+   "target": "passeggiata",
+   "peso": 6
+  },
+  {
+   "source": "apertura",
+   "target": "bosco",
+   "peso": 3
+  },
+  {
+   "source": "quiete",
+   "target": "bellezza",
+   "peso": 1
+  },
+  {
+   "source": "quiete",
+   "target": "abbandono",
+   "peso": 2
+  },
+  {
+   "source": "quiete",
+   "target": "bosco",
+   "peso": 5
+  },
+  {
+   "source": "rumore",
+   "target": "bellezza",
+   "peso": 5
+  },
+  {
+   "source": "memoria",
+   "target": "identità",
+   "peso": 2
+  },
+  {
+   "source": "memoria",
+   "target": "strada",
+   "peso": 6
+  },
+  {
+   "source": "memoria",
+   "target": "quartiere",
+   "peso": 5
+  },
+  {
+   "source": "memoria",
+   "target": "bosco",
+   "peso": 6
+  },
+  {
+   "source": "memoria",
+   "target": "borgo",
+   "peso": 5
+  },
+  {
+   "source": "identità",
+   "target": "naturalità",
+   "peso": 2
+  },
+  {
+   "source": "identità",
+   "target": "passeggiata",
+   "peso": 1
+  },
+  {
+   "source": "identità",
+   "target": "agricoltura",
+   "peso": 3
+  },
+  {
+   "source": "identità",
+   "target": "strada",
+   "peso": 6
+  },
+  {
+   "source": "identità",
+   "target": "bosco",
+   "peso": 3
+  },
+  {
+   "source": "identità",
+   "target": "torrente",
+   "peso": 3
+  },
+  {
+   "source": "identità",
+   "target": "capannoni",
+   "peso": 1
+  },
+  {
+   "source": "bellezza",
+   "target": "abbandono",
+   "peso": 4
+  },
+  {
+   "source": "bellezza",
+   "target": "agricoltura",
+   "peso": 5
+  },
+  {
+   "source": "bellezza",
+   "target": "pascolo",
+   "peso": 2
+  },
+  {
+   "source": "bellezza",
+   "target": "pale eoliche",
+   "peso": 3
+  },
+  {
+   "source": "bellezza",
+   "target": "uliveto",
+   "peso": 6
+  },
+  {
+   "source": "naturalità",
+   "target": "strada",
+   "peso": 5
+  },
+  {
+   "source": "naturalità",
+   "target": "torrente",
+   "peso": 3
+  },
+  {
+   "source": "naturalità",
+   "target": "capannoni",
+   "peso": 5
+  },
+  {
+   "source": "passeggiata",
+   "target": "agricoltura",
+   "peso": 4
+  },
+  {
+   "source": "passeggiata",
+   "target": "bosco",
+   "peso": 1
+  },
+  {
+   "source": "passeggiata",
+   "target": "torrente",
+   "peso": 5
+  },
+  {
+   "source": "passeggiata",
+   "target": "uliveto",
+   "peso": 2
+  },
+  {
+   "source": "agricoltura",
+   "target": "strada",
+   "peso": 1
+  },
+  {
+   "source": "agricoltura",
+   "target": "pale eoliche",
+   "peso": 1
+  },
+  {
+   "source": "pascolo",
+   "target": "strada",
+   "peso": 5
+  },
+  {
+   "source": "pascolo",
+   "target": "quartiere",
+   "peso": 6
+  },
+  {
+   "source": "pascolo",
+   "target": "bosco",
+   "peso": 5
+  },
+  {
+   "source": "pascolo",
+   "target": "torrente",
+   "peso": 5
+  },
+  {
+   "source": "pascolo",
+   "target": "uliveto",
+   "peso": 2
+  },
+  {
+   "source": "strada",
+   "target": "bosco",
+   "peso": 6
+  },
+  {
+   "source": "strada",
+   "target": "torrente",
+   "peso": 4
+  },
+  {
+   "source": "quartiere",
+   "target": "bosco",
+   "peso": 4
+  },
+  {
+   "source": "bosco",
+   "target": "torrente",
+   "peso": 4
+  },
+  {
+   "source": "bosco",
+   "target": "uliveto",
+   "peso": 4
+  },
+  {
+   "source": "borgo",
+   "target": "capannoni",
+   "peso": 2
+  }
+ ]
+}

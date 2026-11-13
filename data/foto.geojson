@@ -1,0 +1,3099 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.656499,
+     40.925722
+    ]
+   },
+   "properties": {
+    "id": 1,
+    "nome": "Vulture_29_maggio_20250824_101254",
+    "file": "data/foto/Vulture_29_maggio_20250824_101254.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_101254_mini.jpg",
+    "cluster": 2,
+    "data": "2025-08-24T10:12",
+    "quota": 429.497,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.681252,
+     40.925434
+    ]
+   },
+   "properties": {
+    "id": 2,
+    "nome": "Vulture_29_maggio_20250824_121055",
+    "file": "data/foto/Vulture_29_maggio_20250824_121055.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_121055_mini.jpg",
+    "cluster": 5,
+    "data": "2025-08-24T12:10",
+    "quota": 429.497,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.62973,
+     40.922296
+    ]
+   },
+   "properties": {
+    "id": 3,
+    "nome": "Vulture_29_maggio_20250824_105319",
+    "file": "data/foto/Vulture_29_maggio_20250824_105319.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_105319_mini.jpg",
+    "cluster": 1,
+    "data": "2025-08-24T10:53",
+    "quota": 429.497,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629528,
+     40.920042
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.622489,
+     41.026382
+    ]
+   },
+   "properties": {
+    "id": 4,
+    "nome": "Vulture_29_maggio_20250824_112510",
+    "file": "data/foto/Vulture_29_maggio_20250824_112510.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_112510_mini.jpg",
+    "cluster": 3,
+    "data": "2025-08-24T11:25",
+    "quota": 429.497,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.622429,
+     41.025706
+    ],
+    "nota_spostamento": "spostata di 75 m a nord, appena oltre il bordo della cella, nel cluster 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623053,
+     40.830727
+    ]
+   },
+   "properties": {
+    "id": 5,
+    "nome": "android_20260529_105019",
+    "file": "data/foto/android_20260529_105019.jpg",
+    "mini": "data/foto/android_20260529_105019_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:50",
+    "quota": 636.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623079,
+     40.830718
+    ]
+   },
+   "properties": {
+    "id": 6,
+    "nome": "android_20260529_105028",
+    "file": "data/foto/android_20260529_105028.jpg",
+    "mini": "data/foto/android_20260529_105028_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:50",
+    "quota": 636.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623092,
+     40.830694
+    ]
+   },
+   "properties": {
+    "id": 7,
+    "nome": "android_20260529_105014",
+    "file": "data/foto/android_20260529_105014.jpg",
+    "mini": "data/foto/android_20260529_105014_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:50",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623088,
+     40.830667
+    ]
+   },
+   "properties": {
+    "id": 8,
+    "nome": "sony_DSC05169",
+    "file": "data/foto/sony_DSC05169.jpg",
+    "mini": "data/foto/sony_DSC05169_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:54",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623067,
+     40.83065
+    ]
+   },
+   "properties": {
+    "id": 9,
+    "nome": "sony_DSC05168",
+    "file": "data/foto/sony_DSC05168.jpg",
+    "mini": "data/foto/sony_DSC05168_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:54",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623039,
+     40.83065
+    ]
+   },
+   "properties": {
+    "id": 10,
+    "nome": "sony_DSC05165",
+    "file": "data/foto/sony_DSC05165.jpg",
+    "mini": "data/foto/sony_DSC05165_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:53",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623018,
+     40.830667
+    ]
+   },
+   "properties": {
+    "id": 11,
+    "nome": "sony_DSC05164",
+    "file": "data/foto/sony_DSC05164.jpg",
+    "mini": "data/foto/sony_DSC05164_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:52",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623014,
+     40.830694
+    ]
+   },
+   "properties": {
+    "id": 12,
+    "nome": "sony_DSC05166",
+    "file": "data/foto/sony_DSC05166.jpg",
+    "mini": "data/foto/sony_DSC05166_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:53",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.623027,
+     40.830718
+    ]
+   },
+   "properties": {
+    "id": 13,
+    "nome": "sony_DSC05167",
+    "file": "data/foto/sony_DSC05167.jpg",
+    "mini": "data/foto/sony_DSC05167_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:53",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.685062,
+     40.895395
+    ]
+   },
+   "properties": {
+    "id": 14,
+    "nome": "android_20260529_150953",
+    "file": "data/foto/android_20260529_150953.jpg",
+    "mini": "data/foto/android_20260529_150953_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T15:09",
+    "quota": 637.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.684984,
+     40.895395
+    ]
+   },
+   "properties": {
+    "id": 15,
+    "nome": "sony_DSC05215",
+    "file": "data/foto/sony_DSC05215.jpg",
+    "mini": "data/foto/sony_DSC05215_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T14:12",
+    "quota": 637.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.583118,
+     40.957518
+    ]
+   },
+   "properties": {
+    "id": 16,
+    "nome": "android_20260529_135119",
+    "file": "data/foto/android_20260529_135119.jpg",
+    "mini": "data/foto/android_20260529_135119_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:51",
+    "quota": 625.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.583156,
+     40.95749
+    ]
+   },
+   "properties": {
+    "id": 17,
+    "nome": "android_20260529_135131",
+    "file": "data/foto/android_20260529_135131.jpg",
+    "mini": "data/foto/android_20260529_135131_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:51",
+    "quota": 626.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.583142,
+     40.957445
+    ]
+   },
+   "properties": {
+    "id": 18,
+    "nome": "android_20260529_135225",
+    "file": "data/foto/android_20260529_135225.jpg",
+    "mini": "data/foto/android_20260529_135225_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:52",
+    "quota": 627.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.583095,
+     40.957445
+    ]
+   },
+   "properties": {
+    "id": 19,
+    "nome": "android_20260529_135235",
+    "file": "data/foto/android_20260529_135235.jpg",
+    "mini": "data/foto/android_20260529_135235_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:52",
+    "quota": 627.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.58308,
+     40.95749
+    ]
+   },
+   "properties": {
+    "id": 20,
+    "nome": "android_20260529_135225_0_",
+    "file": "data/foto/android_20260529_135225_0_.jpg",
+    "mini": "data/foto/android_20260529_135225_0__mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:52",
+    "quota": 627.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610508,
+     40.97614
+    ]
+   },
+   "properties": {
+    "id": 21,
+    "nome": "android_20260529_133959",
+    "file": "data/foto/android_20260529_133959.jpg",
+    "mini": "data/foto/android_20260529_133959_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:40",
+    "quota": 704.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610508,
+     40.97606
+    ]
+   },
+   "properties": {
+    "id": 22,
+    "nome": "android_20260529_133947",
+    "file": "data/foto/android_20260529_133947.jpg",
+    "mini": "data/foto/android_20260529_133947_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:39",
+    "quota": 704.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.6163,
+     40.935829
+    ]
+   },
+   "properties": {
+    "id": 23,
+    "nome": "android_20260529_142839",
+    "file": "data/foto/android_20260529_142839.jpg",
+    "mini": "data/foto/android_20260529_142839_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:28",
+    "quota": 773.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637284,
+     40.851105
+    ]
+   },
+   "properties": {
+    "id": 24,
+    "nome": "android_20260529_110010",
+    "file": "data/foto/android_20260529_110010.jpg",
+    "mini": "data/foto/android_20260529_110010_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T11:00",
+    "quota": 562.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.637137,
+     40.849464
+    ],
+    "nota_spostamento": "gruppo spostato di 182 m a nord, appena oltre il bordo della cella, nel cluster 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637284,
+     40.851025
+    ]
+   },
+   "properties": {
+    "id": 25,
+    "nome": "android_20260529_110011",
+    "file": "data/foto/android_20260529_110011.jpg",
+    "mini": "data/foto/android_20260529_110011_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T11:00",
+    "quota": 562.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.637137,
+     40.849384
+    ],
+    "nota_spostamento": "gruppo spostato di 182 m a nord, appena oltre il bordo della cella, nel cluster 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581266,
+     40.954358
+    ]
+   },
+   "properties": {
+    "id": 26,
+    "nome": "android_20260529_135535",
+    "file": "data/foto/android_20260529_135535.jpg",
+    "mini": "data/foto/android_20260529_135535_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:55",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581295,
+     40.954346
+    ]
+   },
+   "properties": {
+    "id": 27,
+    "nome": "android_20260529_135534",
+    "file": "data/foto/android_20260529_135534.jpg",
+    "mini": "data/foto/android_20260529_135534_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:55",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581306,
+     40.954318
+    ]
+   },
+   "properties": {
+    "id": 28,
+    "nome": "android_20260529_135527",
+    "file": "data/foto/android_20260529_135527.jpg",
+    "mini": "data/foto/android_20260529_135527_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:55",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581295,
+     40.95429
+    ]
+   },
+   "properties": {
+    "id": 29,
+    "nome": "android_20260529_135519",
+    "file": "data/foto/android_20260529_135519.jpg",
+    "mini": "data/foto/android_20260529_135519_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:55",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581266,
+     40.954278
+    ]
+   },
+   "properties": {
+    "id": 30,
+    "nome": "android_20260529_135531",
+    "file": "data/foto/android_20260529_135531.jpg",
+    "mini": "data/foto/android_20260529_135531_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:55",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581238,
+     40.95429
+    ]
+   },
+   "properties": {
+    "id": 31,
+    "nome": "sony_DSC05201",
+    "file": "data/foto/sony_DSC05201.jpg",
+    "mini": "data/foto/sony_DSC05201_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T12:57",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581226,
+     40.954318
+    ]
+   },
+   "properties": {
+    "id": 32,
+    "nome": "sony_DSC05202",
+    "file": "data/foto/sony_DSC05202.jpg",
+    "mini": "data/foto/sony_DSC05202_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T12:57",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.581238,
+     40.954346
+    ]
+   },
+   "properties": {
+    "id": 33,
+    "nome": "sony_DSC05203",
+    "file": "data/foto/sony_DSC05203.jpg",
+    "mini": "data/foto/sony_DSC05203_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T12:57",
+    "quota": 631.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.628286,
+     40.834113
+    ]
+   },
+   "properties": {
+    "id": 34,
+    "nome": "android_20260529_104500",
+    "file": "data/foto/android_20260529_104500.jpg",
+    "mini": "data/foto/android_20260529_104500_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:45",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.628326,
+     40.834073
+    ]
+   },
+   "properties": {
+    "id": 35,
+    "nome": "android_20260529_104455",
+    "file": "data/foto/android_20260529_104455.jpg",
+    "mini": "data/foto/android_20260529_104455_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:44",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.628286,
+     40.834033
+    ]
+   },
+   "properties": {
+    "id": 36,
+    "nome": "android_20260529_104456",
+    "file": "data/foto/android_20260529_104456.jpg",
+    "mini": "data/foto/android_20260529_104456_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:44",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.628246,
+     40.834073
+    ]
+   },
+   "properties": {
+    "id": 37,
+    "nome": "sony_DSC05163",
+    "file": "data/foto/sony_DSC05163.jpg",
+    "mini": "data/foto/sony_DSC05163_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:47",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610167,
+     40.933262
+    ]
+   },
+   "properties": {
+    "id": 38,
+    "nome": "android_20260529_141841",
+    "file": "data/foto/android_20260529_141841.jpg",
+    "mini": "data/foto/android_20260529_141841_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:18",
+    "quota": 715.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610201,
+     40.933202
+    ]
+   },
+   "properties": {
+    "id": 39,
+    "nome": "android_20260529_141845",
+    "file": "data/foto/android_20260529_141845.jpg",
+    "mini": "data/foto/android_20260529_141845_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:18",
+    "quota": 715.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610132,
+     40.933202
+    ]
+   },
+   "properties": {
+    "id": 40,
+    "nome": "android_20260529_141839",
+    "file": "data/foto/android_20260529_141839.jpg",
+    "mini": "data/foto/android_20260529_141839_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:18",
+    "quota": 715.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.733789,
+     40.894905
+    ]
+   },
+   "properties": {
+    "id": 41,
+    "nome": "android_20260529_114340",
+    "file": "data/foto/android_20260529_114340.jpg",
+    "mini": "data/foto/android_20260529_114340_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:43",
+    "quota": 689.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.589864,
+     40.959875
+    ]
+   },
+   "properties": {
+    "id": 42,
+    "nome": "android_20260529_134836",
+    "file": "data/foto/android_20260529_134836.jpg",
+    "mini": "data/foto/android_20260529_134836_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:48",
+    "quota": 594.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.589864,
+     40.959795
+    ]
+   },
+   "properties": {
+    "id": 43,
+    "nome": "android_20260529_134829",
+    "file": "data/foto/android_20260529_134829.jpg",
+    "mini": "data/foto/android_20260529_134829_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:48",
+    "quota": 595.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.613345,
+     40.937018
+    ]
+   },
+   "properties": {
+    "id": 44,
+    "nome": "android_20260529_142343",
+    "file": "data/foto/android_20260529_142343.jpg",
+    "mini": "data/foto/android_20260529_142343_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:23",
+    "quota": 784.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.721907,
+     40.907357
+    ]
+   },
+   "properties": {
+    "id": 45,
+    "nome": "android_20260529_124739",
+    "file": "data/foto/android_20260529_124739.jpg",
+    "mini": "data/foto/android_20260529_124739_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T12:47",
+    "quota": 543.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.721947,
+     40.907317
+    ]
+   },
+   "properties": {
+    "id": 46,
+    "nome": "sony_DSC05193",
+    "file": "data/foto/sony_DSC05193.jpg",
+    "mini": "data/foto/sony_DSC05193_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T11:50",
+    "quota": 543.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.721907,
+     40.907277
+    ]
+   },
+   "properties": {
+    "id": 47,
+    "nome": "sony_DSC05192",
+    "file": "data/foto/sony_DSC05192.jpg",
+    "mini": "data/foto/sony_DSC05192_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T11:50",
+    "quota": 543.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.721867,
+     40.907317
+    ]
+   },
+   "properties": {
+    "id": 48,
+    "nome": "sony_DSC05194",
+    "file": "data/foto/sony_DSC05194.jpg",
+    "mini": "data/foto/sony_DSC05194_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T11:50",
+    "quota": 543.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728853,
+     40.89783
+    ]
+   },
+   "properties": {
+    "id": 49,
+    "nome": "android_20260529_115731",
+    "file": "data/foto/android_20260529_115731.jpg",
+    "mini": "data/foto/android_20260529_115731_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:57",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728888,
+     40.89781
+    ]
+   },
+   "properties": {
+    "id": 50,
+    "nome": "android_20260529_115727",
+    "file": "data/foto/android_20260529_115727.jpg",
+    "mini": "data/foto/android_20260529_115727_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:57",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728888,
+     40.89777
+    ]
+   },
+   "properties": {
+    "id": 51,
+    "nome": "android_20260529_115720",
+    "file": "data/foto/android_20260529_115720.jpg",
+    "mini": "data/foto/android_20260529_115720_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:57",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728853,
+     40.89775
+    ]
+   },
+   "properties": {
+    "id": 52,
+    "nome": "sony_DSC05187",
+    "file": "data/foto/sony_DSC05187.jpg",
+    "mini": "data/foto/sony_DSC05187_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:58",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728819,
+     40.89777
+    ]
+   },
+   "properties": {
+    "id": 53,
+    "nome": "sony_DSC05186",
+    "file": "data/foto/sony_DSC05186.jpg",
+    "mini": "data/foto/sony_DSC05186_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:58",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728819,
+     40.89781
+    ]
+   },
+   "properties": {
+    "id": 54,
+    "nome": "sony_DSC05188",
+    "file": "data/foto/sony_DSC05188.jpg",
+    "mini": "data/foto/sony_DSC05188_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:58",
+    "quota": 633.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.591083,
+     40.961596
+    ]
+   },
+   "properties": {
+    "id": 55,
+    "nome": "android_20260529_134700",
+    "file": "data/foto/android_20260529_134700.jpg",
+    "mini": "data/foto/android_20260529_134700_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:47",
+    "quota": 582.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674785,
+     40.950124
+    ]
+   },
+   "properties": {
+    "id": 56,
+    "nome": "android_20260529_130407",
+    "file": "data/foto/android_20260529_130407.jpg",
+    "mini": "data/foto/android_20260529_130407_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T13:04",
+    "quota": 638.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674825,
+     40.950084
+    ]
+   },
+   "properties": {
+    "id": 57,
+    "nome": "android_20260529_130409",
+    "file": "data/foto/android_20260529_130409.jpg",
+    "mini": "data/foto/android_20260529_130409_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T13:04",
+    "quota": 638.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674785,
+     40.950044
+    ]
+   },
+   "properties": {
+    "id": 58,
+    "nome": "sony_DSC05195",
+    "file": "data/foto/sony_DSC05195.jpg",
+    "mini": "data/foto/sony_DSC05195_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:06",
+    "quota": 638.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674745,
+     40.950084
+    ]
+   },
+   "properties": {
+    "id": 59,
+    "nome": "sony_DSC05196",
+    "file": "data/foto/sony_DSC05196.jpg",
+    "mini": "data/foto/sony_DSC05196_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:06",
+    "quota": 638.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637787,
+     40.851107
+    ]
+   },
+   "properties": {
+    "id": 60,
+    "nome": "android_20260529_104007",
+    "file": "data/foto/android_20260529_104007.jpg",
+    "mini": "data/foto/android_20260529_104007_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:40",
+    "quota": 559.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637822,
+     40.851087
+    ]
+   },
+   "properties": {
+    "id": 61,
+    "nome": "android_20260529_104024",
+    "file": "data/foto/android_20260529_104024.jpg",
+    "mini": "data/foto/android_20260529_104024_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:40",
+    "quota": 559.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637822,
+     40.851047
+    ]
+   },
+   "properties": {
+    "id": 62,
+    "nome": "android_20260529_104018",
+    "file": "data/foto/android_20260529_104018.jpg",
+    "mini": "data/foto/android_20260529_104018_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:40",
+    "quota": 559.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637787,
+     40.851027
+    ]
+   },
+   "properties": {
+    "id": 63,
+    "nome": "android_20260529_103845",
+    "file": "data/foto/android_20260529_103845.jpg",
+    "mini": "data/foto/android_20260529_103845_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:38",
+    "quota": 557.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637752,
+     40.851047
+    ]
+   },
+   "properties": {
+    "id": 64,
+    "nome": "sony_DSC05162",
+    "file": "data/foto/sony_DSC05162.jpg",
+    "mini": "data/foto/sony_DSC05162_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:41",
+    "quota": 557.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.637752,
+     40.851087
+    ]
+   },
+   "properties": {
+    "id": 65,
+    "nome": "sony_DSC05161",
+    "file": "data/foto/sony_DSC05161.jpg",
+    "mini": "data/foto/sony_DSC05161_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:41",
+    "quota": 557.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.650315,
+     40.868757
+    ]
+   },
+   "properties": {
+    "id": 66,
+    "nome": "android_20260529_103146",
+    "file": "data/foto/android_20260529_103146.jpg",
+    "mini": "data/foto/android_20260529_103146_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:31",
+    "quota": 470.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.650353,
+     40.86873
+    ]
+   },
+   "properties": {
+    "id": 67,
+    "nome": "android_20260529_103151",
+    "file": "data/foto/android_20260529_103151.jpg",
+    "mini": "data/foto/android_20260529_103151_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:31",
+    "quota": 470.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.650339,
+     40.868685
+    ]
+   },
+   "properties": {
+    "id": 68,
+    "nome": "sony_DSC05159",
+    "file": "data/foto/sony_DSC05159.jpg",
+    "mini": "data/foto/sony_DSC05159_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:36",
+    "quota": 470.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.650292,
+     40.868685
+    ]
+   },
+   "properties": {
+    "id": 69,
+    "nome": "sony_DSC05158",
+    "file": "data/foto/sony_DSC05158.jpg",
+    "mini": "data/foto/sony_DSC05158_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:34",
+    "quota": 470.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.650277,
+     40.86873
+    ]
+   },
+   "properties": {
+    "id": 70,
+    "nome": "sony_DSC05160",
+    "file": "data/foto/sony_DSC05160.jpg",
+    "mini": "data/foto/sony_DSC05160_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T09:36",
+    "quota": 470.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.729759,
+     40.897524
+    ]
+   },
+   "properties": {
+    "id": 71,
+    "nome": "android_20260529_115256",
+    "file": "data/foto/android_20260529_115256.jpg",
+    "mini": "data/foto/android_20260529_115256_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:52",
+    "quota": 645.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.729793,
+     40.897464
+    ]
+   },
+   "properties": {
+    "id": 72,
+    "nome": "sony_DSC05184",
+    "file": "data/foto/sony_DSC05184.jpg",
+    "mini": "data/foto/sony_DSC05184_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:56",
+    "quota": 645.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.729724,
+     40.897464
+    ]
+   },
+   "properties": {
+    "id": 73,
+    "nome": "sony_DSC05185",
+    "file": "data/foto/sony_DSC05185.jpg",
+    "mini": "data/foto/sony_DSC05185_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:56",
+    "quota": 645.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.692619,
+     40.854046
+    ]
+   },
+   "properties": {
+    "id": 74,
+    "nome": "android_20260529_102306",
+    "file": "data/foto/android_20260529_102306.jpg",
+    "mini": "data/foto/android_20260529_102306_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:23",
+    "quota": 530.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.692659,
+     40.854006
+    ]
+   },
+   "properties": {
+    "id": 75,
+    "nome": "android_20260529_102316",
+    "file": "data/foto/android_20260529_102316.jpg",
+    "mini": "data/foto/android_20260529_102316_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:23",
+    "quota": 530.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.692619,
+     40.853966
+    ]
+   },
+   "properties": {
+    "id": 76,
+    "nome": "android_20260529_102302",
+    "file": "data/foto/android_20260529_102302.jpg",
+    "mini": "data/foto/android_20260529_102302_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:23",
+    "quota": 530.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.692579,
+     40.854006
+    ]
+   },
+   "properties": {
+    "id": 77,
+    "nome": "android_20260529_102300",
+    "file": "data/foto/android_20260529_102300.jpg",
+    "mini": "data/foto/android_20260529_102300_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T10:23",
+    "quota": 530.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.730016,
+     40.913153
+    ]
+   },
+   "properties": {
+    "id": 78,
+    "nome": "android_20260529_122940",
+    "file": "data/foto/android_20260529_122940.jpg",
+    "mini": "data/foto/android_20260529_122940_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:29",
+    "quota": 613.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.730016,
+     40.913073
+    ]
+   },
+   "properties": {
+    "id": 79,
+    "nome": "android_20260529_122941",
+    "file": "data/foto/android_20260529_122941.jpg",
+    "mini": "data/foto/android_20260529_122941_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:29",
+    "quota": 613.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.629815,
+     40.922363
+    ]
+   },
+   "properties": {
+    "id": 80,
+    "nome": "android_20260529_145703",
+    "file": "data/foto/android_20260529_145703.jpg",
+    "mini": "data/foto/android_20260529_145703_mini.jpg",
+    "cluster": 1,
+    "data": "2026-05-29T14:57",
+    "quota": 845.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629613,
+     40.920109
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.629853,
+     40.922335
+    ]
+   },
+   "properties": {
+    "id": 81,
+    "nome": "android_20260529_145658",
+    "file": "data/foto/android_20260529_145658.jpg",
+    "mini": "data/foto/android_20260529_145658_mini.jpg",
+    "cluster": 1,
+    "data": "2026-05-29T14:56",
+    "quota": 845.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629651,
+     40.920081
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.629839,
+     40.922291
+    ]
+   },
+   "properties": {
+    "id": 82,
+    "nome": "android_20260529_145654",
+    "file": "data/foto/android_20260529_145654.jpg",
+    "mini": "data/foto/android_20260529_145654_mini.jpg",
+    "cluster": 1,
+    "data": "2026-05-29T14:56",
+    "quota": 845.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629636,
+     40.920036
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.629792,
+     40.922291
+    ]
+   },
+   "properties": {
+    "id": 83,
+    "nome": "sony_DSC05209",
+    "file": "data/foto/sony_DSC05209.jpg",
+    "mini": "data/foto/sony_DSC05209_mini.jpg",
+    "cluster": 1,
+    "data": "2026-05-29T13:59",
+    "quota": 845.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629589,
+     40.920036
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.629777,
+     40.922335
+    ]
+   },
+   "properties": {
+    "id": 84,
+    "nome": "sony_DSC05211",
+    "file": "data/foto/sony_DSC05211.jpg",
+    "mini": "data/foto/sony_DSC05211_mini.jpg",
+    "cluster": 1,
+    "data": "2026-05-29T13:59",
+    "quota": 845.0,
+    "direzione": null,
+    "spostata": true,
+    "posizione_originale": [
+     15.629575,
+     40.920081
+    ],
+    "nota_spostamento": "gruppo spostato di 250 m a nord, nel cluster 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.593658,
+     40.936566
+    ]
+   },
+   "properties": {
+    "id": 85,
+    "nome": "android_20260529_141029",
+    "file": "data/foto/android_20260529_141029.jpg",
+    "mini": "data/foto/android_20260529_141029_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:10",
+    "quota": 751.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.593698,
+     40.936526
+    ]
+   },
+   "properties": {
+    "id": 86,
+    "nome": "android_20260529_141033",
+    "file": "data/foto/android_20260529_141033.jpg",
+    "mini": "data/foto/android_20260529_141033_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:10",
+    "quota": 751.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.593658,
+     40.936486
+    ]
+   },
+   "properties": {
+    "id": 87,
+    "nome": "sony_DSC05204",
+    "file": "data/foto/sony_DSC05204.jpg",
+    "mini": "data/foto/sony_DSC05204_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T13:12",
+    "quota": 751.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.593618,
+     40.936526
+    ]
+   },
+   "properties": {
+    "id": 88,
+    "nome": "sony_DSC05205",
+    "file": "data/foto/sony_DSC05205.jpg",
+    "mini": "data/foto/sony_DSC05205_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T13:12",
+    "quota": 751.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.657541,
+     40.984908
+    ]
+   },
+   "properties": {
+    "id": 89,
+    "nome": "android_20260529_132038",
+    "file": "data/foto/android_20260529_132038.jpg",
+    "mini": "data/foto/android_20260529_132038_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T13:20",
+    "quota": 546.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.657581,
+     40.984868
+    ]
+   },
+   "properties": {
+    "id": 90,
+    "nome": "android_20260529_132033",
+    "file": "data/foto/android_20260529_132033.jpg",
+    "mini": "data/foto/android_20260529_132033_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T13:20",
+    "quota": 546.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.657541,
+     40.984828
+    ]
+   },
+   "properties": {
+    "id": 91,
+    "nome": "sony_DSC05197",
+    "file": "data/foto/sony_DSC05197.jpg",
+    "mini": "data/foto/sony_DSC05197_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:22",
+    "quota": 546.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.657501,
+     40.984868
+    ]
+   },
+   "properties": {
+    "id": 92,
+    "nome": "sony_DSC05198",
+    "file": "data/foto/sony_DSC05198.jpg",
+    "mini": "data/foto/sony_DSC05198_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T12:23",
+    "quota": 546.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.693599,
+     40.874797
+    ]
+   },
+   "properties": {
+    "id": 93,
+    "nome": "android_20260529_151401",
+    "file": "data/foto/android_20260529_151401.jpg",
+    "mini": "data/foto/android_20260529_151401_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T15:14",
+    "quota": 590.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.693599,
+     40.874717
+    ]
+   },
+   "properties": {
+    "id": 94,
+    "nome": "sony_DSC05216",
+    "file": "data/foto/sony_DSC05216.jpg",
+    "mini": "data/foto/sony_DSC05216_mini.jpg",
+    "cluster": 3,
+    "data": "2026-05-29T14:16",
+    "quota": 590.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.695964,
+     40.923633
+    ]
+   },
+   "properties": {
+    "id": 95,
+    "nome": "android_20260529_112058",
+    "file": "data/foto/android_20260529_112058.jpg",
+    "mini": "data/foto/android_20260529_112058_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:20",
+    "quota": 614.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.695964,
+     40.923553
+    ]
+   },
+   "properties": {
+    "id": 96,
+    "nome": "android_20260529_112053",
+    "file": "data/foto/android_20260529_112053.jpg",
+    "mini": "data/foto/android_20260529_112053_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:20",
+    "quota": 614.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.727001,
+     40.813848
+    ]
+   },
+   "properties": {
+    "id": 97,
+    "nome": "android_20260529_100925",
+    "file": "data/foto/android_20260529_100925.jpg",
+    "mini": "data/foto/android_20260529_100925_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:09",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.727036,
+     40.813828
+    ]
+   },
+   "properties": {
+    "id": 98,
+    "nome": "android_20260529_100919",
+    "file": "data/foto/android_20260529_100919.jpg",
+    "mini": "data/foto/android_20260529_100919_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:09",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.727036,
+     40.813788
+    ]
+   },
+   "properties": {
+    "id": 99,
+    "nome": "android_20260529_100912",
+    "file": "data/foto/android_20260529_100912.jpg",
+    "mini": "data/foto/android_20260529_100912_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:09",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.727001,
+     40.813768
+    ]
+   },
+   "properties": {
+    "id": 100,
+    "nome": "android_20260529_100906",
+    "file": "data/foto/android_20260529_100906.jpg",
+    "mini": "data/foto/android_20260529_100906_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:09",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.726967,
+     40.813788
+    ]
+   },
+   "properties": {
+    "id": 101,
+    "nome": "sony_DSC05156",
+    "file": "data/foto/sony_DSC05156.jpg",
+    "mini": "data/foto/sony_DSC05156_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:12",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.726967,
+     40.813828
+    ]
+   },
+   "properties": {
+    "id": 102,
+    "nome": "sony_DSC05155",
+    "file": "data/foto/sony_DSC05155.jpg",
+    "mini": "data/foto/sony_DSC05155_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:11",
+    "quota": 679.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.732803,
+     40.895481
+    ]
+   },
+   "properties": {
+    "id": 103,
+    "nome": "android_20260529_114600",
+    "file": "data/foto/android_20260529_114600.jpg",
+    "mini": "data/foto/android_20260529_114600_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:46",
+    "quota": 688.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.732803,
+     40.895401
+    ]
+   },
+   "properties": {
+    "id": 104,
+    "nome": "sony_DSC05182",
+    "file": "data/foto/sony_DSC05182.jpg",
+    "mini": "data/foto/sony_DSC05182_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:48",
+    "quota": 688.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.72883,
+     40.897757
+    ]
+   },
+   "properties": {
+    "id": 105,
+    "nome": "android_20260529_113812",
+    "file": "data/foto/android_20260529_113812.jpg",
+    "mini": "data/foto/android_20260529_113812_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:38",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728858,
+     40.897746
+    ]
+   },
+   "properties": {
+    "id": 106,
+    "nome": "android_20260529_113825",
+    "file": "data/foto/android_20260529_113825.jpg",
+    "mini": "data/foto/android_20260529_113825_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:38",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.72887,
+     40.897717
+    ]
+   },
+   "properties": {
+    "id": 107,
+    "nome": "sony_DSC05178",
+    "file": "data/foto/sony_DSC05178.jpg",
+    "mini": "data/foto/sony_DSC05178_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:40",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728858,
+     40.897689
+    ]
+   },
+   "properties": {
+    "id": 108,
+    "nome": "sony_DSC05179",
+    "file": "data/foto/sony_DSC05179.jpg",
+    "mini": "data/foto/sony_DSC05179_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:40",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.72883,
+     40.897677
+    ]
+   },
+   "properties": {
+    "id": 109,
+    "nome": "sony_DSC05190",
+    "file": "data/foto/sony_DSC05190.jpg",
+    "mini": "data/foto/sony_DSC05190_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:03",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728802,
+     40.897689
+    ]
+   },
+   "properties": {
+    "id": 110,
+    "nome": "sony_DSC05181",
+    "file": "data/foto/sony_DSC05181.jpg",
+    "mini": "data/foto/sony_DSC05181_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:41",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.72879,
+     40.897717
+    ]
+   },
+   "properties": {
+    "id": 111,
+    "nome": "sony_DSC05180",
+    "file": "data/foto/sony_DSC05180.jpg",
+    "mini": "data/foto/sony_DSC05180_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:40",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.728802,
+     40.897746
+    ]
+   },
+   "properties": {
+    "id": 112,
+    "nome": "sony_DSC05189",
+    "file": "data/foto/sony_DSC05189.jpg",
+    "mini": "data/foto/sony_DSC05189_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:01",
+    "quota": 635.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.734202,
+     40.824891
+    ]
+   },
+   "properties": {
+    "id": 113,
+    "nome": "android_20260529_101422",
+    "file": "data/foto/android_20260529_101422.jpg",
+    "mini": "data/foto/android_20260529_101422_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:14",
+    "quota": 712.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.734237,
+     40.824831
+    ]
+   },
+   "properties": {
+    "id": 114,
+    "nome": "android_20260529_101429",
+    "file": "data/foto/android_20260529_101429.jpg",
+    "mini": "data/foto/android_20260529_101429_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T10:14",
+    "quota": 712.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.734167,
+     40.824831
+    ]
+   },
+   "properties": {
+    "id": 115,
+    "nome": "sony_DSC05157",
+    "file": "data/foto/sony_DSC05157.jpg",
+    "mini": "data/foto/sony_DSC05157_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T09:16",
+    "quota": 712.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674956,
+     40.951955
+    ]
+   },
+   "properties": {
+    "id": 116,
+    "nome": "android_20260529_130635",
+    "file": "data/foto/android_20260529_130635.jpg",
+    "mini": "data/foto/android_20260529_130635_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T13:06",
+    "quota": 618.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.674956,
+     40.951875
+    ]
+   },
+   "properties": {
+    "id": 117,
+    "nome": "android_20260529_130640",
+    "file": "data/foto/android_20260529_130640.jpg",
+    "mini": "data/foto/android_20260529_130640_mini.jpg",
+    "cluster": 4,
+    "data": "2026-05-29T13:06",
+    "quota": 618.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.568393,
+     40.949583
+    ]
+   },
+   "properties": {
+    "id": 118,
+    "nome": "android_20260529_140259",
+    "file": "data/foto/android_20260529_140259.jpg",
+    "mini": "data/foto/android_20260529_140259_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T14:02",
+    "quota": 528.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691146,
+     40.922887
+    ]
+   },
+   "properties": {
+    "id": 119,
+    "nome": "android_20260529_111717",
+    "file": "data/foto/android_20260529_111717.jpg",
+    "mini": "data/foto/android_20260529_111717_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:17",
+    "quota": 643.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691146,
+     40.922807
+    ]
+   },
+   "properties": {
+    "id": 120,
+    "nome": "android_20260529_111715",
+    "file": "data/foto/android_20260529_111715.jpg",
+    "mini": "data/foto/android_20260529_111715_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:17",
+    "quota": 643.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.591064,
+     40.961581
+    ]
+   },
+   "properties": {
+    "id": 121,
+    "nome": "android_20260529_134623",
+    "file": "data/foto/android_20260529_134623.jpg",
+    "mini": "data/foto/android_20260529_134623_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:46",
+    "quota": 585.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.591064,
+     40.961501
+    ]
+   },
+   "properties": {
+    "id": 122,
+    "nome": "sony_DSC05199",
+    "file": "data/foto/sony_DSC05199.jpg",
+    "mini": "data/foto/sony_DSC05199_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T12:48",
+    "quota": 585.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.600216,
+     40.934781
+    ]
+   },
+   "properties": {
+    "id": 123,
+    "nome": "android_20260529_141337",
+    "file": "data/foto/android_20260529_141337.jpg",
+    "mini": "data/foto/android_20260529_141337_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:13",
+    "quota": 740.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.600256,
+     40.934741
+    ]
+   },
+   "properties": {
+    "id": 124,
+    "nome": "android_20260529_141333",
+    "file": "data/foto/android_20260529_141333.jpg",
+    "mini": "data/foto/android_20260529_141333_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:13",
+    "quota": 741.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.600216,
+     40.934701
+    ]
+   },
+   "properties": {
+    "id": 125,
+    "nome": "sony_DSC05207",
+    "file": "data/foto/sony_DSC05207.jpg",
+    "mini": "data/foto/sony_DSC05207_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T13:16",
+    "quota": 741.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.600176,
+     40.934741
+    ]
+   },
+   "properties": {
+    "id": 126,
+    "nome": "sony_DSC05206",
+    "file": "data/foto/sony_DSC05206.jpg",
+    "mini": "data/foto/sony_DSC05206_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T13:15",
+    "quota": 741.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691332,
+     40.922951
+    ]
+   },
+   "properties": {
+    "id": 127,
+    "nome": "android_20260529_111925",
+    "file": "data/foto/android_20260529_111925.jpg",
+    "mini": "data/foto/android_20260529_111925_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691352,
+     40.922946
+    ]
+   },
+   "properties": {
+    "id": 128,
+    "nome": "android_20260529_111927",
+    "file": "data/foto/android_20260529_111927.jpg",
+    "mini": "data/foto/android_20260529_111927_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691366,
+     40.922931
+    ]
+   },
+   "properties": {
+    "id": 129,
+    "nome": "android_20260529_111923",
+    "file": "data/foto/android_20260529_111923.jpg",
+    "mini": "data/foto/android_20260529_111923_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691372,
+     40.922911
+    ]
+   },
+   "properties": {
+    "id": 130,
+    "nome": "android_20260529_111921",
+    "file": "data/foto/android_20260529_111921.jpg",
+    "mini": "data/foto/android_20260529_111921_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T11:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691366,
+     40.922891
+    ]
+   },
+   "properties": {
+    "id": 131,
+    "nome": "sony_DSC05171",
+    "file": "data/foto/sony_DSC05171.jpg",
+    "mini": "data/foto/sony_DSC05171_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691352,
+     40.922876
+    ]
+   },
+   "properties": {
+    "id": 132,
+    "nome": "sony_DSC05170",
+    "file": "data/foto/sony_DSC05170.jpg",
+    "mini": "data/foto/sony_DSC05170_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691332,
+     40.922871
+    ]
+   },
+   "properties": {
+    "id": 133,
+    "nome": "sony_DSC05172",
+    "file": "data/foto/sony_DSC05172.jpg",
+    "mini": "data/foto/sony_DSC05172_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:19",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691312,
+     40.922876
+    ]
+   },
+   "properties": {
+    "id": 134,
+    "nome": "sony_DSC05173",
+    "file": "data/foto/sony_DSC05173.jpg",
+    "mini": "data/foto/sony_DSC05173_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:20",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691297,
+     40.922891
+    ]
+   },
+   "properties": {
+    "id": 135,
+    "nome": "sony_DSC05177",
+    "file": "data/foto/sony_DSC05177.jpg",
+    "mini": "data/foto/sony_DSC05177_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:23",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691292,
+     40.922911
+    ]
+   },
+   "properties": {
+    "id": 136,
+    "nome": "sony_DSC05176",
+    "file": "data/foto/sony_DSC05176.jpg",
+    "mini": "data/foto/sony_DSC05176_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:23",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691297,
+     40.922931
+    ]
+   },
+   "properties": {
+    "id": 137,
+    "nome": "sony_DSC05174",
+    "file": "data/foto/sony_DSC05174.jpg",
+    "mini": "data/foto/sony_DSC05174_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:20",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.691312,
+     40.922946
+    ]
+   },
+   "properties": {
+    "id": 138,
+    "nome": "sony_DSC05175",
+    "file": "data/foto/sony_DSC05175.jpg",
+    "mini": "data/foto/sony_DSC05175_mini.jpg",
+    "cluster": 5,
+    "data": "2026-05-29T10:23",
+    "quota": 642.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.616359,
+     40.93591
+    ]
+   },
+   "properties": {
+    "id": 139,
+    "nome": "android_20260529_142833",
+    "file": "data/foto/android_20260529_142833.jpg",
+    "mini": "data/foto/android_20260529_142833_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:28",
+    "quota": 760.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.616359,
+     40.93583
+    ]
+   },
+   "properties": {
+    "id": 140,
+    "nome": "sony_DSC05208",
+    "file": "data/foto/sony_DSC05208.jpg",
+    "mini": "data/foto/sony_DSC05208_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T13:30",
+    "quota": 760.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735127,
+     40.82217
+    ]
+   },
+   "properties": {
+    "id": 141,
+    "nome": "android_20260529_100235",
+    "file": "data/foto/android_20260529_100235.jpg",
+    "mini": "data/foto/android_20260529_100235_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T10:02",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735158,
+     40.822155
+    ]
+   },
+   "properties": {
+    "id": 142,
+    "nome": "android_20260529_100234",
+    "file": "data/foto/android_20260529_100234.jpg",
+    "mini": "data/foto/android_20260529_100234_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T10:02",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735166,
+     40.822121
+    ]
+   },
+   "properties": {
+    "id": 143,
+    "nome": "sony_DSC05150",
+    "file": "data/foto/sony_DSC05150.jpg",
+    "mini": "data/foto/sony_DSC05150_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T09:03",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735144,
+     40.822094
+    ]
+   },
+   "properties": {
+    "id": 144,
+    "nome": "sony_DSC05151",
+    "file": "data/foto/sony_DSC05151.jpg",
+    "mini": "data/foto/sony_DSC05151_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T09:03",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735088,
+     40.822121
+    ]
+   },
+   "properties": {
+    "id": 145,
+    "nome": "sony_DSC05152",
+    "file": "data/foto/sony_DSC05152.jpg",
+    "mini": "data/foto/sony_DSC05152_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T09:03",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.735095,
+     40.822155
+    ]
+   },
+   "properties": {
+    "id": 146,
+    "nome": "sony_DSC05154",
+    "file": "data/foto/sony_DSC05154.jpg",
+    "mini": "data/foto/sony_DSC05154_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T09:06",
+    "quota": 703.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5911,
+     40.961687
+    ]
+   },
+   "properties": {
+    "id": 147,
+    "nome": "android_20260529_134546",
+    "file": "data/foto/android_20260529_134546.jpg",
+    "mini": "data/foto/android_20260529_134546_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:45",
+    "quota": 584.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5911,
+     40.961607
+    ]
+   },
+   "properties": {
+    "id": 148,
+    "nome": "android_20260529_134553",
+    "file": "data/foto/android_20260529_134553.jpg",
+    "mini": "data/foto/android_20260529_134553_mini.jpg",
+    "cluster": 6,
+    "data": "2026-05-29T13:45",
+    "quota": 584.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.610097,
+     40.933402
+    ]
+   },
+   "properties": {
+    "id": 149,
+    "nome": "android_20260529_141905",
+    "file": "data/foto/android_20260529_141905.jpg",
+    "mini": "data/foto/android_20260529_141905_mini.jpg",
+    "cluster": 2,
+    "data": "2026-05-29T14:19",
+    "quota": 712.0,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.758635,
+     40.789195
+    ]
+   },
+   "properties": {
+    "id": 150,
+    "nome": "Vulture_29_maggio_20250824_095148",
+    "file": "data/foto/Vulture_29_maggio_20250824_095148.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_095148_mini.jpg",
+    "cluster": 5,
+    "data": "2025-08-24T09:51",
+    "quota": 429.497,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.61203,
+     40.930903
+    ]
+   },
+   "properties": {
+    "id": 151,
+    "nome": "Vulture_29_maggio_20250824_103317",
+    "file": "data/foto/Vulture_29_maggio_20250824_103317.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_103317_mini.jpg",
+    "cluster": 2,
+    "data": "2025-08-24T10:33",
+    "quota": 429.497,
+    "direzione": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.690104,
+     41.071716
+    ]
+   },
+   "properties": {
+    "id": 152,
+    "nome": "Vulture_29_maggio_20250824_114057",
+    "file": "data/foto/Vulture_29_maggio_20250824_114057.jpg",
+    "mini": "data/foto/Vulture_29_maggio_20250824_114057_mini.jpg",
+    "cluster": 3,
+    "data": "2025-08-24T11:40",
+    "quota": 263.506,
+    "direzione": null
+   }
+  }
+ ]
+}

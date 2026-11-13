@@ -1,0 +1,19 @@
+Testi descrittivi del paesaggio: un file .txt per cluster, id a due cifre.
+
+  data/testi/cluster_01.txt, cluster_02.txt, ...
+
+Le sezioni sono riconosciute da righe-titolo (maiuscole/minuscole indifferenti, "#" e ":" facoltativi):
+
+  TITOLO: Crinali panoramici          (il testo può stare sulla stessa riga)
+  DESCRIZIONE GENERALE
+  PARTE CENTRALE                      (anche: "CENTRALE", "IMMAGINE CENTRALE", "PAESAGGIO CENTRALE")
+  ECCEZIONE 1  ...  ECCEZIONE 4       (oppure un'unica sezione "ECCEZIONI" con voci "1." "2." ... o "-")
+
+Se il file non ha righe-titolo: la prima riga è il titolo, il resto la descrizione generale.
+Codifica: UTF-8 consigliata; i file salvati da Windows (ANSI/cp1252) vengono letti comunque.
+
+Sezioni facoltative (formato prodotto da tools/importa_testi_pdf.py dal PDF dell'agente interprete):
+  STRUTTURA CENTRALE        -> scheda descrittiva, "leggi tutto"
+  ECCEZIONI E TENSIONI      -> scheda descrittiva, "leggi tutto"
+  ECCEZIONI  (testo unico, senza voci numerate) -> testo sopra il pannello delle eccezioni
+Rigenerare dal PDF:  python3 tools/importa_testi_pdf.py Output_AgenteAI_Interprete_Cluster.pdf

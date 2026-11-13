@@ -1,0 +1,65 @@
+TITOLO: Periferia forestale del vulcano a bassa antropizzazione
+
+DESCRIZIONE GENERALE
+
+Il cluster 1 descrive un paesaggio periferico rispetto al sistema vulcanico, dominato da matrici forestali continue e da una forte articolazione morfologica, ma caratterizzato da una debole strutturazione antropica e da una leggibilità visiva complessivamente moderata. La scena tende a essere costruita attraverso rilievi aperti e boscosi, nei quali il vulcano resta comunque percettivamente presente come landmark di sfondo, pur senza occupare il centro fisico dell’esperienza spaziale. L’organizzazione percettiva è governata soprattutto dalla relazione tra foresta, rilievo e distanza vulcanica, mentre gli elementi agricoli, storico-culturali e produttivi rimangono marginali o episodici.
+
+STRUTTURA CENTRALE
+
+La struttura centrale del cluster è fortemente coerente su tre variabili: presenza forestale, rilievo articolato e distanza dal vulcano. La mediana molto elevata della presenza forestale, accompagnata da un IQR compatto e interamente positivo, indica una continuità boschiva stabile e dominante. Non si tratta di episodi isolati di vegetazione arborea, ma di un sistema forestale strutturante che occupa foreground e midground, definendo texture, profondità e continuità ecologica della scena.
+
+Anche il relief_context presenta una mediana molto positiva con IQR stabile: il paesaggio è quindi chiaramente collinare o montano, con versanti, articolazioni altimetriche e sistemi di pendio leggibili e continui. Tuttavia questa articolazione non produce chiusura spaziale. La terrain_enclosure mantiene infatti una mediana nettamente negativa, indicando scenari relativamente aperti, con ampie visuali e profondità percettiva. La combinazione tra rilievo positivo e enclosure negativa costruisce un paesaggio montano ma non claustrofobico: dorsali forestali aperte, pendii leggibili e prospettive profonde dominano la percezione.
+
+La distance_to_volcano presenta una mediana prossima al massimo positivo e un IQR estremamente compatto. Questo significa che il cluster appartiene stabilmente alla periferia vulcanica. Il vulcano non è assente: la vis_landmark_share mantiene infatti valori positivi coerenti. Il landmark vulcanico resta leggibile sullo sfondo come riferimento morfologico e identitario, ma non occupa il primo piano percettivo. La scena è quindi costruita più dalla relazione “territorio forestale periferico + presenza remota del vulcano” che dalla monumentalità diretta del cono vulcanico.
+
+La leggibilità complessiva della scena (vis_total_intensity) è moderata e variabile. La mediana leggermente negativa indica che il paesaggio non si presenta come altamente ordinato o fortemente strutturato visivamente. Tuttavia l’IQR attraversa lo zero e si estende anche in positivo: il cluster alterna situazioni di relativa chiarezza percettiva ad altre più dense, opache o poco leggibili, probabilmente a causa della continuità forestale e della debole presenza di elementi antropici ordinatori.
+
+L’ecologia rafforza ulteriormente questa interpretazione. La hemeroby ha valori fortemente negativi e molto stabili: il cluster rappresenta ambienti a elevata naturalità e scarsa antropizzazione. Anche la shannon diversity rimane negativa, indicando una bassa diversità di coperture territoriali: il paesaggio tende alla continuità ecologica più che alla frammentazione o alla mescolanza di usi del suolo.
+
+Le componenti antropiche risultano subordinate. La vis_anthropic_share mantiene valori negativi coerenti, segnalando la debole presenza di infrastrutture produttive o energetiche. Allo stesso modo la vis_agri_share ha mediana e IQR nulli: l’agricoltura non costituisce una matrice strutturante della scena. Quando compare, resta episodica e periferica.
+
+La componente storico-culturale (hist_cult_index) è instabile e marginale. La mediana è prossima allo zero ma leggermente negativa, mentre l’IQR attraversa ampiamente valori sia negativi sia positivi. Questo indica che il tessuto storico non costruisce la struttura dominante del cluster, pur comparendo localmente con episodi leggibili di nuclei storici o piccoli sistemi insediativi.
+
+La presenza d’acqua è secondaria ma non assente. La water_presence_500m mostra una mediana leggermente negativa ma un IQR che entra in positivo: piccoli corsi d’acqua, impluvi o bacini locali possono emergere episodicamente nel foreground senza diventare elemento dominante.
+
+ECCEZIONI E TENSIONI
+
+Le principali tensioni interne riguardano la variabilità della leggibilità storico-culturale e della percezione del vulcano.
+
+La vis_landmark_share presenta numerosi outlier negativi. Questo significa che, pur essendo normalmente percepibile come landmark di sfondo, il vulcano può localmente scomparire o risultare schermato da morfologie, coperture forestali o orientamenti visuali. Si tratta però di eccezioni rispetto alla struttura generale del cluster.
+
+Anche la hist_cult_index mostra una forte dispersione con numerosi outlier sia negativi sia positivi. Alcune porzioni del cluster risultano completamente prive di riferimenti storico-culturali leggibili, mentre altre presentano improvvise emergenze di borghi, nuclei storici o tessuti tradizionali. Tuttavia questi episodi non modificano la dominante ecologico-forestale del sistema.
+
+La water_presence_500m possiede numerosi outlier positivi. In alcuni casi l’acqua locale diventa visibile e strutturante — torrenti, impluvi o piccoli specchi d’acqua — ma rimane una componente secondaria e localizzata.
+
+Anche la vis_anthropic_share presenta sporadici outlier positivi: alcune aree introducono infrastrutture energetiche o produttive percettibili, ma la loro presenza resta marginale rispetto alla forte naturalità complessiva del cluster.
+
+Infine la vis_agri_share possiede esclusivamente outlier positivi sopra una struttura centrale nulla. Questo indica episodi agricoli isolati — radure coltivate, margini rurali o piccole trame agrarie — che interrompono localmente la continuità forestale senza ridefinire l’identità percettiva dominante.
+
+PARTE CENTRALE
+
+La scena dovrebbe essere costruita come un paesaggio forestale periferico e montano, organizzato attraverso pendii boscosi continui, dorsali articolate e profondità visuali aperte. La foresta deve occupare foreground e midground con continuità materica e percettiva: masse arboree dense, coperture estese e texture vegetali dominano la composizione.
+
+Il rilievo deve essere chiaramente leggibile attraverso versanti, dislivelli e articolazioni altimetriche, ma evitando configurazioni vallive troppo chiuse. L’orizzonte deve mantenere apertura e profondità.
+
+Il vulcano deve comparire prevalentemente nel background come landmark distante ma riconoscibile. Non deve dominare fisicamente la scena, bensì funzionare come presenza territoriale remota e stabile.
+
+Gli elementi antropici devono restare subordinati: poche infrastrutture, assenza di forte industrializzazione e scarsissima organizzazione agricola. Eventuali nuclei storici devono comparire come episodi secondari integrati nella matrice forestale.
+
+La leggibilità generale della scena deve mantenere una moderata eterogeneità percettiva: non un paesaggio caotico, ma nemmeno rigidamente ordinato o fortemente geometrizzato.
+
+ECCEZIONE 1
+
+Le eccezioni devono introdurre variazioni locali senza alterare il dominio forestale. Alcuni pannelli possono mostrare improvvise aperture visuali sul vulcano, mentre altri possono schermarlo quasi completamente attraverso dorsali o coperture arboree.
+
+ECCEZIONE 2
+
+Piccoli nuclei storici o episodi rurali possono emergere localmente nel midground, introducendo discontinuità culturali all’interno della naturalità dominante. Tuttavia tali elementi non devono trasformarsi nel soggetto principale.
+
+ECCEZIONE 3
+
+In alcune situazioni l’acqua può acquisire maggiore leggibilità: impluvi, torrenti o piccoli specchi riflettenti possono introdurre micro-centralità ecologiche locali.
+
+ECCEZIONE 4
+
+Le rare emergenze produttive o infrastrutturali devono restare marginali e non alterare il carattere naturale e forestale del cluster.

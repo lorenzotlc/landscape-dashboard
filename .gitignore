@@ -1,0 +1,23 @@
+# --- Esclusi dal repository (restano sul Mac / nella cartella sincronizzata) ---
+# Dati di lavoro originali e pesanti
+dati_reali/
+*.pdf
+*.zip
+*.tif.aux.xml
+
+# Ambiente Python e cache
+.venv/
+__pycache__/
+*.pyc
+
+# Archivi di aggiornamento
+*.tar.gz
+
+# Backup e dati dimostrativi
+data demo backup/
+data/testi_demo/
+data/progetto_esteso.html
+
+# Sistema
+.DS_Store
+Thumbs.db

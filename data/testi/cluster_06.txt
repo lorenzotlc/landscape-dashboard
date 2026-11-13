@@ -1,0 +1,63 @@
+TITOLO: Periferia morfologicamente articolata con infrastrutturazione diffusa e naturalità residuale
+
+DESCRIZIONE GENERALE
+
+Questo cluster descrive un paesaggio periferico rispetto al sistema vulcanico, dominato da una morfologia articolata e da una presenza antropico-produttiva chiaramente percepibile, ma non accompagnata da una forte leggibilità storico-culturale o agricola. La scena tende a organizzarsi attorno a rilievi aperti, crinali e versanti ampi, entro cui infrastrutture produttive, superfici artificiali ed elementi energetici assumono una salienza importante. Il vulcano non costituisce un landmark dominante stabile: la sua presenza è intermittente e subordinata alla struttura morfologica. La componente ecologica appare compressa, con naturalità moderata o debole, diversità territoriale solo episodicamente elevata e presenza d’acqua quasi sempre marginale. La scena risulta quindi leggibile soprattutto come paesaggio infrastrutturato di margine territoriale, più che come paesaggio agricolo o storico consolidato.
+
+STRUTTURA CENTRALE
+
+La struttura percettiva centrale è guidata dalla combinazione tra forte articolazione del rilievo e collocazione periferica rispetto al vulcano. La variabile relief_context mostra infatti una mediana alta e un IQR coerentemente positivo: il paesaggio è stabilmente composto da colline, versanti, crinali e rilievi articolati che costruiscono la principale ossatura visuale della scena. Questa morfologia non produce però una chiusura percettiva; al contrario, terrain_enclosure mantiene valori centrali negativi e un box completamente negativo, indicando una prevalenza di spazi relativamente incassati ma non completamente ostruiti, con aperture visuali discontinue e profondità territoriali frammentate.
+
+La variabile più stabile dell’intero cluster è distance_to_volcano, con mediana prossima al massimo positivo e IQR quasi nullo. Questo definisce una condizione territoriale coerente di periferia vulcanica: il vulcano non struttura direttamente la scena ma agisce come riferimento distante, spesso subordinato alla morfologia locale. La sua visibilità (vis_landmark_share) attraversa infatti lo zero: il landmark vulcanico appare in modo intermittente, presente solo in alcune aperture prospettiche o in condizioni locali favorevoli.
+
+La componente antropica è una delle principali matrici visuali. vis_anthropic_share possiede una mediana positiva e un IQR molto ampio che si estende fortemente verso valori elevati. Questo indica un paesaggio dove infrastrutture produttive, capannoni, impianti energetici, superfici artificiali e strade asfaltate sono frequentemente percepibili e spesso strutturanti. Non si tratta però di una saturazione uniforme: la forte ampiezza dell’IQR introduce gradienti interni tra aree più infrastrutturate e settori più aperti.
+
+Al contrario, la componente agricola tradizionale (vis_agri_share) non costruisce la struttura ordinaria del cluster. Mediana e IQR sono nulli: vigneti, oliveti, filari e terrazzamenti non rappresentano un tessuto stabile della scena. La loro presenza è episodica e confinata a emergenze locali.
+
+La leggibilità visiva complessiva (vis_total_intensity) resta moderata o bassa: la mediana negativa suggerisce una scena spesso frammentata, non completamente ordinata da un sistema dominante unico. La struttura territoriale appare quindi leggibile soprattutto per comparti morfologici e antropici, più che per continuità paesaggistica.
+
+Dal punto di vista ecologico, hemeroby mantiene valori centrali negativi, indicando che il cluster conserva una naturalità residua nonostante la presenza infrastrutturale. Tuttavia questa naturalità non si traduce in una forte complessità ecologica: shannon attraversa lo zero, segnalando mosaici territoriali variabili ma non stabilmente ricchi. I boschi (forest_presence_500m) risultano invece statisticamente presenti, con mediana positiva e IQR ampio: masse arboree, margini forestali e quinte vegetali partecipano in modo importante alla costruzione del midground e del background.
+
+La componente storico-culturale (hist_cult_index) è marginale nella struttura centrale. La mediana è prossima allo zero e il box attraversa lo zero, indicando una presenza discontinua di borghi storici, chiese o nuclei urbani storici, mai realmente dominanti nella percezione ordinaria del cluster.
+
+L’acqua (water_presence_500m) è quasi sempre assente o marginale: torrenti, corsi d’acqua e fasce ripariali non organizzano stabilmente il paesaggio.
+
+ECCEZIONI E TENSIONI
+
+Le principali tensioni interne derivano dall’oscillazione tra infrastrutturazione e naturalità. Sebbene la componente produttiva sia strutturalmente presente, la variabilità interna di vis_anthropic_share produce settori molto intensamente artificializzati alternati ad ambiti più aperti e meno trasformati. Questo genera un paesaggio percettivamente discontinuo.
+
+La presenza agricola costituisce una vera eccezione statistica. vis_agri_share presenta centinaia di outlier positivi sopra un box completamente nullo: alcune aree mostrano improvvise emergenze di coltivi leggibili, filari o appezzamenti strutturati, ma tali episodi non modificano la natura generale del cluster. Sono enclave locali inserite dentro una matrice prevalentemente non agricola.
+
+Una tensione importante riguarda il rapporto col vulcano. La distanza territoriale è estremamente coerente, ma vis_landmark_share attraversa lo zero: pur essendo periferico, il cluster mantiene aperture episodiche in cui il vulcano emerge visivamente. Questo produce una geografia percettiva intermittente, dove il landmark appare come presenza occasionale più che costante.
+
+Anche l’acqua genera eccezioni molto nette. water_presence_500m possiede un box quasi interamente negativo ma numerosi outlier positivi: il paesaggio ordinario è asciutto, ma localmente compaiono torrenti, fasce umide o piccoli sistemi ripariali capaci di modificare temporaneamente la leggibilità ecologica della scena.
+
+Infine, hist_cult_index mostra una forte dispersione tramite outlier sia negativi sia positivi: alcuni settori risultano quasi totalmente privi di riferimenti storico-culturali, mentre altri ospitano emergenze patrimoniali molto leggibili. Tuttavia tali episodi restano puntuali e non riescono a costruire una continuità identitaria stabile.
+
+PARTE CENTRALE
+
+La scena deve essere costruita a partire da rilievi articolati, versanti, colline e crinali percepibili come sistema dominante. Il paesaggio deve apparire territorialmente ampio ma frammentato, con profondità visuali variabili e aperture discontinue.
+
+Nel foreground e nel midground devono comparire infrastrutture produttive ed energetiche: capannoni, suoli artificiali, strade asfaltate, impianti energetici e occasionali gruppi eolici devono essere chiaramente leggibili ma distribuiti in modo non completamente uniforme. La componente antropica non deve trasformarsi in paesaggio urbano compatto: deve mantenere una logica dispersa e territoriale.
+
+Le masse forestali devono occupare una parte importante del midground e del background, soprattutto come quinte arboree e margini boschivi che accompagnano la morfologia. L’agricoltura tradizionale non deve organizzare il paesaggio centrale: eventuali coltivi devono restare secondari e frammentati.
+
+Il vulcano non deve dominare la scena. Quando presente, deve apparire distante, episodico, spesso parzialmente schermato dai rilievi locali.
+
+La leggibilità complessiva deve rimanere moderatamente irregolare: la scena non è né caotica né perfettamente ordinata, ma costruita da comparti territoriali differenziati.
+
+ECCEZIONE 1
+
+Le eccezioni agricole devono apparire come aperture locali improvvise: piccoli sistemi coltivati, filari o appezzamenti leggibili che emergono episodicamente senza trasformare la matrice dominante.
+
+ECCEZIONE 2
+
+Gli episodi d’acqua devono essere marginali ma percettivamente distinti: piccoli torrenti, vegetazione ripariale o fasce umide devono occupare porzioni limitate della scena.
+
+ECCEZIONE 3
+
+Le emergenze storico-culturali devono essere episodiche: borghi, chiese o nuclei storici possono comparire localmente ma non devono diventare il soggetto principale dell’immagine.
+
+ECCEZIONE 4
+
+Le aperture verso il vulcano devono essere trattate come finestre prospettiche occasionali: il landmark emerge solo in alcune configurazioni spaziali e resta subordinato alla morfologia locale.

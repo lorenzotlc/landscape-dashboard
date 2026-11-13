@@ -1,0 +1,26 @@
+{
+  "intestazione": "Cluster 1 – Periferia forestale vulcanica a bassa antropizzazione: eccezioni e tensioni interne",
+  "eccezioni": [
+    {
+      "titolo": "Schermatura locale del vulcano",
+      "variabile": "vis_landmark_share, outlier negativa, forza 4",
+      "testo": "La copertura forestale riduce la leggibilità del landmark."
+    },
+    {
+      "titolo": "Forte emergenza storico-culturale locale",
+      "variabile": "hist_cult_index, outlier positiva, forza 3",
+      "testo": "Il sistema storico domina localmente ma resta episodico."
+    },
+    {
+      "titolo": "Presenza locale di acqua molto leggibile",
+      "variabile": "water_presence_500m, outlier positiva, forza 3",
+      "testo": "Torrente ben evidente ma confinato."
+    },
+    {
+      "titolo": "Episodi agricoli isolati",
+      "variabile": "vis_agri_share, outlier positiva, forza 2",
+      "testo": "Piccole aperture agricole all’interno della matrice forestale."
+    }
+  ],
+  "nota": "Le eccezioni sono locali e non ridefiniscono la struttura centrale del cluster, che resta forestale e periferica rispetto al vulcano."
+}

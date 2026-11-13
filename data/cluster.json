@@ -1,0 +1,46 @@
+{
+  "cluster": [
+    {
+      "id": 1,
+      "nome": "Cluster 1",
+      "colore": "#2e3a8a",
+      "descrizione": "",
+      "n_celle": 1734
+    },
+    {
+      "id": 2,
+      "nome": "Cluster 2",
+      "colore": "#376ead",
+      "descrizione": "",
+      "n_celle": 3671
+    },
+    {
+      "id": 3,
+      "nome": "Cluster 3",
+      "colore": "#4ba0c0",
+      "descrizione": "",
+      "n_celle": 4152
+    },
+    {
+      "id": 4,
+      "nome": "Cluster 4",
+      "colore": "#68c4b8",
+      "descrizione": "",
+      "n_celle": 1368
+    },
+    {
+      "id": 5,
+      "nome": "Cluster 5",
+      "colore": "#b2ddb4",
+      "descrizione": "",
+      "n_celle": 1044
+    },
+    {
+      "id": 6,
+      "nome": "Cluster 6",
+      "colore": "#f5efbb",
+      "descrizione": "",
+      "n_celle": 2348
+    }
+  ]
+}

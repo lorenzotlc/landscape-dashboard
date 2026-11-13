@@ -1,0 +1,18 @@
+Immagini dei cluster: una cartella per cluster, id a due cifre (cluster_01 ... cluster_06).
+
+  data/immagini/cluster_01/fotosferica.jpg   immagine CENTRALE del cluster (quella fornita, nessuna rielaborazione):
+                                             nel pannello "Vista sferica" diventa navigabile con effetto sferico
+                                             (zoom sulla fascia centrale, partenza dal bordo sinistro, rotazione lenta)
+  data/immagini/cluster_01/eccezioni.jpg     UN'UNICA immagine con le 4 eccezioni in griglia 2x2, ritagliata dalla dashboard:
+                                             1 = alto-sinistra, 2 = alto-destra, 3 = basso-sinistra, 4 = basso-destra
+                                             (bordi tra i riquadri: config.json -> immagini.eccezioni_composita)
+                                             in alternativa: eccezione_1.jpg ... eccezione_4.jpg separati
+
+Formati accettati: jpg, png, webp. Se un file manca, la dashboard mostra un segnaposto.
+Larghezza massima consigliata per fotosferica: 8192 px (limite WebGL); angolo di campo attribuito: config.json -> immagini.panorama.hfov_foto.
+
+Preparazione automatica dalle immagini generate (dati_reali/output_IA_GEN_GPTs/clusterN/centrale.jpg + eccezioni.jpg):
+  python3 tools/prepara_immagini.py --controllo dati_reali/_controllo_ritagli.jpg
+  centrale.jpg -> fotosferica.jpg; dalla tavola eccezioni.jpg (con bordi, didascalie, ombre) vengono ritagliati
+  automaticamente i 4 riquadri -> eccezione_1..4.jpg. NON copiare eccezioni.jpg qui: la dashboard la ritaglierebbe
+  con una griglia regolare, sbagliando sulle tavole con didascalie.

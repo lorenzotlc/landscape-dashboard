@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 3 — Periferia agricolo-antropica aperta | Eccezioni e tensioni interne",
+  "eccezioni": [
+    {
+      "titolo": "Forte emergenza visuale del vulcano",
+      "variabile": "vis_landmark_share",
+      "testo": "Il profilo vulcanico è chiaramente percepibile ma resta sullo sfondo e non domina la matrice agricola."
+    },
+    {
+      "titolo": "Concentrazione locale di infrastrutture produttive",
+      "variabile": "vis_anthropic_share",
+      "testo": "Presenza concentrata di capannoni e impianti produttivi che emerge sul contesto ma non sostituisce la matrice agricola."
+    },
+    {
+      "titolo": "Nuclei forestali localmente percepibili",
+      "variabile": "forest_presence_500m",
+      "testo": "Piccolo nucleo boschivo che introduce una variazione locale senza alterare l’apertura agricola dominante."
+    },
+    {
+      "titolo": "Episodi di forte presenza storico-culturale",
+      "variabile": "hist_cult_index",
+      "testo": "Elemento storico-culturale puntuale che emerge localmente ma non è diffuso nel cluster."
+    }
+  ]
+}

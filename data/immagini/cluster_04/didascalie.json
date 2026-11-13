@@ -1,0 +1,25 @@
+{
+  "intestazione": "Tipologia del cluster 4: Paesaggio agricolo aperto e periferico con mosaico ecologico diffuso",
+  "eccezioni": [
+    {
+      "titolo": "Episodi forestali più estesi del quadro centrale",
+      "variabile": "forest_presence_500m, positive, strength 5",
+      "testo": ""
+    },
+    {
+      "titolo": "Rilievi più articolati e versanti marcati",
+      "variabile": "relief_context, positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Chiusura valliva locale del paesaggio",
+      "variabile": "terrain_enclosure, negative, strength 3",
+      "testo": ""
+    },
+    {
+      "titolo": "Presenza episodica di nuclei storico-culturali leggibili",
+      "variabile": "hist_cult_index, positive, strength 2",
+      "testo": ""
+    }
+  ]
+}

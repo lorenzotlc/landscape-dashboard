@@ -1,0 +1,77 @@
+{
+  "_nota": "Modifica nome, gruppo e unita; l'ordine qui è l'ordine nel grafico. Rilancia prepara_dati.py per applicare.",
+  "variabili": [
+    {
+      "codice": "visibility.vis_agri_share",
+      "nome": "Quota agricola visibile",
+      "gruppo": "Visibilità",
+      "unita": ""
+    },
+    {
+      "codice": "visibility.vis_anthropic_share",
+      "nome": "Quota antropica visibile",
+      "gruppo": "Visibilità",
+      "unita": ""
+    },
+    {
+      "codice": "visibility.vis_landmark_share",
+      "nome": "Quota di landmark visibili",
+      "gruppo": "Visibilità",
+      "unita": ""
+    },
+    {
+      "codice": "visibility.vis_total_intensity",
+      "nome": "Intensità visiva totale",
+      "gruppo": "Visibilità",
+      "unita": ""
+    },
+    {
+      "codice": "hist_cult_index",
+      "nome": "Indice storico-culturale",
+      "gruppo": "Storia e cultura",
+      "unita": ""
+    },
+    {
+      "codice": "morphology.relief_context",
+      "nome": "Contesto del rilievo",
+      "gruppo": "Morfologia",
+      "unita": ""
+    },
+    {
+      "codice": "morphology.terrain_enclosure",
+      "nome": "Chiusura del terreno",
+      "gruppo": "Morfologia",
+      "unita": ""
+    },
+    {
+      "codice": "morphology.distance_to_volcano",
+      "nome": "Distanza dal vulcano",
+      "gruppo": "Morfologia",
+      "unita": ""
+    },
+    {
+      "codice": "ecology.shannon",
+      "nome": "Diversità (Shannon)",
+      "gruppo": "Ecologia",
+      "unita": ""
+    },
+    {
+      "codice": "ecology.hemeroby",
+      "nome": "Emerobia",
+      "gruppo": "Ecologia",
+      "unita": ""
+    },
+    {
+      "codice": "ecology.water_presence_500m",
+      "nome": "Acqua entro 500 m",
+      "gruppo": "Ecologia",
+      "unita": ""
+    },
+    {
+      "codice": "ecology.forest_presence_500m",
+      "nome": "Bosco entro 500 m",
+      "gruppo": "Ecologia",
+      "unita": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 2 – Eccezioni e tensioni interne",
+  "eccezioni": [
+    {
+      "titolo": "Episodi di forte infrastrutturazione produttiva",
+      "variabile": "vis_anthropic_share",
+      "testo": ""
+    },
+    {
+      "titolo": "Presenza molto leggibile del vulcano",
+      "variabile": "vis_landmark_share",
+      "testo": ""
+    },
+    {
+      "titolo": "Borghi storici o nuclei culturali fortemente percepibili",
+      "variabile": "hist_cult_index",
+      "testo": ""
+    },
+    {
+      "titolo": "Matrici agricole localmente visibili",
+      "variabile": "vis_agri_share",
+      "testo": ""
+    }
+  ]
+}

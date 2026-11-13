@@ -1,0 +1,71 @@
+TITOLO: Paesaggio collinare aperto a mosaico ecologico con presenza antropica intermittente
+
+DESCRIZIONE GENERALE
+
+Questo cluster descrive un paesaggio territorialmente periferico rispetto al sistema vulcanico, caratterizzato da una struttura morfologica moderatamente articolata e da una leggibilità spaziale relativamente aperta, ma non pienamente stabile. La scena dominante non è costruita da un singolo elemento iconico, bensì da una combinazione di rilievi dolci, mosaico ecologico, presenza forestale diffusa e acqua localmente percepibile. La componente agricola tradizionale non costituisce invece una matrice strutturante stabile: la sua presenza emerge quasi esclusivamente come episodio locale. Anche la componente storico-culturale rimane debole e discontinua, mentre gli elementi produttivi e antropici oscillano tra aree scarsamente infrastrutturate e nuclei maggiormente trasformati.
+
+STRUTTURA CENTRALE
+
+La struttura centrale del cluster è governata soprattutto da tre sistemi coerenti: la posizione territoriale periferica rispetto al vulcano, la presenza di un mosaico ecologico articolato e una morfologia moderatamente aperta e collinare.
+
+La variabile più stabile è la distanza dal vulcano. La mediana molto elevata e l’IQR fortemente positivo indicano un paesaggio collocato stabilmente nella periferia vulcanica. Questo non significa necessariamente assenza del vulcano, ma una sua perdita di centralità percettiva diretta. Infatti la visibilità del landmark vulcanico attraversa condizioni miste: il box include sia valori negativi sia positivi. Il vulcano può comparire come elemento di sfondo episodico, ma non domina stabilmente la scena.
+
+Dal punto di vista ecologico il cluster presenta una forte articolazione interna del suolo. La diversità del land cover ha mediana positiva e IQR ampio ma coerente, suggerendo una compresenza leggibile di boschi, aree aperte, vegetazione ripariale e superfici differenziate. Questa eterogeneità non è caotica: genera piuttosto un paesaggio a mosaico, con continui passaggi tra matrici forestali, aperture territoriali e sistemi semi-naturali.
+
+La presenza forestale locale è stabilmente percepibile. La mediana positiva e l’IQR ampio ma coerente indicano che masse arboree, margini boschivi e quinte forestali occupano una posizione importante nel midground e nel background della scena. I boschi non diventano però una copertura totalizzante: convivono con superfici aperte e rilievi leggibili.
+
+Anche l’acqua costituisce un elemento significativo della struttura centrale. Torrenti, corsi d’acqua minori e vegetazione ripariale risultano frequentemente percepibili, soprattutto nelle porzioni di foreground e midground. La presenza idrica contribuisce alla leggibilità ecologica del paesaggio e rafforza la varietà territoriale complessiva.
+
+La morfologia è moderatamente articolata. Il rilievo presenta una mediana lievemente positiva e un IQR che attraversa condizioni differenti: prevalgono colline, versanti morbidi e ondulazioni, più che rilievi estremi. Parallelamente, l’apertura visuale mostra un equilibrio instabile tra spazi aperti e situazioni vallive o parzialmente chiuse. Il cluster non costruisce né panorami completamente aperti né paesaggi fortemente incassati: alterna quinte morfologiche e aperture prospettiche.
+
+La componente antropica produttiva è presente ma non dominante. La mediana negativa indica che infrastrutture industriali o energetiche non organizzano stabilmente il paesaggio. Tuttavia l’IQR molto ampio segnala una forte oscillazione interna: alcuni casi mostrano aree produttive, impianti energetici o infrastrutture percepibili, altri quasi nessuna presenza artificiale.
+
+La leggibilità visuale complessiva rimane moderatamente bassa. La mediana negativa della visual intensity suggerisce scene spesso frammentate o poco gerarchizzate, dove nessun elemento assume una dominanza percettiva assoluta. Questo contribuisce a una percezione diffusa e distribuita del territorio.
+
+La componente agricola tradizionale non struttura il cluster. La mediana e l’IQR nulli indicano che vigneti, filari e trame agricole sono generalmente assenti come sistema dominante. Quando compaiono, lo fanno come eccezioni isolate.
+
+Anche la componente storico-culturale rimane marginale nella struttura centrale. Sebbene la mediana sia leggermente positiva, l’IQR attraversa lo zero: borghi storici, nuclei antichi e monumenti sono presenti solo in modo discontinuo e non organizzano stabilmente la percezione del territorio.
+
+ECCEZIONI E TENSIONI
+
+Le principali tensioni interne derivano dall’oscillazione tra naturalità diffusa e improvvise emergenze antropiche.
+
+La variabile antropica mostra infatti un’estensione molto ampia del boxplot. Alcune porzioni del cluster presentano aree produttive, fotovoltaico, strade asfaltate o impianti energetici chiaramente leggibili. Tuttavia queste emergenze non diventano struttura dominante perché la mediana resta negativa e l’intero sistema territoriale continua a essere governato dal mosaico ecologico e dalla morfologia aperta.
+
+Un’altra tensione importante riguarda la visibilità del vulcano. Il cluster oscilla tra aree in cui il landmark vulcanico è completamente schermato e altre in cui emerge chiaramente nello sfondo. Questa variabilità produce un paesaggio percettivamente instabile rispetto all’orizzonte dominante.
+
+La componente storico-culturale presenta una forte dispersione e numerosi outlier sia negativi sia positivi. Alcuni casi mostrano assenza quasi totale di strutture storiche percepibili, mentre altri concentrano borghi storici o nuclei culturali molto leggibili. Tuttavia tali episodi rimangono locali e non ridefiniscono la struttura generale del cluster.
+
+Anche la relazione con il vulcano contiene una tensione significativa. Pur essendo stabilmente periferico, il cluster presenta numerosi outlier verso valori più vicini al sistema vulcanico. Questo suggerisce episodi territoriali di transizione, nei quali il vulcano torna temporaneamente a esercitare una presenza più diretta.
+
+Infine, la componente agricola costituisce un’eccezione puntuale ma percettivamente leggibile. Gli outlier positivi mostrano episodi locali con coltivi visibili o matrici agricole organizzate. Tuttavia l’assenza di un IQR strutturato impedisce a questi elementi di definire l’identità complessiva del cluster.
+
+PARTE CENTRALE
+
+La scena deve essere costruita come un paesaggio collinare periferico, articolato da rilievi morbidi e da una forte alternanza ecologica. Il foreground può includere corsi d’acqua minori, vegetazione ripariale e superfici aperte discontinue. Il midground deve essere dominato da alternanze tra boschi, radure, versanti e mosaici territoriali differenziati. Nel background possono comparire quinte forestali continue e, in modo subordinato, la sagoma del vulcano.
+
+L’organizzazione spaziale deve privilegiare la lettura orizzontale del mosaico territoriale piuttosto che la presenza di un singolo oggetto dominante. La diversità delle coperture del suolo deve essere immediatamente leggibile attraverso variazioni di texture, continuità vegetale e articolazione morfologica.
+
+Le componenti antropiche devono rimanere secondarie: piccoli nuclei produttivi, infrastrutture sparse o elementi energetici possono comparire, ma senza occupare il centro percettivo della scena.
+
+La componente storico-culturale deve essere episodica: piccoli borghi o tessuti storici possono apparire localmente, soprattutto nel foreground o nel midground prossimo, ma senza trasformarsi in skyline urbani o sistemi monumentali dominanti.
+
+NOTE SULLE ECCEZIONI
+
+Le eccezioni devono essere rappresentate come episodi localizzati che interrompono temporaneamente la continuità ecologica del cluster.
+
+ECCEZIONE 1
+
+Gli outlier antropici possono manifestarsi attraverso concentrazioni di capannoni, impianti energetici o infrastrutture lineari più evidenti. Tuttavia tali episodi devono occupare porzioni limitate della scena.
+
+ECCEZIONE 2
+
+Le variazioni della visibilità vulcanica devono produrre differenze nello sfondo: in alcune immagini il vulcano può risultare assente o schermato da rilievi e quinte forestali; in altre emergere chiaramente come landmark distante.
+
+ECCEZIONE 3
+
+Le anomalie storico-culturali possono introdurre borghi storici più leggibili o nuclei monumentali locali, ma sempre come emergenze secondarie immerse nel sistema collinare ed ecologico.
+
+ECCEZIONE 4
+
+Gli episodi agricoli devono comparire come frammenti localizzati di coltivi o filari, senza trasformare il cluster in un paesaggio agricolo continuo.

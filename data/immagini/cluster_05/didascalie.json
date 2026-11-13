@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 5 – Paesaggio agricolo-storico periferico ad alta leggibilità: eccezioni e tensioni interne",
+  "eccezioni": [
+    {
+      "titolo": "Rilievi più articolati e morfologicamente incisivi",
+      "variabile": "morphology.relief_context – positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Aumento locale della copertura forestale",
+      "variabile": "ecology.forest_presence_500m – positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Totale schermatura del vulcano",
+      "variabile": "visibility.vis_landmark_share – negative, strength 2",
+      "testo": ""
+    },
+    {
+      "titolo": "Presenza episodica di infrastrutture produttive",
+      "variabile": "visibility.vis_anthropic_share – positive, strength 2",
+      "testo": ""
+    }
+  ]
+}

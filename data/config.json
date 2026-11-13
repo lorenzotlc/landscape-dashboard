@@ -1,0 +1,54 @@
+{
+  "titolo": "Visualizzatore ipotesi visuali del paesaggio",
+  "sottotitolo": "Mappa degli intorni percepiti · SuperSOM k=6 · area del Vulture",
+  "raster_cluster": "data/cluster.tif",
+  "confine": "data/area_studio.geojson",
+  "foto": "data/foto.geojson",
+  "cluster": "data/cluster.json",
+  "statistiche": "data/statistiche_cluster.json",
+  "grafo": "data/grafo_partecipativo.json",
+  "immagini": {
+    "cartella": "data/immagini",
+    "estensioni": [
+      "jpg",
+      "png",
+      "webp"
+    ],
+    "fotosferica": "fotosferica",
+    "eccezioni": [
+      "eccezione_1",
+      "eccezione_2",
+      "eccezione_3",
+      "eccezione_4"
+    ],
+    "eccezioni_composita": {
+      "file": "eccezioni",
+      "colonne": 2,
+      "righe": 2,
+      "spaziatura_px": 0,
+      "margine_px": 0,
+      "_nota": "Un'unica immagine con le 4 eccezioni in griglia (ordine: alto-sinistra=1, alto-destra=2, basso-sinistra=3, basso-destra=4). Se ci sono bordi bianchi tra i riquadri, indicarne lo spessore in pixel in spaziatura_px (tra riquadri) e margine_px (attorno). Se il file manca si cercano eccezione_1..4."
+    },
+    "panorama": {
+      "hfov_foto": 100,
+      "zoom_iniziale": 0.5,
+      "rotazione_automatica": 3,
+      "ripresa_rotazione_ms": 4000,
+      "soglia_sferica": null,
+      "_nota": "hfov_foto = angolo di campo orizzontale attribuito alla foto (gradi): più è grande, più forte l'effetto sferico. zoom_iniziale = frazione della larghezza della foto visibile all'avvio. rotazione_automatica = gradi/secondo verso destra, partendo dal bordo sinistro (0 = disattivata). soglia_sferica: null = mai 360°; impostare 1.9 solo se si usano vere foto sferiche 2:1."
+    }
+  },
+  "mappa": {
+    "centro": [
+      40.65,
+      15.84
+    ],
+    "zoom": 12,
+    "opacita_cluster": 0.65
+  },
+  "dati_dimostrativi": false,
+  "testi": {
+    "cartella": "data/testi",
+    "file": "cluster_{id}.txt"
+  }
+}
