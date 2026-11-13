@@ -1,54 +1,52 @@
 {
  "demo": true,
- "descrizione": "Grafo DIMOSTRATIVO: sostituire con i dati partecipativi reali (nodi = temi/concetti emersi, archi = co-occorrenze).",
+ "descrizione": "SEGNAPOSTO in attesa dei dati della survey: etichette, gruppi, pesi e legami sono provvisori (nodi = temi emersi, archi = co-occorrenze).",
  "nodi": [
   {
    "id": "silenzio",
-   "etichetta": "silenzio",
-   "gruppo": "percezione",
+   "etichetta": "label 1",
+   "gruppo": "gruppo 1",
    "peso": 9,
    "cluster": [
-    3,
-    8,
-    9
+    2,
+    3
    ]
   },
   {
    "id": "panorama",
-   "etichetta": "panorama",
-   "gruppo": "percezione",
+   "etichetta": "label 2",
+   "gruppo": "gruppo 1",
    "peso": 17,
    "cluster": [
     1,
-    2,
-    7
+    2
    ]
   },
   {
    "id": "apertura",
-   "etichetta": "apertura",
-   "gruppo": "percezione",
+   "etichetta": "label 3",
+   "gruppo": "gruppo 1",
    "peso": 17,
    "cluster": [
-    4,
-    9
+    3,
+    4
    ]
   },
   {
    "id": "quiete",
-   "etichetta": "quiete",
-   "gruppo": "percezione",
+   "etichetta": "label 4",
+   "gruppo": "gruppo 1",
    "peso": 8,
    "cluster": [
-    4,
-    8,
-    9
+    2,
+    3,
+    4
    ]
   },
   {
    "id": "rumore",
-   "etichetta": "rumore",
-   "gruppo": "percezione",
+   "etichetta": "label 5",
+   "gruppo": "gruppo 1",
    "peso": 6,
    "cluster": [
     3
@@ -56,8 +54,8 @@
   },
   {
    "id": "memoria",
-   "etichetta": "memoria",
-   "gruppo": "valori",
+   "etichetta": "label 6",
+   "gruppo": "gruppo 2",
    "peso": 18,
    "cluster": [
     1,
@@ -66,39 +64,38 @@
   },
   {
    "id": "identità",
-   "etichetta": "identità",
-   "gruppo": "valori",
+   "etichetta": "label 7",
+   "gruppo": "gruppo 2",
    "peso": 7,
    "cluster": [
     1,
-    5,
-    7
+    5
    ]
   },
   {
    "id": "bellezza",
-   "etichetta": "bellezza",
-   "gruppo": "valori",
+   "etichetta": "label 8",
+   "gruppo": "gruppo 2",
    "peso": 2,
    "cluster": [
-    7,
-    8
+    1,
+    2
    ]
   },
   {
    "id": "abbandono",
-   "etichetta": "abbandono",
-   "gruppo": "valori",
+   "etichetta": "label 9",
+   "gruppo": "gruppo 2",
    "peso": 15,
    "cluster": [
-    3,
-    8
+    2,
+    3
    ]
   },
   {
    "id": "naturalità",
-   "etichetta": "naturalità",
-   "gruppo": "valori",
+   "etichetta": "label 10",
+   "gruppo": "gruppo 2",
    "peso": 13,
    "cluster": [
     1
@@ -106,8 +103,8 @@
   },
   {
    "id": "passeggiata",
-   "etichetta": "passeggiata",
-   "gruppo": "usi",
+   "etichetta": "label 11",
+   "gruppo": "gruppo 3",
    "peso": 6,
    "cluster": [
     4,
@@ -116,30 +113,30 @@
   },
   {
    "id": "agricoltura",
-   "etichetta": "agricoltura",
-   "gruppo": "usi",
+   "etichetta": "label 12",
+   "gruppo": "gruppo 3",
    "peso": 15,
    "cluster": [
-    5,
-    7,
-    9
+    1,
+    3,
+    5
    ]
   },
   {
    "id": "pascolo",
-   "etichetta": "pascolo",
-   "gruppo": "usi",
+   "etichetta": "label 13",
+   "gruppo": "gruppo 3",
    "peso": 14,
    "cluster": [
+    1,
     5,
-    6,
-    7
+    6
    ]
   },
   {
    "id": "strada",
-   "etichetta": "strada",
-   "gruppo": "usi",
+   "etichetta": "label 14",
+   "gruppo": "gruppo 3",
    "peso": 9,
    "cluster": [
     1,
@@ -148,49 +145,48 @@
   },
   {
    "id": "quartiere",
-   "etichetta": "quartiere",
-   "gruppo": "usi",
+   "etichetta": "label 15",
+   "gruppo": "gruppo 3",
    "peso": 7,
    "cluster": [
     2,
-    6,
-    9
+    3,
+    6
    ]
   },
   {
    "id": "bosco",
-   "etichetta": "bosco",
-   "gruppo": "elementi",
+   "etichetta": "label 16",
+   "gruppo": "gruppo 4",
    "peso": 8,
    "cluster": [
     1,
-    5,
-    9
+    3,
+    5
    ]
   },
   {
    "id": "borgo",
-   "etichetta": "borgo",
-   "gruppo": "elementi",
+   "etichetta": "label 17",
+   "gruppo": "gruppo 4",
    "peso": 4,
    "cluster": [
-    2,
-    8
+    2
    ]
   },
   {
    "id": "pale eoliche",
-   "etichetta": "pale eoliche",
-   "gruppo": "elementi",
+   "etichetta": "label 18",
+   "gruppo": "gruppo 4",
    "peso": 13,
    "cluster": [
-    7
+    1
    ]
   },
   {
    "id": "torrente",
-   "etichetta": "torrente",
-   "gruppo": "elementi",
+   "etichetta": "label 19",
+   "gruppo": "gruppo 4",
    "peso": 6,
    "cluster": [
     5
@@ -198,8 +194,8 @@
   },
   {
    "id": "capannoni",
-   "etichetta": "capannoni",
-   "gruppo": "elementi",
+   "etichetta": "label 20",
+   "gruppo": "gruppo 4",
    "peso": 15,
    "cluster": [
     1,
@@ -208,8 +204,8 @@
   },
   {
    "id": "uliveto",
-   "etichetta": "uliveto",
-   "gruppo": "elementi",
+   "etichetta": "label 21",
+   "gruppo": "gruppo 4",
    "peso": 3,
    "cluster": [
     5,

@@ -10,7 +10,7 @@ VP.grafo = (() => {
     const root = document.getElementById("graph");
     const data = VP.stato.grafo;
     if (!data) { root.innerHTML = `<div class="empty">Dati partecipativi non ancora disponibili.<br>Aggiungi data/grafo_partecipativo.json</div>`; return; }
-    if (data.demo) document.getElementById("graph-note").textContent = "dati dimostrativi";
+    if (data.demo) document.getElementById("graph-note").textContent = "in implementazione";
     nodes = data.nodi.map(d => ({ ...d })); links = data.archi.map(d => ({ ...d }));
     const gruppi = [...new Set(nodes.map(d => d.gruppo))];
     const color = d3.scaleOrdinal(gruppi, ["#4E79A7", "#E15759", "#59A14F", "#B07AA1", "#F28E2B", "#76B7B2"]);

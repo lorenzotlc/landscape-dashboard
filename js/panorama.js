@@ -39,7 +39,7 @@ VP.panorama = (() => {
     });
     ctx.fillStyle = col.darker(1.6); ctx.fillRect(0, H * 0.72, W, H);
     ctx.textAlign = "center"; ctx.fillStyle = "rgba(255,255,255,.85)";
-    [0.2, 0.5, 0.8].forEach(f => {
+    if (!neutro) [0.2, 0.5, 0.8].forEach(f => {
       ctx.font = "600 34px system-ui, sans-serif";
       ctx.fillText(neutro ? "Seleziona un cluster sulla mappa" : `Segnaposto · cluster ${VP.pad2(id)}`, W * f, H * 0.82);
       ctx.font = "24px system-ui, sans-serif";
