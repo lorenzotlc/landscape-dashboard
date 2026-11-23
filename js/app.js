@@ -20,6 +20,7 @@
     VP.testi.init(); VP.boxplot.init(); VP.immagini.init(); VP.foto.init(); VP.survey.init();
     await VP.mappa.init();
     VP.progetto.init();
+    espansione();
   } catch (e) {
     console.error(e);
     document.querySelector(".grid").innerHTML = `<div class="panel" style="grid-column:1/-1;grid-row:1/-1;padding:24px">
@@ -62,5 +63,38 @@
     if (era) VP.bus.emit("blocco", false);
   });
   VP.bus.on("sblocca", () => { S.bloccato = false; aggiornaTestata(); VP.bus.emit("blocco", false); });
-  document.addEventListener("keydown", e => { if (e.key === "Escape" && S.bloccato) VP.bus.emit("sblocca"); });
+  // Esc: se c'è un pannello ingrandito (e nessuna finestra aperta sopra) torna ai 4 pannelli; altrimenti sblocca il cluster
+  document.addEventListener("keydown", e => {
+    if (e.key !== "Escape") return;
+    const sopra = document.querySelector(".modale:not([hidden]), #lightbox:not([hidden]), .confronto:not([hidden])");
+    if (!sopra && !document.body.classList.contains("vista-progetto") && document.querySelector(".grid[data-espanso]")) { VP.espandi(null); return; }
+    if (S.bloccato) VP.bus.emit("sblocca");
+  });
+
+  // Ingrandimento di un pannello di destra: occupa lo spazio dei 4 pannelli, affiancato alla mappa (solo desktop/tablet).
+  function espansione() {
+    const pannelli = [["p-street", "l'ipotesi visuale dominante"], ["p-exc", "eccezioni locali e foto reali"],
+                      ["p-box", "le variabili del cluster"], ["p-graph", "i dati della survey"]];
+    const grid = document.querySelector(".grid");
+    VP.espandi = classe => {
+      document.querySelectorAll(".grid > .panel").forEach(p => p.classList.toggle("espanso", !!classe && p.classList.contains(classe)));
+      if (classe) grid.dataset.espanso = classe; else delete grid.dataset.espanso;
+      document.querySelectorAll(".btn-espandi").forEach(b => {
+        const on = b.dataset.pannello === classe;
+        b.classList.toggle("on", on);
+        b.title = on ? "Torna alla vista con tutti i pannelli (Esc)" : `Ingrandisci ${b.dataset.nome}`;
+        b.setAttribute("aria-label", b.title); b.setAttribute("aria-pressed", String(on));
+      });
+      window.dispatchEvent(new Event("resize"));   // mappa e ipotesi visuale ricalcolano le dimensioni
+    };
+    pannelli.forEach(([classe, nome]) => {
+      const h = document.querySelector(`.${classe} .panel-h`); if (!h) return;
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "btn-espandi"; b.dataset.pannello = classe; b.dataset.nome = nome;
+      b.innerHTML = `<svg viewBox="0 0 16 16" aria-hidden="true"><path class="ap" d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/><path class="ch" d="M6 2v4H2M14 6h-4V2M10 14v-4h4M2 10h4v4"/></svg>`;
+      b.onclick = () => VP.espandi(grid.dataset.espanso === classe ? null : classe);
+      h.appendChild(b);
+    });
+    VP.espandi(null);
+  }
 })();

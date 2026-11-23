@@ -115,9 +115,14 @@ VP.survey = (() => {
     if (mostraParole && !termini.length) leg.querySelectorAll(".sv-simb")[1].insertAdjacentHTML("beforeend",
       `<span class="sv-nessuna">nessuna parola citata da almeno ${D.n_minimo} persone</span>`);
 
-    const W = el.clientWidth, H = el.clientHeight - leg.offsetHeight;
-    if (W < 60 || H < 100) return;
-    const svg = d3.select(el).append("svg").attr("width", W).attr("height", H);
+    // Il grafo è disegnato sempre nella stessa tela di riferimento (420×240 unità, circa le proporzioni del pannello normale) e scalato in blocco (viewBox):
+    // nel pannello ingrandito cerchi, linee, testi e parole crescono tutti dello stesso fattore, così la figura
+    // è identica, solo più grande; se il pannello ha proporzioni diverse, lo spazio in più resta come margine.
+    const Wpx = el.clientWidth, Hpx = el.clientHeight - leg.offsetHeight;
+    if (Wpx < 60 || Hpx < 100) return;
+    const W = 420, H = 240;
+    const svg = d3.select(el).append("svg").attr("width", Wpx).attr("height", Hpx)
+      .attr("viewBox", `0 0 ${W} ${H}`).attr("preserveAspectRatio", "xMidYMid meet");
     const R = Math.max(40, Math.min(W, H) * 0.42);
     const rr = d3.scaleLinear([1, 5], [5, Math.max(12, R * 0.24)]).clamp(true);
     const tot = s.risposte || s.n;
@@ -131,10 +136,11 @@ VP.survey = (() => {
     const raggio = d => Math.max(rr(d.w), rr(d.pr));
 
     // livelli: conflitti, legami delle parole, valori, parole
+    let kZoom = 1;
     const zg = svg.append("g"), lg = zg.append("g"), tlg = zg.append("g");
     const link = lg.selectAll("line").data(links.filter(d => d.q > 0)).join("line")
       .attr("stroke", "#b5414b").attr("stroke-linecap", "round")
-      .attr("stroke-width", d => 0.8 + 9 * d.q / qmax).attr("stroke-opacity", d => 0.1 + 0.55 * d.q / qmax)
+      .attr("stroke-width", d => 0.6 + 5 * d.q / qmax).attr("stroke-opacity", d => 0.12 + 0.55 * d.q / qmax)
       .on("mousemove", (ev, d) => tip(ev, `<b>Conflitto: ${D.valori[d.source.i ?? d.source]} – ${D.valori[d.target.i ?? d.target]}</b><br>coppia indicata nel ${Math.round(d.q * 100)}% delle risposte<br><span style="opacity:.7">più alta la quota, più i due valori sono lontani</span>`))
       .on("mouseleave", notip);
     const node = zg.append("g").selectAll("g").data(nodes).join("g")
@@ -145,10 +151,11 @@ VP.survey = (() => {
       .on("mouseleave", () => { notip(); evidenziaValore(null); });
     node.append("circle").attr("r", d => rr(d.w)).attr("fill", d => COL[d.i]).attr("fill-opacity", .9);
     node.append("circle").attr("r", d => rr(d.pr)).attr("fill", "none").attr("stroke", d => d3.color(COL[d.i]).darker(0.9)).attr("stroke-width", 2.2);
-    node.append("text").attr("text-anchor", "middle").attr("dy", "0.35em").attr("fill", "#fff").attr("pointer-events", "none")
-      .style("font-size", "11px").style("font-weight", 700).text(d => fmt(d.w));
-    node.append("text").attr("pointer-events", "none").attr("text-anchor", "middle").style("font-size", "12px")
-      .attr("fill", "#1f2328").attr("y", d => raggio(d) + 12).text(d => d.nome)
+    node.append("text").attr("class", "sv-num").attr("text-anchor", "middle").attr("dy", "0.35em").attr("fill", "#fff").attr("pointer-events", "none")
+      .style("font-size", "10.5px").style("font-weight", 700).text(d => fmt(d.w));
+    node.append("text").attr("class", "sv-nome").attr("pointer-events", "none").attr("text-anchor", "middle").style("font-size", "9.6px")
+      .style("font-weight", 600).style("letter-spacing", "0.05em")
+      .attr("fill", "#1f2328").attr("y", d => raggio(d) + 11).text(d => d.nome.toUpperCase())
       .each(function (d) { const b = this.getBBox(); d.et = { x0: b.x - 2, y0: b.y - 1, x1: b.x + b.width + 2, y1: b.y + b.height + 1 }; });
 
     // 1) forma di equilibrio dei valori (deterministica, allineata), adattata allo spazio del pannello;
@@ -194,11 +201,11 @@ VP.survey = (() => {
     let tnode = null, tlink = null;
     if (conP) {
       const amax = d3.max(termini, d => d3.max(d.legami, l => l.a)) || 1;
-      const fs = d3.scaleSqrt(d3.extent(termini, d => d.n), [10.5, 13.5]);
+      const fs = d3.scaleSqrt(d3.extent(termini, d => d.n), [9.8, 12.6]);
       const tl = termini.flatMap(d => d.legami.map(l => ({ term: d, val: nodes[l.v], a: l.a })));
       tlink = tlg.selectAll("line").data(tl).join("line")
         .attr("stroke", d => COL[d.val.i]).attr("stroke-linecap", "round")
-        .attr("stroke-width", d => 0.8 + 3.4 * d.a / amax).attr("stroke-opacity", 0.5);
+        .attr("stroke-width", d => 0.6 + 2.2 * d.a / amax).attr("stroke-opacity", 0.5);
       tnode = zg.append("g").selectAll("g").data(termini, d => d.key).join("g").attr("class", d => `sv-term ${d.tipo}`)
         .style("cursor", "grab")
         .on("mousemove", (ev, d) => tip(ev, `<b>${d.t}</b> · ${d.tipo === "omissione" ? "omissione (importante ma non rappresentato)" : "parola chiave"}` +
@@ -308,7 +315,7 @@ VP.survey = (() => {
         .velocityDecay(0.4).alphaMin(0.002).alphaDecay(0.012)
         .on("tick", () => {
           tlink.attr("x1", d => d.term.x).attr("y1", d => d.term.y).attr("x2", d => d.val.x).attr("y2", d => d.val.y);
-          tnode.attr("transform", d => `translate(${d.x},${d.y})`);
+          tnode.attr("transform", d => `translate(${d.x},${d.y}) scale(${1 / kZoom})`);
           termini.forEach(d => posPrecT[d.key] = { x: d.x, y: d.y });
         });
       tnode.call(d3.drag()
@@ -334,7 +341,15 @@ VP.survey = (() => {
     // su touch lo zoom risponde solo a due dita, così con un dito si continua a scorrere la pagina
     const zoom = d3.zoom().scaleExtent([0.5, 4])
       .filter(e => (e.type === "wheel" || !e.button) && (!e.touches || e.touches.length > 1))
-      .on("zoom", e => zg.attr("transform", e.transform));
+      .on("zoom", e => { zg.attr("transform", e.transform); testiFissi(e.transform.k); });
+    // con lo zoom la geometria si ingrandisce, i testi no: le dimensioni dei caratteri (e delle etichette
+    // delle parole) vengono divise per il fattore di zoom, così restano costanti sullo schermo
+    function testiFissi(kz) {
+      kZoom = kz;
+      node.select(".sv-num").style("font-size", `${10.5 / kz}px`);
+      node.select(".sv-nome").style("font-size", `${9.6 / kz}px`).attr("y", d => raggio(d) + 11 / kz);
+      if (tnode) tnode.attr("transform", d => `translate(${d.x},${d.y}) scale(${1 / kz})`);
+    }
     svg.call(zoom).on("dblclick.zoom", null).on("dblclick", () => svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity));
   }
 

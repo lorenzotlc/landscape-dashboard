@@ -500,3 +500,26 @@ button.sv-demo:hover{background:#704900}
 .p-street .panel-h .btn-leggi,.p-exc .panel-h .btn-leggi{margin-left:auto}
 .p-street .panel-h .hint,.p-exc .panel-h .hint{order:9;flex:1 0 100%;display:block;margin:0;font-size:12px;line-height:1.35;
   white-space:normal;overflow:visible;text-overflow:clip;color:var(--muted)}
+/* ---- Ingrandimento di un pannello di destra (desktop e tablet; non su smartphone) ---- */
+.btn-espandi{order:5;flex:none;margin-left:8px;width:28px;height:28px;padding:0;border:0;border-radius:6px;background:var(--btn-bg);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--ombra-1);transition:background-color .15s,transform .08s}
+.btn-espandi:hover{background:var(--btn-bg-h)}
+.btn-espandi:active{transform:scale(.94)}
+.btn-espandi:focus-visible{outline:2px solid #2f2226;outline-offset:2px}
+.btn-espandi svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn-espandi .ch,.btn-espandi.on .ap{display:none}
+.btn-espandi.on .ch{display:inline}
+.p-graph .panel-h .btn-espandi{margin-left:6px}
+.grid[data-espanso] > .panel:not(.p-map):not(.espanso){display:none}
+.grid[data-espanso] > .panel.espanso{grid-column:2/4;grid-row:1/3}
+.grid[data-espanso] .foto-gal{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1100px){
+  .grid[data-espanso]{grid-template-rows:60vh 80vh}
+  .grid[data-espanso] > .panel.espanso{grid-column:1/3;grid-row:2/3}
+}
+@media (max-width:700px){
+  .btn-espandi{display:none}
+  .grid[data-espanso] > .panel{display:flex!important}
+}
+.p-graph .sv-sel{max-width:132px}
+@media (max-width:700px){.p-graph .sv-sel{max-width:200px}}
