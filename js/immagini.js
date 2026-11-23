@@ -1,6 +1,7 @@
 // Pannelli immagini: vista sferica (immagine centrale del cluster, fotosferica.jpg) e matrice 2x2 delle eccezioni.
 // Cerca i file secondo la convenzione in data/immagini/LEGGIMI.txt; se mancano mostra un segnaposto.
 VP.immagini = (() => {
+  const SOTTOTITOLO = "scenario statisticamente più plausibile, generato con IA a partire dai dati";
   const cache = new Map();       // "id/nome" -> url risolto o null
   const didascalie = new Map();  // id -> oggetto didascalie
   let token = 0;
@@ -122,7 +123,7 @@ VP.immagini = (() => {
     VP.panorama.mostra(null, null, "");
     didCorr = null; pulsanti(null);
     document.getElementById("synth").hidden = true;
-    document.getElementById("street-caption").textContent = "seleziona un cluster sulla mappa";
+    document.getElementById("street-caption").textContent = SOTTOTITOLO;
     document.querySelectorAll("#exc figure").forEach((f, i) => {
       imposta(f.querySelector("img"), segnaposto(null, cfg.eccezioni[i], `Eccezione ${i + 1}`));
       f.querySelector("figcaption").textContent = `Eccezione ${i + 1}`;
@@ -144,7 +145,7 @@ VP.immagini = (() => {
     const t = VP.testi.get(id);
     VP.panorama.mostra(sv, id, nome);
     didCorr = did; pulsanti(id);
-    document.getElementById("street-caption").textContent = sv ? "trascina per guardarti intorno" : "segnaposto · trascina per guardarti intorno";
+    document.getElementById("street-caption").textContent = sv ? SOTTOTITOLO : `segnaposto · ${SOTTOTITOLO}`;
     const synth = document.getElementById("synth");
     synth.hidden = !sy;
     if (sy) { imposta(document.getElementById("synth-img"), sy); document.getElementById("synth-img").dataset.caption = `Immagine sintetica centrale · ${nome}`; }

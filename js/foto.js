@@ -141,8 +141,11 @@ VP.foto = (() => {
   function init() {
     const n = feats.length;
     const h = document.querySelector(".p-exc .panel-h");
-    h.innerHTML = `<div class="tabs"><button data-tab="ia" class="on">Eccezioni di paesaggio</button>` +
+    const SOTTO = { ia: "variazioni meno frequenti nel cluster, generate con IA",
+                    foto: "fotografie scattate nel cluster, da confrontare con l'ipotesi dominante" };
+    h.innerHTML = `<div class="tabs"><button data-tab="ia" class="on">Eccezioni locali</button>` +
       (n ? `<button data-tab="foto">Foto reali <span id="foto-n"></span></button>` : "") + `</div>` +
+      `<span class="hint" id="exc-sub" title="${SOTTO.ia}">${SOTTO.ia}</span>` +
       `<button class="btn-leggi" id="btn-eccezioni" hidden title="Leggi i testi delle eccezioni">Leggi</button>`;
     document.getElementById("exc").insertAdjacentHTML("afterend", `<div class="foto-gal" id="foto-gal" hidden></div>`);
     h.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
@@ -150,6 +153,7 @@ VP.foto = (() => {
       h.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b));
       document.getElementById("exc").hidden = tab !== "ia";
       document.getElementById("foto-gal").hidden = tab !== "foto";
+      const sub = document.getElementById("exc-sub"); sub.textContent = sub.title = SOTTO[tab];
     });
   }
 

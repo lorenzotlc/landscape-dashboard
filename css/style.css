@@ -116,7 +116,7 @@ body{display:flex;flex-direction:column;overflow:hidden}
 .btn-leggi[hidden]{display:none}
 .panel-h .hint{margin-left:auto}
 .panel-h .hint + .btn-leggi{margin-left:8px}
-.p-exc .panel-h .tabs{margin-right:auto}
+.p-exc .panel-h .tabs{flex:none}
 
 /* Finestra popup dei testi */
 .modale{position:fixed;inset:0;z-index:4000;background:rgba(25,22,24,.55);display:flex;align-items:center;justify-content:center;padding:24px}
@@ -489,3 +489,14 @@ button.sv-demo:hover{background:#704900}
 .legend .lg-info-tit{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:#8a5a00}
 .legend .lg-info-chiudi{font:inherit;font-size:11px;font-weight:600;height:22px;padding:0 10px;border:0;border-radius:5px;background:var(--btn-bg);color:#fff;cursor:pointer}
 .legend .lg-info-chiudi:hover{background:var(--btn-bg-h)}
+/* intestazioni con sottotitolo e linguette colorate (attiva = piena, inattiva = tenue) */
+.p-exc .panel-h .hint,.p-street .panel-h .hint{flex:1 1 auto;min-width:0;margin-left:2px;text-align:left}
+.tabs button{background:var(--acc-ton);color:#5e434b;transition:background-color .15s,color .15s}
+.tabs button:hover{background:var(--acc-ton-h)}
+.tabs button.on,.tabs button.on:hover{background:var(--btn-bg);color:#fff}
+.tabs button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* sottotitolo su una seconda riga dell'intestazione (pannelli ipotesi dominante ed eccezioni/foto) */
+.p-street .panel-h,.p-exc .panel-h{flex-wrap:wrap;row-gap:2px}
+.p-street .panel-h .btn-leggi,.p-exc .panel-h .btn-leggi{margin-left:auto}
+.p-street .panel-h .hint,.p-exc .panel-h .hint{order:9;flex:1 0 100%;display:block;margin:0;font-size:12px;line-height:1.35;
+  white-space:normal;overflow:visible;text-overflow:clip;color:var(--muted)}
