@@ -80,6 +80,8 @@ VP.survey = (() => {
   // Parole (facoltative): termini ricorrenti delle risposte libere, legati ai valori a cui sono più associati
   // (chi cita il termine dà a quel valore un peso superiore alla media). Le parole non deformano la forma dei valori.
   const SOGLIA_ASSOC = 0.1, MAX_LEGAMI = 2;
+  // dimensioni dei testi del grafo (unità della tela di riferimento): piccole per non coprire nodi e archi
+  const FS_NUM = 9.2, FS_NOME = 8.4, FS_PAROLA = [8.4, 10.6];
   let sim, simT, posPrec = {}, posPrecT = {}, mostraParole = true, nParole = 6;
   const segno = v => (v > 0 ? "+" : "") + fmt(v);
   function fermaSim() { if (sim) sim.stop(); if (simT) simT.stop(); }
@@ -152,10 +154,10 @@ VP.survey = (() => {
     node.append("circle").attr("r", d => rr(d.w)).attr("fill", d => COL[d.i]).attr("fill-opacity", .9);
     node.append("circle").attr("r", d => rr(d.pr)).attr("fill", "none").attr("stroke", d => d3.color(COL[d.i]).darker(0.9)).attr("stroke-width", 2.2);
     node.append("text").attr("class", "sv-num").attr("text-anchor", "middle").attr("dy", "0.35em").attr("fill", "#fff").attr("pointer-events", "none")
-      .style("font-size", "10.5px").style("font-weight", 700).text(d => fmt(d.w));
-    node.append("text").attr("class", "sv-nome").attr("pointer-events", "none").attr("text-anchor", "middle").style("font-size", "9.6px")
+      .style("font-size", `${FS_NUM}px`).style("font-weight", 700).text(d => fmt(d.w));
+    node.append("text").attr("class", "sv-nome").attr("pointer-events", "none").attr("text-anchor", "middle").style("font-size", `${FS_NOME}px`)
       .style("font-weight", 600).style("letter-spacing", "0.05em")
-      .attr("fill", "#1f2328").attr("y", d => raggio(d) + 11).text(d => d.nome.toUpperCase())
+      .attr("fill", "#1f2328").attr("y", d => raggio(d) + 10).text(d => d.nome.toUpperCase())
       .each(function (d) { const b = this.getBBox(); d.et = { x0: b.x - 2, y0: b.y - 1, x1: b.x + b.width + 2, y1: b.y + b.height + 1 }; });
 
     // 1) forma di equilibrio dei valori (deterministica, allineata), adattata allo spazio del pannello;
@@ -201,7 +203,7 @@ VP.survey = (() => {
     let tnode = null, tlink = null;
     if (conP) {
       const amax = d3.max(termini, d => d3.max(d.legami, l => l.a)) || 1;
-      const fs = d3.scaleSqrt(d3.extent(termini, d => d.n), [9.8, 12.6]);
+      const fs = d3.scaleSqrt(d3.extent(termini, d => d.n), [FS_PAROLA[0], FS_PAROLA[1]]);
       const tl = termini.flatMap(d => d.legami.map(l => ({ term: d, val: nodes[l.v], a: l.a })));
       tlink = tlg.selectAll("line").data(tl).join("line")
         .attr("stroke", d => COL[d.val.i]).attr("stroke-linecap", "round")
@@ -218,7 +220,7 @@ VP.survey = (() => {
       tnode.append("text").attr("text-anchor", "middle").attr("dy", "0.35em").style("font-size", d => `${fs(d.n)}px`).text(d => d.t);
       tnode.each(function (d) {
         const b = this.querySelector("text").getBBox();
-        d.w = b.width + 10; d.h = b.height + 3;
+        d.w = b.width + 8; d.h = b.height + 2;
         d3.select(this).select("rect").attr("x", -d.w / 2).attr("y", -d.h / 2).attr("width", d.w).attr("height", d.h).attr("rx", d.h / 2);
       });
       // Forze delle parole: attrazione verso i valori legati (molla più corta = legame più forte), nessuna
@@ -346,8 +348,8 @@ VP.survey = (() => {
     // delle parole) vengono divise per il fattore di zoom, così restano costanti sullo schermo
     function testiFissi(kz) {
       kZoom = kz;
-      node.select(".sv-num").style("font-size", `${10.5 / kz}px`);
-      node.select(".sv-nome").style("font-size", `${9.6 / kz}px`).attr("y", d => raggio(d) + 11 / kz);
+      node.select(".sv-num").style("font-size", `${FS_NUM / kz}px`);
+      node.select(".sv-nome").style("font-size", `${FS_NOME / kz}px`).attr("y", d => raggio(d) + 10 / kz);
       if (tnode) tnode.attr("transform", d => `translate(${d.x},${d.y}) scale(${1 / kz})`);
     }
     svg.call(zoom).on("dblclick.zoom", null).on("dblclick", () => svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity));
