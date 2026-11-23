@@ -9,10 +9,59 @@ VP.mappa = (() => {
   function coloreCluster(v) {
     const c = VP.stato.clusters.get(v);
     if (!c) return null;
+    const base = coloreModo(v);
     const cur = VP.stato.clusterCorrente, attenua = cur != null && cur !== v;
-    const k = c.colore + attenua;
-    if (!cacheColori.has(k)) cacheColori.set(k, attenua ? d3.interpolateRgb(c.colore, "#ffffff")(0.68) : c.colore);
+    const k = base + attenua;
+    if (!cacheColori.has(k)) cacheColori.set(k, attenua ? d3.interpolateRgb(base, "#ffffff")(0.68) : base);
     return cacheColori.get(k);
+  }
+
+  // ---- Colorazione per dati della survey ------------------------------------------------------
+  // "cluster" = colori dei cluster; le altre modalità colorano ogni cluster con un dato aggregato della survey
+  // per la classe di portatori di interesse scelta nel pannello della survey.
+  const MODI = [["cluster", "Cluster"], ["dominante", "Valore dominante"], ["intensita", "Intensità di un valore"],
+                ["conflitto", "Conflitto principale"], ["scarto", "Scarto priorità – percezione"]];
+  const INSUFF = "#d9d5d0", SCARTO_MAX = 2;
+  let modo = "cluster", valSel = 0;
+  const fmt1 = v => v.toLocaleString("it-IT", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const colVal = () => VP.survey?.COLORI || [];
+  function datoSurvey(v) {
+    const D = VP.stato.survey; if (!D || !VP.survey) return null;
+    const b = D.dati[String(v)]?.[VP.survey.classe()];
+    return b && b.n >= D.n_minimo ? b : null;
+  }
+  function conflittoPrincipale(b) {
+    let best = null;
+    for (const [k, c] of Object.entries(b.conflitti)) if (!best || c > best.c) best = { k, c };
+    return best ? { coppia: best.k.replace("|", " – "), q: best.c / (b.risposte || b.n) } : null;
+  }
+  const scalaIntensita = i => d3.interpolateRgb("#f3efe8", d3.color(colVal()[i]).darker(0.7));
+  const scalaConflitto = d3.interpolateRgb("#f6e3e3", "#8f1f2a");
+  // il conflitto è colorato in modo relativo: dal valore più basso al più alto tra i cluster (per la classe scelta),
+  // altrimenti quote simili (es. 30–40%) darebbero colori indistinguibili; gli estremi reali sono scritti in legenda
+  function estremiConflitto() {
+    const q = [...VP.stato.clusters.keys()].map(v => { const b = datoSurvey(v); return b ? conflittoPrincipale(b)?.q : null; }).filter(x => x != null);
+    return q.length ? d3.extent(q) : [0, 1];
+  }
+  const scalaScarto = t => d3.interpolatePRGn(0.5 + Math.max(-1, Math.min(1, t / SCARTO_MAX)) / 2);
+  function coloreModo(v) {
+    if (modo === "cluster") return VP.stato.clusters.get(v).colore;
+    const b = datoSurvey(v); if (!b) return INSUFF;
+    if (modo === "dominante") return colVal()[d3.maxIndex(b.valori)];
+    if (modo === "intensita") return scalaIntensita(valSel)((b.valori[valSel] - 1) / 4);
+    if (modo === "conflitto") { const [a, z] = estremiConflitto(), q = conflittoPrincipale(b)?.q || 0; return scalaConflitto(z > a ? 0.15 + 0.85 * (q - a) / (z - a) : 0.6); }
+    if (modo === "scarto") return scalaScarto(b.direzioni[valSel] - b.valori[valSel]);
+    return INSUFF;
+  }
+  function annotazione(v) {
+    const c = VP.stato.clusters.get(v);
+    if (modo === "cluster") return c.titolo || c.nome;
+    const b = datoSurvey(v); if (!b) return "dati insufficienti";
+    const D = VP.stato.survey;
+    if (modo === "dominante") { const i = d3.maxIndex(b.valori); return `${D.valori[i]} · ${fmt1(b.valori[i])}`; }
+    if (modo === "intensita") return `${D.valori[valSel]} · ${fmt1(b.valori[valSel])}`;
+    if (modo === "conflitto") { const k = conflittoPrincipale(b); return k ? `${k.coppia} · ${Math.round(k.q * 100)}%` : "–"; }
+    if (modo === "scarto") { const d = b.direzioni[valSel] - b.valori[valSel]; return `${d > 0 ? "+" : ""}${fmt1(d)} (priorità ${fmt1(b.direzioni[valSel])}, percezione ${fmt1(b.valori[valSel])})`; }
   }
 
   // ---- Sistemi di riferimento -------------------------------------------------------------
@@ -70,17 +119,77 @@ VP.mappa = (() => {
     ctl.onAdd = () => {
       legendEl = L.DomUtil.create("div", "legend");
       L.DomEvent.disableClickPropagation(legendEl);
-      for (const c of VP.stato.clusters.values()) {
-        const d = L.DomUtil.create("div", "", legendEl);
-        d.dataset.id = c.id;
-        d.innerHTML = `<i style="background:${c.colore}"></i><span>${VP.pad2(c.id)} · ${c.titolo || c.nome}</span>`;
-        d.title = `${VP.pad2(c.id)} · ${c.titolo || c.nome}`;
-        d.onmouseenter = () => { if (!VP.stato.bloccato) VP.bus.emit("seleziona", c.id); };
-        d.onclick = () => VP.bus.emit("blocca", c.id);
+      L.DomEvent.disableScrollPropagation(legendEl);
+      const D = VP.stato.survey;
+      if (D) {
+        const ctrl = L.DomUtil.create("div", "lg-ctrl", legendEl);
+        ctrl.innerHTML = `<button class="lg-min" type="button" title="Riduci / espandi la legenda" aria-label="Riduci la legenda">–</button>` +
+          `<label>Colora per <select id="map-modo">${MODI.map(([k, n]) => `<option value="${k}">${n}</option>`).join("")}</select></label>` +
+          `<select id="map-valore" hidden>${D.valori.map((v, i) => `<option value="${i}">${v}</option>`).join("")}</select>`;
+        ctrl.querySelector("#map-modo").onchange = e => { modo = e.target.value; ridisegna(); };
+        ctrl.querySelector("#map-valore").onchange = e => { valSel = +e.target.value; ridisegna(); };
+        const min = ctrl.querySelector(".lg-min");
+        min.onclick = () => { const c = legendEl.classList.toggle("ridotta"); min.textContent = c ? "+" : "–"; min.setAttribute("aria-label", c ? "Espandi la legenda" : "Riduci la legenda"); };
+        // finché i dati della survey sono dimostrativi: pulsante info con la spiegazione
+        if (D.demo) {
+          const bi = L.DomUtil.create("button", "lg-info", ctrl);
+          bi.type = "button"; bi.textContent = "i"; bi.title = "Informazioni sui dati della survey";
+          bi.setAttribute("aria-label", "Informazioni sui dati della survey"); bi.setAttribute("aria-expanded", "false");
+          const pan = L.DomUtil.create("div", "lg-info-pan", legendEl);
+          pan.hidden = true; pan.setAttribute("role", "note");
+          pan.innerHTML = `<p class="lg-info-tit">Dati dimostrativi</p>
+            <p>Le colorazioni legate alla survey (<i>Valore dominante</i>, <i>Intensità di un valore</i>, <i>Conflitto principale</i>, <i>Scarto priorità – percezione</i>) sono esempi costruiti su <b>dati fittizi</b>.</p>
+            <p>Servono a dare un'idea del tipo di risultati attesi dalla survey, ancora in corso, e non rappresentano risultati della ricerca. La colorazione <i>Cluster</i> mostra invece i risultati dell'analisi territoriale.</p>
+            <button type="button" class="lg-info-chiudi">Chiudi</button>`;
+          ctrl.after(pan);
+          const apri = v => { pan.hidden = !v; bi.setAttribute("aria-expanded", String(v)); bi.classList.toggle("on", v); };
+          bi.onclick = () => apri(pan.hidden);
+          pan.querySelector(".lg-info-chiudi").onclick = () => apri(false);
+        }
       }
+      L.DomUtil.create("div", "lg-righe", legendEl);
+      L.DomUtil.create("div", "lg-key", legendEl);
+      aggiornaLegenda();
       return legendEl;
     };
     ctl.addTo(map);
+  }
+  function aggiornaLegenda() {
+    if (!legendEl) return;
+    const D = VP.stato.survey, sv = modo !== "cluster";
+    const selV = legendEl.querySelector("#map-valore");
+    if (selV) selV.hidden = !(modo === "intensita" || modo === "scarto");
+    const righe = legendEl.querySelector(".lg-righe");
+    righe.innerHTML = "";
+    for (const c of VP.stato.clusters.values()) {
+      const d = L.DomUtil.create("div", "lg-row", righe);
+      d.dataset.id = c.id;
+      const testo = `${VP.pad2(c.id)} · ${annotazione(c.id)}`;
+      d.innerHTML = `<i style="background:${coloreModo(c.id)}"></i><span>${testo}</span>`;
+      d.title = sv ? `${VP.pad2(c.id)} · ${c.titolo || c.nome}\n${annotazione(c.id)}` : testo;
+      d.classList.toggle("on", c.id === VP.stato.clusterCorrente);
+      d.onmouseenter = () => { if (!VP.stato.bloccato) VP.bus.emit("seleziona", c.id); };
+      d.onclick = () => VP.bus.emit("blocca", c.id);
+    }
+    const key = legendEl.querySelector(".lg-key");
+    if (!sv) { key.innerHTML = ""; key.hidden = true; return; }
+    key.hidden = false;
+    const grad = (fn, a, b) => `<div class="lg-grad" style="background:linear-gradient(90deg,${d3.range(0, 1.01, 0.1).map(fn).join(",")})"></div>` +
+      `<div class="lg-ext"><span>${a}</span><span>${b}</span></div>`;
+    let h = "";
+    if (modo === "dominante") h = `<div class="lg-chips">${D.valori.map((v, i) => `<span><i style="background:${colVal()[i]}"></i>${v}</span>`).join("")}</div>`;
+    if (modo === "intensita") h = grad(scalaIntensita(valSel), "1 debole", "5 forte");
+    if (modo === "conflitto") { const [a, z] = estremiConflitto();
+      h = grad(t => scalaConflitto(0.15 + 0.85 * t), `${Math.round(a * 100)}%`, `${Math.round(z * 100)}% indica la coppia principale`); }
+    if (modo === "scarto") h = grad(t => scalaScarto((t - 0.5) * 2 * SCARTO_MAX), `priorità < percezione`, `priorità > percezione`);
+    const cl = VP.survey?.classe() || "tutti";
+    const nomeCl = cl === "tutti" ? "tutti i portatori di interesse" : (D.classi.find(c => c.id === cl)?.nome || cl);
+    h += `<div class="lg-nota">${nomeCl}${D.demo ? " · <b>dati fittizi</b>" : ""}<br><i class="lg-insuff"></i>dati insufficienti (meno di ${D.n_minimo} rispondenti)</div>`;
+    key.innerHTML = h;
+  }
+  function ridisegna() {
+    aggiornaLegenda();
+    if (layer) layer.updateColors(vals => coloreCluster(vals[0]));
   }
 
   // Confine dell'area di studio (GeoJSON in WGS84 / EPSG:4326, come richiesto dallo standard GeoJSON)
@@ -88,7 +197,7 @@ VP.mappa = (() => {
     const url = VP.stato.config.confine;
     if (!url) return null;
     let gj;
-    try { const r = await fetch(url); if (!r.ok) throw new Error(r.status); gj = await r.json(); }
+    try { const r = await fetch(url, { cache: "no-cache" }); if (!r.ok) throw new Error(r.status); gj = await r.json(); }
     catch (e) { console.warn("Confine dell'area di studio non trovato:", url); return null; }
     const crs = gj.crs?.properties?.name || "";
     if (crs && !/4326|CRS84/i.test(crs))
@@ -123,7 +232,7 @@ VP.mappa = (() => {
     };
     base["OSM chiaro"].addTo(map);
 
-    const buf = await fetch(VP.stato.config.raster_cluster).then(r => {
+    const buf = await fetch(VP.stato.config.raster_cluster, { cache: "no-cache" }).then(r => {
       if (!r.ok) throw new Error("Raster dei cluster non trovato: " + VP.stato.config.raster_cluster); return r.arrayBuffer();
     });
     georaster = await parseGeoraster(buf);
@@ -173,11 +282,13 @@ VP.mappa = (() => {
   // Ridisegna i colori (evidenziazione) quando cambia il cluster
   let pending = null;
   VP.bus.on("cluster", id => {
-    if (legendEl) legendEl.querySelectorAll("div").forEach(d => d.classList.toggle("on", +d.dataset.id === id));
+    if (legendEl) legendEl.querySelectorAll(".lg-row").forEach(d => d.classList.toggle("on", +d.dataset.id === id));
     if (!layer) return;
     clearTimeout(pending);
     pending = setTimeout(() => layer.updateColors(vals => coloreCluster(vals[0])), 40);
   });
+
+  VP.bus.on("classe", () => { if (modo !== "cluster") ridisegna(); else aggiornaLegenda(); });
 
   return { init, areaCella, valoreA };
 })();

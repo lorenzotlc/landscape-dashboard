@@ -111,7 +111,7 @@ VP.foto = (() => {
   async function carica() {
     const url = VP.stato.config.foto;
     if (!url) return;
-    try { const r = await fetch(url); if (r.ok) feats = (await r.json()).features || []; } catch (e) {}
+    try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) feats = (await r.json()).features || []; } catch (e) {}
   }
 
   // chiamata da mappa.js: restituisce il layer da aggiungere alla mappa (o null)

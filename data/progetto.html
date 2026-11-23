@@ -12,7 +12,7 @@
   <p class="pg-occhiello">Progetto di dottorato · <a href="https://phd-landscape.unibg.it/" target="_blank" rel="noopener">Landscape Studies for Global and Local Challenges</a> · Università degli Studi di Bergamo</p>
   <h1>Paesaggio tra misura e percezione</h1>
   <p class="pg-sottotitolo">Mediazioni esperte, algoritmiche e situate nella produzione della conoscenza paesaggistica</p>
-  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-13">13 novembre 2026</time></p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-23">23 novembre 2026</time></p>
   <p class="pg-lead">Il paesaggio è al tempo stesso realtà materiale e oggetto di conoscenza: ciò che ne sappiamo passa attraverso <strong>forme di rappresentazione</strong> (carte, piani, indicatori, immagini) che selezionano, ordinano e rendono visibili alcuni aspetti a scapito di altri.</p>
   <p>La ricerca pone al centro proprio questi <strong>modi attraverso cui il paesaggio si rende conoscibile</strong>. Su un piano rappresentativo-metodologico, ne indaga presupposti e limiti e sperimenta nuove forme di rappresentazione che mettono in relazione dati, cartografie e immagini generate con l'intelligenza artificiale. Su un piano teorico-epistemologico, legge la produzione della conoscenza paesaggistica come una catena di <strong>mediazioni</strong>, esperte, algoritmiche e situate, in cui si distribuisce l'autorità di rappresentare il territorio.</p>
   <p>Due nozioni orientano l'analisi: la <strong>transcalarità</strong> (Turco, 2010), per osservare che cosa cambia nel passaggio tra scale e punti di vista, e la <strong>transmedialità</strong> (Turco, 2025), per seguire il paesaggio mentre attraversa dati, carte, classificazioni, immagini e interpretazioni. </p><p>L'area del Vulture, in Basilicata, è il laboratorio della sperimentazione; questa dashboard ne rende consultabili gli esiti.</p>
@@ -73,16 +73,74 @@
     <li><b>Vista sferica.</b> L'immagine della struttura dominante, navigabile trascinando con il mouse o con il dito. Il pulsante «Leggi» ne apre la descrizione.</li>
     <li><b>Eccezioni di paesaggio.</b> Le quattro immagini delle eccezioni locali, con le relative didascalie. Nella linguetta «Foto reali» si trovano le fotografie scattate nel cluster: cliccandone una si apre il confronto affiancato con l'immagine generata.</li>
     <li><b>Variabili del cluster.</b> I boxplot dei dodici indicatori, sulla stessa scala; le tacche grigie indicano le mediane degli altri cluster.</li>
-    <li><b>Grafo dei dati partecipativi.</b> I temi emersi dalla survey e le loro relazioni (attualmente dimostrativo).</li>
+    <li><b>Dati della survey.</b> Il pannello in basso a destra ha due schede: «Valori e conflitti», un grafo dei cinque valori del paesaggio (vedi <a href="#grafo">come leggerlo</a>), e «Confronto», che mette a confronto riconoscibilità, valori e priorità di sviluppo tra le classi di portatori di interesse. Il menu in alto nel pannello sceglie la classe. I dati attualmente visibili sono fittizi e hanno solo scopo dimostrativo.</li>
+    <li><b>Colorazione della mappa.</b> Nella legenda della mappa, il menu «Colora per» sostituisce i colori dei cluster con un dato della survey: il valore dominante, l'intensità di un valore, il conflitto principale o lo scarto tra priorità di sviluppo e percezione, per la classe di portatori di interesse scelta.</li>
   </ul>
   <p class="pg-nota">Il tasto Esc sblocca il cluster selezionato e chiude le finestre aperte. Su smartphone i pannelli sono disposti in un'unica colonna.</p>
+  <div class="pg-azioni"><a href="#dashboard" class="pg-btn pg-btn-primario">Apri la dashboard</a></div>
+</section>
+
+<section class="pg-sez" id="grafo" data-titolo="Leggere il grafo dei valori">
+  <h2>Leggere il grafo dei valori e dei conflitti</h2>
+  <p>Il grafo restituisce, per la famiglia di paesaggio e la classe di portatori di interesse scelte, tre risposte della survey: quanto pesa ciascuno dei cinque valori (naturalistico, economico, turistico, identitario, ricreativo), quali coppie di valori sono ritenute più difficili da far convivere e quali direzioni di sviluppo sono considerate prioritarie. Ne deriva una figura che cambia a ogni selezione: la sua <strong>forma</strong> è il primo elemento da leggere.</p>
+
+  <h3>La distanza è il conflitto</h3>
+  <p>Ogni coppia di valori è legata da una molla la cui lunghezza cresce con la quota di persone che ha indicato quella coppia come conflittuale (linee rosse, più spesse per i conflitti più citati). Due valori <strong>lontani</strong> sono percepiti in tensione; due valori <strong>vicini</strong> sono stati raramente indicati come conflittuali, quindi appaiono compatibili, non necessariamente simili. Con cinque valori e dieci coppie il piano non può rispettare esattamente tutte le distanze: le posizioni vanno lette come tendenze, e i valori esatti si trovano passando il mouse su nodi e linee o nella scheda «Confronto».</p>
+
+  <figure class="pg-schemi" aria-label="Forme tipiche del grafo">
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Pentagono regolare">
+        <g stroke="#b5414b" stroke-opacity=".3" stroke-width="1.6"><line x1="80" y1="14" x2="134" y2="52"/><line x1="134" y1="52" x2="113" y2="98"/><line x1="113" y1="98" x2="47" y2="98"/><line x1="47" y1="98" x2="26" y2="52"/><line x1="26" y1="52" x2="80" y2="14"/><line x1="80" y1="14" x2="113" y2="98"/><line x1="80" y1="14" x2="47" y2="98"/><line x1="26" y1="52" x2="134" y2="52"/><line x1="26" y1="52" x2="113" y2="98"/><line x1="134" y1="52" x2="47" y2="98"/></g>
+        <circle cx="80" cy="14" r="9" fill="#4f9a5a"/><circle cx="134" cy="52" r="9" fill="#c98a2b"/><circle cx="113" cy="98" r="9" fill="#3f7fb5"/><circle cx="47" cy="98" r="9" fill="#9c5a7a"/><circle cx="26" cy="52" r="9" fill="#3fa6a0"/>
+      </svg>
+      <p><b>Pentagono regolare.</b> I conflitti sono distribuiti in modo simile tra le coppie: nessuna tensione domina sulle altre.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Forma allungata">
+        <g stroke="#b5414b" stroke-linecap="round"><line x1="16" y1="56" x2="144" y2="56" stroke-width="7" stroke-opacity=".6"/><line x1="16" y1="56" x2="80" y2="26" stroke-width="1.5" stroke-opacity=".25"/><line x1="144" y1="56" x2="80" y2="86" stroke-width="1.5" stroke-opacity=".25"/></g>
+        <circle cx="16" cy="56" r="10" fill="#9c5a7a"/><circle cx="144" cy="56" r="10" fill="#3f7fb5"/><circle cx="80" cy="26" r="8" fill="#4f9a5a"/><circle cx="72" cy="58" r="8" fill="#c98a2b"/><circle cx="80" cy="86" r="8" fill="#3fa6a0"/>
+      </svg>
+      <p><b>Forma allungata.</b> Una coppia è indicata molto più delle altre: il paesaggio è polarizzato lungo un asse, con gli altri valori in posizione intermedia.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Valore isolato">
+        <g stroke="#b5414b" stroke-linecap="round" stroke-opacity=".5"><line x1="140" y1="56" x2="40" y2="30" stroke-width="6"/><line x1="140" y1="56" x2="30" y2="70" stroke-width="5"/><line x1="140" y1="56" x2="62" y2="88" stroke-width="3.5"/><line x1="140" y1="56" x2="64" y2="46" stroke-width="2.5"/></g>
+        <circle cx="140" cy="56" r="11" fill="#c98a2b"/><circle cx="40" cy="30" r="8" fill="#4f9a5a"/><circle cx="30" cy="70" r="8" fill="#3fa6a0"/><circle cx="62" cy="88" r="8" fill="#9c5a7a"/><circle cx="64" cy="46" r="8" fill="#3f7fb5"/>
+      </svg>
+      <p><b>Un valore isolato.</b> Un valore è in conflitto con quasi tutti gli altri e si stacca dal gruppo; i valori rimasti vicini tra loro sono percepiti come compatibili.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Due gruppi">
+        <g stroke="#b5414b" stroke-linecap="round" stroke-opacity=".45"><line x1="30" y1="40" x2="130" y2="44" stroke-width="5"/><line x1="36" y1="80" x2="126" y2="78" stroke-width="5"/><line x1="30" y1="40" x2="126" y2="78" stroke-width="3"/></g>
+        <circle cx="30" cy="40" r="9" fill="#4f9a5a"/><circle cx="36" cy="80" r="9" fill="#3fa6a0"/><circle cx="130" cy="44" r="9" fill="#c98a2b"/><circle cx="126" cy="78" r="9" fill="#9c5a7a"/><circle cx="80" cy="22" r="8" fill="#3f7fb5"/>
+      </svg>
+      <p><b>Due gruppi.</b> Due insiemi di valori compatibili si fronteggiano: il conflitto non riguarda una sola coppia, ma due modi diversi di intendere lo stesso paesaggio.</p>
+    </div>
+  </figure>
+
+  <p class="pg-nota">La figura viene sempre adattata allo spazio del pannello: un grafo non è «più grande» perché c'è più conflitto. La lunghezza massima corrisponde al conflitto più citato in quella selezione; l'intensità assoluta si legge dallo spessore delle linee rosse e dalle percentuali indicate passando il mouse, oppure sulla mappa con «Colora per → Conflitto principale». L'orientamento invece è stabile (il valore naturalistico tende a stare in alto): la stessa selezione produce sempre la stessa figura e, cambiando cluster o classe, i nodi si spostano solo se cambiano i conflitti.</p>
+
+  <h3>Cerchio e anello: paesaggio percepito e paesaggio desiderato</h3>
+  <p>Il <strong>cerchio pieno</strong> di ogni valore è tanto più grande quanto più quel valore è percepito nel paesaggio; l'<strong>anello</strong> indica quanto è ritenuta prioritaria la direzione di sviluppo corrispondente (tutela ecologica, sviluppo produttivo, valorizzazione turistica, identità locale, fruizione ricreativa). Un anello più largo del cerchio segnala che si vorrebbe più di quanto si percepisce; un anello più stretto, un valore già forte che non si ritiene di dover ulteriormente spingere. Le due misure provengono da domande diverse (un punteggio e un ordinamento): il confronto è indicativo.</p>
+
+  <h3>Le parole</h3>
+  <p>Le etichette sono i termini più ricorrenti nelle risposte libere: con bordo pieno le parole chiave associate al paesaggio, con bordo tratteggiato le <em>omissioni</em>, cioè ciò che le persone ritengono importante ma non rappresentato nelle immagini. Ogni parola è legata ai valori a cui chi la cita attribuisce un peso superiore alla media: più il legame è forte, più la linea è spessa e la parola vicina al valore. Le parole che si collocano tra due valori lontani sono <strong>parole contese</strong>, richiamate da interessi in tensione. Compaiono solo termini citati da almeno cinque persone.</p>
+
+  <h3>Alcuni esempi</h3>
+  <p class="pg-nota">Gli esempi usano i dati dimostrativi attualmente nella dashboard: illustrano il modo di leggere il grafo, non risultati della ricerca.</p>
+  <ul class="pg-lista">
+    <li><b>Cluster 06, tutti i portatori di interesse.</b> Il valore economico si stacca dagli altri: è in conflitto con il naturalistico (41% delle risposte), con il ricreativo (28%) e con l'identitario (15%). È la forma del valore isolato. Il naturalistico ha un cerchio piccolo (percepito 2,0) e un anello più largo (priorità 3,1): si vorrebbe più tutela di quanta se ne percepisca.</li>
+    <li><b>Cluster 05.</b> La tensione principale è tra identitario e turistico (41%): la figura si allunga lungo questo asse. L'identitario è insieme il valore più percepito (4,6) e la priorità più alta (4,1): un paesaggio riconosciuto per la sua storia, in cui la valorizzazione turistica è vissuta come possibile minaccia.</li>
+    <li><b>Cluster 01.</b> Il naturalistico domina (percepito 4,5) ed è distante dall'economico (41%) e dal turistico (23%); il suo anello è poco più stretto del cerchio: un valore già forte, da mantenere più che da accrescere.</li>
+    <li><b>Confrontare le classi.</b> Sempre nel cluster 06, per chi ha un rapporto di lavoro con il territorio il conflitto più indicato diventa economico–ricreativo (37%), mentre economico–naturalistico scende al 27%; per chi frequenta l'area per turismo resta economico–naturalistico (46%). Cambiando classe dal menu, la figura si deforma: le differenze di forma tra classi sono le <strong>divergenze tra letture</strong> che la ricerca intende far emergere.</li>
+  </ul>
   <div class="pg-azioni"><a href="#dashboard" class="pg-btn pg-btn-primario">Apri la dashboard</a></div>
 </section>
 
 <section class="pg-sez" id="stato" data-titolo="A che punto siamo">
   <h2>A che punto siamo</h2>
   <p>La mappa degli intorni percepiti e le ipotesi visuali delle sei configurazioni sono state completate; la survey è in corso e saranno avviate l'analisi delle risposte e la restituzione pubblica. Stabilità dei raggruppamenti, riproducibilità degli output generativi e adeguatezza paesaggistica delle immagini non sono ancora state valutate in modo sistematico: i risultati vanno letti come provvisori.</p>
-  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-13">13 novembre 2026</time></p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Progetto in corso</b> · ultimo aggiornamento: <time datetime="2026-11-23">23 novembre 2026</time></p>
   <h3>Pubblicazioni</h3>
   <p class="pg-nota">Le pubblicazioni che deriveranno dal progetto saranno segnalate qui.</p>
   <h3>Ricerca</h3>

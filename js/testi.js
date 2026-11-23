@@ -57,7 +57,7 @@ VP.testi = (() => {
     if (!cfg) return;
     await Promise.all([...VP.stato.clusters.keys()].map(async id => {
       try {
-        const r = await fetch(`${cfg.cartella}/${cfg.file.replace("{id}", VP.pad2(id))}`);
+        const r = await fetch(`${cfg.cartella}/${cfg.file.replace("{id}", VP.pad2(id))}`, { cache: "no-cache" });
         if (!r.ok) return;
         const t = analizza(decodifica(await r.arrayBuffer()));
         dati.set(id, t);

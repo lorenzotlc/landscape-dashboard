@@ -56,8 +56,8 @@ body{display:flex;flex-direction:column;overflow:hidden}
 .tiles-chiari{filter:grayscale(1) brightness(1.08) contrast(.85) opacity(.85)}
 .leaflet-container{font:inherit;background:#eef0ee}
 .legend{background:#fff;padding:6px 8px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.2);font-size:12.5px;max-height:260px;overflow:auto}
-.legend div{display:flex;align-items:center;gap:6px;padding:2px 4px;border-radius:4px;cursor:pointer;max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.legend div:hover,.legend div.on{background:#f0eee8}
+.legend .lg-row{display:flex;align-items:center;gap:6px;padding:2px 4px;border-radius:4px;cursor:pointer;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.legend .lg-row:hover,.legend .lg-row.on{background:#f0eee8}
 .legend i{width:12px;height:12px;border-radius:3px;flex:none}
 .legend span{overflow:hidden;text-overflow:ellipsis}
 
@@ -302,7 +302,7 @@ body.vista-progetto .scheda,body.vista-progetto .grid,body.vista-progetto .hint-
   .panel-h .hint{display:none}
   .opacity input{width:70px}
   .legend{font-size:11.5px;max-height:130px;padding:4px 6px}
-  .legend div{max-width:160px}
+  .legend .lg-row{max-width:170px}
   .synth{width:34%}
   .modale{padding:0;align-items:stretch}
   .modale-box{max-width:none;max-height:none;height:100%;border-radius:0}
@@ -376,3 +376,116 @@ body.vista-progetto .scheda,body.vista-progetto .grid,body.vista-progetto .hint-
 .pg-galleria .pg-btn{margin-top:auto}
 .pg-stato{display:inline-block;line-height:1.5}
 .pg-stato-punto{display:inline-block;vertical-align:middle;margin-right:7px;flex:none}
+
+/* pannello survey */
+.p-graph .panel-h{flex-wrap:wrap;row-gap:4px}
+.p-graph .tabs button{font-size:14px;padding:2px 6px}
+.sv-sel{margin-left:auto;font:inherit;font-size:12.5px;max-width:165px;min-width:0;border:1px solid var(--line);border-radius:6px;padding:3px 6px;background:#fff;color:var(--ink)}
+.sv{position:absolute;inset:0;display:flex;flex-direction:column}
+.sv-info{display:flex;gap:8px;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);padding:5px 10px 0}
+.sv-info span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sv-demo{flex:none;background:#fff3d6;color:#8a5a00;border:1px solid #f0d9a0;border-radius:999px;padding:0 8px;font-size:11px;font-weight:600}
+.sv-corpo{flex:1;min-height:0;position:relative;overflow-y:auto;overflow-x:hidden}
+.sv-corpo svg{display:block}
+.sv-gr{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;fill:var(--muted);font-weight:700}
+.sv-dot{cursor:pointer}
+.sv-leg{display:flex;flex-wrap:wrap;gap:2px 10px;padding:4px 10px 0;font-size:11.5px;color:var(--ink)}
+.sv-leg span{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.sv-leg i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.sv-simb{flex-basis:100%;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:10.5px;color:var(--muted)}
+.sv-simb i.pieno{background:#9b9ea4}
+.sv-simb i.anello{background:none;border:1.8px solid #6b6f76;width:7px;height:7px}
+.sv-simb i.linea{width:12px;height:3px;border-radius:2px;background:#b5414b;opacity:.6}
+/* legenda della mappa: modalità di colorazione */
+.legend .lg-ctrl{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:0 2px 5px;margin-bottom:4px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.legend .lg-ctrl select{font:inherit;font-size:12px;border:1px solid var(--line);border-radius:5px;padding:1px 3px;background:#fff;color:var(--ink);max-width:170px}
+.legend .lg-key{padding:5px 2px 0;margin-top:4px;border-top:1px solid var(--line);max-width:270px}
+.legend .lg-grad{height:9px;border-radius:3px}
+.legend .lg-ext{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:2px}
+.legend .lg-chips{display:flex;flex-wrap:wrap;gap:2px 9px;font-size:11.5px}
+.legend .lg-chips span{display:inline-flex;align-items:center;gap:4px}
+.legend .lg-chips i{width:10px;height:10px;border-radius:50%}
+.legend .lg-nota{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.35}
+.legend .lg-nota i.lg-insuff{display:inline-block;width:10px;height:10px;border-radius:2px;background:#d9d5d0;vertical-align:-1px;margin-right:4px}
+.legend .lg-min{order:9;margin-left:auto;font:inherit;font-size:13px;line-height:1;width:20px;height:20px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink);cursor:pointer;padding:0}
+.legend.ridotta .lg-righe,.legend.ridotta .lg-key{display:none}
+.legend.ridotta .lg-ctrl{border-bottom:0;margin-bottom:0;padding-bottom:0}
+/* parole nel grafo dei valori */
+.sv-term rect{fill:#fff;fill-opacity:.94;stroke:#bdb6ad;stroke-width:1}
+.sv-term text{fill:#3a3338}
+.sv-term.omissione rect{stroke-dasharray:3 2;fill:#faf7f2}
+.sv-term.omissione text{font-style:italic;fill:#6b5d62}
+.sv-simb i.pill{width:16px;height:9px;border-radius:5px;background:#fff;border:1px solid #bdb6ad}
+.sv-simb i.pill.om{border-style:dashed;background:#faf7f2}
+.sv-simb i.linea-t{width:12px;height:2px;border-radius:1px;background:#8a8a8a}
+.sv-par{display:inline-flex;align-items:center;gap:3px;color:var(--ink)}
+.sv-par label{display:inline-flex;align-items:center;gap:3px;cursor:pointer}
+.sv-par input{margin:0}
+.sv-par button{font:inherit;font-size:11px;line-height:1;width:16px;height:16px;padding:0;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink);cursor:pointer}
+.sv-par b{min-width:14px;text-align:center;font-weight:600}
+.sv-nessuna{font-style:italic}
+.sv-info-i{cursor:help;color:var(--muted);border-bottom:1px dotted var(--muted)}
+.sv-leg .sv-simb + .sv-simb{margin-top:1px}
+/* avviso sui dati dimostrativi della survey */
+.sv-avviso{position:absolute;inset:0;overflow:auto;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:14px 20px;font-size:13.5px;line-height:1.5;color:var(--ink)}
+.sv-avviso p{margin:0 0 6px;max-width:560px}
+.sv-avviso-tit{font-size:12px!important;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:#8a5a00}
+.sv-avviso-nota{color:var(--muted);font-size:12.5px}
+.sv-btn{align-self:flex-start;margin-top:6px;font:inherit;font-size:13.5px;font-weight:600;border:0;border-radius:999px;padding:7px 16px;background:#7d5a63;color:#fff;cursor:pointer}
+.sv-btn:hover{background:#6a4b53}
+button.sv-demo{cursor:pointer;font-family:inherit}
+button.sv-demo:hover{background:#ffe9b8}
+.p-graph.sv-in-avviso .panel-h .tabs,.p-graph.sv-in-avviso .panel-h .sv-sel{opacity:.45;pointer-events:none}
+/* ---- Pulsanti in stile moderno (tonali, a pillola, con stato hover/press e focus visibile) ---- */
+:root{--acc:#7d5a63;--acc-ton:#f2e9eb;--acc-ton-h:#e8d9dd;--acc-txt:#4a3239;--ombra-1:0 1px 2px rgba(60,40,45,.16),0 1px 3px rgba(60,40,45,.08);--ombra-2:0 2px 4px rgba(60,40,45,.18),0 3px 8px rgba(60,40,45,.12)}
+.btn-leggi,.sch-toggle,button.sv-demo,.sv-btn,.legend .lg-min,.sv-par button{
+  -webkit-tap-highlight-color:transparent;transition:background-color .15s,box-shadow .15s,transform .08s;user-select:none}
+.btn-leggi,.sch-toggle{display:inline-flex;align-items:center;height:28px;border:0;border-radius:999px;background:var(--acc-ton);color:var(--acc-txt);
+  font-size:12.5px;font-weight:600;letter-spacing:.01em;box-shadow:var(--ombra-1)}
+.btn-leggi{padding:0 14px 0 30px}
+.btn-leggi::before{left:12px}
+.sch-toggle{padding:0 14px}
+.sch-toggle[hidden]{display:none}
+.btn-leggi:hover,.sch-toggle:hover{background:var(--acc-ton-h);box-shadow:var(--ombra-2)}
+button.sv-demo{display:inline-flex;align-items:center;gap:4px;height:22px;border:0;border-radius:999px;padding:0 10px;background:#fff0c9;color:#7a4f00;
+  font-size:11px;font-weight:600;box-shadow:var(--ombra-1)}
+button.sv-demo::before{content:"!";display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;
+  background:#c98a00;color:#fff;font-size:9.5px;font-weight:800}
+button.sv-demo:hover{background:#ffe6a6;box-shadow:var(--ombra-2)}
+.sv-btn{height:36px;padding:0 20px;letter-spacing:.01em;box-shadow:var(--ombra-1)}
+.sv-btn:hover{background:#6a4b53;box-shadow:var(--ombra-2)}
+.legend .lg-min,.sv-par button{border:0;background:#efebe6;color:var(--acc-txt);box-shadow:none;border-radius:6px;font-weight:700}
+.legend .lg-min:hover,.sv-par button:hover{background:#e3ddd6}
+.btn-leggi:active,.sch-toggle:active,button.sv-demo:active,.sv-btn:active,.legend .lg-min:active,.sv-par button:active{transform:scale(.96);box-shadow:none}
+.btn-leggi:focus-visible,.sch-toggle:focus-visible,button.sv-demo:focus-visible,.sv-btn:focus-visible,.legend .lg-min:focus-visible,.sv-par button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* variante richiesta: rettangoli con angoli poco arrotondati, testo chiaro su fondo scuro */
+:root{--btn-bg:#5e434b;--btn-bg-h:#4b343b;--btn-txt:#fff}
+.btn-leggi,.sch-toggle,.sv-btn{border-radius:6px;background:var(--btn-bg);color:var(--btn-txt)}
+.btn-leggi:hover,.sch-toggle:hover,.sv-btn:hover{background:var(--btn-bg-h)}
+.btn-leggi::before{box-shadow:none}
+button.sv-demo{border-radius:6px;background:#8a5a00;color:#fff}
+button.sv-demo::before{background:#fff;color:#8a5a00}
+button.sv-demo:hover{background:#704900}
+.legend .lg-min,.sv-par button{border-radius:5px;background:var(--btn-bg);color:var(--btn-txt)}
+.legend .lg-min:hover,.sv-par button:hover{background:var(--btn-bg-h)}
+.btn-leggi:focus-visible,.sch-toggle:focus-visible,button.sv-demo:focus-visible,.sv-btn:focus-visible,.legend .lg-min:focus-visible,.sv-par button:focus-visible{outline-color:#2f2226}
+/* schemi delle forme del grafo nella pagina del progetto */
+.pg-schemi{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0 10px}
+.pg-schemi>div{background:#fff;border:1px solid #e3dad4;border-radius:10px;padding:10px 12px}
+.pg-schemi svg{display:block;width:100%;height:auto;max-height:120px}
+.pg-schemi p{margin:6px 0 0;font-size:14px;line-height:1.45}
+@media (max-width:1100px){.pg-schemi{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.pg-schemi{grid-template-columns:1fr}}
+/* pulsante info e pannellino sui dati dimostrativi, nella legenda della mappa */
+.legend .lg-info{order:8;margin-left:auto;width:20px;height:20px;padding:0;border:0;border-radius:5px;background:#8a5a00;color:#fff;
+  font:italic 700 12px/1 Georgia,"Times New Roman",serif;cursor:pointer;box-shadow:var(--ombra-1);transition:background-color .15s,transform .08s}
+.legend .lg-info:hover,.legend .lg-info.on{background:#704900}
+.legend .lg-info:active{transform:scale(.94)}
+.legend .lg-info:focus-visible{outline:2px solid #2f2226;outline-offset:2px}
+.legend .lg-ctrl:has(.lg-info) .lg-min{margin-left:4px}
+.legend .lg-info-pan{background:#fff7e3;border:1px solid #f0d9a0;border-radius:6px;padding:7px 9px;margin:0 0 6px;max-width:270px;font-size:11.5px;line-height:1.45;color:#3a2f1c;white-space:normal}
+.legend .lg-info-pan[hidden]{display:none}
+.legend .lg-info-pan p{margin:0 0 5px}
+.legend .lg-info-tit{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:#8a5a00}
+.legend .lg-info-chiudi{font:inherit;font-size:11px;font-weight:600;height:22px;padding:0 10px;border:0;border-radius:5px;background:var(--btn-bg);color:#fff;cursor:pointer}
+.legend .lg-info-chiudi:hover{background:var(--btn-bg-h)}

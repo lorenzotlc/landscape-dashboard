@@ -2,22 +2,22 @@
 (async () => {
   const S = VP.stato;
   const getJSON = async (p, opz = false) => {
-    const r = await fetch(p);
+    const r = await fetch(p, { cache: "no-cache" });
     if (!r.ok) { if (opz) return null; throw new Error(`File non trovato: ${p}`); }
     return r.json();
   };
   try {
     S.config = await getJSON("data/config.json");
-    const [cl, st, gr] = await Promise.all([getJSON(S.config.cluster), getJSON(S.config.statistiche), getJSON(S.config.grafo, true)]);
+    const [cl, st, sv] = await Promise.all([getJSON(S.config.cluster), getJSON(S.config.statistiche), S.config.survey ? getJSON(S.config.survey, true) : null]);
     cl.cluster.forEach(c => S.clusters.set(c.id, c));
-    S.stats = st; S.grafo = gr;
+    S.stats = st; S.survey = sv;
     document.getElementById("titolo").textContent = S.config.titolo;
     document.getElementById("sottotitolo").textContent = S.config.sottotitolo || "";
     document.title = S.config.titolo;
     document.getElementById("demo-badge").hidden = !S.config.dati_dimostrativi;
 
     await Promise.all([VP.testi.carica(), VP.foto.carica()]);
-    VP.testi.init(); VP.boxplot.init(); VP.immagini.init(); VP.foto.init(); VP.grafo.init();
+    VP.testi.init(); VP.boxplot.init(); VP.immagini.init(); VP.foto.init(); VP.survey.init();
     await VP.mappa.init();
     VP.progetto.init();
   } catch (e) {

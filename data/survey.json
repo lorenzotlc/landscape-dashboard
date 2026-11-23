@@ -1,0 +1,6748 @@
+{
+ "demo": true,
+ "descrizione": "DATI FITTIZI generati per l'anteprima: 172 rispondenti simulati, con parole chiave e omissioni simulate. Sostituire con gli aggregati della survey reale.",
+ "dimensione": "Rapporto con il territorio",
+ "n_minimo": 5,
+ "valori": [
+  "naturalistico",
+  "economico",
+  "turistico",
+  "identitario",
+  "ricreativo"
+ ],
+ "direzioni": [
+  "tutela ecologica",
+  "sviluppo produttivo",
+  "valorizzazione turistica",
+  "identità locale",
+  "fruizione ricreativa"
+ ],
+ "direzioni_estese": [
+  "tutela ecologica e naturalistica",
+  "sviluppo economico e produttivo",
+  "valorizzazione turistica",
+  "conservazione dell'identità locale",
+  "fruizione ricreativa e accessibilità"
+ ],
+ "riconoscibilita": [
+  "plausibilità",
+  "somiglianza col reale",
+  "corrispondenza in mappa"
+ ],
+ "riconoscibilita_brevi": [
+  "plausibilità",
+  "vs foto reali",
+  "vs mappa"
+ ],
+ "classi": [
+  {
+   "id": "quotidiana",
+   "nome": "Vita quotidiana / residenza"
+  },
+  {
+   "id": "lavoro",
+   "nome": "Lavoro / attività professionale"
+  },
+  {
+   "id": "turismo",
+   "nome": "Turismo / tempo libero"
+  },
+  {
+   "id": "studio",
+   "nome": "Studio / ricerca"
+  },
+  {
+   "id": "associazioni",
+   "nome": "Attività associative o culturali"
+  },
+  {
+   "id": "amministrazione",
+   "nome": "Amministrazione / pianificazione"
+  }
+ ],
+ "dati": {
+  "0": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     3.2,
+     3.44,
+     3.0,
+     3.34,
+     3.15
+    ],
+    "direzioni": [
+     3.13,
+     3.13,
+     2.61,
+     3.21,
+     2.93
+    ],
+    "riconoscibilita": [
+     3.7,
+     3.52,
+     3.23
+    ],
+    "conflitti": {
+     "naturalistico|economico": 325,
+     "naturalistico|ricreativo": 88,
+     "economico|turistico": 67,
+     "turistico|identitario": 125,
+     "economico|identitario": 148,
+     "naturalistico|identitario": 27,
+     "turistico|ricreativo": 18,
+     "economico|ricreativo": 123,
+     "naturalistico|turistico": 67,
+     "identitario|ricreativo": 44
+    },
+    "risposte": 1032,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 254,
+      "q": 0.246,
+      "assoc": [
+       -1.19,
+       0.86,
+       -0.89,
+       -0.49,
+       -0.91
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 190,
+      "q": 0.184,
+      "assoc": [
+       -0.87,
+       0.93,
+       -0.75,
+       -0.42,
+       -0.83
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 148,
+      "q": 0.143,
+      "assoc": [
+       1.4,
+       -1.33,
+       0.5,
+       -0.27,
+       0.99
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 140,
+      "q": 0.136,
+      "assoc": [
+       -0.21,
+       -0.25,
+       1.2,
+       1.35,
+       0.32
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 140,
+      "q": 0.136,
+      "assoc": [
+       -1.37,
+       0.57,
+       -1.1,
+       -1.01,
+       -0.93
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 138,
+      "q": 0.134,
+      "assoc": [
+       -0.08,
+       0.51,
+       0.66,
+       0.77,
+       0.11
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 125,
+      "q": 0.121,
+      "assoc": [
+       -0.24,
+       -0.31,
+       1.32,
+       1.3,
+       0.28
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 124,
+      "q": 0.12,
+      "assoc": [
+       -0.83,
+       1.07,
+       -0.64,
+       -0.2,
+       -0.85
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 106,
+      "q": 0.103,
+      "assoc": [
+       1.51,
+       -1.33,
+       0.45,
+       -0.27,
+       0.75
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 105,
+      "q": 0.102,
+      "assoc": [
+       0.28,
+       0.67,
+       -0.26,
+       -0.05,
+       -0.02
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 94,
+      "q": 0.091,
+      "assoc": [
+       -1.54,
+       0.41,
+       -1.12,
+       -0.84,
+       -0.97
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 85,
+      "q": 0.082,
+      "assoc": [
+       0.62,
+       -0.48,
+       0.29,
+       0.13,
+       0.85
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 79,
+      "q": 0.077,
+      "assoc": [
+       0.53,
+       -0.21,
+       0.15,
+       0.65,
+       0.27
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 79,
+      "q": 0.077,
+      "assoc": [
+       1.38,
+       -1.38,
+       0.48,
+       -0.2,
+       1.12
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 78,
+      "q": 0.076,
+      "assoc": [
+       0.27,
+       0.61,
+       -0.26,
+       0.03,
+       0.01
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 77,
+      "q": 0.075,
+      "assoc": [
+       1.07,
+       -1.26,
+       0.81,
+       -0.22,
+       1.35
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     3.19,
+     3.41,
+     2.73,
+     3.42,
+     3.23
+    ],
+    "direzioni": [
+     3.1,
+     3.07,
+     2.2,
+     3.44,
+     3.19
+    ],
+    "riconoscibilita": [
+     3.83,
+     3.72,
+     3.46
+    ],
+    "conflitti": {
+     "naturalistico|economico": 134,
+     "naturalistico|ricreativo": 29,
+     "economico|turistico": 24,
+     "turistico|identitario": 52,
+     "economico|identitario": 49,
+     "naturalistico|identitario": 5,
+     "turistico|ricreativo": 5,
+     "economico|ricreativo": 41,
+     "naturalistico|turistico": 18,
+     "identitario|ricreativo": 15
+    },
+    "risposte": 372,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 95,
+      "q": 0.255,
+      "assoc": [
+       -1.19,
+       0.81,
+       -0.88,
+       -0.51,
+       -0.96
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 67,
+      "q": 0.18,
+      "assoc": [
+       -0.87,
+       0.99,
+       -0.76,
+       -0.41,
+       -0.98
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 55,
+      "q": 0.148,
+      "assoc": [
+       1.38,
+       -1.34,
+       0.38,
+       -0.3,
+       1.04
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 52,
+      "q": 0.14,
+      "assoc": [
+       -0.23,
+       -0.32,
+       1.23,
+       1.29,
+       0.46
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 51,
+      "q": 0.137,
+      "assoc": [
+       0.07,
+       0.51,
+       0.46,
+       0.67,
+       0.24
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 50,
+      "q": 0.134,
+      "assoc": [
+       -1.37,
+       0.61,
+       -1.17,
+       -0.82,
+       -1.11
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 45,
+      "q": 0.121,
+      "assoc": [
+       -0.83,
+       1.03,
+       -0.62,
+       -0.27,
+       -0.9
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 41,
+      "q": 0.11,
+      "assoc": [
+       0.47,
+       0.69,
+       -0.27,
+       0.04,
+       0.06
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 37,
+      "q": 0.099,
+      "assoc": [
+       -0.27,
+       -0.44,
+       0.89,
+       1.41,
+       0.55
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.097,
+      "assoc": [
+       1.56,
+       -1.24,
+       0.32,
+       -0.17,
+       0.74
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.097,
+      "assoc": [
+       -0.27,
+       -0.38,
+       1.38,
+       1.24,
+       0.46
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.097,
+      "assoc": [
+       -1.58,
+       0.28,
+       -1.01,
+       -0.79,
+       -1.04
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 35,
+      "q": 0.094,
+      "assoc": [
+       0.38,
+       0.59,
+       -0.16,
+       0.0,
+       -0.01
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 32,
+      "q": 0.086,
+      "assoc": [
+       0.59,
+       -0.51,
+       0.3,
+       0.04,
+       0.83
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 29,
+      "q": 0.078,
+      "assoc": [
+       1.36,
+       -1.38,
+       0.27,
+       -0.39,
+       1.01
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 28,
+      "q": 0.075,
+      "assoc": [
+       0.49,
+       -0.45,
+       0.44,
+       0.79,
+       0.3
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     3.0,
+     3.94,
+     3.01,
+     3.13,
+     2.87
+    ],
+    "direzioni": [
+     2.92,
+     4.09,
+     2.68,
+     2.81,
+     2.49
+    ],
+    "riconoscibilita": [
+     3.66,
+     3.46,
+     3.25
+    ],
+    "conflitti": {
+     "economico|ricreativo": 36,
+     "economico|identitario": 31,
+     "naturalistico|economico": 62,
+     "naturalistico|ricreativo": 26,
+     "economico|turistico": 19,
+     "turistico|identitario": 25,
+     "identitario|ricreativo": 13,
+     "naturalistico|turistico": 17,
+     "turistico|ricreativo": 3,
+     "naturalistico|identitario": 14
+    },
+    "risposte": 246,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 64,
+      "q": 0.26,
+      "assoc": [
+       -1.08,
+       0.75,
+       -1.06,
+       -0.47,
+       -0.83
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 46,
+      "q": 0.187,
+      "assoc": [
+       -0.7,
+       0.8,
+       -0.93,
+       -0.43,
+       -0.69
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 43,
+      "q": 0.175,
+      "assoc": [
+       -0.24,
+       0.34,
+       1.06,
+       0.92,
+       -0.01
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 34,
+      "q": 0.138,
+      "assoc": [
+       1.41,
+       -1.35,
+       0.49,
+       -0.16,
+       1.02
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 34,
+      "q": 0.138,
+      "assoc": [
+       -1.3,
+       0.59,
+       -1.22,
+       -1.01,
+       -0.78
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 33,
+      "q": 0.134,
+      "assoc": [
+       -0.7,
+       0.82,
+       -0.62,
+       -0.22,
+       -0.81
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 32,
+      "q": 0.13,
+      "assoc": [
+       0.31,
+       0.56,
+       -0.01,
+       -0.28,
+       -0.12
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 31,
+      "q": 0.126,
+      "assoc": [
+       -0.49,
+       -0.16,
+       1.37,
+       1.42,
+       0.17
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 30,
+      "q": 0.122,
+      "assoc": [
+       -0.4,
+       -0.14,
+       1.22,
+       1.54,
+       0.07
+      ]
+     },
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 26,
+      "q": 0.106,
+      "assoc": [
+       0.46,
+       0.25,
+       0.22,
+       0.26,
+       0.44
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 25,
+      "q": 0.102,
+      "assoc": [
+       1.48,
+       -1.22,
+       0.31,
+       -0.25,
+       0.81
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.098,
+      "assoc": [
+       -1.5,
+       0.52,
+       -1.22,
+       -1.0,
+       -1.03
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.089,
+      "assoc": [
+       0.59,
+       -0.17,
+       0.22,
+       0.6,
+       0.41
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.081,
+      "assoc": [
+       1.05,
+       -1.59,
+       0.94,
+       -0.08,
+       1.33
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.069,
+      "assoc": [
+       0.17,
+       0.59,
+       -0.31,
+       -0.13,
+       0.02
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.069,
+      "assoc": [
+       1.0,
+       0.0,
+       -0.01,
+       -0.71,
+       -0.1
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     3.11,
+     3.05,
+     3.56,
+     3.18,
+     3.37
+    ],
+    "direzioni": [
+     2.85,
+     2.31,
+     3.61,
+     2.95,
+     3.28
+    ],
+    "riconoscibilita": [
+     3.66,
+     3.24,
+     2.8
+    ],
+    "conflitti": {
+     "naturalistico|economico": 52,
+     "turistico|identitario": 21,
+     "identitario|ricreativo": 5,
+     "turistico|ricreativo": 5,
+     "economico|ricreativo": 17,
+     "economico|identitario": 28,
+     "economico|turistico": 12,
+     "naturalistico|turistico": 10,
+     "naturalistico|ricreativo": 17,
+     "naturalistico|identitario": 1
+    },
+    "risposte": 168,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 37,
+      "q": 0.22,
+      "assoc": [
+       -1.43,
+       0.97,
+       -0.78,
+       -0.48,
+       -0.99
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 31,
+      "q": 0.185,
+      "assoc": [
+       -1.07,
+       1.14,
+       -0.69,
+       -0.31,
+       -0.82
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 26,
+      "q": 0.155,
+      "assoc": [
+       -1.34,
+       0.48,
+       -1.1,
+       -1.22,
+       -0.98
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 25,
+      "q": 0.149,
+      "assoc": [
+       -0.03,
+       -0.37,
+       1.16,
+       1.3,
+       0.31
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.143,
+      "assoc": [
+       -0.11,
+       -0.26,
+       1.15,
+       1.32,
+       0.3
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.131,
+      "assoc": [
+       1.48,
+       -1.24,
+       0.62,
+       -0.28,
+       0.9
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.113,
+      "assoc": [
+       0.47,
+       -0.58,
+       0.55,
+       0.29,
+       0.58
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.101,
+      "assoc": [
+       0.13,
+       0.53,
+       0.38,
+       0.87,
+       0.4
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.095,
+      "assoc": [
+       1.52,
+       -1.55,
+       0.69,
+       -0.25,
+       0.57
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.095,
+      "assoc": [
+       -0.92,
+       1.38,
+       -0.68,
+       -0.25,
+       -0.81
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.089,
+      "assoc": [
+       0.49,
+       -0.39,
+       0.64,
+       0.15,
+       0.83
+      ]
+     },
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.089,
+      "assoc": [
+       0.69,
+       0.08,
+       -0.16,
+       -0.12,
+       0.3
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.083,
+      "assoc": [
+       -1.46,
+       0.23,
+       -1.2,
+       -0.83,
+       -0.94
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.083,
+      "assoc": [
+       1.04,
+       -1.2,
+       0.44,
+       -0.33,
+       1.2
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.077,
+      "assoc": [
+       1.51,
+       -1.28,
+       0.59,
+       -0.26,
+       0.94
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.071,
+      "assoc": [
+       0.39,
+       0.45,
+       -0.23,
+       0.07,
+       0.21
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     3.68,
+     3.21,
+     2.96,
+     3.42,
+     2.98
+    ],
+    "direzioni": [
+     3.95,
+     2.75,
+     2.44,
+     3.2,
+     2.66
+    ],
+    "riconoscibilita": [
+     3.55,
+     3.45,
+     3.21
+    ],
+    "conflitti": {
+     "naturalistico|turistico": 15,
+     "economico|turistico": 8,
+     "turistico|identitario": 17,
+     "naturalistico|economico": 35,
+     "naturalistico|identitario": 6,
+     "naturalistico|ricreativo": 7,
+     "economico|ricreativo": 14,
+     "identitario|ricreativo": 7,
+     "economico|identitario": 19,
+     "turistico|ricreativo": 4
+    },
+    "risposte": 132,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 28,
+      "q": 0.212,
+      "assoc": [
+       -1.07,
+       0.9,
+       -0.89,
+       -0.53,
+       -0.84
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 27,
+      "q": 0.205,
+      "assoc": [
+       -0.83,
+       0.71,
+       -0.59,
+       -0.65,
+       -0.76
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.152,
+      "assoc": [
+       1.32,
+       -1.46,
+       0.74,
+       -0.32,
+       0.92
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.144,
+      "assoc": [
+       1.27,
+       -1.37,
+       0.62,
+       -0.48,
+       0.86
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.136,
+      "assoc": [
+       -0.35,
+       -0.21,
+       1.15,
+       1.41,
+       0.24
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.136,
+      "assoc": [
+       -0.35,
+       -0.32,
+       1.2,
+       1.46,
+       -0.04
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.121,
+      "assoc": [
+       -1.37,
+       0.66,
+       -0.96,
+       -0.92,
+       -0.61
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.106,
+      "assoc": [
+       -0.25,
+       0.07,
+       0.75,
+       1.5,
+       0.16
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.106,
+      "assoc": [
+       -0.82,
+       0.93,
+       -0.68,
+       -0.14,
+       -1.06
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.098,
+      "assoc": [
+       0.4,
+       -0.21,
+       -0.04,
+       0.5,
+       0.48
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.098,
+      "assoc": [
+       0.47,
+       -0.75,
+       0.11,
+       0.19,
+       0.63
+      ]
+     },
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.098,
+      "assoc": [
+       0.86,
+       0.25,
+       -0.65,
+       -0.12,
+       0.02
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.098,
+      "assoc": [
+       0.93,
+       0.56,
+       -0.65,
+       -0.5,
+       0.09
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.098,
+      "assoc": [
+       -0.14,
+       0.48,
+       0.65,
+       0.96,
+       0.02
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.091,
+      "assoc": [
+       0.98,
+       0.45,
+       -0.38,
+       -0.26,
+       0.77
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.083,
+      "assoc": [
+       -1.5,
+       0.7,
+       -1.05,
+       -0.42,
+       -0.8
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     3.28,
+     3.22,
+     3.01,
+     3.7,
+     3.4
+    ],
+    "direzioni": [
+     3.19,
+     2.7,
+     2.32,
+     3.82,
+     2.97
+    ],
+    "riconoscibilita": [
+     3.66,
+     3.52,
+     3.13
+    ],
+    "conflitti": {
+     "naturalistico|economico": 35,
+     "economico|identitario": 17,
+     "turistico|identitario": 6,
+     "economico|ricreativo": 12,
+     "identitario|ricreativo": 4,
+     "naturalistico|ricreativo": 7,
+     "naturalistico|turistico": 4,
+     "naturalistico|identitario": 1,
+     "economico|turistico": 3,
+     "turistico|ricreativo": 1
+    },
+    "risposte": 90,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.244,
+      "assoc": [
+       -1.28,
+       0.91,
+       -0.56,
+       -0.43,
+       -0.67
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.178,
+      "assoc": [
+       -0.97,
+       1.09,
+       -0.57,
+       -0.2,
+       -0.59
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.167,
+      "assoc": [
+       1.52,
+       -1.16,
+       0.72,
+       -0.37,
+       0.87
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.144,
+      "assoc": [
+       -1.12,
+       1.32,
+       -0.55,
+       0.15,
+       -0.48
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.144,
+      "assoc": [
+       0.26,
+       -0.15,
+       1.07,
+       1.22,
+       0.37
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.133,
+      "assoc": [
+       0.31,
+       -0.22,
+       1.07,
+       1.13,
+       0.52
+      ]
+     },
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.133,
+      "assoc": [
+       -1.53,
+       0.44,
+       -0.93,
+       -1.28,
+       -0.9
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.122,
+      "assoc": [
+       1.63,
+       -1.22,
+       0.63,
+       -0.25,
+       0.87
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.1,
+      "assoc": [
+       -0.06,
+       0.33,
+       0.66,
+       0.63,
+       -0.29
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.1,
+      "assoc": [
+       1.5,
+       -1.11,
+       1.1,
+       -0.14,
+       0.93
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.089,
+      "assoc": [
+       1.47,
+       -0.97,
+       0.49,
+       -0.7,
+       0.73
+      ]
+     },
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.089,
+      "assoc": [
+       -0.28,
+       0.03,
+       -0.64,
+       -0.33,
+       0.1
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.089,
+      "assoc": [
+       0.97,
+       -0.47,
+       -0.26,
+       0.3,
+       0.1
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.089,
+      "assoc": [
+       -0.03,
+       0.53,
+       -0.51,
+       0.42,
+       0.1
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.078,
+      "assoc": [
+       0.72,
+       -0.65,
+       -0.01,
+       0.44,
+       0.03
+      ]
+     },
+     {
+      "t": "tradizioni",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.078,
+      "assoc": [
+       0.44,
+       -0.08,
+       0.99,
+       1.01,
+       0.89
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     3.25,
+     3.67,
+     3.46,
+     3.54,
+     3.08
+    ],
+    "direzioni": [
+     2.75,
+     3.67,
+     3.29,
+     3.12,
+     2.17
+    ],
+    "riconoscibilita": [
+     3.62,
+     3.58,
+     2.88
+    ],
+    "conflitti": {
+     "economico|turistico": 1,
+     "turistico|identitario": 4,
+     "naturalistico|economico": 7,
+     "economico|identitario": 4,
+     "naturalistico|turistico": 3,
+     "naturalistico|ricreativo": 2,
+     "economico|ricreativo": 3
+    },
+    "risposte": 24,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.333,
+      "assoc": [
+       -0.88,
+       0.96,
+       -0.96,
+       -0.54,
+       -1.21
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.208,
+      "assoc": [
+       -0.05,
+       0.53,
+       0.74,
+       0.46,
+       0.52
+      ]
+     }
+    ]
+   }
+  },
+  "1": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     4.49,
+     2.1,
+     3.55,
+     3.12,
+     4.11
+    ],
+    "direzioni": [
+     3.95,
+     1.77,
+     3.06,
+     2.67,
+     3.53
+    ],
+    "riconoscibilita": [
+     4.24,
+     4.09,
+     3.85
+    ],
+    "conflitti": {
+     "naturalistico|economico": 71,
+     "turistico|identitario": 4,
+     "naturalistico|turistico": 40,
+     "economico|ricreativo": 8,
+     "economico|turistico": 13,
+     "naturalistico|ricreativo": 20,
+     "economico|identitario": 4,
+     "identitario|ricreativo": 6,
+     "naturalistico|identitario": 5,
+     "turistico|ricreativo": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 148,
+      "q": 0.86,
+      "assoc": [
+       0.11,
+       0.0,
+       -0.05,
+       -0.04,
+       0.02
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 106,
+      "q": 0.616,
+      "assoc": [
+       0.22,
+       0.01,
+       -0.09,
+       -0.04,
+       -0.21
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 79,
+      "q": 0.459,
+      "assoc": [
+       0.09,
+       -0.04,
+       -0.07,
+       0.02,
+       0.16
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 77,
+      "q": 0.448,
+      "assoc": [
+       -0.22,
+       0.08,
+       0.27,
+       0.0,
+       0.38
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 55,
+      "q": 0.32,
+      "assoc": [
+       -0.09,
+       -0.43,
+       0.14,
+       0.01,
+       -0.31
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 54,
+      "q": 0.314,
+      "assoc": [
+       0.12,
+       0.02,
+       0.23,
+       0.05,
+       0.2
+      ]
+     },
+     {
+      "t": "frescura",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.128,
+      "assoc": [
+       -0.36,
+       -0.15,
+       -0.41,
+       0.16,
+       0.53
+      ]
+     },
+     {
+      "t": "castagneti",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.11,
+      "assoc": [
+       -0.39,
+       0.9,
+       0.09,
+       0.15,
+       -0.85
+      ]
+     },
+     {
+      "t": "incendi",
+      "tipo": "omissione",
+      "n": 13,
+      "q": 0.076,
+      "assoc": [
+       -0.03,
+       0.43,
+       -0.7,
+       0.04,
+       -0.57
+      ]
+     },
+     {
+      "t": "funghi",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.058,
+      "assoc": [
+       -0.99,
+       0.6,
+       0.05,
+       0.18,
+       -0.11
+      ]
+     },
+     {
+      "t": "abbandono",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.029,
+      "assoc": [
+       -0.09,
+       -0.9,
+       -0.75,
+       0.08,
+       -0.11
+      ]
+     },
+     {
+      "t": "abbazia di San Michele",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.029,
+      "assoc": [
+       -1.09,
+       -0.1,
+       0.25,
+       0.88,
+       -0.31
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     4.47,
+     2.16,
+     3.16,
+     3.18,
+     4.23
+    ],
+    "direzioni": [
+     3.94,
+     1.71,
+     2.56,
+     2.85,
+     3.94
+    ],
+    "riconoscibilita": [
+     4.34,
+     4.27,
+     4.15
+    ],
+    "conflitti": {
+     "naturalistico|economico": 24,
+     "turistico|identitario": 2,
+     "naturalistico|turistico": 12,
+     "economico|ricreativo": 5,
+     "economico|turistico": 8,
+     "naturalistico|ricreativo": 8,
+     "economico|identitario": 2,
+     "identitario|ricreativo": 1
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 55,
+      "q": 0.887,
+      "assoc": [
+       0.1,
+       -0.09,
+       -0.05,
+       -0.05,
+       0.05
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.581,
+      "assoc": [
+       0.28,
+       0.01,
+       -0.11,
+       0.07,
+       -0.25
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 29,
+      "q": 0.468,
+      "assoc": [
+       0.08,
+       -0.13,
+       -0.16,
+       -0.14,
+       0.02
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 27,
+      "q": 0.435,
+      "assoc": [
+       -0.25,
+       0.17,
+       0.32,
+       -0.14,
+       0.44
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.242,
+      "assoc": [
+       0.07,
+       -0.23,
+       -0.03,
+       0.09,
+       -0.49
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 13,
+      "q": 0.21,
+      "assoc": [
+       -0.31,
+       0.15,
+       0.15,
+       0.05,
+       0.47
+      ]
+     },
+     {
+      "t": "frescura",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.194,
+      "assoc": [
+       -0.3,
+       -0.16,
+       -0.41,
+       0.41,
+       0.52
+      ]
+     },
+     {
+      "t": "incendi",
+      "tipo": "omissione",
+      "n": 8,
+      "q": 0.129,
+      "assoc": [
+       -0.09,
+       0.34,
+       -0.29,
+       0.07,
+       -0.85
+      ]
+     },
+     {
+      "t": "castagneti",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.113,
+      "assoc": [
+       -0.47,
+       0.98,
+       0.84,
+       0.25,
+       -0.8
+      ]
+     },
+     {
+      "t": "funghi",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.081,
+      "assoc": [
+       -1.07,
+       0.44,
+       0.44,
+       0.02,
+       0.17
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     4.27,
+     2.56,
+     3.54,
+     3.0,
+     3.85
+    ],
+    "direzioni": [
+     3.71,
+     2.59,
+     3.15,
+     2.54,
+     3.02
+    ],
+    "riconoscibilita": [
+     4.22,
+     4.1,
+     3.85
+    ],
+    "conflitti": {
+     "economico|ricreativo": 2,
+     "economico|turistico": 3,
+     "identitario|ricreativo": 3,
+     "naturalistico|economico": 14,
+     "naturalistico|turistico": 12,
+     "naturalistico|identitario": 3,
+     "naturalistico|ricreativo": 4
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 34,
+      "q": 0.829,
+      "assoc": [
+       0.14,
+       0.03,
+       -0.04,
+       -0.03,
+       0.03
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 25,
+      "q": 0.61,
+      "assoc": [
+       0.21,
+       0.16,
+       -0.22,
+       -0.12,
+       -0.17
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.488,
+      "assoc": [
+       -0.22,
+       -0.21,
+       0.41,
+       0.05,
+       0.35
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.39,
+      "assoc": [
+       0.04,
+       0.13,
+       0.09,
+       0.25,
+       0.46
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.268,
+      "assoc": [
+       -0.27,
+       -0.56,
+       -0.08,
+       -0.18,
+       -0.31
+      ]
+     },
+     {
+      "t": "castagneti",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.244,
+      "assoc": [
+       -0.17,
+       0.54,
+       -0.24,
+       0.1,
+       -0.55
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.22,
+      "assoc": [
+       0.4,
+       0.44,
+       -0.09,
+       0.22,
+       0.26
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     4.39,
+     1.71,
+     4.11,
+     2.96,
+     4.18
+    ],
+    "direzioni": [
+     3.54,
+     1.25,
+     4.04,
+     2.46,
+     3.71
+    ],
+    "riconoscibilita": [
+     4.25,
+     3.68,
+     3.43
+    ],
+    "conflitti": {
+     "naturalistico|economico": 13,
+     "identitario|ricreativo": 2,
+     "naturalistico|turistico": 6,
+     "naturalistico|ricreativo": 4,
+     "economico|identitario": 2,
+     "turistico|identitario": 1
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.786,
+      "assoc": [
+       0.2,
+       0.1,
+       0.07,
+       -0.06,
+       0.09
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.571,
+      "assoc": [
+       0.23,
+       -0.21,
+       0.14,
+       -0.03,
+       -0.24
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.5,
+      "assoc": [
+       -0.25,
+       0.14,
+       -0.11,
+       -0.11,
+       0.39
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.464,
+      "assoc": [
+       0.22,
+       0.05,
+       0.05,
+       -0.04,
+       0.13
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       -0.23,
+       -0.46,
+       -0.02,
+       0.2,
+       -0.35
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 11,
+      "q": 0.393,
+      "assoc": [
+       0.24,
+       0.01,
+       0.26,
+       -0.33,
+       0.09
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     4.91,
+     1.77,
+     3.73,
+     3.05,
+     3.95
+    ],
+    "direzioni": [
+     4.86,
+     1.5,
+     2.82,
+     2.68,
+     3.14
+    ],
+    "riconoscibilita": [
+     4.05,
+     4.05,
+     3.64
+    ],
+    "conflitti": {
+     "naturalistico|turistico": 7,
+     "naturalistico|identitario": 2,
+     "naturalistico|economico": 8,
+     "turistico|ricreativo": 1,
+     "turistico|identitario": 1,
+     "naturalistico|ricreativo": 1,
+     "economico|turistico": 1,
+     "economico|ricreativo": 1
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.909,
+      "assoc": [
+       0.09,
+       -0.02,
+       -0.03,
+       0.05,
+       -0.05
+      ]
+     },
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.864,
+      "assoc": [
+       0.04,
+       0.07,
+       -0.15,
+       -0.1,
+       -0.11
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.455,
+      "assoc": [
+       -0.11,
+       -0.27,
+       0.27,
+       -0.15,
+       -0.25
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 10,
+      "q": 0.455,
+      "assoc": [
+       0.09,
+       0.03,
+       0.07,
+       0.05,
+       0.05
+      ]
+     },
+     {
+      "t": "sentieri",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.409,
+      "assoc": [
+       -0.02,
+       0.23,
+       0.16,
+       0.29,
+       0.49
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       -0.16,
+       -0.02,
+       -0.1,
+       -0.05,
+       0.17
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     4.8,
+     2.07,
+     3.73,
+     3.33,
+     4.27
+    ],
+    "direzioni": [
+     4.13,
+     1.27,
+     3.2,
+     2.73,
+     3.67
+    ],
+    "riconoscibilita": [
+     4.27,
+     4.2,
+     3.87
+    ],
+    "conflitti": {
+     "naturalistico|economico": 10,
+     "naturalistico|ricreativo": 3,
+     "naturalistico|turistico": 2
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "boschi",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 1.0,
+      "assoc": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "t": "silenzio",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.733,
+      "assoc": [
+       0.11,
+       -0.07,
+       -0.1,
+       0.12,
+       0.01
+      ]
+     },
+     {
+      "t": "laghi di Monticchio",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.6,
+      "assoc": [
+       -0.02,
+       0.04,
+       0.38,
+       0.22,
+       0.07
+      ]
+     },
+     {
+      "t": "faggete",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.533,
+      "assoc": [
+       -0.05,
+       0.18,
+       -0.23,
+       -0.33,
+       -0.14
+      ]
+     },
+     {
+      "t": "isolamento",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       -0.2,
+       -0.47,
+       0.27,
+       0.07,
+       -0.07
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     4.5,
+     1.25,
+     4.0,
+     4.0,
+     4.75
+    ],
+    "direzioni": [
+     4.0,
+     1.5,
+     4.0,
+     2.5,
+     3.0
+    ],
+    "riconoscibilita": [
+     4.0,
+     3.75,
+     3.25
+    ],
+    "conflitti": {
+     "economico|turistico": 1,
+     "naturalistico|economico": 2,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  },
+  "2": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     3.84,
+     3.17,
+     3.3,
+     3.62,
+     3.59
+    ],
+    "direzioni": [
+     3.43,
+     2.72,
+     2.66,
+     3.13,
+     3.06
+    ],
+    "riconoscibilita": [
+     3.69,
+     3.4,
+     3.14
+    ],
+    "conflitti": {
+     "naturalistico|ricreativo": 27,
+     "economico|identitario": 40,
+     "naturalistico|identitario": 7,
+     "naturalistico|economico": 49,
+     "turistico|identitario": 30,
+     "economico|ricreativo": 9,
+     "naturalistico|turistico": 3,
+     "turistico|ricreativo": 2,
+     "economico|turistico": 4,
+     "identitario|ricreativo": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 85,
+      "q": 0.494,
+      "assoc": [
+       -0.01,
+       -0.2,
+       -0.0,
+       -0.15,
+       0.41
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 79,
+      "q": 0.459,
+      "assoc": [
+       -0.1,
+       0.06,
+       -0.14,
+       0.37,
+       -0.18
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 73,
+      "q": 0.424,
+      "assoc": [
+       -0.26,
+       -0.24,
+       0.32,
+       0.16,
+       0.05
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 64,
+      "q": 0.372,
+      "assoc": [
+       0.41,
+       -0.18,
+       -0.19,
+       -0.23,
+       -0.12
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 62,
+      "q": 0.36,
+      "assoc": [
+       0.32,
+       -0.31,
+       0.01,
+       -0.09,
+       -0.06
+      ]
+     },
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 60,
+      "q": 0.349,
+      "assoc": [
+       -0.22,
+       0.8,
+       -0.06,
+       -0.14,
+       -0.11
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 51,
+      "q": 0.297,
+      "assoc": [
+       0.08,
+       0.44,
+       -0.16,
+       -0.19,
+       -0.1
+      ]
+     },
+     {
+      "t": "armonia",
+      "tipo": "chiave",
+      "n": 42,
+      "q": 0.244,
+      "assoc": [
+       -0.22,
+       -0.22,
+       0.27,
+       0.26,
+       -0.02
+      ]
+     },
+     {
+      "t": "spopolamento",
+      "tipo": "omissione",
+      "n": 35,
+      "q": 0.203,
+      "assoc": [
+       0.16,
+       -0.74,
+       -0.24,
+       0.46,
+       0.01
+      ]
+     },
+     {
+      "t": "strade rurali",
+      "tipo": "omissione",
+      "n": 31,
+      "q": 0.18,
+      "assoc": [
+       0.23,
+       0.19,
+       0.22,
+       -0.04,
+       0.5
+      ]
+     },
+     {
+      "t": "eolico",
+      "tipo": "omissione",
+      "n": 18,
+      "q": 0.105,
+      "assoc": [
+       -0.23,
+       0.83,
+       -0.07,
+       -0.23,
+       -0.32
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     3.82,
+     3.08,
+     3.16,
+     3.69,
+     3.68
+    ],
+    "direzioni": [
+     3.6,
+     2.52,
+     2.35,
+     3.19,
+     3.34
+    ],
+    "riconoscibilita": [
+     3.77,
+     3.81,
+     3.35
+    ],
+    "conflitti": {
+     "naturalistico|ricreativo": 7,
+     "economico|identitario": 17,
+     "naturalistico|identitario": 1,
+     "naturalistico|economico": 21,
+     "turistico|identitario": 10,
+     "economico|ricreativo": 2,
+     "naturalistico|turistico": 1,
+     "turistico|ricreativo": 1,
+     "economico|turistico": 1,
+     "identitario|ricreativo": 1
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 32,
+      "q": 0.516,
+      "assoc": [
+       -0.04,
+       -0.17,
+       -0.13,
+       -0.22,
+       0.39
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 28,
+      "q": 0.452,
+      "assoc": [
+       -0.14,
+       -0.12,
+       0.02,
+       0.52,
+       -0.14
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 27,
+      "q": 0.435,
+      "assoc": [
+       0.29,
+       -0.15,
+       -0.09,
+       -0.25,
+       -0.05
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.355,
+      "assoc": [
+       -0.32,
+       -0.04,
+       0.29,
+       -0.01,
+       -0.09
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 21,
+      "q": 0.339,
+      "assoc": [
+       0.32,
+       -0.6,
+       -0.02,
+       0.07,
+       -0.01
+      ]
+     },
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 21,
+      "q": 0.339,
+      "assoc": [
+       -0.06,
+       0.87,
+       -0.11,
+       -0.07,
+       0.13
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.306,
+      "assoc": [
+       0.07,
+       0.45,
+       -0.06,
+       -0.22,
+       -0.2
+      ]
+     },
+     {
+      "t": "armonia",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.258,
+      "assoc": [
+       -0.14,
+       -0.02,
+       0.21,
+       0.24,
+       -0.24
+      ]
+     },
+     {
+      "t": "spopolamento",
+      "tipo": "omissione",
+      "n": 15,
+      "q": 0.242,
+      "assoc": [
+       0.11,
+       -0.75,
+       -0.09,
+       0.51,
+       -0.08
+      ]
+     },
+     {
+      "t": "strade rurali",
+      "tipo": "omissione",
+      "n": 12,
+      "q": 0.194,
+      "assoc": [
+       0.34,
+       0.17,
+       -0.16,
+       0.06,
+       0.41
+      ]
+     },
+     {
+      "t": "eolico",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.097,
+      "assoc": [
+       -0.66,
+       0.75,
+       0.17,
+       -0.36,
+       -0.34
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     3.66,
+     3.8,
+     3.24,
+     3.46,
+     3.44
+    ],
+    "direzioni": [
+     3.15,
+     3.88,
+     2.59,
+     2.71,
+     2.68
+    ],
+    "riconoscibilita": [
+     3.78,
+     3.05,
+     3.27
+    ],
+    "conflitti": {
+     "economico|identitario": 9,
+     "turistico|identitario": 8,
+     "naturalistico|economico": 10,
+     "naturalistico|ricreativo": 7,
+     "naturalistico|identitario": 4,
+     "economico|ricreativo": 2,
+     "economico|turistico": 1
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 26,
+      "q": 0.634,
+      "assoc": [
+       -0.2,
+       0.39,
+       -0.01,
+       -0.08,
+       -0.13
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.537,
+      "assoc": [
+       -0.07,
+       -0.03,
+       -0.02,
+       0.26,
+       -0.17
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.39,
+      "assoc": [
+       -0.22,
+       -0.24,
+       0.38,
+       0.47,
+       0.06
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.39,
+      "assoc": [
+       0.15,
+       -0.24,
+       -0.18,
+       -0.09,
+       0.69
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.366,
+      "assoc": [
+       0.21,
+       0.2,
+       -0.18,
+       -0.13,
+       -0.04
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.317,
+      "assoc": [
+       0.19,
+       -0.27,
+       -0.01,
+       -0.46,
+       0.02
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.22,
+      "assoc": [
+       0.56,
+       -0.14,
+       -0.36,
+       -0.46,
+       -0.33
+      ]
+     },
+     {
+      "t": "strade rurali",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.171,
+      "assoc": [
+       0.2,
+       -0.23,
+       0.18,
+       -0.03,
+       0.99
+      ]
+     },
+     {
+      "t": "armonia",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.146,
+      "assoc": [
+       -0.49,
+       0.03,
+       0.59,
+       0.37,
+       -0.27
+      ]
+     },
+     {
+      "t": "eolico",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.146,
+      "assoc": [
+       0.01,
+       0.53,
+       -0.08,
+       -0.3,
+       -0.44
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     3.71,
+     2.79,
+     4.0,
+     3.46,
+     3.79
+    ],
+    "direzioni": [
+     2.86,
+     1.89,
+     3.82,
+     2.93,
+     3.5
+    ],
+    "riconoscibilita": [
+     3.64,
+     3.11,
+     2.46
+    ],
+    "conflitti": {
+     "turistico|identitario": 6,
+     "turistico|ricreativo": 1,
+     "naturalistico|economico": 7,
+     "economico|identitario": 5,
+     "naturalistico|ricreativo": 6,
+     "economico|turistico": 1,
+     "economico|ricreativo": 2
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 19,
+      "q": 0.679,
+      "assoc": [
+       -0.14,
+       -0.31,
+       0.11,
+       0.01,
+       0.16
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.536,
+      "assoc": [
+       -0.11,
+       -0.12,
+       0.2,
+       -0.13,
+       0.41
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       0.45,
+       0.05,
+       -0.25,
+       0.04,
+       -0.45
+      ]
+     },
+     {
+      "t": "armonia",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.393,
+      "assoc": [
+       -0.26,
+       -0.33,
+       0.0,
+       0.26,
+       0.4
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.321,
+      "assoc": [
+       0.4,
+       0.1,
+       0.0,
+       -0.13,
+       -0.45
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.25,
+      "assoc": [
+       0.14,
+       0.07,
+       -0.43,
+       0.25,
+       -0.5
+      ]
+     },
+     {
+      "t": "strade rurali",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.25,
+      "assoc": [
+       0.14,
+       0.5,
+       0.57,
+       -0.18,
+       0.07
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       -0.38,
+       0.88,
+       0.33,
+       -0.3,
+       0.05
+      ]
+     },
+     {
+      "t": "spopolamento",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       0.12,
+       -0.62,
+       -0.5,
+       0.54,
+       0.05
+      ]
+     },
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.179,
+      "assoc": [
+       -0.11,
+       0.81,
+       -0.2,
+       -0.06,
+       -0.19
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     4.18,
+     2.82,
+     3.09,
+     3.68,
+     3.5
+    ],
+    "direzioni": [
+     3.77,
+     2.0,
+     2.77,
+     3.5,
+     2.95
+    ],
+    "riconoscibilita": [
+     3.36,
+     3.41,
+     3.32
+    ],
+    "conflitti": {
+     "naturalistico|turistico": 2,
+     "naturalistico|ricreativo": 3,
+     "turistico|identitario": 5,
+     "naturalistico|identitario": 1,
+     "economico|identitario": 5,
+     "naturalistico|economico": 3,
+     "economico|turistico": 1,
+     "economico|ricreativo": 2
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.591,
+      "assoc": [
+       -0.1,
+       0.18,
+       -0.17,
+       0.24,
+       -0.04
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.591,
+      "assoc": [
+       -0.03,
+       -0.36,
+       -0.01,
+       -0.07,
+       0.12
+      ]
+     },
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.455,
+      "assoc": [
+       0.62,
+       -0.02,
+       -0.29,
+       -0.48,
+       0.0
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.409,
+      "assoc": [
+       -0.52,
+       -0.04,
+       0.35,
+       0.43,
+       0.06
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       0.19,
+       -0.19,
+       0.03,
+       -0.18,
+       0.0
+      ]
+     },
+     {
+      "t": "spopolamento",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.318,
+      "assoc": [
+       0.39,
+       -0.25,
+       -0.23,
+       0.32,
+       -0.36
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.227,
+      "assoc": [
+       0.22,
+       0.38,
+       -0.29,
+       -0.28,
+       -0.1
+      ]
+     },
+     {
+      "t": "campi",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.227,
+      "assoc": [
+       -0.58,
+       0.58,
+       0.51,
+       -0.08,
+       -0.3
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     4.07,
+     2.93,
+     2.8,
+     4.0,
+     3.47
+    ],
+    "direzioni": [
+     3.93,
+     2.67,
+     1.87,
+     3.93,
+     2.6
+    ],
+    "riconoscibilita": [
+     3.67,
+     3.13,
+     3.07
+    ],
+    "conflitti": {
+     "economico|identitario": 4,
+     "naturalistico|economico": 7,
+     "economico|ricreativo": 1,
+     "naturalistico|identitario": 1,
+     "naturalistico|ricreativo": 2
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "boschetti",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.533,
+      "assoc": [
+       0.18,
+       -0.18,
+       -0.05,
+       0.0,
+       0.03
+      ]
+     },
+     {
+      "t": "colline",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.467,
+      "assoc": [
+       -0.07,
+       -0.36,
+       0.2,
+       0.14,
+       -0.04
+      ]
+     },
+     {
+      "t": "masserie",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.467,
+      "assoc": [
+       -0.5,
+       0.21,
+       -0.23,
+       0.29,
+       -0.18
+      ]
+     },
+     {
+      "t": "pascoli",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.4,
+      "assoc": [
+       0.27,
+       0.23,
+       -0.3,
+       -0.17,
+       0.03
+      ]
+     },
+     {
+      "t": "varietà",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       0.73,
+       -0.33,
+       0.2,
+       0.0,
+       0.13
+      ]
+     },
+     {
+      "t": "armonia",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       -0.27,
+       -0.13,
+       0.2,
+       0.0,
+       -0.27
+      ]
+     },
+     {
+      "t": "tranquillità",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       -0.27,
+       0.27,
+       0.2,
+       -0.2,
+       0.53
+      ]
+     },
+     {
+      "t": "spopolamento",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       -0.27,
+       -0.13,
+       -0.2,
+       0.2,
+       0.33
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     4.0,
+     3.5,
+     4.0,
+     3.5,
+     3.5
+    ],
+    "direzioni": [
+     4.0,
+     3.75,
+     2.5,
+     2.75,
+     2.0
+    ],
+    "riconoscibilita": [
+     3.5,
+     3.75,
+     2.5
+    ],
+    "conflitti": {
+     "turistico|identitario": 1,
+     "naturalistico|economico": 1,
+     "naturalistico|ricreativo": 2
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  },
+  "3": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     2.31,
+     4.38,
+     2.4,
+     3.05,
+     2.33
+    ],
+    "direzioni": [
+     2.8,
+     4.13,
+     2.23,
+     3.51,
+     2.33
+    ],
+    "riconoscibilita": [
+     3.95,
+     3.69,
+     3.49
+    ],
+    "conflitti": {
+     "economico|turistico": 37,
+     "naturalistico|economico": 66,
+     "turistico|ricreativo": 3,
+     "economico|ricreativo": 16,
+     "economico|identitario": 34,
+     "identitario|ricreativo": 5,
+     "naturalistico|identitario": 4,
+     "turistico|identitario": 3,
+     "naturalistico|turistico": 3,
+     "naturalistico|ricreativo": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 136,
+      "q": 0.791,
+      "assoc": [
+       -0.21,
+       0.06,
+       -0.01,
+       -0.0,
+       0.06
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 134,
+      "q": 0.779,
+      "assoc": [
+       0.01,
+       0.07,
+       0.07,
+       0.04,
+       -0.0
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 124,
+      "q": 0.721,
+      "assoc": [
+       0.06,
+       0.13,
+       -0.03,
+       0.09,
+       -0.03
+      ]
+     },
+     {
+      "t": "trattori",
+      "tipo": "chiave",
+      "n": 46,
+      "q": 0.267,
+      "assoc": [
+       0.1,
+       -0.07,
+       -0.03,
+       -0.33,
+       -0.04
+      ]
+     },
+     {
+      "t": "area industriale di San Nicola",
+      "tipo": "omissione",
+      "n": 41,
+      "q": 0.238,
+      "assoc": [
+       0.2,
+       0.13,
+       0.02,
+       -0.1,
+       -0.03
+      ]
+     },
+     {
+      "t": "fotovoltaico a terra",
+      "tipo": "omissione",
+      "n": 26,
+      "q": 0.151,
+      "assoc": [
+       -0.58,
+       -0.3,
+       -0.01,
+       -0.05,
+       0.06
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 25,
+      "q": 0.145,
+      "assoc": [
+       -0.03,
+       -0.18,
+       -0.08,
+       -0.05,
+       0.03
+      ]
+     },
+     {
+      "t": "campi aperti",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.14,
+      "assoc": [
+       0.07,
+       -0.17,
+       0.1,
+       -0.05,
+       0.09
+      ]
+     },
+     {
+      "t": "monotonia",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.116,
+      "assoc": [
+       0.69,
+       -0.78,
+       -0.55,
+       -0.05,
+       -0.18
+      ]
+     },
+     {
+      "t": "orizzonte",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.041,
+      "assoc": [
+       0.12,
+       -0.95,
+       1.03,
+       0.38,
+       -0.18
+      ]
+     },
+     {
+      "t": "inquinamento",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.035,
+      "assoc": [
+       1.36,
+       -0.88,
+       0.27,
+       -0.21,
+       0.01
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     2.24,
+     4.35,
+     2.11,
+     3.0,
+     2.37
+    ],
+    "direzioni": [
+     2.77,
+     4.21,
+     1.61,
+     3.74,
+     2.66
+    ],
+    "riconoscibilita": [
+     4.02,
+     3.77,
+     3.68
+    ],
+    "conflitti": {
+     "economico|turistico": 13,
+     "naturalistico|economico": 29,
+     "turistico|ricreativo": 1,
+     "economico|ricreativo": 7,
+     "economico|identitario": 8,
+     "identitario|ricreativo": 1,
+     "naturalistico|identitario": 1,
+     "turistico|identitario": 1,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 50,
+      "q": 0.806,
+      "assoc": [
+       -0.18,
+       0.01,
+       0.03,
+       0.0,
+       0.11
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 46,
+      "q": 0.742,
+      "assoc": [
+       -0.0,
+       0.1,
+       0.15,
+       0.09,
+       -0.07
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 45,
+      "q": 0.726,
+      "assoc": [
+       0.11,
+       0.09,
+       -0.0,
+       0.16,
+       -0.04
+      ]
+     },
+     {
+      "t": "trattori",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.242,
+      "assoc": [
+       0.16,
+       -0.22,
+       -0.31,
+       -0.47,
+       0.1
+      ]
+     },
+     {
+      "t": "area industriale di San Nicola",
+      "tipo": "omissione",
+      "n": 15,
+      "q": 0.242,
+      "assoc": [
+       0.09,
+       0.25,
+       0.15,
+       -0.2,
+       0.23
+      ]
+     },
+     {
+      "t": "campi aperti",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.161,
+      "assoc": [
+       -0.04,
+       0.05,
+       -0.01,
+       -0.2,
+       0.33
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.161,
+      "assoc": [
+       -0.14,
+       0.05,
+       0.09,
+       -0.2,
+       -0.17
+      ]
+     },
+     {
+      "t": "monotonia",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.145,
+      "assoc": [
+       0.31,
+       -0.8,
+       -0.45,
+       0.0,
+       -0.48
+      ]
+     },
+     {
+      "t": "fotovoltaico a terra",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.145,
+      "assoc": [
+       -0.24,
+       -0.35,
+       -0.11,
+       0.11,
+       -0.15
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     2.24,
+     4.66,
+     2.29,
+     2.83,
+     2.07
+    ],
+    "direzioni": [
+     2.71,
+     4.76,
+     2.56,
+     3.0,
+     1.98
+    ],
+    "riconoscibilita": [
+     3.9,
+     3.51,
+     3.61
+    ],
+    "conflitti": {
+     "naturalistico|economico": 15,
+     "naturalistico|ricreativo": 1,
+     "economico|turistico": 8,
+     "economico|ricreativo": 4,
+     "identitario|ricreativo": 3,
+     "turistico|identitario": 1,
+     "economico|identitario": 7,
+     "naturalistico|identitario": 2
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 34,
+      "q": 0.829,
+      "assoc": [
+       -0.24,
+       0.05,
+       -0.03,
+       0.05,
+       0.04
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 33,
+      "q": 0.805,
+      "assoc": [
+       0.06,
+       0.1,
+       0.1,
+       0.08,
+       -0.01
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 32,
+      "q": 0.78,
+      "assoc": [
+       0.04,
+       0.06,
+       0.02,
+       0.01,
+       0.05
+      ]
+     },
+     {
+      "t": "trattori",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.293,
+      "assoc": [
+       0.17,
+       -0.08,
+       0.12,
+       -0.33,
+       -0.07
+      ]
+     },
+     {
+      "t": "area industriale di San Nicola",
+      "tipo": "omissione",
+      "n": 8,
+      "q": 0.195,
+      "assoc": [
+       0.63,
+       0.09,
+       0.08,
+       -0.08,
+       -0.32
+      ]
+     },
+     {
+      "t": "fotovoltaico a terra",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.171,
+      "assoc": [
+       -0.96,
+       -0.37,
+       -0.44,
+       -0.11,
+       0.07
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.146,
+      "assoc": [
+       -0.24,
+       -0.49,
+       -0.46,
+       0.34,
+       -0.07
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     2.18,
+     4.21,
+     2.96,
+     3.07,
+     2.5
+    ],
+    "direzioni": [
+     2.46,
+     3.46,
+     3.11,
+     3.32,
+     2.64
+    ],
+    "riconoscibilita": [
+     4.11,
+     3.61,
+     3.07
+    ],
+    "conflitti": {
+     "naturalistico|economico": 8,
+     "turistico|ricreativo": 1,
+     "economico|identitario": 7,
+     "economico|turistico": 10,
+     "turistico|identitario": 1,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.857,
+      "assoc": [
+       -0.1,
+       0.16,
+       -0.01,
+       0.01,
+       -0.04
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 22,
+      "q": 0.786,
+      "assoc": [
+       -0.31,
+       0.06,
+       -0.01,
+       -0.07,
+       -0.05
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.571,
+      "assoc": [
+       0.01,
+       0.22,
+       -0.09,
+       -0.13,
+       0.06
+      ]
+     },
+     {
+      "t": "trattori",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.286,
+      "assoc": [
+       0.07,
+       0.04,
+       -0.09,
+       -0.07,
+       0.0
+      ]
+     },
+     {
+      "t": "area industriale di San Nicola",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.25,
+      "assoc": [
+       0.11,
+       0.07,
+       -0.11,
+       0.07,
+       -0.07
+      ]
+     },
+     {
+      "t": "campi aperti",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.179,
+      "assoc": [
+       0.62,
+       -0.41,
+       0.04,
+       0.13,
+       0.1
+      ]
+     },
+     {
+      "t": "fotovoltaico a terra",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.179,
+      "assoc": [
+       -0.38,
+       -0.21,
+       0.24,
+       -0.07,
+       0.1
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     2.86,
+     4.05,
+     2.45,
+     3.09,
+     2.05
+    ],
+    "direzioni": [
+     3.68,
+     3.68,
+     2.27,
+     3.68,
+     1.68
+    ],
+    "riconoscibilita": [
+     3.91,
+     3.45,
+     3.27
+    ],
+    "conflitti": {
+     "economico|turistico": 4,
+     "naturalistico|economico": 8,
+     "naturalistico|turistico": 1,
+     "economico|identitario": 6,
+     "economico|ricreativo": 1,
+     "naturalistico|identitario": 1,
+     "turistico|ricreativo": 1
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.818,
+      "assoc": [
+       0.03,
+       -0.05,
+       0.1,
+       -0.15,
+       0.07
+      ]
+     },
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.636,
+      "assoc": [
+       -0.01,
+       0.1,
+       -0.17,
+       0.19,
+       -0.12
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.591,
+      "assoc": [
+       -0.09,
+       0.26,
+       -0.07,
+       -0.01,
+       0.03
+      ]
+     },
+     {
+      "t": "area industriale di San Nicola",
+      "tipo": "omissione",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       -0.11,
+       0.08,
+       -0.2,
+       0.16,
+       -0.05
+      ]
+     },
+     {
+      "t": "trattori",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.273,
+      "assoc": [
+       0.14,
+       -0.05,
+       0.05,
+       -0.09,
+       -0.05
+      ]
+     },
+     {
+      "t": "campi aperti",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.227,
+      "assoc": [
+       -0.46,
+       -0.25,
+       0.35,
+       0.31,
+       -0.45
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     2.13,
+     4.4,
+     2.6,
+     3.73,
+     3.0
+    ],
+    "direzioni": [
+     2.6,
+     3.8,
+     2.07,
+     4.07,
+     2.47
+    ],
+    "riconoscibilita": [
+     3.6,
+     4.2,
+     3.33
+    ],
+    "conflitti": {
+     "naturalistico|economico": 5,
+     "identitario|ricreativo": 1,
+     "economico|identitario": 5,
+     "economico|turistico": 2,
+     "economico|ricreativo": 2
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "grano",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.867,
+      "assoc": [
+       0.02,
+       0.14,
+       -0.14,
+       0.11,
+       -0.08
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.867,
+      "assoc": [
+       -0.06,
+       -0.02,
+       -0.06,
+       -0.04,
+       0.0
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.8,
+      "assoc": [
+       0.2,
+       0.1,
+       -0.02,
+       0.1,
+       0.0
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     2.5,
+     4.75,
+     2.75,
+     3.0,
+     2.0
+    ],
+    "direzioni": [
+     2.5,
+     4.75,
+     2.5,
+     3.5,
+     1.75
+    ],
+    "riconoscibilita": [
+     4.0,
+     4.25,
+     4.0
+    ],
+    "conflitti": {
+     "naturalistico|economico": 1,
+     "economico|identitario": 1,
+     "economico|ricreativo": 2
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  },
+  "4": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     3.68,
+     3.82,
+     2.78,
+     3.19,
+     3.2
+    ],
+    "direzioni": [
+     3.29,
+     3.52,
+     2.3,
+     3.13,
+     2.75
+    ],
+    "riconoscibilita": [
+     3.27,
+     2.99,
+     2.84
+    ],
+    "conflitti": {
+     "naturalistico|ricreativo": 35,
+     "naturalistico|economico": 64,
+     "economico|ricreativo": 35,
+     "turistico|ricreativo": 5,
+     "identitario|ricreativo": 4,
+     "turistico|identitario": 17,
+     "naturalistico|identitario": 5,
+     "economico|identitario": 4,
+     "economico|turistico": 2,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 105,
+      "q": 0.61,
+      "assoc": [
+       -0.19,
+       0.29,
+       -0.04,
+       0.1,
+       -0.08
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 78,
+      "q": 0.453,
+      "assoc": [
+       -0.21,
+       0.23,
+       -0.04,
+       0.18,
+       -0.05
+      ]
+     },
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 69,
+      "q": 0.401,
+      "assoc": [
+       0.38,
+       -0.31,
+       0.05,
+       -0.21,
+       0.04
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 65,
+      "q": 0.378,
+      "assoc": [
+       0.43,
+       -0.24,
+       -0.07,
+       -0.3,
+       -0.16
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 64,
+      "q": 0.372,
+      "assoc": [
+       0.38,
+       -0.16,
+       -0.04,
+       -0.38,
+       0.33
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 63,
+      "q": 0.366,
+      "assoc": [
+       -0.16,
+       0.32,
+       0.38,
+       0.36,
+       -0.09
+      ]
+     },
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 39,
+      "q": 0.227,
+      "assoc": [
+       -0.55,
+       -0.02,
+       -0.19,
+       0.12,
+       -0.33
+      ]
+     },
+     {
+      "t": "fiume Ofanto",
+      "tipo": "omissione",
+      "n": 35,
+      "q": 0.203,
+      "assoc": [
+       0.41,
+       -0.19,
+       -0.18,
+       -0.05,
+       0.17
+      ]
+     },
+     {
+      "t": "campagna",
+      "tipo": "chiave",
+      "n": 33,
+      "q": 0.192,
+      "assoc": [
+       -0.32,
+       -0.64,
+       -0.17,
+       0.17,
+       0.52
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "omissione",
+      "n": 26,
+      "q": 0.151,
+      "assoc": [
+       -0.41,
+       0.3,
+       0.22,
+       0.15,
+       -0.13
+      ]
+     },
+     {
+      "t": "consumo di suolo",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.052,
+      "assoc": [
+       0.32,
+       -0.38,
+       -0.11,
+       -0.08,
+       -0.09
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     3.76,
+     3.84,
+     2.53,
+     3.29,
+     3.23
+    ],
+    "direzioni": [
+     3.26,
+     3.58,
+     1.98,
+     3.55,
+     2.63
+    ],
+    "riconoscibilita": [
+     3.35,
+     3.06,
+     3.18
+    ],
+    "conflitti": {
+     "naturalistico|ricreativo": 13,
+     "naturalistico|economico": 26,
+     "economico|ricreativo": 12,
+     "turistico|ricreativo": 1,
+     "identitario|ricreativo": 2,
+     "turistico|identitario": 6,
+     "naturalistico|identitario": 2
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 41,
+      "q": 0.661,
+      "assoc": [
+       -0.1,
+       0.26,
+       -0.07,
+       0.17,
+       0.07
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 35,
+      "q": 0.565,
+      "assoc": [
+       -0.19,
+       0.16,
+       0.04,
+       0.14,
+       0.0
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 27,
+      "q": 0.435,
+      "assoc": [
+       -0.05,
+       0.35,
+       0.28,
+       0.3,
+       -0.04
+      ]
+     },
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.387,
+      "assoc": [
+       0.37,
+       -0.21,
+       0.09,
+       -0.21,
+       0.07
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.323,
+      "assoc": [
+       0.39,
+       -0.49,
+       -0.03,
+       -0.29,
+       -0.08
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.29,
+      "assoc": [
+       0.24,
+       -0.12,
+       -0.03,
+       -0.62,
+       0.22
+      ]
+     },
+     {
+      "t": "fiume Ofanto",
+      "tipo": "omissione",
+      "n": 14,
+      "q": 0.226,
+      "assoc": [
+       0.46,
+       0.09,
+       -0.03,
+       -0.0,
+       -0.01
+      ]
+     },
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.21,
+      "assoc": [
+       -0.37,
+       0.01,
+       -0.15,
+       0.17,
+       -0.38
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.145,
+      "assoc": [
+       -0.42,
+       0.72,
+       -0.09,
+       0.04,
+       -0.23
+      ]
+     },
+     {
+      "t": "campagna",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.129,
+      "assoc": [
+       -0.51,
+       -1.09,
+       -0.66,
+       -0.04,
+       -0.1
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     3.46,
+     4.24,
+     2.95,
+     2.73,
+     2.8
+    ],
+    "direzioni": [
+     3.07,
+     4.66,
+     2.44,
+     2.49,
+     2.34
+    ],
+    "riconoscibilita": [
+     3.12,
+     3.17,
+     2.85
+    ],
+    "conflitti": {
+     "naturalistico|ricreativo": 13,
+     "economico|ricreativo": 9,
+     "naturalistico|economico": 11,
+     "turistico|ricreativo": 1,
+     "turistico|identitario": 3,
+     "economico|identitario": 1,
+     "naturalistico|identitario": 2,
+     "economico|turistico": 1
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 32,
+      "q": 0.78,
+      "assoc": [
+       -0.15,
+       0.26,
+       0.05,
+       0.11,
+       -0.05
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.415,
+      "assoc": [
+       -0.29,
+       0.29,
+       -0.25,
+       0.27,
+       0.08
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.415,
+      "assoc": [
+       0.54,
+       -0.3,
+       0.05,
+       -0.32,
+       -0.04
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.39,
+      "assoc": [
+       0.47,
+       -0.37,
+       -0.2,
+       -0.36,
+       0.2
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.366,
+      "assoc": [
+       -0.26,
+       0.36,
+       0.58,
+       0.4,
+       -0.27
+      ]
+     },
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.341,
+      "assoc": [
+       0.47,
+       -0.46,
+       -0.09,
+       -0.3,
+       0.2
+      ]
+     },
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.195,
+      "assoc": [
+       -0.84,
+       0.13,
+       -0.2,
+       0.27,
+       -0.18
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.171,
+      "assoc": [
+       -0.18,
+       0.04,
+       0.33,
+       0.27,
+       -0.23
+      ]
+     },
+     {
+      "t": "fiume Ofanto",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.146,
+      "assoc": [
+       0.37,
+       -0.91,
+       -0.45,
+       0.1,
+       0.53
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     3.57,
+     3.39,
+     3.25,
+     3.21,
+     3.75
+    ],
+    "direzioni": [
+     3.32,
+     2.39,
+     3.0,
+     2.96,
+     3.32
+    ],
+    "riconoscibilita": [
+     3.36,
+     2.46,
+     2.39
+    ],
+    "conflitti": {
+     "naturalistico|economico": 10,
+     "economico|identitario": 3,
+     "economico|ricreativo": 4,
+     "naturalistico|ricreativo": 5,
+     "turistico|identitario": 2,
+     "turistico|ricreativo": 2,
+     "economico|turistico": 1,
+     "identitario|ricreativo": 1
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.536,
+      "assoc": [
+       0.23,
+       -0.26,
+       0.15,
+       -0.15,
+       -0.08
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       -0.07,
+       0.11,
+       0.08,
+       0.04,
+       -0.17
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       0.35,
+       0.11,
+       0.0,
+       -0.3,
+       0.5
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       -0.24,
+       -0.06,
+       -0.17,
+       0.12,
+       -0.25
+      ]
+     },
+     {
+      "t": "campagna",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.357,
+      "assoc": [
+       -0.07,
+       0.01,
+       -0.25,
+       -0.01,
+       0.55
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.321,
+      "assoc": [
+       -0.02,
+       0.16,
+       0.08,
+       0.45,
+       0.36
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.286,
+      "assoc": [
+       0.3,
+       -0.14,
+       0.0,
+       0.04,
+       -0.5
+      ]
+     },
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       -0.9,
+       0.27,
+       0.08,
+       -0.05,
+       -0.75
+      ]
+     },
+     {
+      "t": "fiume Ofanto",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       0.26,
+       0.27,
+       0.25,
+       -0.21,
+       0.25
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.179,
+      "assoc": [
+       -0.57,
+       0.01,
+       -0.05,
+       -0.01,
+       0.25
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     4.32,
+     3.73,
+     2.59,
+     3.27,
+     3.09
+    ],
+    "direzioni": [
+     4.14,
+     3.18,
+     2.0,
+     2.5,
+     3.18
+    ],
+    "riconoscibilita": [
+     3.18,
+     3.09,
+     2.68
+    ],
+    "conflitti": {
+     "turistico|identitario": 2,
+     "economico|ricreativo": 5,
+     "naturalistico|economico": 10,
+     "naturalistico|ricreativo": 3,
+     "naturalistico|identitario": 1,
+     "identitario|ricreativo": 1
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "siepi",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.591,
+      "assoc": [
+       0.22,
+       -0.27,
+       -0.28,
+       0.03,
+       -0.09
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.591,
+      "assoc": [
+       0.3,
+       0.04,
+       -0.28,
+       -0.35,
+       -0.01
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.545,
+      "assoc": [
+       0.35,
+       -0.06,
+       -0.01,
+       -0.11,
+       0.66
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.409,
+      "assoc": [
+       -0.54,
+       0.38,
+       0.3,
+       -0.05,
+       -0.2
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       -0.57,
+       0.4,
+       0.28,
+       0.23,
+       -0.59
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.227,
+      "assoc": [
+       -0.32,
+       0.27,
+       0.61,
+       0.73,
+       -0.29
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     3.27,
+     3.4,
+     2.67,
+     3.8,
+     3.4
+    ],
+    "direzioni": [
+     3.0,
+     2.73,
+     2.07,
+     4.2,
+     3.0
+    ],
+    "riconoscibilita": [
+     3.33,
+     3.13,
+     2.6
+    ],
+    "conflitti": {
+     "turistico|identitario": 2,
+     "economico|ricreativo": 4,
+     "naturalistico|economico": 6,
+     "naturalistico|turistico": 1,
+     "naturalistico|ricreativo": 1,
+     "turistico|ricreativo": 1
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "filari",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.533,
+      "assoc": [
+       -0.27,
+       -0.15,
+       -0.29,
+       -0.42,
+       0.1
+      ]
+     },
+     {
+      "t": "vigneti",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.533,
+      "assoc": [
+       -0.02,
+       0.35,
+       -0.17,
+       0.33,
+       0.1
+      ]
+     },
+     {
+      "t": "biodiversità",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.4,
+      "assoc": [
+       0.4,
+       -0.23,
+       0.17,
+       -0.3,
+       -0.07
+      ]
+     },
+     {
+      "t": "campagna",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.4,
+      "assoc": [
+       -0.1,
+       -0.07,
+       0.0,
+       0.37,
+       0.43
+      ]
+     },
+     {
+      "t": "fiumi",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       0.33,
+       -0.4,
+       -0.27,
+       -0.2,
+       0.0
+      ]
+     },
+     {
+      "t": "uliveti",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       0.13,
+       0.4,
+       -0.27,
+       0.4,
+       0.0
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.333,
+      "assoc": [
+       -0.27,
+       0.2,
+       0.73,
+       0.2,
+       -0.6
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     3.5,
+     4.25,
+     3.0,
+     3.5,
+     3.0
+    ],
+    "direzioni": [
+     2.25,
+     3.75,
+     3.5,
+     4.0,
+     1.5
+    ],
+    "riconoscibilita": [
+     3.25,
+     2.5,
+     2.5
+    ],
+    "conflitti": {
+     "naturalistico|economico": 1,
+     "turistico|identitario": 2,
+     "economico|ricreativo": 1
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  },
+  "5": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     2.95,
+     3.23,
+     4.13,
+     4.6,
+     3.48
+    ],
+    "direzioni": [
+     2.15,
+     2.62,
+     3.3,
+     4.12,
+     2.82
+    ],
+    "riconoscibilita": [
+     4.05,
+     3.63,
+     3.42
+    ],
+    "conflitti": {
+     "turistico|identitario": 70,
+     "economico|identitario": 40,
+     "naturalistico|turistico": 15,
+     "naturalistico|economico": 4,
+     "identitario|ricreativo": 27,
+     "economico|ricreativo": 7,
+     "naturalistico|ricreativo": 5,
+     "naturalistico|identitario": 3,
+     "economico|turistico": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 140,
+      "q": 0.814,
+      "assoc": [
+       0.04,
+       -0.04,
+       0.07,
+       0.09,
+       -0.01
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 125,
+      "q": 0.727,
+      "assoc": [
+       0.01,
+       -0.1,
+       0.19,
+       0.04,
+       -0.05
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 76,
+      "q": 0.442,
+      "assoc": [
+       0.03,
+       -0.17,
+       -0.35,
+       0.11,
+       -0.01
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 75,
+      "q": 0.436,
+      "assoc": [
+       -0.17,
+       0.57,
+       -0.03,
+       -0.02,
+       -0.11
+      ]
+     },
+     {
+      "t": "feste patronali",
+      "tipo": "omissione",
+      "n": 47,
+      "q": 0.273,
+      "assoc": [
+       -0.32,
+       0.13,
+       0.02,
+       0.12,
+       0.01
+      ]
+     },
+     {
+      "t": "tradizioni",
+      "tipo": "chiave",
+      "n": 40,
+      "q": 0.233,
+      "assoc": [
+       0.17,
+       -0.16,
+       -0.28,
+       0.2,
+       0.27
+      ]
+     },
+     {
+      "t": "panorama",
+      "tipo": "chiave",
+      "n": 23,
+      "q": 0.134,
+      "assoc": [
+       0.13,
+       -0.45,
+       0.57,
+       -0.69,
+       0.39
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.116,
+      "assoc": [
+       -0.3,
+       0.47,
+       0.22,
+       -0.65,
+       -0.33
+      ]
+     },
+     {
+      "t": "chiese",
+      "tipo": "chiave",
+      "n": 17,
+      "q": 0.099,
+      "assoc": [
+       -0.01,
+       -0.29,
+       -0.66,
+       -0.13,
+       0.22
+      ]
+     },
+     {
+      "t": "grotte e cantine",
+      "tipo": "omissione",
+      "n": 17,
+      "q": 0.099,
+      "assoc": [
+       0.22,
+       -0.06,
+       0.23,
+       -0.08,
+       -0.31
+      ]
+     },
+     {
+      "t": "centri storici vuoti",
+      "tipo": "omissione",
+      "n": 11,
+      "q": 0.064,
+      "assoc": [
+       0.5,
+       -0.87,
+       0.14,
+       0.03,
+       0.43
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     2.94,
+     3.13,
+     3.84,
+     4.68,
+     3.77
+    ],
+    "direzioni": [
+     1.94,
+     2.45,
+     3.02,
+     4.35,
+     3.24
+    ],
+    "riconoscibilita": [
+     4.16,
+     3.79,
+     3.55
+    ],
+    "conflitti": {
+     "turistico|identitario": 32,
+     "economico|identitario": 14,
+     "naturalistico|turistico": 3,
+     "naturalistico|economico": 2,
+     "identitario|ricreativo": 9,
+     "economico|ricreativo": 1,
+     "naturalistico|ricreativo": 1
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 52,
+      "q": 0.839,
+      "assoc": [
+       0.03,
+       -0.03,
+       0.12,
+       0.03,
+       -0.08
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 37,
+      "q": 0.597,
+      "assoc": [
+       -0.02,
+       -0.16,
+       -0.22,
+       0.16,
+       0.01
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.581,
+      "assoc": [
+       -0.02,
+       -0.1,
+       0.27,
+       -0.01,
+       -0.08
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.387,
+      "assoc": [
+       -0.19,
+       0.5,
+       -0.21,
+       -0.01,
+       0.02
+      ]
+     },
+     {
+      "t": "feste patronali",
+      "tipo": "omissione",
+      "n": 21,
+      "q": 0.339,
+      "assoc": [
+       -0.27,
+       0.16,
+       -0.03,
+       0.18,
+       0.08
+      ]
+     },
+     {
+      "t": "tradizioni",
+      "tipo": "chiave",
+      "n": 20,
+      "q": 0.323,
+      "assoc": [
+       0.01,
+       0.02,
+       -0.29,
+       0.12,
+       -0.02
+      ]
+     },
+     {
+      "t": "chiese",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.113,
+      "assoc": [
+       0.21,
+       -0.27,
+       -0.41,
+       -0.11,
+       0.51
+      ]
+     },
+     {
+      "t": "grotte e cantine",
+      "tipo": "omissione",
+      "n": 7,
+      "q": 0.113,
+      "assoc": [
+       0.21,
+       0.16,
+       0.16,
+       -0.25,
+       -0.49
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.097,
+      "assoc": [
+       0.23,
+       0.2,
+       0.33,
+       -1.01,
+       0.06
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     2.56,
+     3.85,
+     4.29,
+     4.49,
+     3.02
+    ],
+    "direzioni": [
+     1.88,
+     3.78,
+     3.46,
+     3.68,
+     2.2
+    ],
+    "riconoscibilita": [
+     4.1,
+     3.63,
+     3.32
+    ],
+    "conflitti": {
+     "economico|ricreativo": 4,
+     "economico|identitario": 9,
+     "turistico|identitario": 13,
+     "naturalistico|turistico": 4,
+     "identitario|ricreativo": 7,
+     "naturalistico|identitario": 2,
+     "naturalistico|ricreativo": 1,
+     "naturalistico|economico": 1
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 31,
+      "q": 0.756,
+      "assoc": [
+       -0.04,
+       -0.08,
+       0.09,
+       0.06,
+       0.01
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 30,
+      "q": 0.732,
+      "assoc": [
+       0.04,
+       -0.05,
+       -0.06,
+       0.18,
+       -0.09
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 28,
+      "q": 0.683,
+      "assoc": [
+       -0.03,
+       0.25,
+       0.06,
+       0.05,
+       0.01
+      ]
+     },
+     {
+      "t": "feste patronali",
+      "tipo": "omissione",
+      "n": 14,
+      "q": 0.341,
+      "assoc": [
+       -0.35,
+       0.0,
+       0.06,
+       0.01,
+       0.05
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.293,
+      "assoc": [
+       0.11,
+       -0.19,
+       -0.38,
+       -0.15,
+       -0.02
+      ]
+     },
+     {
+      "t": "cantine",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.171,
+      "assoc": [
+       -0.56,
+       0.72,
+       0.14,
+       -0.63,
+       -0.31
+      ]
+     },
+     {
+      "t": "tradizioni",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.146,
+      "assoc": [
+       0.27,
+       -0.02,
+       0.04,
+       0.51,
+       0.31
+      ]
+     },
+     {
+      "t": "panorama",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.122,
+      "assoc": [
+       0.44,
+       -0.45,
+       0.31,
+       -0.69,
+       0.38
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     2.96,
+     2.68,
+     4.61,
+     4.36,
+     3.64
+    ],
+    "direzioni": [
+     2.29,
+     1.71,
+     4.07,
+     3.89,
+     3.04
+    ],
+    "riconoscibilita": [
+     3.82,
+     3.39,
+     3.36
+    ],
+    "conflitti": {
+     "turistico|identitario": 11,
+     "economico|identitario": 8,
+     "naturalistico|ricreativo": 2,
+     "naturalistico|turistico": 2,
+     "identitario|ricreativo": 2,
+     "economico|ricreativo": 1,
+     "naturalistico|identitario": 1,
+     "naturalistico|economico": 1
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 25,
+      "q": 0.893,
+      "assoc": [
+       0.12,
+       0.0,
+       0.11,
+       0.12,
+       0.04
+      ]
+     },
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.857,
+      "assoc": [
+       0.04,
+       0.11,
+       0.1,
+       0.14,
+       0.02
+      ]
+     },
+     {
+      "t": "panorama",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.429,
+      "assoc": [
+       0.12,
+       -0.35,
+       0.14,
+       -0.44,
+       0.19
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.286,
+      "assoc": [
+       -0.09,
+       0.95,
+       0.02,
+       0.14,
+       -0.27
+      ]
+     },
+     {
+      "t": "feste patronali",
+      "tipo": "omissione",
+      "n": 8,
+      "q": 0.286,
+      "assoc": [
+       -0.21,
+       0.2,
+       0.14,
+       0.39,
+       -0.39
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       -0.46,
+       -0.68,
+       -0.44,
+       -0.02,
+       -0.14
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     3.36,
+     3.09,
+     3.95,
+     4.86,
+     3.09
+    ],
+    "direzioni": [
+     3.09,
+     2.36,
+     2.82,
+     4.27,
+     2.45
+    ],
+    "riconoscibilita": [
+     3.86,
+     3.5,
+     3.41
+    ],
+    "conflitti": {
+     "turistico|identitario": 9,
+     "identitario|ricreativo": 6,
+     "naturalistico|turistico": 3,
+     "economico|identitario": 4
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.818,
+      "assoc": [
+       -0.03,
+       -0.09,
+       0.16,
+       -0.03,
+       0.13
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 18,
+      "q": 0.818,
+      "assoc": [
+       -0.03,
+       -0.2,
+       0.21,
+       0.03,
+       -0.15
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.636,
+      "assoc": [
+       0.06,
+       0.19,
+       -0.24,
+       0.06,
+       0.05
+      ]
+     },
+     {
+      "t": "aglianico",
+      "tipo": "chiave",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       -0.11,
+       0.41,
+       -0.08,
+       -0.24,
+       0.03
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     3.53,
+     3.07,
+     4.07,
+     4.8,
+     3.8
+    ],
+    "direzioni": [
+     2.33,
+     1.93,
+     2.93,
+     4.73,
+     3.07
+    ],
+    "riconoscibilita": [
+     4.07,
+     3.47,
+     3.53
+    ],
+    "conflitti": {
+     "economico|identitario": 4,
+     "identitario|ricreativo": 3,
+     "turistico|identitario": 4,
+     "economico|ricreativo": 1,
+     "economico|turistico": 1,
+     "naturalistico|ricreativo": 1,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "borghi",
+      "tipo": "chiave",
+      "n": 13,
+      "q": 0.867,
+      "assoc": [
+       0.01,
+       0.01,
+       0.01,
+       0.12,
+       -0.03
+      ]
+     },
+     {
+      "t": "castello",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.8,
+      "assoc": [
+       0.05,
+       -0.07,
+       0.02,
+       0.03,
+       0.12
+      ]
+     },
+     {
+      "t": "tradizioni",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.467,
+      "assoc": [
+       0.18,
+       0.08,
+       -0.07,
+       -0.09,
+       0.49
+      ]
+     },
+     {
+      "t": "storia",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.4,
+      "assoc": [
+       0.13,
+       -0.23,
+       0.1,
+       -0.13,
+       -0.47
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     2.75,
+     3.75,
+     4.75,
+     4.25,
+     3.5
+    ],
+    "direzioni": [
+     1.25,
+     3.5,
+     4.75,
+     3.25,
+     2.25
+    ],
+    "riconoscibilita": [
+     4.25,
+     4.0,
+     2.75
+    ],
+    "conflitti": {
+     "economico|identitario": 1,
+     "naturalistico|turistico": 2,
+     "turistico|identitario": 1
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  },
+  "6": {
+   "tutti": {
+    "n": 172,
+    "valori": [
+     1.95,
+     3.95,
+     1.88,
+     2.47,
+     2.17
+    ],
+    "direzioni": [
+     3.13,
+     4.03,
+     2.11,
+     2.67,
+     3.05
+    ],
+    "riconoscibilita": [
+     3.02,
+     3.35,
+     2.63
+    ],
+    "conflitti": {
+     "economico|identitario": 26,
+     "economico|ricreativo": 48,
+     "naturalistico|economico": 71,
+     "turistico|ricreativo": 7,
+     "identitario|ricreativo": 1,
+     "naturalistico|turistico": 5,
+     "economico|turistico": 10,
+     "naturalistico|identitario": 3,
+     "turistico|identitario": 1
+    },
+    "risposte": 172,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 140,
+      "q": 0.814,
+      "assoc": [
+       -0.11,
+       0.06,
+       0.02,
+       -0.14,
+       0.05
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 118,
+      "q": 0.686,
+      "assoc": [
+       -0.03,
+       0.19,
+       -0.09,
+       0.16,
+       -0.09
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 94,
+      "q": 0.547,
+      "assoc": [
+       -0.29,
+       -0.1,
+       -0.0,
+       0.03,
+       0.01
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 56,
+      "q": 0.326,
+      "assoc": [
+       0.45,
+       0.24,
+       -0.13,
+       0.07,
+       0.15
+      ]
+     },
+     {
+      "t": "tralicci",
+      "tipo": "omissione",
+      "n": 52,
+      "q": 0.302,
+      "assoc": [
+       0.03,
+       0.22,
+       -0.04,
+       0.05,
+       0.02
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 37,
+      "q": 0.215,
+      "assoc": [
+       0.43,
+       -0.03,
+       -0.18,
+       0.13,
+       -0.11
+      ]
+     },
+     {
+      "t": "degrado",
+      "tipo": "chiave",
+      "n": 27,
+      "q": 0.157,
+      "assoc": [
+       0.02,
+       -0.88,
+       0.3,
+       -0.32,
+       0.05
+      ]
+     },
+     {
+      "t": "periferia",
+      "tipo": "chiave",
+      "n": 23,
+      "q": 0.134,
+      "assoc": [
+       0.4,
+       -0.04,
+       0.46,
+       -0.2,
+       -0.21
+      ]
+     },
+     {
+      "t": "frammentazione",
+      "tipo": "chiave",
+      "n": 21,
+      "q": 0.122,
+      "assoc": [
+       -0.19,
+       -0.43,
+       0.16,
+       0.06,
+       0.12
+      ]
+     },
+     {
+      "t": "discariche",
+      "tipo": "omissione",
+      "n": 19,
+      "q": 0.11,
+      "assoc": [
+       0.47,
+       -0.59,
+       0.17,
+       0.22,
+       -0.22
+      ]
+     },
+     {
+      "t": "verde urbano",
+      "tipo": "omissione",
+      "n": 11,
+      "q": 0.064,
+      "assoc": [
+       -0.31,
+       -0.5,
+       -0.16,
+       0.44,
+       1.1
+      ]
+     }
+    ]
+   },
+   "quotidiana": {
+    "n": 62,
+    "valori": [
+     1.9,
+     3.9,
+     1.6,
+     2.71,
+     2.13
+    ],
+    "direzioni": [
+     3.11,
+     3.95,
+     1.66,
+     2.95,
+     3.32
+    ],
+    "riconoscibilita": [
+     3.31,
+     3.61,
+     2.87
+    ],
+    "conflitti": {
+     "economico|identitario": 8,
+     "economico|ricreativo": 14,
+     "naturalistico|economico": 32,
+     "turistico|ricreativo": 2,
+     "identitario|ricreativo": 1,
+     "naturalistico|turistico": 1,
+     "economico|turistico": 2,
+     "naturalistico|identitario": 1,
+     "turistico|identitario": 1
+    },
+    "risposte": 62,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 50,
+      "q": 0.806,
+      "assoc": [
+       -0.08,
+       0.12,
+       -0.04,
+       -0.11,
+       -0.01
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 45,
+      "q": 0.726,
+      "assoc": [
+       0.03,
+       0.16,
+       -0.06,
+       0.11,
+       -0.08
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 36,
+      "q": 0.581,
+      "assoc": [
+       -0.29,
+       -0.21,
+       0.13,
+       -0.07,
+       0.07
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 21,
+      "q": 0.339,
+      "assoc": [
+       0.57,
+       0.38,
+       -0.26,
+       0.15,
+       0.01
+      ]
+     },
+     {
+      "t": "tralicci",
+      "tipo": "omissione",
+      "n": 18,
+      "q": 0.29,
+      "assoc": [
+       -0.01,
+       0.32,
+       0.07,
+       -0.04,
+       -0.07
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.194,
+      "assoc": [
+       0.35,
+       0.01,
+       -0.18,
+       0.21,
+       -0.21
+      ]
+     },
+     {
+      "t": "degrado",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.161,
+      "assoc": [
+       -0.2,
+       -0.8,
+       0.4,
+       -0.31,
+       0.27
+      ]
+     },
+     {
+      "t": "frammentazione",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.145,
+      "assoc": [
+       -0.13,
+       -0.79,
+       0.4,
+       0.07,
+       0.2
+      ]
+     },
+     {
+      "t": "verde urbano",
+      "tipo": "omissione",
+      "n": 5,
+      "q": 0.081,
+      "assoc": [
+       -0.3,
+       -0.7,
+       -0.2,
+       0.89,
+       1.27
+      ]
+     }
+    ]
+   },
+   "lavoro": {
+    "n": 41,
+    "valori": [
+     1.83,
+     4.51,
+     1.76,
+     2.24,
+     2.0
+    ],
+    "direzioni": [
+     3.02,
+     4.9,
+     1.9,
+     2.46,
+     2.71
+    ],
+    "riconoscibilita": [
+     2.83,
+     3.29,
+     2.59
+    ],
+    "conflitti": {
+     "economico|ricreativo": 15,
+     "economico|identitario": 5,
+     "economico|turistico": 6,
+     "naturalistico|economico": 11,
+     "naturalistico|identitario": 1,
+     "turistico|ricreativo": 2,
+     "naturalistico|turistico": 1
+    },
+    "risposte": 41,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 34,
+      "q": 0.829,
+      "assoc": [
+       -0.12,
+       0.02,
+       0.04,
+       -0.13,
+       0.09
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 30,
+      "q": 0.732,
+      "assoc": [
+       0.0,
+       0.15,
+       -0.16,
+       0.16,
+       -0.07
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 24,
+      "q": 0.585,
+      "assoc": [
+       -0.33,
+       -0.05,
+       0.04,
+       -0.12,
+       -0.17
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.341,
+      "assoc": [
+       0.53,
+       0.27,
+       -0.18,
+       0.11,
+       0.29
+      ]
+     },
+     {
+      "t": "tralicci",
+      "tipo": "omissione",
+      "n": 11,
+      "q": 0.268,
+      "assoc": [
+       0.08,
+       0.03,
+       -0.12,
+       -0.06,
+       0.27
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 10,
+      "q": 0.244,
+      "assoc": [
+       0.27,
+       -0.11,
+       -0.06,
+       0.16,
+       -0.1
+      ]
+     },
+     {
+      "t": "periferia",
+      "tipo": "chiave",
+      "n": 5,
+      "q": 0.122,
+      "assoc": [
+       0.57,
+       -0.51,
+       0.44,
+       0.36,
+       0.0
+      ]
+     }
+    ]
+   },
+   "turismo": {
+    "n": 28,
+    "valori": [
+     1.82,
+     3.54,
+     2.43,
+     2.04,
+     2.36
+    ],
+    "direzioni": [
+     2.64,
+     3.14,
+     3.64,
+     2.11,
+     3.46
+    ],
+    "riconoscibilita": [
+     2.79,
+     3.18,
+     2.11
+    ],
+    "conflitti": {
+     "naturalistico|economico": 13,
+     "economico|ricreativo": 10,
+     "economico|identitario": 3,
+     "naturalistico|turistico": 1,
+     "turistico|ricreativo": 1
+    },
+    "risposte": 28,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 26,
+      "q": 0.929,
+      "assoc": [
+       -0.05,
+       0.0,
+       0.03,
+       -0.07,
+       0.03
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.536,
+      "assoc": [
+       -0.42,
+       0.13,
+       0.1,
+       0.23,
+       -0.09
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 14,
+      "q": 0.5,
+      "assoc": [
+       -0.18,
+       -0.25,
+       -0.07,
+       0.32,
+       0.07
+      ]
+     },
+     {
+      "t": "tralicci",
+      "tipo": "omissione",
+      "n": 9,
+      "q": 0.321,
+      "assoc": [
+       -0.04,
+       0.13,
+       -0.1,
+       0.41,
+       0.2
+      ]
+     },
+     {
+      "t": "degrado",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.25,
+      "assoc": [
+       0.04,
+       -0.39,
+       -0.29,
+       -0.32,
+       -0.36
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.25,
+      "assoc": [
+       0.04,
+       0.04,
+       0.14,
+       0.11,
+       0.5
+      ]
+     },
+     {
+      "t": "strade",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       1.01,
+       0.3,
+       -0.26,
+       -0.2,
+       0.31
+      ]
+     },
+     {
+      "t": "periferia",
+      "tipo": "chiave",
+      "n": 6,
+      "q": 0.214,
+      "assoc": [
+       0.35,
+       0.13,
+       0.4,
+       -0.54,
+       -0.52
+      ]
+     }
+    ]
+   },
+   "studio": {
+    "n": 22,
+    "valori": [
+     2.45,
+     3.82,
+     1.95,
+     2.59,
+     2.23
+    ],
+    "direzioni": [
+     4.14,
+     3.77,
+     1.95,
+     2.59,
+     2.55
+    ],
+    "riconoscibilita": [
+     2.95,
+     3.18,
+     2.95
+    ],
+    "conflitti": {
+     "naturalistico|economico": 6,
+     "economico|ricreativo": 5,
+     "economico|identitario": 4,
+     "economico|turistico": 2,
+     "naturalistico|turistico": 2,
+     "turistico|ricreativo": 2,
+     "naturalistico|identitario": 1
+    },
+    "risposte": 22,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 16,
+      "q": 0.727,
+      "assoc": [
+       -0.14,
+       0.06,
+       0.05,
+       -0.09,
+       0.15
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 15,
+      "q": 0.682,
+      "assoc": [
+       0.01,
+       0.12,
+       -0.15,
+       0.14,
+       -0.03
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 11,
+      "q": 0.5,
+      "assoc": [
+       -0.27,
+       0.09,
+       -0.05,
+       0.41,
+       -0.05
+      ]
+     },
+     {
+      "t": "lavoro",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.409,
+      "assoc": [
+       0.32,
+       -0.04,
+       0.05,
+       -0.15,
+       0.22
+      ]
+     },
+     {
+      "t": "tralicci",
+      "tipo": "omissione",
+      "n": 8,
+      "q": 0.364,
+      "assoc": [
+       0.05,
+       0.18,
+       0.05,
+       -0.09,
+       0.02
+      ]
+     },
+     {
+      "t": "periferia",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.318,
+      "assoc": [
+       0.12,
+       0.18,
+       0.19,
+       -0.31,
+       -0.23
+      ]
+     },
+     {
+      "t": "discariche",
+      "tipo": "omissione",
+      "n": 6,
+      "q": 0.273,
+      "assoc": [
+       0.21,
+       -0.48,
+       0.05,
+       0.08,
+       -0.56
+      ]
+     }
+    ]
+   },
+   "associazioni": {
+    "n": 15,
+    "valori": [
+     1.87,
+     3.47,
+     2.2,
+     2.53,
+     2.47
+    ],
+    "direzioni": [
+     3.13,
+     3.8,
+     1.8,
+     3.27,
+     3.0
+    ],
+    "riconoscibilita": [
+     3.0,
+     3.0,
+     2.4
+    ],
+    "conflitti": {
+     "naturalistico|economico": 7,
+     "economico|ricreativo": 4,
+     "economico|identitario": 4
+    },
+    "risposte": 15,
+    "termini": [
+     {
+      "t": "pale eoliche",
+      "tipo": "chiave",
+      "n": 12,
+      "q": 0.8,
+      "assoc": [
+       -0.12,
+       0.2,
+       -0.12,
+       -0.12,
+       0.03
+      ]
+     },
+     {
+      "t": "capannoni",
+      "tipo": "chiave",
+      "n": 9,
+      "q": 0.6,
+      "assoc": [
+       0.02,
+       0.31,
+       0.13,
+       0.13,
+       -0.13
+      ]
+     },
+     {
+      "t": "cemento",
+      "tipo": "chiave",
+      "n": 7,
+      "q": 0.467,
+      "assoc": [
+       -0.44,
+       -0.04,
+       -0.06,
+       -0.1,
+       0.53
+      ]
+     }
+    ]
+   },
+   "amministrazione": {
+    "n": 4,
+    "valori": [
+     2.25,
+     4.5,
+     2.25,
+     3.0,
+     1.75
+    ],
+    "direzioni": [
+     2.5,
+     4.75,
+     2.5,
+     2.75,
+     2.5
+    ],
+    "riconoscibilita": [
+     2.75,
+     3.25,
+     2.25
+    ],
+    "conflitti": {
+     "economico|identitario": 2,
+     "naturalistico|economico": 2
+    },
+    "risposte": 4,
+    "termini": []
+   }
+  }
+ },
+ "termini_info": "termini: {t, tipo: chiave|omissione, n: persone (o risposte, per tutte le famiglie) che citano il termine, q: quota, assoc: [5] differenza tra il peso medio dei valori dato da chi cita il termine e quello di tutti (stesso cluster e classe)}; solo termini citati da almeno n_minimo persone."
+}

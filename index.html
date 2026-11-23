@@ -73,7 +73,8 @@
   </section>
 
   <section class="panel p-graph">
-    <div class="panel-h"><h2>Grafo dei dati partecipativi</h2><span class="hint" id="graph-note"></span></div>
+    <div class="panel-h"><div class="tabs" id="sv-tabs" aria-label="Dati della survey"><button data-v="a" class="on">Valori e conflitti</button><button data-v="b">Confronto</button></div>
+      <select class="sv-sel" id="sv-classe" aria-label="Portatori di interesse"></select></div>
     <div class="chart" id="graph"></div>
   </section>
 </main>
@@ -95,7 +96,7 @@
 <script src="js/mappa.js"></script>
 <script src="js/boxplot.js"></script>
 <script src="js/immagini.js"></script>
-<script src="js/grafo.js"></script>
+<script src="js/survey.js"></script>
 <script src="js/progetto.js"></script>
 <script src="js/app.js"></script>
 </body>

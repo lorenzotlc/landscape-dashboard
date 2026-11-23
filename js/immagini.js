@@ -24,7 +24,7 @@ VP.immagini = (() => {
   async function caricaDidascalie(id) {
     if (didascalie.has(id)) return didascalie.get(id);
     let d = {};
-    try { const r = await fetch(`${cartella(id)}/didascalie.json`); if (r.ok) d = await r.json(); } catch (e) {}
+    try { const r = await fetch(`${cartella(id)}/didascalie.json`, { cache: "no-cache" }); if (r.ok) d = await r.json(); } catch (e) {}
     didascalie.set(id, d); return d;
   }
 
