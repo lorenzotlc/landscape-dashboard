@@ -180,6 +180,14 @@ body.modale-aperta{overflow:hidden}
 .menu a{color:rgba(255,255,255,.85);text-decoration:none;font-size:14.5px;font-weight:600;padding:7px 14px;border-radius:999px;white-space:nowrap}
 .menu a:hover{background:rgba(255,255,255,.12);color:#fff}
 .menu a.on{background:#fff;color:#7d5a63}
+/* selettore lingua IT/EN, in fondo alla barra */
+.lingua{flex:none;display:flex;border:1px solid rgba(255,255,255,.55);border-radius:6px;overflow:hidden}
+.lingua button{border:0;margin:0;padding:5px 9px;min-width:36px;background:transparent;color:rgba(255,255,255,.9);font:inherit;font-size:12.5px;font-weight:700;letter-spacing:.04em;cursor:pointer;line-height:1.2}
+.lingua button+button{border-left:1px solid rgba(255,255,255,.55)}
+.lingua button:hover{background:rgba(255,255,255,.14);color:#fff}
+.lingua button.on{background:#fff;color:#7d5a63;cursor:default}
+.lingua button:focus-visible{outline:2px solid #fff;outline-offset:-3px}
+body.vista-progetto .lingua{margin-left:auto}
 
 /* ---- Vista "Il progetto" ---- */
 body.vista-progetto .scheda,body.vista-progetto .grid,body.vista-progetto .hint-top{display:none}
@@ -523,3 +531,21 @@ button.sv-demo:hover{background:#704900}
 }
 .p-graph .sv-sel{max-width:132px}
 @media (max-width:700px){.p-graph .sv-sel{max-width:200px}}
+
+/* intestazioni strette (pannelli di destra a 1100–1500 px, testi inglesi più lunghi): tutto su una riga */
+.p-exc,.p-graph{container-type:inline-size}
+@media (min-width:701px){
+  .p-graph .panel-h{flex-wrap:nowrap}
+  .p-graph .panel-h .tabs{flex:none}
+  .p-graph .sv-sel{flex:0 1 132px;min-width:64px;text-overflow:ellipsis}
+  @container (max-width:460px){
+    .p-exc .panel-h .btn-leggi{font-size:0;width:28px;padding:0;margin-left:auto;justify-content:center}
+    .p-exc .panel-h .btn-leggi::before{left:50%;transform:translate(-50%,-50%)}
+  }
+}
+@container (max-width:460px){
+  .p-exc .panel-h,.p-graph .panel-h{gap:6px;padding-left:10px;padding-right:10px}
+  .p-exc .tabs{gap:3px}
+  .p-exc .tabs button,.p-graph .tabs button{font-size:13.5px;padding:2px 6px}
+  .p-exc .panel-h .btn-espandi,.p-graph .panel-h .btn-espandi{margin-left:4px}
+}

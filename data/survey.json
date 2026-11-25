@@ -2,6 +2,7 @@
  "demo": true,
  "descrizione": "DATI FITTIZI generati per l'anteprima: 172 rispondenti simulati, con parole chiave e omissioni simulate. Sostituire con gli aggregati della survey reale.",
  "dimensione": "Rapporto con il territorio",
+ "dimensione_en": "Relationship with the territory",
  "n_minimo": 5,
  "valori": [
   "naturalistico",
@@ -10,12 +11,26 @@
   "identitario",
   "ricreativo"
  ],
+ "valori_en": [
+  "natural",
+  "economic",
+  "tourism",
+  "identity",
+  "recreational"
+ ],
  "direzioni": [
   "tutela ecologica",
   "sviluppo produttivo",
   "valorizzazione turistica",
   "identità locale",
   "fruizione ricreativa"
+ ],
+ "direzioni_en": [
+  "ecological protection",
+  "productive development",
+  "tourism promotion",
+  "local identity",
+  "recreational use"
  ],
  "direzioni_estese": [
   "tutela ecologica e naturalistica",
@@ -24,40 +39,63 @@
   "conservazione dell'identità locale",
   "fruizione ricreativa e accessibilità"
  ],
+ "direzioni_estese_en": [
+  "ecological and nature protection",
+  "economic and productive development",
+  "tourism promotion",
+  "conservation of local identity",
+  "recreational use and accessibility"
+ ],
  "riconoscibilita": [
   "plausibilità",
   "somiglianza col reale",
   "corrispondenza in mappa"
+ ],
+ "riconoscibilita_en": [
+  "plausibility",
+  "similarity to reality",
+  "match with the map"
  ],
  "riconoscibilita_brevi": [
   "plausibilità",
   "vs foto reali",
   "vs mappa"
  ],
+ "riconoscibilita_brevi_en": [
+  "plausibility",
+  "vs real photos",
+  "vs map"
+ ],
  "classi": [
   {
    "id": "quotidiana",
-   "nome": "Vita quotidiana / residenza"
+   "nome": "Vita quotidiana / residenza",
+   "nome_en": "Daily life / residence"
   },
   {
    "id": "lavoro",
-   "nome": "Lavoro / attività professionale"
+   "nome": "Lavoro / attività professionale",
+   "nome_en": "Work / professional activity"
   },
   {
    "id": "turismo",
-   "nome": "Turismo / tempo libero"
+   "nome": "Turismo / tempo libero",
+   "nome_en": "Tourism / leisure"
   },
   {
    "id": "studio",
-   "nome": "Studio / ricerca"
+   "nome": "Studio / ricerca",
+   "nome_en": "Study / research"
   },
   {
    "id": "associazioni",
-   "nome": "Attività associative o culturali"
+   "nome": "Attività associative o culturali",
+   "nome_en": "Associations or cultural activities"
   },
   {
    "id": "amministrazione",
-   "nome": "Amministrazione / pianificazione"
+   "nome": "Amministrazione / pianificazione",
+   "nome_en": "Administration / planning"
   }
  ],
  "dati": {
@@ -6744,5 +6782,69 @@
    }
   }
  },
- "termini_info": "termini: {t, tipo: chiave|omissione, n: persone (o risposte, per tutte le famiglie) che citano il termine, q: quota, assoc: [5] differenza tra il peso medio dei valori dato da chi cita il termine e quello di tutti (stesso cluster e classe)}; solo termini citati da almeno n_minimo persone."
+ "termini_info": "termini: {t, tipo: chiave|omissione, n: persone (o risposte, per tutte le famiglie) che citano il termine, q: quota, assoc: [5] differenza tra il peso medio dei valori dato da chi cita il termine e quello di tutti (stesso cluster e classe)}; solo termini citati da almeno n_minimo persone.",
+ "termini_en": {
+  "abbandono": "abandonment",
+  "abbazia di San Michele": "San Michele abbey",
+  "aglianico": "Aglianico",
+  "area industriale di San Nicola": "San Nicola industrial area",
+  "armonia": "harmony",
+  "biodiversità": "biodiversity",
+  "borghi": "villages",
+  "boschetti": "copses",
+  "boschi": "woods",
+  "campagna": "countryside",
+  "campi": "fields",
+  "campi aperti": "open fields",
+  "cantine": "wineries",
+  "capannoni": "sheds",
+  "castagneti": "chestnut groves",
+  "castello": "castle",
+  "cemento": "concrete",
+  "centri storici vuoti": "empty historic centres",
+  "chiese": "churches",
+  "colline": "hills",
+  "consumo di suolo": "land take",
+  "degrado": "decay",
+  "discariche": "landfills",
+  "eolico": "wind power",
+  "faggete": "beech woods",
+  "feste patronali": "patron saint festivals",
+  "filari": "tree rows",
+  "fiume Ofanto": "Ofanto river",
+  "fiumi": "rivers",
+  "fotovoltaico a terra": "ground-mounted solar",
+  "frammentazione": "fragmentation",
+  "frescura": "coolness",
+  "funghi": "mushrooms",
+  "grano": "wheat",
+  "grotte e cantine": "caves and cellars",
+  "incendi": "wildfires",
+  "inquinamento": "pollution",
+  "isolamento": "isolation",
+  "laghi di Monticchio": "Monticchio lakes",
+  "lavoro": "work",
+  "masserie": "farmsteads",
+  "monotonia": "monotony",
+  "orizzonte": "horizon",
+  "pale eoliche": "wind turbines",
+  "panorama": "panorama",
+  "pascoli": "pastures",
+  "periferia": "outskirts",
+  "sentieri": "trails",
+  "siepi": "hedgerows",
+  "silenzio": "silence",
+  "spopolamento": "depopulation",
+  "storia": "history",
+  "strade": "roads",
+  "strade rurali": "rural roads",
+  "tradizioni": "traditions",
+  "tralicci": "pylons",
+  "tranquillità": "tranquillity",
+  "trattori": "tractors",
+  "uliveti": "olive groves",
+  "varietà": "variety",
+  "verde urbano": "urban green",
+  "vigneti": "vineyards"
+ }
 }

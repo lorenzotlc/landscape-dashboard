@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 5 – Peripheral agricultural-historical landscape with high legibility: exceptions and internal tensions",
+  "eccezioni": [
+    {
+      "titolo": "More articulated and morphologically incisive reliefs",
+      "variabile": "morphology.relief_context – positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Local increase in forest cover",
+      "variabile": "ecology.forest_presence_500m – positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Complete screening of the volcano",
+      "variabile": "visibility.vis_landmark_share – negative, strength 2",
+      "testo": ""
+    },
+    {
+      "titolo": "Episodic presence of productive infrastructure",
+      "variabile": "visibility.vis_anthropic_share – positive, strength 2",
+      "testo": ""
+    }
+  ]
+}

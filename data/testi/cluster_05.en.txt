@@ -1,0 +1,67 @@
+TITOLO: Peripheral agricultural-historical matrix with high legibility
+
+DESCRIZIONE GENERALE
+
+This cluster builds a highly legible and orderly landscape, in which the traditional agricultural component and the historical-cultural one form the dominant system. The central structure does not derive from spectacular or exceptional elements, but from a stable continuity of cultivated patterns, historic centres and clear territorial organisation. The landscape appears peripheral to the volcano, which loses its direct perceptual role and remains episodic or marginal in the background. The whole generates an open but not extreme scene, in which legibility arises above all from the continuity of the rural matrix and the strong persistence of historic systems.
+
+STRUTTURA CENTRALE
+
+The central structure is dominated by the very strong consistency of the historical-cultural component. Hist_cult_index shows a maximum median and a null IQR: the historic system is not an episode but a constant structural condition of the whole cluster. Historic villages, consolidated fabrics, architectural landmarks and legible historic centres thus become the main perceptual organiser of the landscape. The scene is not urban in the modern sense, but historically layered.
+
+This structure is supported by a very stable agricultural presence. Vis_agri_share has a high median and a wide, entirely positive IQR: traditional agriculture does not appear as an indistinct rural background, but as a clearly legible pattern. Tree rows, olive groves, vineyards, plots and farming systems organise foreground and midground with continuity. Agricultural salience is strong but subordinate to the historic system, which remains the true identity element of the cluster.
+
+The overall legibility of the scene is also high and stable. Vis_total_intensity shows a positive median and an entirely positive IQR, indicating generally clear, orderly and easily interpreted landscapes. This legibility does not derive from single dominant landmarks, but from the consistency of morphology, agriculture and historic settlement.
+
+The cluster is also territorially peripheral to the volcano. Distance_to_volcano has a strongly positive median and a completely positive IQR: the relationship with the volcano is therefore indirect and distant. Consistently, vis_landmark_share crosses zero and has a slightly negative median: the volcano is not absolutely absent, but it does not stably structure the scene. It appears only in some view openings or exceptional conditions.
+
+Morphologically, the cluster keeps a moderate articulation of relief. Relief_context crosses zero with a slightly negative median: relatively gentle or not very rugged situations prevail, but without total flat uniformity. Terrain_enclosure also oscillates around zero, suggesting an alternation between panoramic openings and more enclosed conditions. The result is a balanced landscape, neither strongly closed nor completely open.
+
+The human-productive component (vis_anthropic_share) remains stably subordinate. The negative median and the entirely negative IQR indicate that industrial, energy or productive infrastructure is generally barely perceivable. The cluster thus avoids an industrial reading of the territory.
+
+Ecologically, a moderate natural heterogeneity emerges. Ecology.shannon is stably positive: the environmental mosaic is diversified, without turning into dominant wilderness. The presence of water (water_presence_500m) is relatively frequent but variable, while forest presence (forest_presence_500m) remains oscillating and subordinate to the agricultural matrix.
+
+ECCEZIONI E TENSIONI
+
+Internal tensions derive above all from morphological variability and from the episodic presence of natural components or the volcanic landmark.
+
+Relief_context shows numerous positive outliers: some portions of the cluster develop much more articulated reliefs than the central structure. In these cases more incised slopes, ridges or more mountainous landforms appear, increasing visual depth. These situations nonetheless remain marginal compared with the prevalence of moderately rolling landscapes.
+
+Forest_presence_500m also has many positive outliers. This indicates local episodes in which woodland suddenly becomes more visible and continuous. The forest never replaces the dominant agricultural matrix, however: it remains an episodic edge or background element.
+
+Vis_landmark_share has negative outliers corresponding to conditions in which the volcano is completely screened. In some configurations the volcanic landmark disappears entirely from perception, accentuating the local autonomy of the historic-agricultural landscape.
+
+The few positive deviations of vis_anthropic_share instead indicate local episodes of greater productive or infrastructural presence. These are isolated emergences, however, unable to redefine the general identity of the cluster.
+
+Finally, some negative outliers of vis_total_intensity show portions in which the scene temporarily loses clarity and legibility. These episodes may derive from greater morphological fragmentation, screening or lower visual continuity, but remain subordinate to the strong general consistency of the cluster.
+
+PARTE CENTRALE
+
+The scene should be built as a clearly organised historic rural landscape. Legible agricultural patterns dominate the foreground and midground: regular tree rows, olive groves, cultivated plots and continuous rural networks. Agricultural elements should not appear generic, but structured and orderly.
+
+Within this matrix, historic centres, consolidated villages, historic building fabrics and small scattered monumental systems emerge with strong salience. These elements should be perceived as continuous and territorially integrated, not as single isolated monuments.
+
+The morphology remains moderately rolling, with an alternation of openings and slight perspective closures. The scene should keep good visual depth without turning into an extreme or mountainous panorama.
+
+The volcano, when present, remains in the background with a subordinate role. It should neither dominate the horizon nor organise the main composition.
+
+Modern productive components should remain secondary and unobtrusive. Any human infrastructure should not take on perceptual centrality.
+
+NOTE SULLE ECCEZIONI
+
+Visual exceptions should appear as local variations and not as the dominant structure.
+
+ECCEZIONE 1
+
+Positive relief outliers may be translated into episodes of greater morphological articulation: sharper slopes, more legible ridges or deeper ravines. These situations should, however, occupy limited portions of the scene.
+
+ECCEZIONE 2
+
+Forest outliers may introduce denser or more continuous woodland patches, especially along the edges or on secondary reliefs, without obscuring agricultural legibility.
+
+ECCEZIONE 3
+
+The screening of the volcano should be rendered through morphological closures or horizons that completely remove the landmark from the background.
+
+ECCEZIONE 4
+
+The rare productive emergences may appear as localised episodes of modern infrastructure — small plants, productive areas or energy elements — without altering the dominant historic-rural identity.

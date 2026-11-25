@@ -8,7 +8,7 @@ VP.modale = (() => {
     el.innerHTML = `<div class="modale-box" role="dialog" aria-modal="true" aria-labelledby="modale-titolo">
         <header class="modale-h"><span class="modale-sw"></span>
           <div class="modale-tt"><div class="modale-sopra"></div><h3 id="modale-titolo"></h3></div>
-          <button class="modale-x" aria-label="Chiudi">×</button></header>
+          <button class="modale-x" aria-label="${VP.t("Chiudi")}">×</button></header>
         <div class="modale-corpo"></div></div>`;
     document.body.appendChild(el);
     el.addEventListener("click", e => { if (e.target === el || e.target.closest(".modale-x")) chiudi(); });

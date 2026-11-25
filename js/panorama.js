@@ -41,15 +41,15 @@ VP.panorama = (() => {
     ctx.textAlign = "center"; ctx.fillStyle = "rgba(255,255,255,.85)";
     if (!neutro) [0.2, 0.5, 0.8].forEach(f => {
       ctx.font = "600 34px system-ui, sans-serif";
-      ctx.fillText(neutro ? "Seleziona un cluster sulla mappa" : `Segnaposto · cluster ${VP.pad2(id)}`, W * f, H * 0.82);
+      ctx.fillText(VP.t("Segnaposto · cluster {n}", { n: VP.pad2(id) }), W * f, H * 0.82);
       ctx.font = "24px system-ui, sans-serif";
       ctx.fillText(neutro ? "la vista sferica del cluster comparirà qui" : `cluster_${VP.pad2(id)}/${VP.stato.config.immagini.fotosferica}.jpg`, W * f, H * 0.82 + 38);
     });
     if (neutro) { const url = cv.toDataURL("image/jpeg", 0.85); segnaposti.set(chiave, url); return url; }
     // linee verticali di riferimento ai bordi per verificare il punto di partenza della rotazione
     ctx.fillStyle = "rgba(255,255,255,.6)"; ctx.font = "600 28px system-ui, sans-serif";
-    ctx.textAlign = "right"; ctx.fillText("bordo destro →", W - 20, H * 0.5);
-    ctx.textAlign = "left"; ctx.fillText("← bordo sinistro", 20, H * 0.5);
+    ctx.textAlign = "right"; ctx.fillText(VP.t("bordo destro →"), W - 20, H * 0.5);
+    ctx.textAlign = "left"; ctx.fillText(VP.t("← bordo sinistro"), 20, H * 0.5);
     const url = cv.toDataURL("image/jpeg", 0.85);
     segnaposti.set(chiave, url); return url;
   }

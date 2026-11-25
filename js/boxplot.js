@@ -25,11 +25,11 @@ VP.boxplot = (() => {
       righe.push({ key: v.id, v });
     }
     document.querySelector(".legend-inline").innerHTML = zMode
-      ? `<i class="lg-c"></i>cluster <i class="lg-g"></i>intera area`
-      : `<i class="lg-c"></i>cluster <i class="lg-t"></i>mediane altri cluster`;
+      ? `<i class="lg-c"></i>cluster <i class="lg-g"></i>${VP.t("intera area")}`
+      : `<i class="lg-c"></i>cluster <i class="lg-t"></i>${VP.t("mediane altri cluster")}`;
     svg = d3.select(root).append("svg").attr("width", "100%").attr("height", "100%");
     g = svg.append("g");
-    root.insertAdjacentHTML("beforeend", `<div class="empty" id="box-empty">Passa il mouse su una cella della mappa</div>`);
+    root.insertAdjacentHTML("beforeend", `<div class="empty" id="box-empty">${VP.t("Passa il mouse su una cella della mappa")}</div>`);
     new ResizeObserver(() => { layout(); draw(VP.stato.clusterCorrente, false); }).observe(root);
   }
 
@@ -54,7 +54,7 @@ VP.boxplot = (() => {
       .call(a => a.selectAll("text").attr("fill", "#6b6f76").style("font-size", "11.5px"))
       .call(a => a.select(".domain").attr("stroke", "#ccc")).call(a => a.selectAll("line").attr("stroke", "#ccc"));
     g.append("text").attr("x", W - M.r).attr("y", H - 2).attr("text-anchor", "end").attr("fill", "#6b6f76")
-      .style("font-size", "11.5px").text(zMode ? "z-score rispetto all'intera area" : "valori standardizzati");
+      .style("font-size", "11.5px").text(zMode ? VP.t("z-score rispetto all'intera area") : VP.t("valori standardizzati"));
     if (x.domain()[0] < 0 && x.domain()[1] > 0)
       g.append("line").attr("x1", x(0)).attr("x2", x(0)).attr("y1", M.t).attr("y2", H - M.b).attr("stroke", "#bbb").attr("stroke-dasharray", "3,3");
 
@@ -100,13 +100,13 @@ VP.boxplot = (() => {
     const u = v.unita ? " " + v.unita : "";
     let h = `<b>${v.nome}</b>${v.codice ? `<br><span style="opacity:.7">${v.codice}</span>` : ""}<br>`;
     if (s) {
-      h += `Cluster ${VP.pad2(id)}: mediana <b>${fmt(s.mediana)}${u}</b><br>Q1–Q3 ${fmt(s.q1)} – ${fmt(s.q3)}` +
-           `<br>baffi ${fmt(s.baffo_inf)} – ${fmt(s.baffo_sup)} · min/max ${fmt(s.min)} / ${fmt(s.max)}`;
+      h += `Cluster ${VP.pad2(id)}: ${VP.t("mediana")} <b>${fmt(s.mediana)}${u}</b><br>Q1–Q3 ${fmt(s.q1)} – ${fmt(s.q3)}` +
+           `<br>${VP.t("baffi")} ${fmt(s.baffo_inf)} – ${fmt(s.baffo_sup)} · min/max ${fmt(s.min)} / ${fmt(s.max)}`;
       const no = (s.n_out_inf ?? 0) + (s.n_out_sup ?? 0) || s.outlier?.length || 0;
-      h += `<br>n = ${(s.n ?? 0).toLocaleString("it-IT")}${no ? ` · outlier ${no.toLocaleString("it-IT")}` +
-           (s.n_out_inf != null ? ` (${s.n_out_inf} sotto, ${s.n_out_sup} sopra)` : "") : ""}`;
+      h += `<br>n = ${VP.lingua.num(s.n)}${no ? ` · outlier ${VP.lingua.num(no)}` +
+           (s.n_out_inf != null ? ` (${s.n_out_inf} ${VP.t("sotto")}, ${s.n_out_sup} ${VP.t("sopra")})` : "") : ""}`;
     }
-    if (zMode) { const gl = S.globale[v.id]; h += `<br>Intera area: mediana ${fmt(gl.mediana)}${u}`; }
+    if (zMode) { const gl = S.globale[v.id]; h += `<br>${VP.t("Intera area: mediana")} ${fmt(gl.mediana)}${u}`; }
     VP.tooltip.show(h, ev.clientX, ev.clientY);
   }
 

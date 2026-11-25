@@ -3,14 +3,16 @@
   const S = VP.stato;
   const getJSON = async (p, opz = false) => {
     const r = await fetch(p, { cache: "no-cache" });
-    if (!r.ok) { if (opz) return null; throw new Error(`File non trovato: ${p}`); }
+    if (!r.ok) { if (opz) return null; throw new Error(VP.t("File non trovato: {p}", { p })); }
     return r.json();
   };
   try {
+    VP.lingua.traduciDOM(); VP.lingua.selettore();
     S.config = await getJSON("data/config.json");
     const [cl, st, sv] = await Promise.all([getJSON(S.config.cluster), getJSON(S.config.statistiche), S.config.survey ? getJSON(S.config.survey, true) : null]);
     cl.cluster.forEach(c => S.clusters.set(c.id, c));
     S.stats = st; S.survey = sv;
+    await VP.lingua.localizzaDati(S);
     document.getElementById("titolo").textContent = S.config.titolo;
     document.getElementById("sottotitolo").textContent = S.config.sottotitolo || "";
     document.title = S.config.titolo;
@@ -24,8 +26,8 @@
   } catch (e) {
     console.error(e);
     document.querySelector(".grid").innerHTML = `<div class="panel" style="grid-column:1/-1;grid-row:1/-1;padding:24px">
-      <h2>Impossibile avviare la dashboard</h2><p>${e.message}</p>
-      <p>Avvia l'applicazione da un server locale (es. <code>./avvia.sh</code> oppure <code>python3 -m http.server</code>) e non aprendo direttamente index.html.</p></div>`;
+      <h2>${VP.t("Impossibile avviare la dashboard")}</h2><p>${e.message}</p>
+      <p>${VP.t("Avvia l'applicazione da un server locale (es. <code>./avvia.sh</code> oppure <code>python3 -m http.server</code>) e non aprendo direttamente index.html.")}</p></div>`;
     return;
   }
 
@@ -33,21 +35,21 @@
     const id = S.clusterCorrente, c = S.clusters.get(id);
     // Titolo grande del cluster corrente (scheda sotto la testata)
     const nome = document.getElementById("sch-nome"), scheda = document.getElementById("scheda");
-    const nuovo = c ? `${c.titolo || c.nome}` : "Esplora i cluster di paesaggio";
+    const nuovo = c ? `${c.titolo || c.nome}` : VP.t("Esplora i cluster di paesaggio");
     if (nome.textContent !== nuovo) { scheda.classList.remove("cambio"); void scheda.offsetWidth; scheda.classList.add("cambio"); }
     nome.textContent = nuovo; nome.title = nuovo;
     document.getElementById("sch-meta").textContent = c
-      ? [`Cluster ${VP.pad2(id)}`, `${(c.n_celle ?? 0).toLocaleString("it-IT")} celle`,
-         VP.mappa.areaCella() ? `${(c.n_celle * VP.mappa.areaCella() / 1e6).toLocaleString("it-IT", { maximumFractionDigits: 1 })} km²` : ""]
+      ? [`Cluster ${VP.pad2(id)}`, VP.t("{n} celle", { n: VP.lingua.num(c.n_celle) }),
+         VP.mappa.areaCella() ? `${VP.lingua.num(c.n_celle * VP.mappa.areaCella() / 1e6, { maximumFractionDigits: 1 })} km²` : ""]
           .filter(Boolean).join(" · ")
-      : "Passa il mouse su una cella della mappa";
+      : VP.t("Passa il mouse su una cella della mappa");
     document.getElementById("sch-fisso").hidden = !S.bloccato;
     document.getElementById("hint-top").textContent = S.bloccato
-      ? "Cluster fisso · clic sulla mappa o Esc per sbloccare" : "Passa il mouse sulla mappa · clic per fissare il cluster · Esc per sbloccare";
+      ? VP.t("Cluster fisso · clic sulla mappa o Esc per sbloccare") : VP.t("Passa il mouse sulla mappa · clic per fissare il cluster · Esc per sbloccare");
     document.documentElement.style.setProperty("--cur", c ? c.colore : "#ccc");
   }
 
-  document.getElementById("logo").onclick = () => VP.modale.apri({ sopra: "Dottorato di ricerca", titolo: "PhD Landscape Studies for Global and Local Challenges",
+  document.getElementById("logo").onclick = () => VP.modale.apri({ sopra: VP.t("Dottorato di ricerca"), titolo: "PhD Landscape Studies for Global and Local Challenges",
     colore: "#0d2f5a", html: `<p style="text-align:center;margin:8px 0 0"><img src="assets/logo.png" alt="" style="max-width:min(420px,100%);height:auto"></p>` });
 
   VP.bus.on("seleziona", id => {
@@ -73,8 +75,8 @@
 
   // Ingrandimento di un pannello di destra: occupa lo spazio dei 4 pannelli, affiancato alla mappa (solo desktop/tablet).
   function espansione() {
-    const pannelli = [["p-street", "l'ipotesi visuale dominante"], ["p-exc", "eccezioni locali e foto reali"],
-                      ["p-box", "le variabili del cluster"], ["p-graph", "i dati della survey"]];
+    const pannelli = [["p-street", VP.t("l'ipotesi visuale dominante")], ["p-exc", VP.t("eccezioni locali e foto reali")],
+                      ["p-box", VP.t("le variabili del cluster")], ["p-graph", VP.t("i dati della survey")]];
     const grid = document.querySelector(".grid");
     VP.espandi = classe => {
       document.querySelectorAll(".grid > .panel").forEach(p => p.classList.toggle("espanso", !!classe && p.classList.contains(classe)));
@@ -82,7 +84,7 @@
       document.querySelectorAll(".btn-espandi").forEach(b => {
         const on = b.dataset.pannello === classe;
         b.classList.toggle("on", on);
-        b.title = on ? "Torna alla vista con tutti i pannelli (Esc)" : `Ingrandisci ${b.dataset.nome}`;
+        b.title = on ? VP.t("Torna alla vista con tutti i pannelli (Esc)") : VP.t("Ingrandisci {nome}", { nome: b.dataset.nome });
         b.setAttribute("aria-label", b.title); b.setAttribute("aria-pressed", String(on));
       });
       window.dispatchEvent(new Event("resize"));   // mappa e ipotesi visuale ricalcolano le dimensioni
@@ -97,4 +99,9 @@
     });
     VP.espandi(null);
   }
+
+  // dopo un cambio di lingua: ripristina cluster fissato e pannello ingrandito (qui, quando i gestori sono registrati)
+  const salvato = VP.lingua.statoSalvato();
+  if (salvato && salvato.cluster != null && S.clusters.has(salvato.cluster)) VP.bus.emit(salvato.bloccato ? "blocca" : "seleziona", salvato.cluster);
+  if (salvato && salvato.espanso && window.matchMedia("(min-width:701px)").matches) VP.espandi(salvato.espanso);
 })();

@@ -1,0 +1,166 @@
+<!--
+  "The project" page, English version of data/progetto.html (loaded when the dashboard is set to English).
+  Keep it aligned with the Italian page: same section ids, same structure.
+  Each <section class="pg-sez" id="..." data-titolo="..."> becomes an entry of the index.
+  <div data-auto="cluster" data-stile="galleria"></div> = gallery of the 6 clusters generated from the data.
+  Title and subtitle: those of the poster.
+  The working paper is NOT published: do not cite it. Future publications go under "Where we are".
+  STATUS: at every update change the date in both <time> elements.
+-->
+
+<section class="pg-sez pg-apertura" id="progetto" data-titolo="The project">
+  <p class="pg-occhiello">PhD project · <a href="https://phd-landscape.unibg.it/" target="_blank" rel="noopener">Landscape Studies for Global and Local Challenges</a> · University of Bergamo</p>
+  <h1>Landscape between Measurement and Perception</h1>
+  <p class="pg-sottotitolo">Expert, algorithmic and situated mediations in the production of landscape knowledge</p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Ongoing project</b> · last updated: <time datetime="2026-11-23">23 November 2026</time></p>
+  <p class="pg-lead">Landscape is at once a material reality and an object of knowledge: what we know about it passes through <strong>forms of representation</strong> (maps, plans, indicators, images) that select, order and make visible some aspects at the expense of others.</p>
+  <p>The research focuses on these very <strong>ways in which landscape becomes knowable</strong>. On a representational and methodological level, it examines their assumptions and limits and experiments with new forms of representation that relate data, maps and images generated with artificial intelligence. On a theoretical and epistemological level, it reads the production of landscape knowledge as a chain of <strong>mediations</strong>, expert, algorithmic and situated, across which the authority to represent the territory is distributed.</p>
+  <p>Two notions guide the analysis: <strong>transcalarity</strong> (Turco, 2010), to observe what changes when moving between scales and points of view, and <strong>transmediality</strong> (Turco, 2025), to follow landscape as it passes through data, maps, classifications, images and interpretations.</p><p>The Vulture area, in Basilicata (southern Italy), is the testing ground; this dashboard makes its results available for consultation.</p>
+  <div class="pg-azioni">
+    <a href="#dashboard" class="pg-btn pg-btn-primario">Open the dashboard</a>
+    <a href="#metodo" class="pg-btn">The framework</a>
+  </div>
+</section>
+
+<section class="pg-sez" id="perche" data-titolo="Framework and questions">
+  <h2>Theoretical framework and research questions</h2>
+  <p>Landscape can be understood as a relationship between materiality, experience and project (Besse, 2018): it is an ecological system, which can be analysed with spatial metrics, but also a system of signs, in which representations train the gaze even before direct experience (Cosgrove, 2003; Turri, 1998). From this perspective, cartography is not a neutral tool but a device that produces meanings (Casti, 2013).</p>
+  <p>Landscape studies nonetheless remain divided between data-driven geospatial analyses and qualitative, participatory approaches concerned with perceptions and values, and there is a strong need for a transdisciplinary reading (Dorado, 2023). When the two perspectives meet, integration is mostly additive, and the mediations that connect them remain implicit. The role of artificial intelligence in this context is still largely unexplored (Kang et al., 2024).</p>
+  <p>Hence the two research questions: how can the integration of <strong>geospatial analysis and participatory practices</strong> contribute to a more complete understanding of landscape and of the values associated with it? And how can <strong>artificial intelligence</strong> technologies support this integration?</p>
+  <p>The hypothesis is that plural and reflexive knowledge arises not from the sum or the forced convergence of readings, but from their <strong>transparent and contestable comparison</strong>, which can also make gaps, omissions and conflicts visible.</p>
+</section>
+
+<section class="pg-sez" id="metodo" data-titolo="The framework">
+  <h2>A seven-phase framework</h2>
+  <p>To test this hypothesis, the research builds a seven-phase methodological framework, in which each step is treated as a mediation to be documented and each result can reopen earlier choices.</p>
+  <p>The starting point is expert and institutional knowledge: the landscape-unit sheet of the <strong>Regional Landscape Plan of Basilicata</strong> sets out the distinctive features of the Vulture, from the volcanic edifice to woods, vineyards, olive groves and villages, up to industrial sites and renewable energy plants. These features are translated into twelve indicators, organised into four dimensions (visual-perceptual, historical-cultural, morphological and ecological) and calculated on a grid of 250-metre cells, largely through intervisibility analyses.</p>
+  <p>An unsupervised neural network, the <strong>SuperSOM</strong> (Kohonen, 2001; Wehrens and Buydens, 2007), identifies latent recurrences in the data and returns six territorial configurations, following an approach already used to define territorial typologies (Tonini et al., 2025). Generative artificial intelligence interprets their statistical profiles and translates them into images; finally, the images are submitted to the local community and discussed in a public feedback phase.</p>
+  <figure class="pg-fig" data-opz><img src="assets/progetto/dispositivo.jpg" alt="The seven-phase methodological framework"><figcaption>The methodological framework: from expert-institutional knowledge to reflexive feedback.</figcaption></figure>
+  <p>The result is a <strong>map of perceived surroundings</strong>. Unlike the inventory map of landscape plans, which describes what is there and where, it assigns to each cell the value of what can be perceived from it, not of what it contains.</p>
+</section>
+
+<section class="pg-sez" id="configurazioni" data-titolo="The six configurations">
+  <h2>Six configurations of the Vulture</h2>
+  <p>The configurations should not be understood as regions or natural types, but as <strong>classificatory hypotheses</strong>, dependent on the variables, weights and parameters adopted. Names were assigned only after the profiles had been interpreted, so that they would not anticipate their meaning.</p>
+  <div data-auto="cluster" data-stile="galleria"></div>
+</section>
+
+<section class="pg-sez" id="immagini" data-titolo="The images">
+  <h2>Images as visual hypotheses</h2>
+  <p>For each configuration, a first GPT model interprets the statistical profile, distinguishing dominant features from exceptions; two further models derive from it an image of the dominant structure, explorable in the “Dominant visual hypothesis” panel, and four images of the local exceptions. Using generated images to stimulate participation is a recent field of experimentation (Awashra et al., 2025).</p>
+  <p>These images are not photographs but <strong>visual hypotheses</strong>: to build a scene, the model has to settle shapes and relations that the data do not determine, and it can make features spread across the territory appear as a single place. This is why the dashboard always shows them next to the map, the statistical profiles and the photographs taken in each configuration.</p>
+</section>
+
+<section class="pg-sez" id="partecipazione" data-titolo="Participation">
+  <h2>Situated knowledge and participation</h2>
+  <p>The previous phases rest on an expert and institutional framework. The participatory component, <strong>currently under way</strong>, brings in the situated knowledge of those who live in and move through the territory (Burini, 2016). A survey distributed across the area asks about the recognisability of the images and records values, omissions and development preferences.</p>
+  <figure class="pg-fig" data-opz><img src="assets/progetto/figE_survey.jpg" alt="The territorial survey"><figcaption>The territorial survey on the visual hypotheses.</figcaption></figure>
+  <p>Participation is not meant as a validation of the algorithmic result: it can recognise, complement or contest it, to the point of calling sources, indicators and weights into question. The results will feed into a reflexive feedback process (Ghisalberti, 2018), through maps of values and conflicts, scenarios and public discussion, and into the participatory data graph of the dashboard, which is still a demo.</p>
+</section>
+
+<section class="pg-sez" id="trasparenza" data-titolo="Mediations and transparency">
+  <h2>Mediations and transparency</h2>
+  <p>Every step of the framework involves choices: which features matter, how they are measured, how they are grouped, how they become images. In passing from one medium to another, from document to indicator, from cluster to text, from text to image, some relations become more legible and others fade (Turco, 2025). Once they enter planning, maps and images risk appearing neutral and consolidate categories and priorities.</p>
+  <p>For this reason the project documents, for each mediation, who decides and with what traces, also keeping the discarded generations. The aim is to make the authority to represent visible and attributable, and the chain of choices reconstructable and contestable.</p>
+</section>
+
+<section class="pg-sez" id="uso" data-titolo="How to use the dashboard">
+  <h2>How to use the dashboard</h2>
+  <p>For each configuration, the dashboard compares the map, the data, the generated images and photographs of the territory. All panels update together when a cluster is selected.</p>
+  <ul class="pg-lista pg-uso">
+    <li><b>Map of perceived surroundings.</b> Hovering over (or tapping) a cell shows its cluster; a click pins it, and a click outside the cells returns to the overview. The layer selector turns on the boundary of the study area, the real photos and the base maps.</li>
+    <li><b>Cluster description.</b> The band below the header shows the cluster name and a summary; “read more” opens the full text of the interpretation.</li>
+    <li><b>Dominant visual hypothesis.</b> The statistically most plausible scenario of the cluster, generated with AI from the data: the imagery produced by the chain of mediations, not the photograph of a place. It can be explored as a sphere by dragging with the mouse or a finger; the “Read” button opens its description.</li>
+    <li><b>Local exceptions and real photos.</b> The “Local exceptions” tab shows the four AI-generated images of the less frequent variations within the cluster, with their captions. The “Real photos” tab holds the photographs taken in the cluster: clicking one opens a side-by-side comparison with the dominant visual hypothesis.</li>
+    <li><b>Cluster variables.</b> Boxplots of the twelve indicators, on the same scale; the grey ticks mark the medians of the other clusters.</li>
+    <li><b>Survey data.</b> The bottom-right panel has two tabs: “Values and conflicts”, a graph of the five landscape values (see <a href="#grafo">how to read it</a>), and “Comparison”, which compares recognisability, values and development priorities across stakeholder groups. The menu at the top of the panel selects the group. The data currently shown are fictitious and for demonstration only.</li>
+    <li><b>Map colouring.</b> In the map legend, the “Colour by” menu replaces the cluster colours with a survey measure: the dominant value, the intensity of a value, the main conflict or the gap between development priority and perception, for the selected stakeholder group.</li>
+  </ul>
+  <p class="pg-nota">The Esc key unpins the selected cluster and closes open windows. On smartphones the panels are arranged in a single column. The IT/EN buttons at the top switch the language.</p>
+  <div class="pg-azioni"><a href="#dashboard" class="pg-btn pg-btn-primario">Open the dashboard</a></div>
+</section>
+
+<section class="pg-sez" id="grafo" data-titolo="Reading the values graph">
+  <h2>Reading the graph of values and conflicts</h2>
+  <p>For the selected landscape family and stakeholder group, the graph shows three survey answers: how much weight each of the five values carries (natural, economic, tourism, identity, recreational), which pairs of values are considered hardest to reconcile, and which development directions are considered a priority. The result is a figure that changes with every selection: its <strong>shape</strong> is the first thing to read.</p>
+
+  <h3>Distance is conflict</h3>
+  <p>Each pair of values is linked by a spring whose length grows with the share of people who indicated that pair as conflicting (red lines, thicker for the most cited conflicts). Two <strong>distant</strong> values are perceived as being in tension; two <strong>close</strong> values were rarely indicated as conflicting, so they appear compatible, not necessarily similar. With five values and ten pairs, the plane cannot respect all distances exactly: positions should be read as tendencies, and the exact values can be found by hovering over nodes and lines or in the “Comparison” tab.</p>
+
+  <figure class="pg-schemi" aria-label="Typical shapes of the graph">
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Regular pentagon">
+        <g stroke="#b5414b" stroke-opacity=".3" stroke-width="1.6"><line x1="80" y1="14" x2="134" y2="52"/><line x1="134" y1="52" x2="113" y2="98"/><line x1="113" y1="98" x2="47" y2="98"/><line x1="47" y1="98" x2="26" y2="52"/><line x1="26" y1="52" x2="80" y2="14"/><line x1="80" y1="14" x2="113" y2="98"/><line x1="80" y1="14" x2="47" y2="98"/><line x1="26" y1="52" x2="134" y2="52"/><line x1="26" y1="52" x2="113" y2="98"/><line x1="134" y1="52" x2="47" y2="98"/></g>
+        <circle cx="80" cy="14" r="9" fill="#4f9a5a"/><circle cx="134" cy="52" r="9" fill="#c98a2b"/><circle cx="113" cy="98" r="9" fill="#3f7fb5"/><circle cx="47" cy="98" r="9" fill="#9c5a7a"/><circle cx="26" cy="52" r="9" fill="#3fa6a0"/>
+      </svg>
+      <p><b>Regular pentagon.</b> Conflicts are spread evenly across the pairs: no tension dominates the others.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Elongated shape">
+        <g stroke="#b5414b" stroke-linecap="round"><line x1="16" y1="56" x2="144" y2="56" stroke-width="7" stroke-opacity=".6"/><line x1="16" y1="56" x2="80" y2="26" stroke-width="1.5" stroke-opacity=".25"/><line x1="144" y1="56" x2="80" y2="86" stroke-width="1.5" stroke-opacity=".25"/></g>
+        <circle cx="16" cy="56" r="10" fill="#9c5a7a"/><circle cx="144" cy="56" r="10" fill="#3f7fb5"/><circle cx="80" cy="26" r="8" fill="#4f9a5a"/><circle cx="72" cy="58" r="8" fill="#c98a2b"/><circle cx="80" cy="86" r="8" fill="#3fa6a0"/>
+      </svg>
+      <p><b>Elongated shape.</b> One pair is indicated far more than the others: the landscape is polarised along an axis, with the other values in between.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Isolated value">
+        <g stroke="#b5414b" stroke-linecap="round" stroke-opacity=".5"><line x1="140" y1="56" x2="40" y2="30" stroke-width="6"/><line x1="140" y1="56" x2="30" y2="70" stroke-width="5"/><line x1="140" y1="56" x2="62" y2="88" stroke-width="3.5"/><line x1="140" y1="56" x2="64" y2="46" stroke-width="2.5"/></g>
+        <circle cx="140" cy="56" r="11" fill="#c98a2b"/><circle cx="40" cy="30" r="8" fill="#4f9a5a"/><circle cx="30" cy="70" r="8" fill="#3fa6a0"/><circle cx="62" cy="88" r="8" fill="#9c5a7a"/><circle cx="64" cy="46" r="8" fill="#3f7fb5"/>
+      </svg>
+      <p><b>An isolated value.</b> One value conflicts with almost all the others and breaks away from the group; the values that remain close together are perceived as compatible.</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 160 112" role="img" aria-label="Two groups">
+        <g stroke="#b5414b" stroke-linecap="round" stroke-opacity=".45"><line x1="30" y1="40" x2="130" y2="44" stroke-width="5"/><line x1="36" y1="80" x2="126" y2="78" stroke-width="5"/><line x1="30" y1="40" x2="126" y2="78" stroke-width="3"/></g>
+        <circle cx="30" cy="40" r="9" fill="#4f9a5a"/><circle cx="36" cy="80" r="9" fill="#3fa6a0"/><circle cx="130" cy="44" r="9" fill="#c98a2b"/><circle cx="126" cy="78" r="9" fill="#9c5a7a"/><circle cx="80" cy="22" r="8" fill="#3f7fb5"/>
+      </svg>
+      <p><b>Two groups.</b> Two sets of compatible values face each other: the conflict does not concern a single pair, but two different ways of understanding the same landscape.</p>
+    </div>
+  </figure>
+
+  <p class="pg-nota">The figure is always fitted to the space of the panel: a graph is not “bigger” because there is more conflict. The maximum length corresponds to the most cited conflict in that selection; absolute intensity can be read from the thickness of the red lines and from the percentages shown on hover, or on the map with “Colour by → Main conflict”. The orientation, on the other hand, is stable (the natural value tends to sit at the top): the same selection always produces the same figure and, when changing cluster or group, nodes move only if the conflicts change.</p>
+
+  <h3>Circle and ring: perceived landscape and desired landscape</h3>
+  <p>The <strong>filled circle</strong> of each value is larger the more that value is perceived in the landscape; the <strong>ring</strong> shows how much of a priority the corresponding development direction is considered (ecological protection, productive development, tourism promotion, local identity, recreational use). A ring wider than the circle signals that people would like more than they perceive; a narrower ring, a value that is already strong and that people do not feel should be pushed further. The two measures come from different questions (a score and a ranking): the comparison is indicative.</p>
+
+  <h3>The words</h3>
+  <p>The labels are the most recurrent terms in the free-text answers: with a solid border, the keywords associated with the landscape; with a dashed border, the <em>omissions</em>, i.e. what people consider important but not represented in the images. Each word is linked to the values to which those who cite it give above-average weight: the stronger the link, the thicker the line and the closer the word to the value. Words placed between two distant values are <strong>contested words</strong>, invoked by interests in tension. Only terms cited by at least five people are shown.</p>
+
+  <h3>Some examples</h3>
+  <p class="pg-nota">The examples use the demo data currently in the dashboard: they illustrate how to read the graph, not research results.</p>
+  <ul class="pg-lista">
+    <li><b>Cluster 06, all stakeholders.</b> The economic value breaks away from the others: it conflicts with the natural value (41% of answers), the recreational value (28%) and the identity value (15%). This is the shape of the isolated value. The natural value has a small circle (perceived 2.0) and a wider ring (priority 3.1): people would like more protection than they perceive.</li>
+    <li><b>Cluster 05.</b> The main tension is between identity and tourism (41%): the figure stretches along this axis. Identity is both the most perceived value (4.6) and the highest priority (4.1): a landscape recognised for its history, in which tourism promotion is experienced as a possible threat.</li>
+    <li><b>Cluster 01.</b> The natural value dominates (perceived 4.5) and is far from the economic (41%) and tourism (23%) values; its ring is only slightly narrower than its circle: a value that is already strong, to be maintained rather than increased.</li>
+    <li><b>Comparing groups.</b> Again in cluster 06, for those whose relationship with the territory is through work, the most cited conflict becomes economic–recreational (37%), while economic–natural drops to 27%; for those who visit the area for tourism it remains economic–natural (46%). Changing the group from the menu deforms the figure: the differences in shape between groups are the <strong>divergences between readings</strong> that the research aims to bring out.</li>
+  </ul>
+  <div class="pg-azioni"><a href="#dashboard" class="pg-btn pg-btn-primario">Open the dashboard</a></div>
+</section>
+
+<section class="pg-sez" id="stato" data-titolo="Where we are">
+  <h2>Where we are</h2>
+  <p>The map of perceived surroundings and the visual hypotheses of the six configurations have been completed; the survey is under way, and the analysis of the answers and the public feedback phase will follow. The stability of the groupings, the reproducibility of the generative outputs and the landscape adequacy of the images have not yet been assessed systematically: the results should be read as provisional.</p>
+  <p class="pg-stato"><span class="pg-stato-punto"></span><b>Ongoing project</b> · last updated: <time datetime="2026-11-23">23 November 2026</time></p>
+  <h3>Publications</h3>
+  <p class="pg-nota">Publications arising from the project will be listed here.</p>
+  <h3>Research</h3>
+  <p><b>Lorenzo Amato</b>, PhD in <a href="https://phd-landscape.unibg.it/" target="_blank" rel="noopener">Landscape Studies for Global and Local Challenges</a>, University of Bergamo. Supervisor: Prof. Marco Tononi (University of Bergamo); co-supervisor: Ing. Rosa Coluzzi (CNR-IMIOT, Potenza). Research period abroad at the Institute of Earth Surface Dynamics, University of Lausanne, with Prof. Marj Tonini.</p>
+  <h3>References</h3>
+  <ul class="pg-biblio">
+    <li>Awashra I. et al. (2025), Generative AI text-to-image for community participation in landscape planning, <em>Landscape and Urban Planning</em>, 264: 105464. <a href="https://doi.org/10.1016/j.landurbplan.2025.105464" target="_blank" rel="noopener">doi</a></li>
+    <li>Besse J.-M. (2018), <em>La nécessité du paysage</em>, Parenthèses, Marseille.</li>
+    <li>Burini F. (2016), <em>Cartografia partecipativa. Mapping per la governance ambientale e urbana</em>, FrancoAngeli, Milano.</li>
+    <li>Casti E. (2013), <em>Cartografia critica. Dal topos alla chora</em>, Guerini e Associati, Milano.</li>
+    <li>Cosgrove D. (2003), Landscape and the European sense of sight, in <em>Handbook of Cultural Geography</em>, SAGE.</li>
+    <li>Dorado M. I. A. (2023), Theoretical conceptions for a holistic, transdisciplinary approach to contemporary landscape, <em>City, Territory and Architecture</em>, 10.</li>
+    <li>Ghisalberti A. (2018), <em>Rigenerazione urbana e restituzione di territorio</em>, Mimesis.</li>
+    <li>Kang Y., Gao S., Roth R.E. (2024), Artificial intelligence studies in cartography, <em>Cartography and Geographic Information Science</em>, 51(4). <a href="https://doi.org/10.1080/15230406.2023.2295943" target="_blank" rel="noopener">doi</a></li>
+    <li>Kohonen T. (2001), <em>Self-Organizing Maps</em>, Springer. <a href="https://doi.org/10.1007/978-3-642-56927-2" target="_blank" rel="noopener">doi</a></li>
+    <li>Lussault M. (2007), <em>L'Homme spatial</em>, Seuil.</li>
+    <li>Tonini M. et al. (2025), Redefining Swiss territorial typologies, <em>Journal of Geovisualization and Spatial Analysis</em>, 9. <a href="https://doi.org/10.1007/s41651-025-00226-3" target="_blank" rel="noopener">doi</a></li>
+    <li>Turco A. (2010), <em>Configurazioni della territorialità</em>, FrancoAngeli.</li>
+    <li>Turco A. (2025), <em>Mediologia della territorialità</em>, Unicopli, Milano.</li>
+    <li>Wehrens R., Buydens L. M. C. (2007), Self- and Super-organizing Maps in R, <em>Journal of Statistical Software</em>, 21(5). <a href="https://doi.org/10.18637/jss.v021.i05" target="_blank" rel="noopener">doi</a></li>
+  </ul>
+  <p class="pg-nota">Data: Copernicus, INGV, ISTAT, Italian Civil Protection Department, Basilicata Region. Base maps: © OpenStreetMap, OpenTopoMap, Esri. Built with Leaflet, D3, Pannellum.</p>
+</section>

@@ -11,8 +11,8 @@ VP.survey = (() => {
   const COL = ["#4f9a5a", "#c98a2b", "#3f7fb5", "#9c5a7a", "#3fa6a0"];
   const SEL = "#7d5a63";
   let D, root, vista = "a", classe = "tutti", cluster = null, raf;
-  const fmt = v => v == null ? "–" : v.toLocaleString("it-IT", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-  const nomeClasse = id => id === "tutti" ? "tutti i portatori di interesse" : (D.classi.find(c => c.id === id)?.nome || id);
+  const fmt = v => v == null ? "–" : v.toLocaleString(VP.lingua.loc, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const nomeClasse = id => id === "tutti" ? VP.t("tutti i portatori di interesse") : (D.classi.find(c => c.id === id)?.nome || id);
   const blocco = (cl, cs) => D.dati[String(cl)]?.[cs];
   const valido = b => b && b.n >= D.n_minimo;
   const tip = (ev, html) => VP.tooltip.show(html, ev.clientX, ev.clientY);
@@ -21,9 +21,9 @@ VP.survey = (() => {
   function init() {
     root = document.getElementById("graph");
     D = VP.stato.survey;
-    if (!D) { root.innerHTML = `<div class="empty">Dati della survey non ancora disponibili.</div>`; return; }
+    if (!D) { root.innerHTML = `<div class="empty">${VP.t("Dati della survey non ancora disponibili.")}</div>`; return; }
     const sel = document.getElementById("sv-classe");
-    sel.innerHTML = `<option value="tutti">Tutti i portatori di interesse</option>` +
+    sel.innerHTML = `<option value="tutti">${VP.t("Tutti i portatori di interesse")}</option>` +
       D.classi.map(c => `<option value="${c.id}">${c.nome}</option>`).join("");
     sel.title = D.dimensione || "";
     sel.onchange = () => { classe = sel.value; VP.bus.emit("classe", classe); disegna(); };
@@ -46,11 +46,11 @@ VP.survey = (() => {
     fermaSim();
     document.querySelector(".p-graph")?.classList.add("sv-in-avviso");
     root.innerHTML = `<div class="sv-avviso" role="note">
-      <p class="sv-avviso-tit">Anteprima dimostrativa</p>
-      <p>I dati di questo pannello sono <b>fittizi</b>: sono stati generati per simulazione e non derivano dalla survey, ancora in corso.</p>
-      <p>Servono solo a mostrare che cosa si immagina di poter restituire a partire dalle risposte raccolte: i valori attribuiti a ciascuna famiglia di paesaggio, i conflitti tra valori, le priorità di sviluppo, le parole ricorrenti e il confronto tra portatori di interesse.</p>
-      <p class="sv-avviso-nota">Non vanno letti né citati come risultati della ricerca. Lo stesso vale per la colorazione della mappa basata sulla survey.</p>
-      <button type="button" class="sv-btn" id="sv-apri">Visualizza l'esempio</button>
+      <p class="sv-avviso-tit">${VP.t("Anteprima dimostrativa")}</p>
+      <p>${VP.t("I dati di questo pannello sono <b>fittizi</b>: sono stati generati per simulazione e non derivano dalla survey, ancora in corso.")}</p>
+      <p>${VP.t("Servono solo a mostrare che cosa si immagina di poter restituire a partire dalle risposte raccolte: i valori attribuiti a ciascuna famiglia di paesaggio, i conflitti tra valori, le priorità di sviluppo, le parole ricorrenti e il confronto tra portatori di interesse.")}</p>
+      <p class="sv-avviso-nota">${VP.t("Non vanno letti né citati come risultati della ricerca. Lo stesso vale per la colorazione della mappa basata sulla survey.")}</p>
+      <button type="button" class="sv-btn" id="sv-apri">${VP.t("Visualizza l'esempio")}</button>
     </div>`;
     root.querySelector("#sv-apri").onclick = () => { avviso = false; disegna(); };
   }
@@ -61,14 +61,14 @@ VP.survey = (() => {
     if (D.demo && avviso) { mostraAvviso(); return; }
     document.querySelector(".p-graph")?.classList.remove("sv-in-avviso");
     const cl = cluster ?? 0, s = blocco(cl, classe), t = blocco(cl, "tutti");
-    const dove = cluster == null ? "tutte le famiglie di paesaggio" : `cluster ${VP.pad2(cluster)}`;
-    root.innerHTML = `<div class="sv"><div class="sv-info"><span>${dove} · ${nomeClasse(classe)}${s ? ` · ${s.n} rispondenti` : ""}</span>` +
-      `${D.demo ? `<button type="button" class="sv-demo" id="sv-torna" title="Rileggi l'avviso sui dati dimostrativi">dati fittizi · avviso</button>` : ""}</div><div class="sv-corpo"></div></div>`;
+    const dove = cluster == null ? VP.t("tutte le famiglie di paesaggio") : `cluster ${VP.pad2(cluster)}`;
+    root.innerHTML = `<div class="sv"><div class="sv-info"><span>${dove} · ${nomeClasse(classe)}${s ? ` · ${VP.t("{n} rispondenti", { n: s.n })}` : ""}</span>` +
+      `${D.demo ? `<button type="button" class="sv-demo" id="sv-torna" title="${VP.t("Rileggi l'avviso sui dati dimostrativi")}">${VP.t("dati fittizi · avviso")}</button>` : ""}</div><div class="sv-corpo"></div></div>`;
     root.querySelector("#sv-torna")?.addEventListener("click", () => { avviso = true; disegna(); });
     const corpo = root.querySelector(".sv-corpo");
-    if (!t) { corpo.innerHTML = `<div class="empty">Nessun dato per questa selezione.</div>`; return; }
+    if (!t) { corpo.innerHTML = `<div class="empty">${VP.t("Nessun dato per questa selezione.")}</div>`; return; }
     if (vista === "a") {
-      if (!valido(s)) { corpo.innerHTML = `<div class="empty">Dati insufficienti: meno di ${D.n_minimo} rispondenti in questa classe.<br>Per tutelare l'anonimato non vengono mostrati.</div>`; return; }
+      if (!valido(s)) { corpo.innerHTML = `<div class="empty">${VP.t("Dati insufficienti: meno di {n} rispondenti in questa classe.<br>Per tutelare l'anonimato non vengono mostrati.", { n: D.n_minimo })}</div>`; return; }
       vistaA(corpo, s, t);
     } else { fermaSim(); vistaB(corpo, cl); }
   }
@@ -98,16 +98,15 @@ VP.survey = (() => {
     fermaSim();
     const termini = mostraParole ? terminiVisibili(s) : [];
     const leg = document.createElement("div"); leg.className = "sv-leg";
-    const aiuto = "Cerchio pieno: peso percepito del valore. Anello: priorità della direzione di sviluppo corrispondente.\n" +
-      "Linee rosse: coppie di valori in conflitto; più la coppia è indicata, più i due valori sono distanti.\n" +
-      "Parole: termini ricorrenti nelle risposte libere (bordo tratteggiato = omissione: importante ma non rappresentato), " +
-      "legate ai valori a cui chi le cita dà un peso superiore alla media; linea più spessa = legame più forte.\n" +
-      "Trascina nodi e parole · rotella o due dita = zoom · doppio clic = vista iniziale.";
-    leg.innerHTML = `<div class="sv-simb"><span><i class="pieno"></i>peso percepito</span><span><i class="anello"></i>priorità</span>` +
-      `<span><i class="linea"></i>conflitto = distanza</span></div>` +
-      `<div class="sv-simb"><span class="sv-par"><label><input type="checkbox" ${mostraParole ? "checked" : ""}> parole</label>` +
-      (mostraParole ? `<button type="button" data-d="-1" aria-label="Meno parole">−</button><b>${nParole}</b><button type="button" data-d="1" aria-label="Più parole">+</button>` : "") + `</span>` +
-      (mostraParole ? `<span><i class="pill"></i>chiave</span><span><i class="pill om"></i>omissione</span>` : "") +
+    const aiuto = [VP.t("Cerchio pieno: peso percepito del valore. Anello: priorità della direzione di sviluppo corrispondente."),
+      VP.t("Linee rosse: coppie di valori in conflitto; più la coppia è indicata, più i due valori sono distanti."),
+      VP.t("Parole: termini ricorrenti nelle risposte libere (bordo tratteggiato = omissione: importante ma non rappresentato), legate ai valori a cui chi le cita dà un peso superiore alla media; linea più spessa = legame più forte."),
+      VP.t("Trascina nodi e parole · rotella o due dita = zoom · doppio clic = vista iniziale.")].join("\n");
+    leg.innerHTML = `<div class="sv-simb"><span><i class="pieno"></i>${VP.t("peso percepito")}</span><span><i class="anello"></i>${VP.t("priorità")}</span>` +
+      `<span><i class="linea"></i>${VP.t("conflitto = distanza")}</span></div>` +
+      `<div class="sv-simb"><span class="sv-par"><label><input type="checkbox" ${mostraParole ? "checked" : ""}> ${VP.t("parole")}</label>` +
+      (mostraParole ? `<button type="button" data-d="-1" aria-label="${VP.t("Meno parole")}">−</button><b>${nParole}</b><button type="button" data-d="1" aria-label="${VP.t("Più parole")}">+</button>` : "") + `</span>` +
+      (mostraParole ? `<span><i class="pill"></i>${VP.t("chiave")}</span><span><i class="pill om"></i>${VP.t("omissione")}</span>` : "") +
       `<span class="sv-info-i" tabindex="0" title="${aiuto}">ⓘ</span></div>`;
     el.appendChild(leg);
     leg.querySelector(".sv-par input").onchange = e => { mostraParole = e.target.checked; disegna(); };
@@ -115,7 +114,7 @@ VP.survey = (() => {
     leg.querySelector(".sv-info-i").onclick = ev => { ev.stopPropagation(); tip(ev, aiuto.replace(/\n/g, "<br>")); };
     leg.querySelectorAll(".sv-par button").forEach(bt => bt.onclick = () => { nParole = Math.max(1, Math.min(16, nParole + +bt.dataset.d)); disegna(); });
     if (mostraParole && !termini.length) leg.querySelectorAll(".sv-simb")[1].insertAdjacentHTML("beforeend",
-      `<span class="sv-nessuna">nessuna parola citata da almeno ${D.n_minimo} persone</span>`);
+      `<span class="sv-nessuna">${VP.t("nessuna parola citata da almeno {n} persone", { n: D.n_minimo })}</span>`);
 
     // Il grafo è disegnato sempre nella stessa tela di riferimento (420×240 unità, circa le proporzioni del pannello normale) e scalato in blocco (viewBox):
     // nel pannello ingrandito cerchi, linee, testi e parole crescono tutti dello stesso fattore, così la figura
@@ -143,12 +142,12 @@ VP.survey = (() => {
     const link = lg.selectAll("line").data(links.filter(d => d.q > 0)).join("line")
       .attr("stroke", "#b5414b").attr("stroke-linecap", "round")
       .attr("stroke-width", d => 0.6 + 5 * d.q / qmax).attr("stroke-opacity", d => 0.12 + 0.55 * d.q / qmax)
-      .on("mousemove", (ev, d) => tip(ev, `<b>Conflitto: ${D.valori[d.source.i ?? d.source]} – ${D.valori[d.target.i ?? d.target]}</b><br>coppia indicata nel ${Math.round(d.q * 100)}% delle risposte<br><span style="opacity:.7">più alta la quota, più i due valori sono lontani</span>`))
+      .on("mousemove", (ev, d) => tip(ev, `<b>${VP.t("Conflitto")}: ${D.valori[d.source.i ?? d.source]} – ${D.valori[d.target.i ?? d.target]}</b><br>${VP.t("coppia indicata nel {q}% delle risposte", { q: Math.round(d.q * 100) })}<br><span style="opacity:.7">${VP.t("più alta la quota, più i due valori sono lontani")}</span>`))
       .on("mouseleave", notip);
     const node = zg.append("g").selectAll("g").data(nodes).join("g")
-      .on("mousemove", (ev, d) => tip(ev, `<b>Valore ${d.nome}</b><br>peso percepito: ${fmt(d.w)} su 5` +
-        `<br>priorità «${(D.direzioni_estese || D.direzioni)[d.i]}»: ${fmt(d.pr)} su 5` +
-        (classe !== "tutti" ? `<br><span style="opacity:.7">tutti i rispondenti: ${fmt(t.valori[d.i])} · ${fmt(t.direzioni[d.i])}</span>` : "")))
+      .on("mousemove", (ev, d) => tip(ev, `<b>${VP.t("Valore {nome}", { nome: d.nome })}</b><br>${VP.t("peso percepito")}: ${VP.t("{v} su 5", { v: fmt(d.w) })}` +
+        `<br>${VP.t("priorità")} «${(D.direzioni_estese || D.direzioni)[d.i]}»: ${VP.t("{v} su 5", { v: fmt(d.pr) })}` +
+        (classe !== "tutti" ? `<br><span style="opacity:.7">${VP.t("tutti i rispondenti")}: ${fmt(t.valori[d.i])} · ${fmt(t.direzioni[d.i])}</span>` : "")))
       .on("mouseenter", (ev, d) => evidenziaValore(d.i))
       .on("mouseleave", () => { notip(); evidenziaValore(null); });
     node.append("circle").attr("r", d => rr(d.w)).attr("fill", d => COL[d.i]).attr("fill-opacity", .9);
@@ -210,10 +209,10 @@ VP.survey = (() => {
         .attr("stroke-width", d => 0.6 + 2.2 * d.a / amax).attr("stroke-opacity", 0.5);
       tnode = zg.append("g").selectAll("g").data(termini, d => d.key).join("g").attr("class", d => `sv-term ${d.tipo}`)
         .style("cursor", "grab")
-        .on("mousemove", (ev, d) => tip(ev, `<b>${d.t}</b> · ${d.tipo === "omissione" ? "omissione (importante ma non rappresentato)" : "parola chiave"}` +
-          `<br>citata da ${d.n} ${cluster == null ? "risposte" : "persone"} (${Math.round(d.q * 100)}%)` +
-          `<br>più legata a: ${d.legami.map(l => `${D.valori[l.v]} (${segno(l.a)})`).join(", ")}` +
-          `<br><span style="opacity:.7">chi la cita dà a questi valori un peso superiore alla media</span>`))
+        .on("mousemove", (ev, d) => tip(ev, `<b>${d.t}</b> · ${d.tipo === "omissione" ? VP.t("omissione (importante ma non rappresentato)") : VP.t("parola chiave")}` +
+          `<br>${VP.t(cluster == null ? "citata da {n} risposte ({q}%)" : "citata da {n} persone ({q}%)", { n: d.n, q: Math.round(d.q * 100) })}` +
+          `<br>${VP.t("più legata a")}: ${d.legami.map(l => `${D.valori[l.v]} (${segno(l.a)})`).join(", ")}` +
+          `<br><span style="opacity:.7">${VP.t("chi la cita dà a questi valori un peso superiore alla media")}</span>`))
         .on("mouseenter", (ev, d) => evidenziaTermine(d))
         .on("mouseleave", () => { notip(); evidenziaTermine(null); });
       tnode.append("rect");
@@ -380,9 +379,9 @@ VP.survey = (() => {
 
   // ---------- B: confronto tra portatori di interesse ----------
   function vistaB(el, cl) {
-    const gruppi = [["Riconoscibilità", "riconoscibilita", D.riconoscibilita, D.riconoscibilita],
-                    ["Valori", "valori", D.valori, D.valori],
-                    ["Priorità di sviluppo", "direzioni", D.direzioni, D.direzioni_estese || D.direzioni]];
+    const gruppi = [[VP.t("Riconoscibilità"), "riconoscibilita", D.riconoscibilita, D.riconoscibilita],
+                    [VP.t("Valori"), "valori", D.valori, D.valori],
+                    [VP.t("Priorità di sviluppo"), "direzioni", D.direzioni, D.direzioni_estese || D.direzioni]];
     const classi = D.classi.filter(c => valido(blocco(cl, c.id)));
     const W = el.clientWidth; if (W < 60) return;
     const lw = Math.min(150, W * 0.38), rh = 16, gh = 17;
@@ -406,7 +405,7 @@ VP.survey = (() => {
           g.append("circle").attr("class", "sv-dot").attr("data-c", c.id).attr("cx", x(v)).attr("cy", yc).attr("r", 3.6)
             .attr("fill", c.id === classe ? SEL : "#9b9ea4").attr("fill-opacity", c.id === classe ? 0 : .6)
             .on("mouseenter", ev => evidenzia(svg, c.id, true))
-            .on("mousemove", ev => tip(ev, `<b>${c.nome}</b> (${blocco(cl, c.id).n})<br>${estese[i]}: ${fmt(v)}<br><span style="opacity:.7">clic per selezionare la classe</span>`))
+            .on("mousemove", ev => tip(ev, `<b>${c.nome}</b> (${blocco(cl, c.id).n})<br>${estese[i]}: ${fmt(v)}<br><span style="opacity:.7">${VP.t("clic per selezionare la classe")}</span>`))
             .on("mouseleave", () => { evidenzia(svg, c.id, false); notip(); })
             .on("click", () => scegliClasse(c.id));
         });
@@ -414,7 +413,7 @@ VP.survey = (() => {
           .attr("stroke", "#1f2328").attr("stroke-width", 2).attr("pointer-events", "none");
         if (sOk) g.append("circle").attr("cx", x(s[chiave][i])).attr("cy", yc).attr("r", 6).attr("fill", SEL)
           .attr("stroke", "#fff").attr("stroke-width", 1.5)
-          .on("mousemove", ev => tip(ev, `<b>${nomeClasse(classe)}</b><br>${estese[i]}: ${fmt(s[chiave][i])}<br>tutti: ${fmt(t[chiave][i])}`))
+          .on("mousemove", ev => tip(ev, `<b>${nomeClasse(classe)}</b><br>${estese[i]}: ${fmt(s[chiave][i])}<br>${VP.t("tutti")}: ${fmt(t[chiave][i])}`))
           .on("mouseleave", notip);
         y += rh;
       });
@@ -425,13 +424,13 @@ VP.survey = (() => {
       .style("font-size", "11px").attr("fill", "#6b6f76").text(v));
     const lg = svg.append("g").attr("transform", `translate(10,${ay - 4})`).style("font-size", "11px").attr("fill", "#6b6f76");
     lg.append("line").attr("x1", 0).attr("x2", 0).attr("y1", -5).attr("y2", 5).attr("stroke", "#1f2328").attr("stroke-width", 2);
-    lg.append("text").attr("x", 5).attr("dy", "0.35em").text("tutti");
+    lg.append("text").attr("x", 5).attr("dy", "0.35em").text(VP.t("tutti"));
     lg.append("circle").attr("cx", 40).attr("r", 3.6).attr("fill", "#9b9ea4").attr("fill-opacity", .6);
-    lg.append("text").attr("x", 47).attr("dy", "0.35em").text("classi");
-    if (sOk) { lg.append("circle").attr("cx", 88).attr("r", 5).attr("fill", SEL); lg.append("text").attr("x", 96).attr("dy", "0.35em").text("selezionata"); }
+    lg.append("text").attr("x", 47).attr("dy", "0.35em").text(VP.t("classi"));
+    if (sOk) { lg.append("circle").attr("cx", 88).attr("r", 5).attr("fill", SEL); lg.append("text").attr("x", 96).attr("dy", "0.35em").text(VP.t("selezionata")); }
     if (classi.length < D.classi.length)
       svg.append("text").attr("x", W - 12).attr("y", 14).attr("text-anchor", "end").style("font-size", "10.5px").attr("fill", "#6b6f76")
-        .text(`classi con meno di ${D.n_minimo} rispondenti non mostrate`);
+        .text(VP.t("classi con meno di {n} rispondenti non mostrate", { n: D.n_minimo }));
   }
   function evidenzia(svg, id, on) {
     svg.selectAll(`.sv-dot[data-c="${id}"]`).filter(function () { return this.getAttribute("fill-opacity") !== "0"; })

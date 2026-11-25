@@ -1,6 +1,8 @@
 {
   "titolo": "Paesaggio tra misura e percezione",
+  "titolo_en": "Landscape between Measurement and Perception",
   "sottotitolo": "Mappa degli intorni percepiti · SuperSOM k=6 · area del Vulture",
+  "sottotitolo_en": "Map of perceived surroundings · SuperSOM k=6 · Vulture area",
   "raster_cluster": "data/cluster.tif",
   "confine": "data/area_studio.geojson",
   "foto": "data/foto.geojson",

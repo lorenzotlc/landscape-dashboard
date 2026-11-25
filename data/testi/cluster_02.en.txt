@@ -1,0 +1,71 @@
+TITOLO: Open hill landscape with an ecological mosaic and intermittent human presence
+
+DESCRIZIONE GENERALE
+
+This cluster describes a landscape that is territorially peripheral to the volcanic system, characterised by a moderately articulated morphological structure and a relatively open, but not fully stable, spatial legibility. The dominant scene is not built by a single iconic element, but by a combination of gentle reliefs, an ecological mosaic, widespread forest presence and locally perceivable water. The traditional agricultural component, on the other hand, is not a stable structuring matrix: its presence emerges almost exclusively as a local episode. The historical-cultural component also remains weak and discontinuous, while productive and human elements oscillate between sparsely equipped areas and more transformed centres.
+
+STRUTTURA CENTRALE
+
+The central structure of the cluster is governed above all by three consistent systems: its peripheral position with respect to the volcano, the presence of an articulated ecological mosaic, and a moderately open, hilly morphology.
+
+The most stable variable is the distance from the volcano. The very high median and strongly positive IQR indicate a landscape stably located in the volcanic periphery. This does not necessarily mean that the volcano is absent, but that it loses direct perceptual centrality. Indeed, the visibility of the volcanic landmark spans mixed conditions: the box includes both negative and positive values. The volcano may appear as an occasional background element, but it does not stably dominate the scene.
+
+Ecologically, the cluster shows a strong internal articulation of the land. Land cover diversity has a positive median and a wide but consistent IQR, suggesting a readable coexistence of woods, open areas, riparian vegetation and differentiated surfaces. This heterogeneity is not chaotic: rather, it generates a mosaic landscape, with continuous transitions between forest matrices, territorial openings and semi-natural systems.
+
+Local forest presence is stably perceivable. The positive median and the wide but consistent IQR indicate that tree masses, woodland edges and forest screens occupy an important position in the midground and background of the scene. Woods do not, however, become an all-encompassing cover: they coexist with open surfaces and readable reliefs.
+
+Water is also a significant element of the central structure. Streams, minor watercourses and riparian vegetation are frequently perceivable, especially in the foreground and midground. The presence of water contributes to the ecological legibility of the landscape and reinforces its overall territorial variety.
+
+The morphology is moderately articulated. Relief has a slightly positive median and an IQR that spans different conditions: hills, gentle slopes and undulations prevail over extreme reliefs. At the same time, visual openness shows an unstable balance between open spaces and valley or partly enclosed situations. The cluster builds neither completely open panoramas nor strongly entrenched landscapes: it alternates morphological screens and perspective openings.
+
+The productive human component is present but not dominant. The negative median indicates that industrial or energy infrastructure does not stably organise the landscape. However, the very wide IQR signals a strong internal oscillation: some cases show perceivable productive areas, energy plants or infrastructure, others almost no artificial presence.
+
+Overall visual legibility remains moderately low. The negative median of visual intensity suggests scenes that are often fragmented or weakly hierarchical, where no element takes on absolute perceptual dominance. This contributes to a diffuse and distributed perception of the territory.
+
+The traditional agricultural component does not structure the cluster. The null median and IQR indicate that vineyards, tree rows and agricultural patterns are generally absent as a dominant system. When they appear, they do so as isolated exceptions.
+
+The historical-cultural component also remains marginal in the central structure. Although the median is slightly positive, the IQR crosses zero: historic villages, old centres and monuments are present only discontinuously and do not stably organise the perception of the territory.
+
+ECCEZIONI E TENSIONI
+
+The main internal tensions arise from the oscillation between widespread naturalness and sudden human emergences.
+
+The human variable indeed shows a very wide boxplot. Some portions of the cluster have clearly readable productive areas, photovoltaics, paved roads or energy plants. However, these emergences do not become the dominant structure, because the median remains negative and the whole territorial system continues to be governed by the ecological mosaic and the open morphology.
+
+Another important tension concerns the visibility of the volcano. The cluster oscillates between areas where the volcanic landmark is completely screened and others where it clearly emerges in the background. This variability produces a landscape that is perceptually unstable with respect to the dominant horizon.
+
+The historical-cultural component shows strong dispersion and numerous negative and positive outliers. Some cases show an almost total absence of perceivable historic structures, while others concentrate very readable historic villages or cultural centres. These episodes nonetheless remain local and do not redefine the general structure of the cluster.
+
+The relationship with the volcano also contains a significant tension. Although stably peripheral, the cluster has numerous outliers towards values closer to the volcanic system. This suggests territorial episodes of transition, in which the volcano temporarily returns to exert a more direct presence.
+
+Finally, the agricultural component is a punctual but perceptually readable exception. Positive outliers show local episodes with visible crops or organised agricultural matrices. However, the absence of a structured IQR prevents these elements from defining the overall identity of the cluster.
+
+PARTE CENTRALE
+
+The scene should be built as a peripheral hill landscape, articulated by gentle reliefs and a strong ecological alternation. The foreground may include minor watercourses, riparian vegetation and discontinuous open surfaces. The midground should be dominated by alternations of woods, clearings, slopes and differentiated territorial mosaics. Continuous forest screens and, in a subordinate way, the silhouette of the volcano may appear in the background.
+
+Spatial organisation should favour a horizontal reading of the territorial mosaic rather than the presence of a single dominant object. The diversity of land covers should be immediately readable through variations in texture, vegetation continuity and morphological articulation.
+
+Human components should remain secondary: small productive centres, scattered infrastructure or energy elements may appear, but without occupying the perceptual centre of the scene.
+
+The historical-cultural component should be episodic: small villages or historic fabrics may appear locally, especially in the foreground or near midground, but without turning into urban skylines or dominant monumental systems.
+
+NOTE SULLE ECCEZIONI
+
+The exceptions should be represented as localised episodes that temporarily interrupt the ecological continuity of the cluster.
+
+ECCEZIONE 1
+
+Human outliers may appear as more evident concentrations of sheds, energy plants or linear infrastructure. Such episodes should, however, occupy limited portions of the scene.
+
+ECCEZIONE 2
+
+Variations in the visibility of the volcano should produce differences in the background: in some images the volcano may be absent or screened by reliefs and forest screens; in others it may clearly emerge as a distant landmark.
+
+ECCEZIONE 3
+
+Historical-cultural anomalies may introduce more readable historic villages or local monumental centres, but always as secondary emergences immersed in the hill and ecological system.
+
+ECCEZIONE 4
+
+Agricultural episodes should appear as localised fragments of crops or tree rows, without turning the cluster into a continuous agricultural landscape.

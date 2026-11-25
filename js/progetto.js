@@ -18,12 +18,28 @@ VP.progetto = (() => {
     "ecology.water_presence_500m": "Quota media di superficie occupata da corpi idrici entro 500 m.",
     "ecology.forest_presence_500m": "Quota media di superficie forestale entro 500 m.",
   };
-  const DIMENSIONE = { "Visibilità": "Visivo-percettiva", "Storia e cultura": "Storico-culturale", "Morfologia": "Morfologica", "Ecologia": "Ecologica" };
+  const SIGNIFICATO_EN = {
+    "visibility.vis_agri_share": "Share of visibility of traditional agricultural systems: olive groves and vineyards.",
+    "visibility.vis_anthropic_share": "Share of visibility of productive and energy elements: productive areas, photovoltaics, wind power.",
+    "visibility.vis_landmark_share": "Share of visibility, in the background, of the summit area of the volcano as a natural landmark.",
+    "visibility.vis_total_intensity": "Overall intensity of the visibility of distinctive elements (intervisibility analysis).",
+    "hist_cult_index": "Emergence of the historical-cultural component in its context: density of cultural elements and visibility of historic centres.",
+    "morphology.relief_context": "Elevation variability within 2 km: high values for rugged landforms, low for flat areas.",
+    "morphology.terrain_enclosure": "Degree of openness or enclosure of the landscape, from the relative topographic position of the cell.",
+    "morphology.distance_to_volcano": "Distance from the perimeter of the volcanic edifice: negative inside, positive outside.",
+    "ecology.shannon": "Diversity of the land cover categories present in the cell.",
+    "ecology.hemeroby": "Average degree of human transformation, from the reclassification of land use.",
+    "ecology.water_presence_500m": "Average share of surface occupied by water bodies within 500 m.",
+    "ecology.forest_presence_500m": "Average share of forest surface within 500 m.",
+  };
+  const DIMENSIONE = { "Visibilità": "Visivo-percettiva", "Storia e cultura": "Storico-culturale", "Morfologia": "Morfologica", "Ecologia": "Ecologica",
+    "Visibility": "Visual-perceptual", "History and culture": "Historical-cultural", "Morphology": "Morphological", "Ecology": "Ecological" };
+  const significato = cod => (VP.lingua.L === "en" ? SIGNIFICATO_EN : SIGNIFICATO)[cod] || "";
 
   function crea() {
     vista = document.createElement("div");
     vista.className = "progetto"; vista.id = "vista-progetto"; vista.hidden = true;
-    vista.innerHTML = `<nav class="pg-indice" aria-label="Indice"></nav><article class="pg-testo"><p class="muted">Caricamento…</p></article>`;
+    vista.innerHTML = `<nav class="pg-indice" aria-label="${VP.t("Indice")}"></nav><article class="pg-testo"><p class="muted">${VP.t("Caricamento…")}</p></article>`;
     document.body.appendChild(vista);
   }
 
@@ -31,11 +47,11 @@ VP.progetto = (() => {
     if (caricata) return;
     const testo = vista.querySelector(".pg-testo");
     try {
-      const r = await fetch("data/progetto.html", { cache: "no-cache" });
+      const r = await VP.lingua.fetchLingua("data/progetto.html", { cache: "no-cache" });
       if (!r.ok) throw new Error(r.status);
       testo.innerHTML = await r.text();
     } catch (e) {
-      testo.innerHTML = `<p class="muted">Testo del progetto non disponibile (data/progetto.html).</p>`; return;
+      testo.innerHTML = `<p class="muted">${VP.t("Testo del progetto non disponibile ({f}).", { f: VP.lingua.fileLingua("data/progetto.html") })}</p>`; return;
     }
     caricata = true;
     // figure facoltative: se l'immagine manca la figura non compare
@@ -55,7 +71,7 @@ VP.progetto = (() => {
   function indice(testo) {
     const nav = vista.querySelector(".pg-indice");
     const sez = [...testo.querySelectorAll(".pg-sez")];
-    nav.innerHTML = `<div class="pg-indice-tit">Il progetto</div>` + sez.map(s =>
+    nav.innerHTML = `<div class="pg-indice-tit">${VP.t("Il progetto")}</div>` + sez.map(s =>
       `<a href="#progetto/${s.id}" data-id="${s.id}">${s.dataset.titolo || s.querySelector("h2,h1")?.textContent || s.id}</a>`).join("");
     nav.querySelectorAll("a").forEach(a => a.onclick = e => { e.preventDefault(); vai(a.dataset.id); });
     // voce attiva durante lo scorrimento
@@ -85,10 +101,10 @@ VP.progetto = (() => {
     let gruppo = null, righe = "";
     for (const v of vars) {
       const g = DIMENSIONE[v.gruppo] || v.gruppo || "";
-      righe += `<tr><td>${g !== gruppo ? `<b>${g}</b>` : ""}</td><td><b>${v.nome}</b><br><code>${v.codice || ""}</code></td><td>${SIGNIFICATO[v.codice] || ""}</td></tr>`;
+      righe += `<tr><td>${g !== gruppo ? `<b>${g}</b>` : ""}</td><td><b>${v.nome}</b><br><code>${v.codice || ""}</code></td><td>${significato(v.codice)}</td></tr>`;
       gruppo = g;
     }
-    box.innerHTML = `<div class="pg-tabella"><table><thead><tr><th>Dimensione</th><th>Indicatore</th><th>Significato</th></tr></thead><tbody>${righe}</tbody></table></div>`;
+    box.innerHTML = `<div class="pg-tabella"><table><thead><tr><th>${VP.t("Dimensione")}</th><th>${VP.t("Indicatore")}</th><th>${VP.t("Significato")}</th></tr></thead><tbody>${righe}</tbody></table></div>`;
   }
 
   async function autoCluster(box) {
@@ -99,12 +115,12 @@ VP.progetto = (() => {
     box.className = "pg-cluster" + (galleria ? " pg-galleria" : "");
     box.innerHTML = cl.map(c => {
       const t = VP.testi.get(c.id), intro = t?.descrizione?.[0] || "";
-      const km = area ? ` · ${(c.n_celle * area / 1e6).toLocaleString("it-IT", { maximumFractionDigits: 1 })} km²` : "";
+      const km = area ? ` · ${VP.lingua.num(c.n_celle * area / 1e6, { maximumFractionDigits: 1 })} km²` : "";
       return `<article class="pg-card" style="--ccol:${c.colore}">
         <div class="pg-card-img" data-id="${c.id}"></div>
-        <div class="pg-card-corpo"><div class="pg-card-num">Cluster ${VP.pad2(c.id)}<span>${(c.n_celle ?? 0).toLocaleString("it-IT")} celle${km}</span></div>
+        <div class="pg-card-corpo"><div class="pg-card-num">Cluster ${VP.pad2(c.id)}<span>${VP.t("{n} celle", { n: VP.lingua.num(c.n_celle) })}${km}</span></div>
         <h4>${c.titolo || c.nome}</h4>${galleria ? "" : `<p>${intro.length > 260 ? intro.slice(0, 257).replace(/\s+\S*$/, "") + "…" : intro}</p>`}
-        <button class="pg-btn" data-esplora="${c.id}">${galleria ? "Esplora" : "Esplora nella dashboard"}</button></div></article>`;
+        <button class="pg-btn" data-esplora="${c.id}">${galleria ? VP.t("Esplora") : VP.t("Esplora nella dashboard")}</button></div></article>`;
     }).join("");
     box.querySelectorAll("[data-esplora]").forEach(b => b.onclick = () => { chiudi(true); VP.bus.emit("blocca", +b.dataset.esplora); });
     for (const c of cl) {

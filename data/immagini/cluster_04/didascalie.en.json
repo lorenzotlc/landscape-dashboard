@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 4 type: Open, peripheral agricultural landscape with a widespread ecological mosaic",
+  "eccezioni": [
+    {
+      "titolo": "Forest episodes more extensive than the central picture",
+      "variabile": "forest_presence_500m, positive, strength 5",
+      "testo": ""
+    },
+    {
+      "titolo": "More articulated reliefs and marked slopes",
+      "variabile": "relief_context, positive, strength 4",
+      "testo": ""
+    },
+    {
+      "titolo": "Local valley enclosure of the landscape",
+      "variabile": "terrain_enclosure, negative, strength 3",
+      "testo": ""
+    },
+    {
+      "titolo": "Episodic presence of legible historical-cultural centres",
+      "variabile": "hist_cult_index, positive, strength 2",
+      "testo": ""
+    }
+  ]
+}

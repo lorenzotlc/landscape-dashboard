@@ -1,77 +1,101 @@
 {
-  "_nota": "Modifica nome, gruppo e unita; l'ordine qui è l'ordine nel grafico. Rilancia prepara_dati.py per applicare.",
+  "_nota": "Modifica nome, gruppo e unita; l'ordine qui è l'ordine nel grafico. Rilancia prepara_dati.py per applicare. I campi nome_en e gruppo_en sono usati nella versione inglese della dashboard.",
   "variabili": [
     {
       "codice": "visibility.vis_agri_share",
       "nome": "Quota agricola visibile",
       "gruppo": "Visibilità",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Visible agricultural share",
+      "gruppo_en": "Visibility"
     },
     {
       "codice": "visibility.vis_anthropic_share",
       "nome": "Quota antropica visibile",
       "gruppo": "Visibilità",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Visible human-made share",
+      "gruppo_en": "Visibility"
     },
     {
       "codice": "visibility.vis_landmark_share",
       "nome": "Quota di landmark visibili",
       "gruppo": "Visibilità",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Visible landmark share",
+      "gruppo_en": "Visibility"
     },
     {
       "codice": "visibility.vis_total_intensity",
       "nome": "Intensità visiva totale",
       "gruppo": "Visibilità",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Total visual intensity",
+      "gruppo_en": "Visibility"
     },
     {
       "codice": "hist_cult_index",
       "nome": "Indice storico-culturale",
       "gruppo": "Storia e cultura",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Historical-cultural index",
+      "gruppo_en": "History and culture"
     },
     {
       "codice": "morphology.relief_context",
       "nome": "Contesto del rilievo",
       "gruppo": "Morfologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Relief context",
+      "gruppo_en": "Morphology"
     },
     {
       "codice": "morphology.terrain_enclosure",
       "nome": "Chiusura del terreno",
       "gruppo": "Morfologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Terrain enclosure",
+      "gruppo_en": "Morphology"
     },
     {
       "codice": "morphology.distance_to_volcano",
       "nome": "Distanza dal vulcano",
       "gruppo": "Morfologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Distance from the volcano",
+      "gruppo_en": "Morphology"
     },
     {
       "codice": "ecology.shannon",
       "nome": "Diversità (Shannon)",
       "gruppo": "Ecologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Diversity (Shannon)",
+      "gruppo_en": "Ecology"
     },
     {
       "codice": "ecology.hemeroby",
       "nome": "Emerobia",
       "gruppo": "Ecologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Hemeroby",
+      "gruppo_en": "Ecology"
     },
     {
       "codice": "ecology.water_presence_500m",
       "nome": "Acqua entro 500 m",
       "gruppo": "Ecologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Water within 500 m",
+      "gruppo_en": "Ecology"
     },
     {
       "codice": "ecology.forest_presence_500m",
       "nome": "Bosco entro 500 m",
       "gruppo": "Ecologia",
-      "unita": ""
+      "unita": "",
+      "nome_en": "Woodland within 500 m",
+      "gruppo_en": "Ecology"
     }
   ]
 }

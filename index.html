@@ -18,63 +18,63 @@
   <button class="logo" id="logo" title="PhD Landscape Studies for Global and Local Challenges">
     <img src="assets/logo.png" alt="PhD Landscape Studies for Global and Local Challenges"></button>
   <div class="brand">
-    <h1 id="titolo">Paesaggio tra misura e percezione</h1>
+    <h1 id="titolo" data-i18n>Paesaggio tra misura e percezione</h1>
     <p id="sottotitolo"></p>
   </div>
-  <nav class="menu" aria-label="Sezioni">
+  <nav class="menu" aria-label="Sezioni" data-i18n-aria>
     <a href="#dashboard" data-voce="dashboard" class="on">Dashboard</a>
-    <a href="#progetto" data-voce="progetto">Il progetto</a>
-    <a href="#progetto/uso" data-voce="uso">Come si usa</a>
+    <a href="#progetto" data-voce="progetto" data-i18n>Il progetto</a>
+    <a href="#progetto/uso" data-voce="uso" data-i18n>Come si usa</a>
   </nav>
-  <div class="hint-top" id="hint-top">Passa il mouse sulla mappa · clic per fissare il cluster · Esc per sbloccare</div>
-  <span class="demo-badge" id="demo-badge" hidden>dati dimostrativi</span>
+  <div class="hint-top" id="hint-top" data-i18n>Passa il mouse sulla mappa · clic per fissare il cluster · Esc per sbloccare</div>
+  <span class="demo-badge" id="demo-badge" hidden data-i18n>dati dimostrativi</span>
 </header>
 
 <section class="scheda" id="scheda">
   <div class="sch-titolo">
     <span class="sch-sw" id="sch-sw"></span>
     <div class="sch-tt">
-      <div class="sch-nome" id="sch-nome">Esplora i cluster di paesaggio</div>
-      <div class="sch-meta" id="sch-meta">Passa il mouse su una cella della mappa</div>
+      <div class="sch-nome" id="sch-nome" data-i18n>Esplora i cluster di paesaggio</div>
+      <div class="sch-meta" id="sch-meta" data-i18n>Passa il mouse su una cella della mappa</div>
     </div>
-    <span class="sch-fisso" id="sch-fisso" hidden>fisso</span>
+    <span class="sch-fisso" id="sch-fisso" hidden data-i18n>fisso</span>
   </div>
   <div class="sch-desc">
-    <span class="sch-label">Descrizione generale</span>
+    <span class="sch-label" data-i18n>Descrizione generale</span>
     <div class="sch-body" id="sch-body"></div>
   </div>
-  <button class="sch-toggle" id="sch-toggle" hidden>leggi tutto</button>
+  <button class="sch-toggle" id="sch-toggle" hidden data-i18n>leggi tutto</button>
 </section>
 
 <main class="grid">
   <section class="panel p-map">
-    <div class="panel-h"><h2>Mappa degli intorni percepiti</h2>
-      <label class="opacity">Opacità <input type="range" id="opacity" min="0" max="1" step="0.05"></label></div>
+    <div class="panel-h"><h2 data-i18n>Mappa degli intorni percepiti</h2>
+      <label class="opacity"><span data-i18n>Opacità</span> <input type="range" id="opacity" min="0" max="1" step="0.05"></label></div>
     <div id="map"></div>
   </section>
 
   <section class="panel p-street">
-    <div class="panel-h"><h2 title="Lo scenario statisticamente dominante del cluster: l'immaginario più plausibile che la catena delle mediazioni (dati, modello, IA generativa) ha prodotto. Non è una fotografia di un luogo reale. Trascina l'immagine per guardarti intorno.">Ipotesi visuale dominante</h2><span class="hint" id="street-caption" title="scenario statisticamente più plausibile, generato con IA a partire dai dati">scenario statisticamente più plausibile, generato con IA a partire dai dati</span><button class="btn-leggi" id="btn-centrale" hidden title="Leggi la descrizione dell'immagine centrale">Leggi</button></div>
+    <div class="panel-h"><h2 data-i18n data-i18n-title title="Lo scenario statisticamente dominante del cluster: l'immaginario più plausibile che la catena delle mediazioni (dati, modello, IA generativa) ha prodotto. Non è una fotografia di un luogo reale. Trascina l'immagine per guardarti intorno.">Ipotesi visuale dominante</h2><span class="hint" id="street-caption" data-i18n data-i18n-title title="scenario statisticamente più plausibile, generato con IA a partire dai dati">scenario statisticamente più plausibile, generato con IA a partire dai dati</span><button class="btn-leggi" id="btn-centrale" hidden data-i18n data-i18n-title title="Leggi la descrizione dell'immagine centrale">Leggi</button></div>
     <div class="street" id="street">
       <div id="pano"></div>
-      <figure class="synth" id="synth" hidden><img id="synth-img" alt=""><figcaption>immagine sintetica centrale</figcaption></figure>
+      <figure class="synth" id="synth" hidden><img id="synth-img" alt=""><figcaption data-i18n>immagine sintetica centrale</figcaption></figure>
     </div>
   </section>
 
   <section class="panel p-exc">
-    <div class="panel-h"><h2>Eccezioni locali</h2></div>
+    <div class="panel-h"><h2 data-i18n>Eccezioni locali</h2></div>
     <div class="exc" id="exc"></div>
   </section>
 
   <section class="panel p-box">
-    <div class="panel-h"><h2>Variabili del cluster</h2>
+    <div class="panel-h"><h2 data-i18n>Variabili del cluster</h2>
       <span class="legend-inline"><i class="lg-c"></i>cluster <i class="lg-g"></i>intera area</span></div>
     <div class="chart" id="boxplot"></div>
   </section>
 
   <section class="panel p-graph">
-    <div class="panel-h"><div class="tabs" id="sv-tabs" aria-label="Dati della survey"><button data-v="a" class="on">Valori e conflitti</button><button data-v="b">Confronto</button></div>
-      <select class="sv-sel" id="sv-classe" aria-label="Portatori di interesse"></select></div>
+    <div class="panel-h"><div class="tabs" id="sv-tabs" aria-label="Dati della survey" data-i18n-aria><button data-v="a" class="on" data-i18n>Valori e conflitti</button><button data-v="b" data-i18n>Confronto</button></div>
+      <select class="sv-sel" id="sv-classe" aria-label="Portatori di interesse" data-i18n-aria></select></div>
     <div class="chart" id="graph"></div>
   </section>
 </main>
@@ -89,6 +89,7 @@
 <script src="vendor/d3.min.js"></script>
 <script src="vendor/pannellum/pannellum.js"></script>
 <script src="js/stato.js"></script>
+<script src="js/lingua.js"></script>
 <script src="js/modale.js"></script>
 <script src="js/testi.js"></script>
 <script src="js/panorama.js"></script>

@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 2 – Exceptions and internal tensions",
+  "eccezioni": [
+    {
+      "titolo": "Episodes of strong productive infrastructure",
+      "variabile": "vis_anthropic_share",
+      "testo": ""
+    },
+    {
+      "titolo": "Very legible presence of the volcano",
+      "variabile": "vis_landmark_share",
+      "testo": ""
+    },
+    {
+      "titolo": "Highly perceivable historic villages or cultural centres",
+      "variabile": "hist_cult_index",
+      "testo": ""
+    },
+    {
+      "titolo": "Locally visible agricultural matrices",
+      "variabile": "vis_agri_share",
+      "testo": ""
+    }
+  ]
+}

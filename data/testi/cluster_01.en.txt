@@ -1,0 +1,65 @@
+TITOLO: Forested periphery of the volcano with low human presence
+
+DESCRIZIONE GENERALE
+
+Cluster 1 describes a landscape that is peripheral to the volcanic system, dominated by continuous forest matrices and strong morphological articulation, but characterised by weak human structuring and an overall moderate visual legibility. The scene tends to be built through open, wooded reliefs in which the volcano nonetheless remains perceptually present as a background landmark, without occupying the physical centre of the spatial experience. Perceptual organisation is governed above all by the relationship between forest, relief and distance from the volcano, while agricultural, historical-cultural and productive elements remain marginal or episodic.
+
+STRUTTURA CENTRALE
+
+The central structure of the cluster is strongly consistent on three variables: forest presence, articulated relief and distance from the volcano. The very high median of forest presence, together with a compact and entirely positive IQR, indicates a stable and dominant woodland continuity. These are not isolated episodes of tree cover but a structuring forest system that occupies foreground and midground, defining the texture, depth and ecological continuity of the scene.
+
+Relief_context also has a strongly positive median with a stable IQR: the landscape is clearly hilly or mountainous, with slopes, changes in elevation and readable, continuous hillside systems. Yet this articulation does not produce spatial enclosure. Terrain_enclosure keeps a clearly negative median, indicating relatively open scenes with wide views and perceptual depth. The combination of positive relief and negative enclosure builds a mountainous but not claustrophobic landscape: open forested ridges, readable slopes and deep perspectives dominate perception.
+
+Distance_to_volcano has a median close to the positive maximum and an extremely compact IQR. This means that the cluster belongs stably to the volcanic periphery. The volcano is not absent: vis_landmark_share keeps consistently positive values. The volcanic landmark remains readable in the background as a morphological and identity reference, but does not occupy the perceptual foreground. The scene is therefore built more by the relationship "peripheral forest territory + remote presence of the volcano" than by the direct monumentality of the volcanic cone.
+
+The overall legibility of the scene (vis_total_intensity) is moderate and variable. The slightly negative median indicates that the landscape does not appear highly ordered or strongly structured visually. However, the IQR crosses zero and extends into positive values: the cluster alternates situations of relative perceptual clarity with denser, more opaque or less legible ones, probably because of forest continuity and the weak presence of ordering human elements.
+
+Ecology further strengthens this interpretation. Hemeroby has strongly negative and very stable values: the cluster represents environments of high naturalness and little human transformation. Shannon diversity also remains negative, indicating a low diversity of land covers: the landscape tends towards ecological continuity rather than fragmentation or a mix of land uses.
+
+Human components are subordinate. Vis_anthropic_share keeps consistently negative values, signalling the weak presence of productive or energy infrastructure. Likewise, vis_agri_share has a null median and IQR: agriculture is not a structuring matrix of the scene. When it appears, it remains episodic and peripheral.
+
+The historical-cultural component (hist_cult_index) is unstable and marginal. The median is close to zero but slightly negative, while the IQR spans both negative and positive values widely. This indicates that the historical fabric does not build the dominant structure of the cluster, although it appears locally with readable episodes of historic centres or small settlement systems.
+
+The presence of water is secondary but not absent. Water_presence_500m shows a slightly negative median but an IQR that extends into positive values: small streams, gullies or local basins may emerge episodically in the foreground without becoming a dominant element.
+
+ECCEZIONI E TENSIONI
+
+The main internal tensions concern the variability of historical-cultural legibility and of the perception of the volcano.
+
+Vis_landmark_share has numerous negative outliers. This means that, although normally perceivable as a background landmark, the volcano may locally disappear or be screened by landforms, forest cover or viewing orientation. These are, however, exceptions with respect to the general structure of the cluster.
+
+Hist_cult_index also shows a strong dispersion with numerous negative and positive outliers. Some portions of the cluster are completely devoid of readable historical-cultural references, while others show sudden emergences of villages, historic centres or traditional fabrics. These episodes do not, however, change the ecological-forest dominant of the system.
+
+Water_presence_500m has numerous positive outliers. In some cases local water becomes visible and structuring — streams, gullies or small ponds — but it remains a secondary and localised component.
+
+Vis_anthropic_share also has sporadic positive outliers: some areas introduce perceivable energy or productive infrastructure, but their presence remains marginal compared with the strong overall naturalness of the cluster.
+
+Finally, vis_agri_share has only positive outliers above a null central structure. This indicates isolated agricultural episodes — cultivated clearings, rural edges or small field patterns — that locally interrupt forest continuity without redefining the dominant perceptual identity.
+
+PARTE CENTRALE
+
+The scene should be built as a peripheral, mountainous forest landscape, organised through continuous wooded slopes, articulated ridges and open visual depths. The forest should occupy foreground and midground with material and perceptual continuity: dense tree masses, extensive cover and vegetation textures dominate the composition.
+
+The relief should be clearly readable through slopes, differences in height and elevation changes, while avoiding valley configurations that are too closed. The horizon should retain openness and depth.
+
+The volcano should appear mainly in the background as a distant but recognisable landmark. It should not physically dominate the scene but function as a remote and stable territorial presence.
+
+Human elements should remain subordinate: little infrastructure, no strong industrialisation and very little agricultural organisation. Any historic centres should appear as secondary episodes integrated into the forest matrix.
+
+The general legibility of the scene should keep a moderate perceptual heterogeneity: not a chaotic landscape, but not a rigidly ordered or strongly geometric one either.
+
+ECCEZIONE 1
+
+The exceptions should introduce local variations without altering the forest dominance. Some panels may show sudden views opening onto the volcano, while others may screen it almost completely through ridges or tree cover.
+
+ECCEZIONE 2
+
+Small historic centres or rural episodes may emerge locally in the midground, introducing cultural discontinuities within the dominant naturalness. Such elements should not, however, become the main subject.
+
+ECCEZIONE 3
+
+In some situations water may become more legible: gullies, streams or small reflecting ponds may introduce local ecological micro-centralities.
+
+ECCEZIONE 4
+
+The rare productive or infrastructural emergences should remain marginal and not alter the natural, forested character of the cluster.

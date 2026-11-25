@@ -1,0 +1,26 @@
+{
+  "intestazione": "Cluster 1 – Forested volcanic periphery with low human presence: exceptions and internal tensions",
+  "eccezioni": [
+    {
+      "titolo": "Local screening of the volcano",
+      "variabile": "vis_landmark_share, negative outlier, strength 4",
+      "testo": "Forest cover reduces the legibility of the landmark."
+    },
+    {
+      "titolo": "Strong local historical-cultural emergence",
+      "variabile": "hist_cult_index, positive outlier, strength 3",
+      "testo": "The historic system dominates locally but remains episodic."
+    },
+    {
+      "titolo": "Very legible local presence of water",
+      "variabile": "water_presence_500m, positive outlier, strength 3",
+      "testo": "A clearly visible but confined stream."
+    },
+    {
+      "titolo": "Isolated agricultural episodes",
+      "variabile": "vis_agri_share, positive outlier, strength 2",
+      "testo": "Small agricultural openings within the forest matrix."
+    }
+  ],
+  "nota": "The exceptions are local and do not redefine the central structure of the cluster, which remains forested and peripheral to the volcano."
+}

@@ -57,7 +57,7 @@ VP.testi = (() => {
     if (!cfg) return;
     await Promise.all([...VP.stato.clusters.keys()].map(async id => {
       try {
-        const r = await fetch(`${cfg.cartella}/${cfg.file.replace("{id}", VP.pad2(id))}`, { cache: "no-cache" });
+        const r = await VP.lingua.fetchLingua(`${cfg.cartella}/${cfg.file.replace("{id}", VP.pad2(id))}`, { cache: "no-cache" });
         if (!r.ok) return;
         const t = analizza(decodifica(await r.arrayBuffer()));
         dati.set(id, t);
@@ -83,20 +83,20 @@ VP.testi = (() => {
     const t = dati.get(id), body = document.getElementById("sch-body");
     const ha = !!(t && t.descrizione.length);
     document.getElementById("sch-toggle").hidden = !ha;
-    body.innerHTML = id == null ? `<p class="muted">Il nome del cluster e la sua descrizione compaiono qui.</p>`
-      : ha ? html(t.descrizione) : `<p class="muted">Testo descrittivo non ancora disponibile per questo cluster.</p>`;
+    body.innerHTML = id == null ? `<p class="muted">${VP.t("Il nome del cluster e la sua descrizione compaiono qui.")}</p>`
+      : ha ? html(t.descrizione) : `<p class="muted">${VP.t("Testo descrittivo non ancora disponibile per questo cluster.")}</p>`;
   }
   const intesta = id => { const c = VP.stato.clusters.get(id); return { sopra: `Cluster ${VP.pad2(id)}`, titolo: c?.titolo || c?.nome || "", colore: c?.colore }; };
   function apriDescrizione(id) {
     const t = dati.get(id); if (!t) return;
     VP.modale.apri({ ...intesta(id), largo: true, html:
-      `<h4>Descrizione generale</h4>${html(t.descrizione)}` +
-      (t.struttura.length ? `<h4>Struttura centrale</h4>${html(t.struttura)}` : "") +
-      (t.tensioni.length ? `<h4>Eccezioni e tensioni interne</h4>${html(t.tensioni)}` : "") });
+      `<h4>${VP.t("Descrizione generale")}</h4>${html(t.descrizione)}` +
+      (t.struttura.length ? `<h4>${VP.t("Struttura centrale")}</h4>${html(t.struttura)}` : "") +
+      (t.tensioni.length ? `<h4>${VP.t("Eccezioni e tensioni interne")}</h4>${html(t.tensioni)}` : "") });
   }
   function apriCentrale(id) {
     const t = dati.get(id); if (!t || !t.centrale.length) return;
-    VP.modale.apri({ ...intesta(id), html: `<h4>Immagine centrale · traduzione visuale</h4>${html(t.centrale)}` });
+    VP.modale.apri({ ...intesta(id), html: `<h4>${VP.t("Immagine centrale · traduzione visuale")}</h4>${html(t.centrale)}` });
   }
   // Testi delle eccezioni. Fonte principale: le didascalie stampate nelle tavole generate (didascalie.json della
   // cartella immagini del cluster); in mancanza, i paragrafi "Eccezione 1..4" del testo del cluster.
@@ -108,13 +108,13 @@ VP.testi = (() => {
       const e = dd ? dd.eccezioni[k] || {} : null;
       const titolo = e && e.titolo ? ` · ${esc(e.titolo)}` : "";
       const corpo = e ? (e.variabile ? `<p class="mod-var">${esc(e.variabile)}</p>` : "") + (e.testo ? `<p>${esc(e.testo)}</p>` : "")
-                      : html(t.eccezioni[k]) || '<p class="muted">Testo non disponibile.</p>';
+                      : html(t.eccezioni[k]) || `<p class="muted">${VP.t("Testo non disponibile.")}</p>`;
       return `<figure class="mod-ecc">${immagini[k] ? `<img src="${immagini[k]}" alt="">` : ""}
-        <figcaption><h4>Eccezione ${k + 1}${titolo}</h4>${corpo}</figcaption></figure>`;
+        <figcaption><h4>${VP.t("Eccezione {n}", { n: k + 1 })}${titolo}</h4>${corpo}</figcaption></figure>`;
     };
     const intro = dd ? (dd.intestazione ? `<p class="mod-intest">${esc(dd.intestazione)}</p>` : "")
-      : (t.osservazioni.length ? `<h4>Osservazioni generali</h4>${html(t.osservazioni)}` : "") + (t.eccezioni_testo.length ? html(t.eccezioni_testo) : "");
-    const nota = dd && dd.nota ? `<p class="mod-nota"><b>Nota.</b> ${esc(dd.nota)}</p>` : "";
+      : (t.osservazioni.length ? `<h4>${VP.t("Osservazioni generali")}</h4>${html(t.osservazioni)}` : "") + (t.eccezioni_testo.length ? html(t.eccezioni_testo) : "");
+    const nota = dd && dd.nota ? `<p class="mod-nota"><b>${VP.t("Nota.")}</b> ${esc(dd.nota)}</p>` : "";
     const corpo = i != null ? voce(i) + nota : intro + `<div class="mod-ecc-griglia">${[0, 1, 2, 3].map(voce).join("")}</div>` + nota;
     VP.modale.apri({ ...intesta(id), largo: i == null, html: corpo });
   }

@@ -19,11 +19,11 @@ VP.mappa = (() => {
   // ---- Colorazione per dati della survey ------------------------------------------------------
   // "cluster" = colori dei cluster; le altre modalità colorano ogni cluster con un dato aggregato della survey
   // per la classe di portatori di interesse scelta nel pannello della survey.
-  const MODI = [["cluster", "Cluster"], ["dominante", "Valore dominante"], ["intensita", "Intensità di un valore"],
-                ["conflitto", "Conflitto principale"], ["scarto", "Scarto priorità – percezione"]];
+  const MODI = [["cluster", "Cluster"], ["dominante", VP.t("Valore dominante")], ["intensita", VP.t("Intensità di un valore")],
+                ["conflitto", VP.t("Conflitto principale")], ["scarto", VP.t("Scarto priorità – percezione")]];
   const INSUFF = "#d9d5d0", SCARTO_MAX = 2;
   let modo = "cluster", valSel = 0;
-  const fmt1 = v => v.toLocaleString("it-IT", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const fmt1 = v => v.toLocaleString(VP.lingua.loc, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const colVal = () => VP.survey?.COLORI || [];
   function datoSurvey(v) {
     const D = VP.stato.survey; if (!D || !VP.survey) return null;
@@ -56,12 +56,12 @@ VP.mappa = (() => {
   function annotazione(v) {
     const c = VP.stato.clusters.get(v);
     if (modo === "cluster") return c.titolo || c.nome;
-    const b = datoSurvey(v); if (!b) return "dati insufficienti";
+    const b = datoSurvey(v); if (!b) return VP.t("dati insufficienti");
     const D = VP.stato.survey;
     if (modo === "dominante") { const i = d3.maxIndex(b.valori); return `${D.valori[i]} · ${fmt1(b.valori[i])}`; }
     if (modo === "intensita") return `${D.valori[valSel]} · ${fmt1(b.valori[valSel])}`;
     if (modo === "conflitto") { const k = conflittoPrincipale(b); return k ? `${k.coppia} · ${Math.round(k.q * 100)}%` : "–"; }
-    if (modo === "scarto") { const d = b.direzioni[valSel] - b.valori[valSel]; return `${d > 0 ? "+" : ""}${fmt1(d)} (priorità ${fmt1(b.direzioni[valSel])}, percezione ${fmt1(b.valori[valSel])})`; }
+    if (modo === "scarto") { const d = b.direzioni[valSel] - b.valori[valSel]; return VP.t("{d} (priorità {p}, percezione {v})", { d: (d > 0 ? "+" : "") + fmt1(d), p: fmt1(b.direzioni[valSel]), v: fmt1(b.valori[valSel]) }); }
   }
 
   // ---- Sistemi di riferimento -------------------------------------------------------------
@@ -123,24 +123,24 @@ VP.mappa = (() => {
       const D = VP.stato.survey;
       if (D) {
         const ctrl = L.DomUtil.create("div", "lg-ctrl", legendEl);
-        ctrl.innerHTML = `<button class="lg-min" type="button" title="Riduci / espandi la legenda" aria-label="Riduci la legenda">–</button>` +
-          `<label>Colora per <select id="map-modo">${MODI.map(([k, n]) => `<option value="${k}">${n}</option>`).join("")}</select></label>` +
+        ctrl.innerHTML = `<button class="lg-min" type="button" title="${VP.t("Riduci / espandi la legenda")}" aria-label="${VP.t("Riduci la legenda")}">–</button>` +
+          `<label>${VP.t("Colora per")} <select id="map-modo">${MODI.map(([k, n]) => `<option value="${k}">${n}</option>`).join("")}</select></label>` +
           `<select id="map-valore" hidden>${D.valori.map((v, i) => `<option value="${i}">${v}</option>`).join("")}</select>`;
         ctrl.querySelector("#map-modo").onchange = e => { modo = e.target.value; ridisegna(); };
         ctrl.querySelector("#map-valore").onchange = e => { valSel = +e.target.value; ridisegna(); };
         const min = ctrl.querySelector(".lg-min");
-        min.onclick = () => { const c = legendEl.classList.toggle("ridotta"); min.textContent = c ? "+" : "–"; min.setAttribute("aria-label", c ? "Espandi la legenda" : "Riduci la legenda"); };
+        min.onclick = () => { const c = legendEl.classList.toggle("ridotta"); min.textContent = c ? "+" : "–"; min.setAttribute("aria-label", c ? VP.t("Espandi la legenda") : VP.t("Riduci la legenda")); };
         // finché i dati della survey sono dimostrativi: pulsante info con la spiegazione
         if (D.demo) {
           const bi = L.DomUtil.create("button", "lg-info", ctrl);
-          bi.type = "button"; bi.textContent = "i"; bi.title = "Informazioni sui dati della survey";
-          bi.setAttribute("aria-label", "Informazioni sui dati della survey"); bi.setAttribute("aria-expanded", "false");
+          bi.type = "button"; bi.textContent = "i"; bi.title = VP.t("Informazioni sui dati della survey");
+          bi.setAttribute("aria-label", VP.t("Informazioni sui dati della survey")); bi.setAttribute("aria-expanded", "false");
           const pan = L.DomUtil.create("div", "lg-info-pan", legendEl);
           pan.hidden = true; pan.setAttribute("role", "note");
-          pan.innerHTML = `<p class="lg-info-tit">Dati dimostrativi</p>
-            <p>Le colorazioni legate alla survey (<i>Valore dominante</i>, <i>Intensità di un valore</i>, <i>Conflitto principale</i>, <i>Scarto priorità – percezione</i>) sono esempi costruiti su <b>dati fittizi</b>.</p>
-            <p>Servono a dare un'idea del tipo di risultati attesi dalla survey, ancora in corso, e non rappresentano risultati della ricerca. La colorazione <i>Cluster</i> mostra invece i risultati dell'analisi territoriale.</p>
-            <button type="button" class="lg-info-chiudi">Chiudi</button>`;
+          pan.innerHTML = `<p class="lg-info-tit">${VP.t("Dati dimostrativi")}</p>
+            <p>${VP.t("Le colorazioni legate alla survey (<i>Valore dominante</i>, <i>Intensità di un valore</i>, <i>Conflitto principale</i>, <i>Scarto priorità – percezione</i>) sono esempi costruiti su <b>dati fittizi</b>.")}</p>
+            <p>${VP.t("Servono a dare un'idea del tipo di risultati attesi dalla survey, ancora in corso, e non rappresentano risultati della ricerca. La colorazione <i>Cluster</i> mostra invece i risultati dell'analisi territoriale.")}</p>
+            <button type="button" class="lg-info-chiudi">${VP.t("Chiudi")}</button>`;
           ctrl.after(pan);
           const apri = v => { pan.hidden = !v; bi.setAttribute("aria-expanded", String(v)); bi.classList.toggle("on", v); };
           bi.onclick = () => apri(pan.hidden);
@@ -178,13 +178,13 @@ VP.mappa = (() => {
       `<div class="lg-ext"><span>${a}</span><span>${b}</span></div>`;
     let h = "";
     if (modo === "dominante") h = `<div class="lg-chips">${D.valori.map((v, i) => `<span><i style="background:${colVal()[i]}"></i>${v}</span>`).join("")}</div>`;
-    if (modo === "intensita") h = grad(scalaIntensita(valSel), "1 debole", "5 forte");
+    if (modo === "intensita") h = grad(scalaIntensita(valSel), VP.t("1 debole"), VP.t("5 forte"));
     if (modo === "conflitto") { const [a, z] = estremiConflitto();
-      h = grad(t => scalaConflitto(0.15 + 0.85 * t), `${Math.round(a * 100)}%`, `${Math.round(z * 100)}% indica la coppia principale`); }
-    if (modo === "scarto") h = grad(t => scalaScarto((t - 0.5) * 2 * SCARTO_MAX), `priorità < percezione`, `priorità > percezione`);
+      h = grad(t => scalaConflitto(0.15 + 0.85 * t), `${Math.round(a * 100)}%`, VP.t("{z}% indica la coppia principale", { z: Math.round(z * 100) })); }
+    if (modo === "scarto") h = grad(t => scalaScarto((t - 0.5) * 2 * SCARTO_MAX), VP.t("priorità < percezione"), VP.t("priorità > percezione"));
     const cl = VP.survey?.classe() || "tutti";
-    const nomeCl = cl === "tutti" ? "tutti i portatori di interesse" : (D.classi.find(c => c.id === cl)?.nome || cl);
-    h += `<div class="lg-nota">${nomeCl}${D.demo ? " · <b>dati fittizi</b>" : ""}<br><i class="lg-insuff"></i>dati insufficienti (meno di ${D.n_minimo} rispondenti)</div>`;
+    const nomeCl = cl === "tutti" ? VP.t("tutti i portatori di interesse") : (D.classi.find(c => c.id === cl)?.nome || cl);
+    h += `<div class="lg-nota">${nomeCl}${D.demo ? ` · <b>${VP.t("dati fittizi")}</b>` : ""}<br><i class="lg-insuff"></i>${VP.t("dati insufficienti (meno di {n} rispondenti)", { n: D.n_minimo })}</div>`;
     key.innerHTML = h;
   }
   function ridisegna() {
@@ -221,16 +221,16 @@ VP.mappa = (() => {
     // Basemap senza API key. Rispettare le policy d'uso dei tile OSM (traffico moderato, attribuzione visibile).
     const osmAttr = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
     const base = {
-      "OSM chiaro": L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      [VP.t("OSM chiaro")]: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         { attribution: osmAttr, maxZoom: 19, className: "tiles-chiari" }),
       "OpenStreetMap": L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         { attribution: osmAttr, maxZoom: 19 }),
       "OpenTopoMap": L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
         { attribution: osmAttr + ', SRTM | © <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)', maxZoom: 17 }),
-      "Ortofoto (Esri)": L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      [VP.t("Ortofoto (Esri)")]: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         { attribution: "Esri, Maxar, Earthstar Geographics", maxZoom: 19 }),
     };
-    base["OSM chiaro"].addTo(map);
+    base[VP.t("OSM chiaro")].addTo(map);
 
     const buf = await fetch(VP.stato.config.raster_cluster, { cache: "no-cache" }).then(r => {
       if (!r.ok) throw new Error("Raster dei cluster non trovato: " + VP.stato.config.raster_cluster); return r.arrayBuffer();
@@ -248,10 +248,10 @@ VP.mappa = (() => {
     if (confine) {
       confine.eachLayer(l => l.options.pane = "confine");
       confine.addTo(map);
-      overlay["Confine area di studio"] = confine;
+      overlay[VP.t("Confine area di studio")] = confine;
     }
     const foto = VP.foto.layerMappa(map);
-    if (foto) { foto.addTo(map); overlay[`Foto reali (${foto.getLayers().length})`] = foto; }
+    if (foto) { foto.addTo(map); overlay[VP.t("Foto reali ({n})", { n: foto.getLayers().length })] = foto; }
     map.fitBounds((confine || layer).getBounds(), { padding: [10, 10] });
     L.control.layers(base, overlay, { collapsed: true }).addTo(map);
     L.control.scale({ imperial: false }).addTo(map);

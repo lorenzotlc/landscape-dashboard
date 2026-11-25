@@ -1,0 +1,25 @@
+{
+  "intestazione": "Cluster 3 — Open agricultural and human periphery | Exceptions and internal tensions",
+  "eccezioni": [
+    {
+      "titolo": "Strong visual emergence of the volcano",
+      "variabile": "vis_landmark_share",
+      "testo": "The volcanic profile is clearly perceivable but remains in the background and does not dominate the agricultural matrix."
+    },
+    {
+      "titolo": "Local concentration of productive infrastructure",
+      "variabile": "vis_anthropic_share",
+      "testo": "A concentrated presence of sheds and production plants that stands out from the context but does not replace the agricultural matrix."
+    },
+    {
+      "titolo": "Locally perceivable forest patches",
+      "variabile": "forest_presence_500m",
+      "testo": "A small woodland patch introducing a local variation without altering the dominant agricultural openness."
+    },
+    {
+      "titolo": "Episodes of strong historical-cultural presence",
+      "variabile": "hist_cult_index",
+      "testo": "A punctual historical-cultural element that emerges locally but is not widespread in the cluster."
+    }
+  ]
+}

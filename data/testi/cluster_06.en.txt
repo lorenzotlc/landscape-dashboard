@@ -1,0 +1,63 @@
+TITOLO: Morphologically articulated periphery with widespread infrastructure and residual naturalness
+
+DESCRIZIONE GENERALE
+
+This cluster describes a landscape that is peripheral to the volcanic system, dominated by an articulated morphology and a clearly perceivable human-productive presence, but not accompanied by strong historical-cultural or agricultural legibility. The scene tends to be organised around open reliefs, ridges and wide slopes, within which productive infrastructure, artificial surfaces and energy elements take on considerable salience. The volcano is not a stable dominant landmark: its presence is intermittent and subordinate to the morphological structure. The ecological component appears compressed, with moderate or weak naturalness, territorial diversity that is only episodically high, and a presence of water that is almost always marginal. The scene is therefore legible above all as an infrastructured landscape at the territorial margin, rather than as a consolidated agricultural or historic landscape.
+
+STRUTTURA CENTRALE
+
+The central perceptual structure is driven by the combination of strong relief articulation and a peripheral position with respect to the volcano. Relief_context shows a high median and a consistently positive IQR: the landscape is stably composed of hills, slopes, ridges and articulated reliefs that form the main visual framework of the scene. This morphology does not, however, produce perceptual closure; on the contrary, terrain_enclosure keeps negative central values and a completely negative box, indicating a prevalence of relatively sunken but not completely obstructed spaces, with discontinuous view openings and fragmented territorial depths.
+
+The most stable variable of the whole cluster is distance_to_volcano, with a median close to the positive maximum and an almost null IQR. This defines a consistent territorial condition of volcanic periphery: the volcano does not directly structure the scene but acts as a distant reference, often subordinate to the local morphology. Its visibility (vis_landmark_share) indeed crosses zero: the volcanic landmark appears intermittently, present only in some perspective openings or in favourable local conditions.
+
+The human component is one of the main visual matrices. Vis_anthropic_share has a positive median and a very wide IQR that extends strongly towards high values. This indicates a landscape where productive infrastructure, sheds, energy plants, artificial surfaces and paved roads are frequently perceivable and often structuring. This is not uniform saturation, however: the large width of the IQR introduces internal gradients between more infrastructured areas and more open sectors.
+
+By contrast, the traditional agricultural component (vis_agri_share) does not build the ordinary structure of the cluster. The median and IQR are null: vineyards, olive groves, tree rows and terraces are not a stable fabric of the scene. Their presence is episodic and confined to local emergences.
+
+Overall visual legibility (vis_total_intensity) remains moderate or low: the negative median suggests an often fragmented scene, not completely ordered by a single dominant system. The territorial structure thus appears legible mainly by morphological and human sectors, rather than through landscape continuity.
+
+Ecologically, hemeroby keeps negative central values, indicating that the cluster retains a residual naturalness despite the presence of infrastructure. This naturalness does not, however, translate into strong ecological complexity: Shannon crosses zero, signalling territorial mosaics that are variable but not stably rich. Woods (forest_presence_500m) are instead statistically present, with a positive median and a wide IQR: tree masses, forest edges and vegetation screens contribute importantly to the construction of the midground and background.
+
+The historical-cultural component (hist_cult_index) is marginal in the central structure. The median is close to zero and the box crosses zero, indicating a discontinuous presence of historic villages, churches or historic urban centres, never really dominant in the ordinary perception of the cluster.
+
+Water (water_presence_500m) is almost always absent or marginal: streams, watercourses and riparian strips do not stably organise the landscape.
+
+ECCEZIONI E TENSIONI
+
+The main internal tensions derive from the oscillation between infrastructure and naturalness. Although the productive component is structurally present, the internal variability of vis_anthropic_share produces very intensely artificialised sectors alternating with more open and less transformed areas. This generates a perceptually discontinuous landscape.
+
+Agricultural presence is a true statistical exception. Vis_agri_share has hundreds of positive outliers above a completely null box: some areas show sudden emergences of legible crops, tree rows or structured plots, but these episodes do not change the general nature of the cluster. They are local enclaves within a predominantly non-agricultural matrix.
+
+An important tension concerns the relationship with the volcano. The territorial distance is extremely consistent, but vis_landmark_share crosses zero: although peripheral, the cluster keeps episodic openings in which the volcano emerges visually. This produces an intermittent perceptual geography, in which the landmark appears as an occasional rather than constant presence.
+
+Water also generates very clear exceptions. Water_presence_500m has an almost entirely negative box but numerous positive outliers: the ordinary landscape is dry, but locally streams, wet strips or small riparian systems appear, able to temporarily modify the ecological legibility of the scene.
+
+Finally, hist_cult_index shows strong dispersion through both negative and positive outliers: some sectors are almost completely devoid of historical-cultural references, while others host very legible heritage landmarks. These episodes nonetheless remain punctual and cannot build a stable continuity of identity.
+
+PARTE CENTRALE
+
+The scene should be built starting from articulated reliefs, slopes, hills and ridges perceivable as the dominant system. The landscape should appear territorially wide but fragmented, with variable visual depths and discontinuous openings.
+
+Productive and energy infrastructure should appear in the foreground and midground: sheds, artificial ground, paved roads, energy plants and occasional groups of wind turbines should be clearly legible but not completely uniformly distributed. The human component should not turn into a compact urban landscape: it should keep a dispersed, territorial logic.
+
+Forest masses should occupy an important part of the midground and background, especially as tree screens and woodland edges that accompany the morphology. Traditional agriculture should not organise the central landscape: any crops should remain secondary and fragmented.
+
+The volcano should not dominate the scene. When present, it should appear distant, episodic and often partly screened by local reliefs.
+
+Overall legibility should remain moderately irregular: the scene is neither chaotic nor perfectly ordered, but built from differentiated territorial sectors.
+
+ECCEZIONE 1
+
+Agricultural exceptions should appear as sudden local openings: small cultivated systems, tree rows or legible plots that emerge episodically without transforming the dominant matrix.
+
+ECCEZIONE 2
+
+Water episodes should be marginal but perceptually distinct: small streams, riparian vegetation or wet strips should occupy limited portions of the scene.
+
+ECCEZIONE 3
+
+Historical-cultural emergences should be episodic: villages, churches or historic centres may appear locally but should not become the main subject of the image.
+
+ECCEZIONE 4
+
+Openings towards the volcano should be treated as occasional perspective windows: the landmark emerges only in some spatial configurations and remains subordinate to the local morphology.

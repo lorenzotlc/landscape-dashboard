@@ -1,7 +1,7 @@
 // Pannelli immagini: vista sferica (immagine centrale del cluster, fotosferica.jpg) e matrice 2x2 delle eccezioni.
 // Cerca i file secondo la convenzione in data/immagini/LEGGIMI.txt; se mancano mostra un segnaposto.
 VP.immagini = (() => {
-  const SOTTOTITOLO = "scenario statisticamente più plausibile, generato con IA a partire dai dati";
+  const SOTTOTITOLO = VP.t("scenario statisticamente più plausibile, generato con IA a partire dai dati");
   const cache = new Map();       // "id/nome" -> url risolto o null
   const didascalie = new Map();  // id -> oggetto didascalie
   let token = 0;
@@ -25,7 +25,7 @@ VP.immagini = (() => {
   async function caricaDidascalie(id) {
     if (didascalie.has(id)) return didascalie.get(id);
     let d = {};
-    try { const r = await fetch(`${cartella(id)}/didascalie.json`, { cache: "no-cache" }); if (r.ok) d = await r.json(); } catch (e) {}
+    try { const r = await VP.lingua.fetchLingua(`${cartella(id)}/didascalie.json`, { cache: "no-cache" }); if (r.ok) d = await r.json(); } catch (e) {}
     didascalie.set(id, d); return d;
   }
 
@@ -46,7 +46,7 @@ VP.immagini = (() => {
       <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${neutro ? "#c3b6b9" : "#cfdde6"}"/><stop offset="1" stop-color="${neutro ? "#f1ecec" : "#f3efe6"}"/></linearGradient></defs>
       <rect width="640" height="400" fill="url(#s)"/>${layers}
       <text x="320" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#1f2328" fill-opacity=".8">${etichetta}</text>
-      <text x="320" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#1f2328" fill-opacity=".6">${neutro ? "seleziona un cluster sulla mappa" : `segnaposto · cluster_${VP.pad2(id)}/${nome}.jpg`}</text></svg>`;
+      <text x="320" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#1f2328" fill-opacity=".6">${neutro ? VP.t("seleziona un cluster sulla mappa") : VP.t("segnaposto · {s}", { s: `cluster_${VP.pad2(id)}/${nome}.jpg` })}</text></svg>`;
     return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
   }
 
@@ -97,7 +97,7 @@ VP.immagini = (() => {
   function init() {
     const exc = document.getElementById("exc");
     VP.stato.config.immagini.eccezioni.forEach((n, i) => {
-      exc.insertAdjacentHTML("beforeend", `<figure data-slot="${n}"><img alt="Eccezione ${i + 1}"><figcaption>Eccezione ${i + 1}</figcaption></figure>`);
+      exc.insertAdjacentHTML("beforeend", `<figure data-slot="${n}"><img alt="${VP.t("Eccezione {n}", { n: i + 1 })}"><figcaption>${VP.t("Eccezione {n}", { n: i + 1 })}</figcaption></figure>`);
     });
     const lb = document.getElementById("lightbox");
     document.addEventListener("click", e => {
@@ -125,8 +125,8 @@ VP.immagini = (() => {
     document.getElementById("synth").hidden = true;
     document.getElementById("street-caption").textContent = SOTTOTITOLO;
     document.querySelectorAll("#exc figure").forEach((f, i) => {
-      imposta(f.querySelector("img"), segnaposto(null, cfg.eccezioni[i], `Eccezione ${i + 1}`));
-      f.querySelector("figcaption").textContent = `Eccezione ${i + 1}`;
+      imposta(f.querySelector("img"), segnaposto(null, cfg.eccezioni[i], VP.t("Eccezione {n}", { n: i + 1 })));
+      f.querySelector("figcaption").textContent = VP.t("Eccezione {n}", { n: i + 1 });
     });
   }
 
@@ -145,17 +145,17 @@ VP.immagini = (() => {
     const t = VP.testi.get(id);
     VP.panorama.mostra(sv, id, nome);
     didCorr = did; pulsanti(id);
-    document.getElementById("street-caption").textContent = sv ? SOTTOTITOLO : `segnaposto · ${SOTTOTITOLO}`;
+    document.getElementById("street-caption").textContent = sv ? SOTTOTITOLO : VP.t("segnaposto · {s}", { s: SOTTOTITOLO });
     const synth = document.getElementById("synth");
     synth.hidden = !sy;
-    if (sy) { imposta(document.getElementById("synth-img"), sy); document.getElementById("synth-img").dataset.caption = `Immagine sintetica centrale · ${nome}`; }
+    if (sy) { imposta(document.getElementById("synth-img"), sy); document.getElementById("synth-img").dataset.caption = VP.t("Immagine sintetica centrale · {nome}", { nome }); }
     document.querySelectorAll("#exc figure").forEach((f, i) => {
       const n = cfg.eccezioni[i], img = f.querySelector("img");
-      imposta(img, ex[i] || segnaposto(id, n, `Eccezione ${i + 1}`));
+      imposta(img, ex[i] || segnaposto(id, n, VP.t("Eccezione {n}", { n: i + 1 })));
       const tit = did.eccezioni?.[i]?.titolo || did[n];
-      f.querySelector("figcaption").textContent = `Eccezione ${i + 1}` + (tit ? ` · ${tit}` : "");
+      f.querySelector("figcaption").textContent = VP.t("Eccezione {n}", { n: i + 1 }) + (tit ? ` · ${tit}` : "");
       f.title = tit || "";
-      img.dataset.caption = `Eccezione ${i + 1} · ${nome}`;
+      img.dataset.caption = VP.t("Eccezione {n} · {nome}", { n: i + 1, nome });
     });
   }
   return { init, fotosferica: id => trova(id, VP.stato.config.immagini.fotosferica) };
