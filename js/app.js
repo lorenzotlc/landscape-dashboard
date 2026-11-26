@@ -79,6 +79,7 @@
                       ["p-box", VP.t("le variabili del cluster")], ["p-graph", VP.t("i dati della survey")]];
     const grid = document.querySelector(".grid");
     VP.espandi = classe => {
+      VP.panorama.ripristina();   // memorizza l'inquadratura e ricrea il visore a cambio di dimensioni avvenuto (la tela WebGL può restare vuota)
       document.querySelectorAll(".grid > .panel").forEach(p => p.classList.toggle("espanso", !!classe && p.classList.contains(classe)));
       if (classe) grid.dataset.espanso = classe; else delete grid.dataset.espanso;
       document.querySelectorAll(".btn-espandi").forEach(b => {

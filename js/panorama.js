@@ -76,16 +76,50 @@ VP.panorama = (() => {
     return { cfg, sferica, haov };
   }
 
-  async function mostra(url, id, nome) {
+  let ultimo = null;   // argomenti dell'ultima immagine mostrata, per ricreare il visore
+  async function mostra(url, id, nome, vista) {
     const my = ++token;
+    ultimo = [url, id, nome];
+    if (!vista) vistaBuona = null;
     let r;
     try { r = await configura(url, id, nome); } catch (e) { return; }
     if (my !== token) return;
     const { cfg, sferica, haov } = r;
+    if (vista) Object.assign(cfg, vista);   // stessa inquadratura dopo un ripristino
     if (viewer) { try { viewer.destroy(); } catch (e) {} viewer = null; }
     viewer = pannellum.viewer("pano", cfg);
     document.getElementById("pano").dataset.tipo = sferica ? "360°" : `foto ${Math.round(haov)}°`;
   }
+
+  // Dopo lo schermo intero o l'ingrandimento del pannello la tela WebGL può restare vuota finché il visore
+  // non viene ricreato: lo si ricrea con la stessa immagine e la stessa inquadratura.
+  // Se il pannello viene nascosto (ingrandimento di un altro pannello) Pannellum si ridimensiona a 0×0 e i suoi
+  // angoli diventano NaN: si conserva l'ultima inquadratura valida.
+  let tRip, vistaBuona = null;
+  function vistaAttuale() {
+    try {
+      const v = { yaw: viewer.getYaw(), pitch: viewer.getPitch(), hfov: viewer.getHfov() };
+      return Object.values(v).every(Number.isFinite) ? v : null;
+    } catch (e) { return null; }
+  }
+  function ripristina(ritardo = 250) {
+    const ora = viewer && vistaAttuale(); if (ora) vistaBuona = ora;
+    clearTimeout(tRip);
+    tRip = setTimeout(() => {
+      if (!viewer || !ultimo) return;
+      const pano = document.getElementById("pano");
+      if (!pano || !pano.clientWidth || !pano.clientHeight) return;   // pannello nascosto: si ripristina quando torna visibile
+      mostra(...ultimo, vistaBuona);
+    }, ritardo);
+  }
+  // contesto WebGL perso (può succedere con tele molto grandi, es. a schermo intero): si ricrea il visore.
+  // La tela è creata da Pannellum in modo asincrono: l'evento (che non risale) si intercetta in fase di cattura.
+  document.addEventListener("webglcontextlost", e => {
+    if (e.target.closest && e.target.closest("#pano")) { e.preventDefault(); ripristina(); }
+  }, true);
+  ["fullscreenchange", "webkitfullscreenchange"].forEach(ev => document.addEventListener(ev, () => {
+    if (!(document.fullscreenElement || document.webkitFullscreenElement)) ripristina(300);
+  }));
 
   // secondo visore indipendente (stessa impostazione e animazione) in un altro contenitore
   async function crea(contenitore, url, id, nome) {
@@ -93,5 +127,5 @@ VP.panorama = (() => {
     return pannellum.viewer(contenitore, cfg);
   }
 
-  return { mostra, crea, viewer: () => viewer };
+  return { mostra, crea, ripristina, viewer: () => viewer };
 })();
